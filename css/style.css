@@ -9,8 +9,10 @@ html{
 }
 #container{
     background-image: url(../image/bg-body.png);
-    height: 100vh;
-    width: 100%;
+    height: 100%;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 a{
@@ -18,7 +20,10 @@ a{
 }
 
 #header{
-    background-color: black; 
+    height: 128px;
+    position: fixed;
+    width: 100%;
+    background-color: black;
 }
 
 #top{
@@ -26,8 +31,8 @@ a{
     display: flex;
     justify-content: space-around;
     width: 90%;
-    position: relative;
     margin: auto;
+    position: relative;
     max-width: 1500px;
 }
 
@@ -122,3 +127,7 @@ a{
     color: orange;
 }
 
+
+#footer{
+    height: 1000px;
+}
