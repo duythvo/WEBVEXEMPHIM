@@ -1,124 +1,124 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-bottom: 1px;
 }
 
-html{
-    font-family: Arial, Helvetica, sans-serif;
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
-#container{
-    background-image: url(../image/bg-body.png);
-    height: 100vh;
-    width: 100%;
-}
-
-a{
-    text-decoration: none;
+#container {
+  background-image: url(../image/bg-body.png);
+  height: 100vh;
+  width: 100%;
 }
 
-#header{
-    background-color: black; 
+a {
+  text-decoration: none;
 }
 
-#top{
-    height: 128px;
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    position: relative;
-    margin: auto;
-    max-width: 1500px;
+#header {
+  background-color: black;
 }
 
-#header #nav{
-    display: flex;
-    align-self: flex-end;
-    margin-bottom: 10px;
-    position: absolute;
-    right: 0;
+#top {
+  height: 128px;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  position: relative;
+  margin: auto;
+  max-width: 1500px;
 }
 
-#header #TH2D{
-    background-image:url(../image/logo.png) ;
-    position: absolute;
-    height: 110px;
-    width: 220px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    bottom: 0;
-    left: 20px;
-}
-#nav .logo{
-    background: url(../image/icon-home.png) no-repeat center 5px;
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    margin-right: 15px;
+#header #nav {
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: 10px;
+  position: absolute;
+  right: 0;
 }
 
-#nav #menu{
-    border: solid 1px #d8047c;
-    border-radius: 30px;
-    padding: 3px;
-    height: 51px;
+#header #TH2D {
+  background-image: url(../image/logo.png);
+  position: absolute;
+  height: 110px;
+  width: 220px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 20px;
+}
+#nav .logo {
+  background: url(../image/icon-home.png) no-repeat center 5px;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  margin-right: 15px;
 }
 
-#nav #menu ul{
-    list-style: none;
-    background-color: #d8047c;
-    border-radius: 30px;
+#nav #menu {
+  border: solid 1px #d8047c;
+  border-radius: 30px;
+  padding: 3px;
+  height: 51px;
 }
 
-#nav #menu >ul>li {
-    display: inline-block;
-    align-self: flex-end;
-    height: 42px;
-    padding: 5px;
-}
-#nav .logo:hover{
-   background-position: center -43px;
-   transition: 0.5s ease-in-out;
-}
-#nav #menu >ul>li:hover{
-    background-color: orange;  
+#nav #menu ul {
+  list-style: none;
+  background-color: #d8047c;
+  border-radius: 30px;
 }
 
-#nav #menu >ul>li:hover:first-child{
-    border-radius: 30px 0 0 30px;
+#nav #menu > ul > li {
+  display: inline-block;
+  align-self: flex-end;
+  height: 42px;
+  padding: 5px;
+}
+#nav .logo:hover {
+  background-position: center -43px;
+  transition: 0.5s ease-in-out;
+}
+#nav #menu > ul > li:hover {
+  background-color: orange;
 }
 
-#nav #menu >ul>li:hover:last-child{
-    border-radius: 0 30px 30px 0;
+#nav #menu > ul > li:hover:first-child {
+  border-radius: 30px 0 0 30px;
 }
 
-#nav #menu >ul> li >a{
-    text-decoration: none;
-    color: white;
-    padding: 0 10px;
-    font-size: 18px;
-    line-height: 35px;
+#nav #menu > ul > li:hover:last-child {
+  border-radius: 0 30px 30px 0;
 }
 
-#login{
-    position: absolute;
-    display: block;
-    right: 0;
-    margin-top: 10px;
+#nav #menu > ul > li > a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+  font-size: 18px;
+  line-height: 35px;
 }
 
-#login a{
-    text-decoration: none;
-    color: white;
-    margin-right: 10px;
+#login {
+  position: absolute;
+  display: block;
+  right: 0;
+  margin-top: 10px;
 }
 
-#login :first-child{
-    border-right: solid 1px white;
-    padding-right: 10px;
+#login a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
 }
 
-#login a:hover{
-    color: orange;
+#login :first-child {
+  border-right: solid 1px white;
+  padding-right: 10px;
 }
 
+#login a:hover {
+  color: orange;
+}
