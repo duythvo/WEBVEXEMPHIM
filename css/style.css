@@ -8,9 +8,11 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 #container{
-    background-image: url(../image/bg-body.png) repeat-y left top;
-    height: 100vh;
-    background-size: contain;
+    background-image: url(../image/bg-body.png);
+    background-size: cover;
+    background-position: left top;
+    background-repeat: repeat-y;
+    height: 100%;
 }
 
 #container-bg{
@@ -18,10 +20,8 @@ html{
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
-    overflow: hidden;
     position: relative;
     width: 100%;
-    height: fit-content;
 }
 
 a{
@@ -138,12 +138,27 @@ ul{
     color: orange;
 }
 
+.poster{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: 130px;
+}
+
+.poster img{
+    width: 100vw;
+    height: auto;
+}
+
 #content{
-    padding-top:150px;
-    height: 1500px;
+    height: 100%;
+    max-height: 2100px;
+    min-height: 2100px;
     background-image: url(../image/bg-body.png);
     background-size: contain;
     background-repeat: repeat-y;
+    padding-top: 130px;
+    overflow: hidden;
 }
 
 #content .content-nav{
@@ -198,8 +213,11 @@ ul{
 }
 
 #content .content-movie{
-    height:480px;
     background: orange;
+}
+
+#content .content-movie .content-movie-bg{
+    height:480px;
     padding-top: 30px;
     position: relative;
     display: flex;
@@ -314,16 +332,18 @@ ul{
 #content .news .menu-news li:nth-child(3),
 #content .news .menu-news li:nth-child(2){
     display: flex;
-    max-width: 650px;
+    max-width: 600px;
+    min-width: 600px;
     color: white;
     background-color: #d8047c;
     border-radius: 0 30px 0 30px;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 #content .news .menu-news li .txt{
     text-align: right;
     margin: auto 0;
+    max-width: 500px;
 }
 
 #content .news .menu-news li img{
@@ -340,12 +360,12 @@ ul{
 
 #footer{
     width: 100%;
-    position: relative;
-    bottom: 0%;
+    height: 100vh;
 }
 
 #footer .container-footer{
-    height: fit-content;
+    position: relative;
+    bottom: 0%;
 }
 
 #footer .logo-footer{
