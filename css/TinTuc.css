@@ -142,7 +142,7 @@
     position: relative;
     padding-top: 120px;
     background-image: url(../image/bg-body.png);
-    height: 100%;
+    height: fit-content ;
 }
 #news>h1{ 
     padding: 20px;
@@ -150,7 +150,9 @@
     text-align: center;
     color: white;
 }
-
+#dienanh,#listnew{
+    height: 100%;
+}
 #news>#dienanh>ul{
     width: max-content;
     position: relative;
@@ -169,17 +171,23 @@
     height: 70px;
     text-indent: 20px;
 }
+#news>#dienanh>ul>li:hover{
+    background-color: yellow;
+}
 #news>#dienanh>ul>li:first-child{
     background-color: yellow;
     transform: translateX(20%);
     box-shadow:  10px 0px 10px  #D9791D;
-
+    
 }
 #news>#dienanh>ul>li:first-child>p{
     font-weight: bold;
     transform:translateY(67%);
     color: black;
     left: -5%;
+}
+#news>#dienanh>ul>li>a:hover{
+    color: black;
 }
 #news>#dienanh>ul>li>a{
     position: relative;
@@ -190,16 +198,17 @@
 #listnew{
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,min-content);
     grid-gap: 10px;
     width: 85%;
     padding: 30px;
 }
-#listnew div{
+.new{
     background-color: white;
-    width: 100%;
 }
-
+.new h1{
+    font-size: 0.3cm;
+}
 #news>#tuyendung>ul{
     width: max-content;
     position: relative;
@@ -222,7 +231,9 @@
     background-color: orange;
     transform: translateX(20%);
     box-shadow:  10px 0px 10px  #D9791D;
-
+}
+#news>#tuyendung>ul>li:first-child:hover{
+    background-color: yellow;
 }
 #news>#tuyendung>ul>li:last-child>p{
     font-weight: bold;
@@ -235,6 +246,9 @@
     top: 29%;
     color: white;
     font-weight: bold;
+}
+#news>#tuyendung>ul>li>a{
+    color: black;
 }
 #listtd{
     margin: auto;
