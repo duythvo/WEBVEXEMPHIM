@@ -10,9 +10,18 @@ html{
 #container{
     background-image: url(../image/bg-body.png);
     background-size: cover;
+    background-position: left top;
+    background-repeat: repeat-y;
+    height: 100%;
+}
+
+#container-bg{
+    background-image: url(../image/bg-footer.jpg) ;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-position: center bottom;
+    background-size: cover;
     position: relative;
+    width: 100%;
 }
 
 a{
@@ -129,17 +138,190 @@ ul{
     color: orange;
 }
 
-#content{
+.poster{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    top: 130px;
 }
 
-#footer{
-    background-image: url(../image/bg-footer.jpg);
-    max-height: 820px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
+.poster img{
+    width: 100vw;
+    height: auto;
+}
+
+#news{
+    height: 100%;
+    max-height: 2100px;
+    min-height: 2100px;
+    background-image: url(../image/bg-body.png);
+    background-size: contain;
+    background-repeat: repeat-y;
+    padding-top: 130px;
+    overflow: hidden;
+}
+
+#news>h1{ 
+    padding: 20px;
+    font-size: 1cm;
+    text-align: center;
+    color: white;
+}
+#dienanh,#tuyendung{
+    height: 100%;
+}
+#news>#dienanh>ul{
+    width: max-content;
     position: relative;
-    top: 100%;
+    left: 50%;
+    transform: translateX(-62%);
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    margin: 20px;
+}
+#news>#dienanh>ul>li{
+    background-color: orange;
+    font-size: 0.7cm;
+    border-radius: 30px 50px 50px 0;
+    width: 280px;
+    height: 70px;
+    text-indent: 20px;
+}
+#news>#dienanh>ul>li:hover{
+    background-color: yellow;
+}
+#news>#dienanh>ul>li:first-child{
+    background-color: yellow;
+    transform: translateX(20%);
+    box-shadow:  10px 0px 10px  #D9791D;
+    
+}
+#news>#dienanh>ul>li:first-child>p{
+    font-weight: bold;
+    transform:translateY(67%);
+    color: black;
+    left: -5%;
+}
+#news>#dienanh>ul>li>a:hover{
+    color: black;
+}
+#news>#dienanh>ul>li>a{
+    position: relative;
+    top: 29%;
+    color: white;
+    font-weight: bold;
+}
+#listnew{
+    display: flex;
+    width: 1170px;
+    margin: auto;
+
+}
+.column{
+    width: 370px;
+    margin: 10px;
+}
+.new{
+    width: 370px;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+.new:hover{
+    background-color: orange;
+}
+.new a{
+    position: absolute;
+    width: 360px;
+    height: 500px;
+}
+.new img{
+    width:350px;
+}
+.new h1{
+    font-size: 0.5cm;
+}
+#news>#tuyendung>ul{
+    width: max-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-62%);
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    margin: 20px;
+}
+#news>#tuyendung>ul>li{
+    background-color: yellow;
+    font-size: 0.7cm;
+    border-radius: 30px 50px 50px 0;
+    width: 280px;
+    height: 70px;
+    text-indent: 20px;
+}
+#news>#tuyendung>ul>li:first-child{
+    background-color: orange;
+    transform: translateX(20%);
+    box-shadow:  10px 0px 10px  #D9791D;
+}
+#news>#tuyendung>ul>li:first-child:hover{
+    background-color: yellow;
+}
+#news>#tuyendung>ul>li:last-child>p{
+    font-weight: bold;
+    transform:translateY(67%);
+    color: black;
+    left: -5%;
+}
+#news>#tuyendung>ul>li>a{
+    position: relative;
+    top: 29%;
+    color: white;
+    font-weight: bold;
+}
+#news>#tuyendung>ul>li>a{
+    color: black;
+}
+#listtd{
+    margin: auto;
+    grid-gap: 10px;
+    width: 85%;
+}
+.td{
+    width: 370px;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+}
+.td:hover{
+    background-color: orange;
+}
+.td a{
+    position: absolute;
+    width: 360px;
+    height: 500px;
+}
+.td img{
+    width:350px;
+}
+.td h1{
+    font-size: 0.5cm;
+}
+#tuyendung{
+    display: none;
+}
+  
+#footer{
+    width: 100%;
+    height: 100vh;
+}
+
+#footer .container-footer{
+    position: relative;
+    bottom: 0%;
 }
 
 #footer .logo-footer{
@@ -234,114 +416,4 @@ ul{
 #infor-company .content-infor{
     text-align: center;
     padding-top: 20px;
-}
-#news{
-    background-image: url(../image/bg-body.png);
-    height: 100%;
-}
-#news>h1{ 
-    padding: 20px;
-    font-size: 1cm;
-    text-align: center;
-    color: white;
-}
-
-#news>#dienanh>ul{
-    width: max-content;
-    position: relative;
-    left: 50%;
-    transform: translateX(-62%);
-    text-align: center;
-    list-style-type: none;
-    display: flex;
-    margin: 20px;
-}
-#news>#dienanh>ul>li{
-    background-color: orange;
-    font-size: 0.7cm;
-    border-radius: 30px 50px 50px 0;
-    width: 280px;
-    height: 70px;
-    text-indent: 20px;
-}
-#news>#dienanh>ul>li:first-child{
-    background-color: yellow;
-    transform: translateX(20%);
-    box-shadow:  10px 0px 10px  #D9791D;
-
-}
-#news>#dienanh>ul>li:first-child>p{
-    font-weight: bold;
-    transform:translateY(67%);
-    color: black;
-    left: -5%;
-}
-#news>#dienanh>ul>li>a{
-    position: relative;
-    top: 29%;
-    color: white;
-    font-weight: bold;
-}
-#listnew{
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 10px;
-    width: 85%;
-    padding: 30px;
-}
-#listnew div{
-    background-color: white;
-    width: 100%;
-}
-
-#news>#tuyendung>ul{
-    width: max-content;
-    position: relative;
-    left: 50%;
-    transform: translateX(-62%);
-    text-align: center;
-    list-style-type: none;
-    display: flex;
-    margin: 20px;
-}
-#news>#tuyendung>ul>li{
-    background-color: yellow;
-    font-size: 0.7cm;
-    border-radius: 30px 50px 50px 0;
-    width: 280px;
-    height: 70px;
-    text-indent: 20px;
-}
-#news>#tuyendung>ul>li:first-child{
-    background-color: orange;
-    transform: translateX(20%);
-    box-shadow:  10px 0px 10px  #D9791D;
-
-}
-#news>#tuyendung>ul>li:last-child>p{
-    font-weight: bold;
-    transform:translateY(67%);
-    color: black;
-    left: -5%;
-}
-#news>#tuyendung>ul>li>a{
-    position: relative;
-    top: 29%;
-    color: white;
-    font-weight: bold;
-}
-#listtd{
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 10px;
-    width: 85%;
-}
-#listtd div{
-    background-color: white;
-    width: 100%;
-}
-#tuyendung{
-    display: none;
 }
