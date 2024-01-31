@@ -269,14 +269,29 @@
 }
 #listtd{
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
     grid-gap: 10px;
     width: 85%;
 }
-#listtd div{
+.td{
+    width: 370px;
+    height: auto;
     background-color: white;
-    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+.td:hover{
+    background-color: orange;
+}
+.td a{
+    position: absolute;
+    width: 360px;
+    height: 500px;
+}
+.td img{
+    width:350px;
+}
+.td h1{
+    font-size: 0.5cm;
 }
 #tuyendung{
     display: none;
