@@ -150,7 +150,7 @@
     text-align: center;
     color: white;
 }
-#dienanh,#listnew{
+#dienanh,#tuyendung{
     height: 100%;
 }
 #news>#dienanh>ul{
@@ -196,18 +196,35 @@
     font-weight: bold;
 }
 #listnew{
+    display: flex;
+    width: 1170px;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,min-content);
-    grid-gap: 10px;
-    width: 85%;
-    padding: 30px;
+
+}
+.column{
+    width: 370px;
+    margin: 10px;
 }
 .new{
+    width: 370px;
+    height: auto;
     background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+.new:hover{
+    background-color: orange;
+}
+.new a{
+    position: absolute;
+    width: 360px;
+    height: 500px;
+}
+.new img{
+    width:350px;
 }
 .new h1{
-    font-size: 0.3cm;
+    font-size: 0.5cm;
 }
 #news>#tuyendung>ul{
     width: max-content;
