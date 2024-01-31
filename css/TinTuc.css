@@ -151,8 +151,6 @@ ul{
 }
 
 #news{
-    height: 100%;
-    max-height: 3080px;
     background-image: url(../image/bg-body.png);
     background-size: contain;
     background-repeat: repeat-y;
@@ -191,6 +189,7 @@ ul{
     background-color: yellow;
 }
 #container-bg>#dienanh>ul>li:first-child{
+    position: relative;
     background-color: yellow;
     transform: translateX(20%);
     box-shadow:  10px 0px 10px  #D9791D;
@@ -206,10 +205,16 @@ ul{
     color: black;
 }
 #container-bg>#dienanh>ul>li>a{
-    position: relative;
-    top: 29%;
+    position: absolute;
+    width: 220px;
+    height: 70px;
+    left: 60%;
     color: white;
     font-weight: bold;
+}
+#container-bg>#dienanh>ul>li>a>p{
+    position: absolute;
+    top: 28%;
 }
 #listnew{
     display: flex;
@@ -222,6 +227,7 @@ ul{
     margin: 10px;
 }
 .new{
+    position: relative;
     width: 370px;
     height: auto;
     background-color: white;
@@ -233,8 +239,8 @@ ul{
 }
 .new a{
     position: absolute;
-    width: 360px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
 }
 .new img{
     width:350px;
@@ -258,7 +264,6 @@ ul{
     border-radius: 30px 50px 50px 0;
     width: 280px;
     height: 70px;
-    text-indent: 20px;
 }
 #container-bg>#tuyendung>ul>li:first-child{
     background-color: orange;
@@ -269,18 +274,27 @@ ul{
     background-color: yellow;
 }
 #container-bg>#tuyendung>ul>li:last-child>p{
+    position: absolute;
     font-weight: bold;
     transform:translateY(67%);
     color: black;
-    left: -5%;
+    text-align: right;
+    left: 63.5%;
 }
 #container-bg>#tuyendung>ul>li>a{
-    position: relative;
-    top: 29%;
+    position: absolute;
+    width: 280px;
+    height: 70px;
+    right: 0%;
     color: white;
     font-weight: bold;
 }
-#container-bg>#tuyendung>ul>li>a{
+#container-bg>#tuyendung>ul>li>a>p{
+    right: 15%;
+    position: absolute;
+    top: 28%;
+}
+#container-bg>#tuyendung>ul>li>a:hover{
     color: black;
 }
 #listtd{
@@ -289,19 +303,21 @@ ul{
     width: 85%;
 }
 .td{
+    position: relative;
     width: 370px;
     height: auto;
     background-color: white;
     padding: 10px;
     margin: auto;
+    margin-bottom: 100px;
 }
 .td:hover{
     background-color: orange;
 }
 .td a{
     position: absolute;
-    width: 360px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
 }
 .td img{
     width:350px;
@@ -315,7 +331,7 @@ ul{
   
 #footer{
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 #footer .container-footer{
