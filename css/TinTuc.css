@@ -152,8 +152,7 @@ ul{
 
 #news{
     height: 100%;
-    max-height: 2100px;
-    min-height: 2100px;
+    max-height: 3080px;
     background-image: url(../image/bg-body.png);
     background-size: contain;
     background-repeat: repeat-y;
@@ -161,7 +160,7 @@ ul{
     overflow: hidden;
 }
 
-#news>h1{ 
+#container-bg>h1{ 
     padding: 20px;
     font-size: 1cm;
     text-align: center;
@@ -170,7 +169,7 @@ ul{
 #dienanh,#tuyendung{
     height: 100%;
 }
-#news>#dienanh>ul{
+#container-bg>#dienanh>ul{
     width: max-content;
     position: relative;
     left: 50%;
@@ -180,7 +179,7 @@ ul{
     display: flex;
     margin: 20px;
 }
-#news>#dienanh>ul>li{
+#container-bg>#dienanh>ul>li{
     background-color: orange;
     font-size: 0.7cm;
     border-radius: 30px 50px 50px 0;
@@ -188,25 +187,25 @@ ul{
     height: 70px;
     text-indent: 20px;
 }
-#news>#dienanh>ul>li:hover{
+#container-bg>#dienanh>ul>li:hover{
     background-color: yellow;
 }
-#news>#dienanh>ul>li:first-child{
+#container-bg>#dienanh>ul>li:first-child{
     background-color: yellow;
     transform: translateX(20%);
     box-shadow:  10px 0px 10px  #D9791D;
     
 }
-#news>#dienanh>ul>li:first-child>p{
+#container-bg>#dienanh>ul>li:first-child>p{
     font-weight: bold;
     transform:translateY(67%);
     color: black;
     left: -5%;
 }
-#news>#dienanh>ul>li>a:hover{
+#container-bg>#dienanh>ul>li>a:hover{
     color: black;
 }
-#news>#dienanh>ul>li>a{
+#container-bg>#dienanh>ul>li>a{
     position: relative;
     top: 29%;
     color: white;
@@ -243,7 +242,7 @@ ul{
 .new h1{
     font-size: 0.5cm;
 }
-#news>#tuyendung>ul{
+#container-bg>#tuyendung>ul{
     width: max-content;
     position: relative;
     left: 50%;
@@ -253,7 +252,7 @@ ul{
     display: flex;
     margin: 20px;
 }
-#news>#tuyendung>ul>li{
+#container-bg>#tuyendung>ul>li{
     background-color: yellow;
     font-size: 0.7cm;
     border-radius: 30px 50px 50px 0;
@@ -261,27 +260,27 @@ ul{
     height: 70px;
     text-indent: 20px;
 }
-#news>#tuyendung>ul>li:first-child{
+#container-bg>#tuyendung>ul>li:first-child{
     background-color: orange;
     transform: translateX(20%);
     box-shadow:  10px 0px 10px  #D9791D;
 }
-#news>#tuyendung>ul>li:first-child:hover{
+#container-bg>#tuyendung>ul>li:first-child:hover{
     background-color: yellow;
 }
-#news>#tuyendung>ul>li:last-child>p{
+#container-bg>#tuyendung>ul>li:last-child>p{
     font-weight: bold;
     transform:translateY(67%);
     color: black;
     left: -5%;
 }
-#news>#tuyendung>ul>li>a{
+#container-bg>#tuyendung>ul>li>a{
     position: relative;
     top: 29%;
     color: white;
     font-weight: bold;
 }
-#news>#tuyendung>ul>li>a{
+#container-bg>#tuyendung>ul>li>a{
     color: black;
 }
 #listtd{
