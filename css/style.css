@@ -237,7 +237,7 @@ ul{
     right: 0;
 }
 
-#content .content-movie .list-movie .current-movie{
+#content .content-movie .list-movie{
     display: flex;
 }
 

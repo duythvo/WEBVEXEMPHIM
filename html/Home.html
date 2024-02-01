@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TH2D-Hệ thống Rạp chiếu phim toàn quốc</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/Home.js"></script>
 </head>
 <body>
     <div id="container">
@@ -44,9 +44,9 @@
             <div id="container-bg">
                 <div class="content-nav">
                     <ul>
-                        <li style="z-index: 3;"><a href="">PHIM ĐANG CHIẾU</a></li>
-                        <li style="z-index: 2;"><a href="">PHIM SẮP CHIẾU</a></li>
-                        <li style="z-index: 1;"><a href="">SUẤT CHIẾU ĐẶC BIỆT</a></li>
+                        <li style="z-index: 3;"><a href="#" onclick="hideUpcomingMovie()">PHIM ĐANG CHIẾU</a></li>
+                        <li style="z-index: 2;"><a href="#" onclick="hideCurrentMovie()">PHIM SẮP CHIẾU</a></li>
+                        <li style="z-index: 1;"><a href="" >SUẤT CHIẾU ĐẶC BIỆT</a></li>
                     </ul>
                 </div>
                 <div class="content-movie">
@@ -54,8 +54,8 @@
                         <div class="slide-prev">
                             <a href=""><img src="../image/icon-start.png" alt=""></a>
                         </div>
-                        <div class="list-movie">
-                            <div class="current-movie">
+                        <div class="current-movie" id="dangchieu">
+                            <div class="list-movie">
                                 <div class="movie-item">
                                     <div class="movie-picture">
                                         <img src="../image/poster-quy-cau2.jpg" alt="" style="width: 220px;">
@@ -94,6 +94,51 @@
                                     </div>
                                     <div class="moview-txt">
                                         <h3>RƯỢU CỐT NGƯỜI (T16)</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="upcoming-movie" id="sapchieu" style="display: none;">
+                            <div class="list-movie">
+                                <div class="movie-item">
+                                    <div class="movie-picture">
+                                        <img src="../image/tra.jpg" alt="" style="width: 220px;">
+                                    </div>
+                                    <div class="moview-txt">
+                                        <h3>TRÀ</h3>
+                                    </div>
+                                </div>
+                                <div class="movie-item">
+                                    <div class="movie-picture">
+                                        <img src="../image/spy-x-family.jpeg" alt="" style="width: 220px;">
+                                    </div>
+                                    <div class="moview-txt">
+                                        <h3>GIA ĐÌNH x ĐIỆP VIÊN MÃ: TRẮNG (T13)</h3>
+                                    </div>
+                                </div>
+                                <div class="movie-item">
+                                    <div class="movie-picture">
+                                        <img src="../image/poster-mai.jpg" alt="" style="width: 220px;">
+                                    </div>
+                                    <div class="moview-txt">
+                                        <h3>MAI (T18)</h3>
+                                    </div>
+                                </div>
+                                <div class="movie-item">
+                                    <div class="movie-picture">
+                                        <img src="../image/argylle-sieu-diep-vien.jpg" alt="" style="width: 220px;">
+                                    </div>
+                                    <div class="moview-txt">
+                                        <h3>ARGYLLE SIÊU ĐIỆP VIÊN (T16)</h3>
+                                    </div>
+                                </div>
+                                <div class="movie-item">
+                                    <div class="movie-picture">
+                                        <img src="../image/sang-den.jpg" alt="" style="width: 220px;">
+                                    </div>
+                                    <div class="moview-txt">
+                                        <h3>SÁNG ĐÈN (K)</h3>
                                     </div>
                                 </div>
                             </div>
