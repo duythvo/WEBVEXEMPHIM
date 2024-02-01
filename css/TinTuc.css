@@ -139,7 +139,6 @@ ul{
 }
 
 .poster{
-    width: 100vw;
     height: auto;
     position: relative;
     top: 130px;
@@ -147,6 +146,7 @@ ul{
 
 .poster img{
     width: 100vw;
+    max-width: 100%;
     height: auto;
 }
 
@@ -155,7 +155,6 @@ ul{
     background-size: contain;
     background-repeat: repeat-y;
     padding-top: 130px;
-    overflow: hidden;
 }
 
 #container-bg>h1{ 
