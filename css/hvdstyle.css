@@ -384,10 +384,11 @@ ul{
   animation: showPlaceholder 0.7s forwards;
 }
 
+
 .contact .form-input form table .t2 {
   background-color: #ccc;
-  width: 410px;
-  max-width: 410px;
+  width: 420px;
+  max-width: 420px;
   height: 40px;
   border-radius: 20px;
   border: 1px solid #ccc;
