@@ -1,3 +1,4 @@
+//js hoi dap
 function toggleAnswer(element) {
   var answer = element.nextElementSibling;
   var allAnswers = document.querySelectorAll(".answer");
@@ -32,6 +33,8 @@ function toggleAnswer(element) {
   var offsetBottom = element.offsetBottom;
   window.scrollTo({ bottom: offsetBottom, behavior: "smooth" });
 }
+
+// js phim dang chieu
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,

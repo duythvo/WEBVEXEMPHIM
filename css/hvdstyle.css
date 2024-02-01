@@ -1,13 +1,13 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-family: Arial, Helvetica, sans-serif;
 }
-#container{
+#container {
   background-image: url(../image/bg-body.png);
   background-size: cover;
   background-position: left top;
@@ -15,8 +15,8 @@ html{
   height: 100%;
 }
 
-#container-bg{
-  background-image: url(../image/bg-footer.jpg) ;
+#container-bg {
+  background-image: url(../image/bg-footer.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -24,11 +24,11 @@ html{
   width: 100%;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-#header{
+#header {
   height: 128px;
   position: fixed;
   width: 100%;
@@ -36,7 +36,7 @@ a{
   z-index: 20;
 }
 
-#top{
+#top {
   height: 128px;
   display: flex;
   justify-content: space-around;
@@ -46,7 +46,7 @@ a{
   max-width: 1500px;
 }
 
-#header #nav{
+#header #nav {
   display: flex;
   align-self: flex-end;
   margin-bottom: 10px;
@@ -54,8 +54,8 @@ a{
   right: 0;
 }
 
-#header #TH2D{
-  background-image:url(../image/logo.png) ;
+#header #TH2D {
+  background-image: url(../image/logo.png);
   position: absolute;
   height: 110px;
   width: 220px;
@@ -64,7 +64,7 @@ a{
   bottom: 0;
   left: 20px;
 }
-#nav .logo{
+#nav .logo {
   background: url(../image/icon-home.png) no-repeat center 5px;
   height: 50px;
   width: 50px;
@@ -72,43 +72,43 @@ a{
   margin-right: 15px;
 }
 
-#nav #menu{
+#nav #menu {
   border: solid 1px #d8047c;
   border-radius: 30px;
   padding: 3px;
   height: 51px;
 }
-ul{
+ul {
   list-style: none;
 }
-#nav #menu ul{
+#nav #menu ul {
   background-color: #d8047c;
   border-radius: 30px;
 }
 
-#nav #menu >ul>li {
+#nav #menu > ul > li {
   display: inline-block;
   align-self: flex-end;
   height: 42px;
   padding: 5px;
 }
-#nav .logo:hover{
- background-position: center -43px;
- transition: 0.5s ease-in-out;
+#nav .logo:hover {
+  background-position: center -43px;
+  transition: 0.5s ease-in-out;
 }
-#nav #menu >ul>li:hover{
-  background-color: orange;  
+#nav #menu > ul > li:hover {
+  background-color: orange;
 }
 
-#nav #menu >ul>li:hover:first-child{
+#nav #menu > ul > li:hover:first-child {
   border-radius: 30px 0 0 30px;
 }
 
-#nav #menu >ul>li:hover:last-child{
+#nav #menu > ul > li:hover:last-child {
   border-radius: 0 30px 30px 0;
 }
 
-#nav #menu >ul> li >a{
+#nav #menu > ul > li > a {
   text-decoration: none;
   color: white;
   padding: 0 10px;
@@ -116,46 +116,46 @@ ul{
   line-height: 35px;
 }
 
-#login{
+#login {
   position: absolute;
   display: block;
   right: 0;
   margin-top: 10px;
 }
 
-#login a{
+#login a {
   text-decoration: none;
   color: white;
   margin-right: 10px;
 }
 
-#login :first-child{
+#login :first-child {
   border-right: solid 1px white;
   padding-right: 10px;
 }
 
-#login a:hover{
+#login a:hover {
   color: orange;
 }
 
-.poster{
+.poster {
   height: auto;
   position: relative;
   top: 130px;
   z-index: 30;
 }
 
-.poster img{
+.poster img {
   width: 100vw;
   max-width: 100%;
   height: auto;
 }
 
-#content{
-    height: 100%;
-    max-height: 2750px;
-    min-height: 2750px;
-    overflow: hidden;
+#content {
+  height: 100%;
+  max-height: 2750px;
+  min-height: 2750px;
+  overflow: hidden;
 }
 
 .contact {
@@ -338,6 +338,12 @@ ul{
   margin-bottom: 2px;
 }
 
+.contact form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .contact-form .title h1 {
   text-transform: uppercase;
   margin-top: 60px;
@@ -349,25 +355,24 @@ ul{
 
 .contact .form-input {
   width: 90%;
-  max-width: 1440px;
   position: relative;
   margin: auto;
   height: auto;
   z-index: 1;
 }
 
-.contact .form-input form table {
-  margin: auto;
-  width: 60%;
-  position: relative;
-  max-width: 1100px;
+.contact .form-input form .table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72%;
 }
 
 .contact .form-input .t1 {
   background-color: #ccc;
   border: 1px solid #ccc;
-  margin-left: 290px;
-  width: 840px;
+  width: 72%;
+  max-width: 1100px;
   height: 40px;
   border-radius: 20px;
   margin-bottom: 10px;
@@ -384,41 +389,41 @@ ul{
   animation: showPlaceholder 0.7s forwards;
 }
 
-.contact .form-input form table .t2 {
+.contact .form-input form .table .t2 {
+  max-width: 550px;
   background-color: #ccc;
-  width: 410px;
-  max-width: 410px;
+  border: 1px solid #ccc;
+  width: 72%;
   height: 40px;
   border-radius: 20px;
-  border: 1px solid #ccc;
   margin-bottom: 10px;
   padding-left: 10px;
   transition: background-color 0.5s ease-in-out;
 }
 
-.contact .form-input form table .t2:focus {
+.contact .form-input form .table .t2:focus {
   background-color: rgba(206, 118, 118, 0.8);
 }
 
-.contact .form-input form table .t2:focus::placeholder {
+.contact .form-input form .table .t2:focus::placeholder {
   color: transparent;
   animation: showPlaceholder 0.7s forwards;
 }
 
-.contact .form-input form textarea {
+.form-input form textarea {
+  max-width: 1100px;
   background-color: #ccc;
   border: 1px solid #ccc;
-  margin-left: 290px;
-  width: 840px;
+  width: 72%;
   height: 200px;
   border-radius: 20px;
   margin-bottom: 10px;
   padding-left: 10px;
   padding-top: 10px;
   font-size: 16px;
-  transition: background-color 0.5 s ease-in-out;
+  transition: background-color 0.7s ease-in-out;
 }
-.contact .form-input form textarea:focus {
+.form-input form textarea:focus {
   background-color: rgba(206, 118, 118, 0.8);
 }
 
@@ -426,8 +431,7 @@ ul{
 ::placeholder {
   color: #333333;
 }
-
-.contact .form-input form textarea:focus::placeholder {
+.form-input form textarea:focus::placeholder {
   color: transparent;
   animation: showPlaceholder 0.7s forwards;
 }
@@ -439,7 +443,6 @@ ul{
 }
 
 .contact .form-input form .send {
-  margin-left: 650px;
   background-color: rgb(209, 139, 9);
   color: white;
   font-size: 30px;
@@ -457,14 +460,7 @@ ul{
   cursor: pointer;
 }
 
-/* .phimdangchieu {
-  background-image: url(../image/bg-body.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 65vh;
-  position: relative;
-  align-items: center;
-} */
+/* phimdangchieu */
 
 .phimdangchieu .p-heading .heading-title {
   text-transform: uppercase;
@@ -532,17 +528,19 @@ ul{
   cursor: pointer;
 }
 
-#footer{
+/* footer */
+
+#footer {
   width: 100%;
   height: 100vh;
 }
 
-#footer .container-footer{
+#footer .container-footer {
   position: relative;
   bottom: 0%;
 }
 
-#footer .logo-footer{
+#footer .logo-footer {
   width: fit-content;
   margin: auto;
   padding-top: 40px;
@@ -556,7 +554,7 @@ ul{
   margin: auto;
 }
 
-#footer .content-footer h3{
+#footer .content-footer h3 {
   color: white;
   border: solid #601c5c 1px;
   line-height: 42px;
@@ -565,44 +563,43 @@ ul{
   background-color: #601c5c;
 }
 
-
-
-#footer .content-footer .content-footer1 .content-lienket{
+#footer .content-footer .content-footer1 .content-lienket {
   margin-top: 20px;
   text-align: center;
 }
 
-#footer li,a{
+#footer li,
+a {
   color: gray;
 }
 
 #footer .content-footer .content-footer5 .content-chinhsach,
 #footer .content-footer .content-footer4 .content-thongtin,
 #footer .content-footer .content-footer3 .content-TH2D,
-#footer .content-footer .content-footer2 .content-hethongrap{
+#footer .content-footer .content-footer2 .content-hethongrap {
   text-align: center;
   font-size: 20px;
   margin-top: 10px;
 }
 
-#footer .content-footer .content-footer3 h3{
+#footer .content-footer .content-footer3 h3 {
   width: fit-content;
   margin: auto;
 }
 
-#footer a:hover{
+#footer a:hover {
   color: orange;
 }
 
-#footer .content-footer .content-footer5{
+#footer .content-footer .content-footer5 {
   width: 100%;
 }
 
-#footer .content-footer .content-footer5 h3{
+#footer .content-footer .content-footer5 h3 {
   margin: auto;
 }
 
-#thanhtoan{
+#thanhtoan {
   background: url(../image/bg-body.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -610,28 +607,28 @@ ul{
   margin-top: 20px;
 }
 
-#thanhtoan .content-thanhtoan{
+#thanhtoan .content-thanhtoan {
   margin: auto;
   width: fit-content;
   padding-top: 10px;
 }
 
-#thanhtoan .content-thanhtoan h3{
+#thanhtoan .content-thanhtoan h3 {
   color: #b3c4d5;
 }
 
-#thanhtoan .card{
+#thanhtoan .card {
   display: flex;
   margin-top: 10px;
 }
 
-#infor-company{
+#infor-company {
   background-color: black;
   height: 200px;
   color: #b3c4d5;
 }
 
-#infor-company .content-infor{
+#infor-company .content-infor {
   text-align: center;
   padding-top: 20px;
 }
