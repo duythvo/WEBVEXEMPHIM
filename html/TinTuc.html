@@ -1,240 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TH2D-Hệ thống Rạp chiếu phim toàn quốc</title>
-    <link rel="stylesheet" href="../css/TinTuc.css">
+    <link rel="stylesheet" href="../css/TinTuc.css" />
     <script src="../js/TinTuc.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-        <div id="header">
-            <div id="top">
-                <div id="TH2D">
-                    <a href=""></a>
-                </div>
-                <div id="login">
-                    <a href="">Đăng nhập</a>
-                    <a href="">Đăng ký</a>
-                </div>
-    
-                <div id="nav">
-                    <a class="logo" href=""></a>                
-                    <div id="menu">
-                        <ul>
-                            <li><a href="">PHIM</a></li>
-                            <li><a href="">LỊCH CHIẾU</a></li>
-                            <li><a href="">RẠP VÀ GIÁ</a></li>
-                            <li><a href="">KHUYẾN MÃI</a></li>
-                            <li><a href="">HỎI VÀ ĐÁP</a></li>
-                            <li style="background-color: orange;"><a href="">TIN TỨC</a></li>
-                            <li><a href="">GIỚI THIỆU</a></li>
-                            <li><a href="">LIÊN HỆ</a></li>
-                        </ul>
-                    </div>
-                </div>
+      <div id="header">
+        <div id="top">
+          <div id="TH2D">
+            <a href=""></a>
+          </div>
+          <div id="login">
+            <a href="">Đăng nhập</a>
+            <a href="">Đăng ký</a>
+          </div>
+
+          <div id="nav">
+            <a class="logo" href=""></a>
+            <div id="menu">
+              <ul>
+                <li><a href="">PHIM</a></li>
+                <li><a href="">LỊCH CHIẾU</a></li>
+                <li><a href="">RẠP VÀ GIÁ</a></li>
+                <li><a href="">KHUYẾN MÃI</a></li>
+                <li><a href="">HỎI VÀ ĐÁP</a></li>
+                <li style="background-color: orange"><a href="">TIN TỨC</a></li>
+                <li><a href="">GIỚI THIỆU</a></li>
+                <li><a href="">LIÊN HỆ</a></li>
+              </ul>
             </div>
+          </div>
         </div>
-        <div class="poster">
-            <img src="../image/gap-lai-chi-bau.jpg" alt="">
+      </div>
+      <div class="poster">
+        <img src="../image/gap-lai-chi-bau.jpg" alt="" />
+      </div>
+
+      <div id="news">
+        <div id="container-bg">
+          <h1>TIN TỨC</h1>
+          <div id="dienanh">
+            <ul>
+              <li><p>TIN ĐIỆN ẢNH</p></li>
+              <li>
+                <a href="#" onclick="hidedienanh()"><p>TUYỂN DỤNG</p></a>
+              </li>
+            </ul>
+            <div id="listnew">
+              <div class="column">
+                <div class="new">
+                  <a href="TGDQ.html"></a>
+                  <img
+                    src="../image/thanhguomdietquy.png"
+                    alt="ThanhGuomDietQuy"
+                  />
+                  <h1>
+                    [THANH GƯƠM DIỆT QUỶ: PHÉP MÀU TÌNH THÂN, CHO ĐẾN CHUYẾN ĐẶC
+                    HUẤN CỦA ĐẠI TRỤ]
+                  </h1>
+                  <p>
+                    [THANH GƯƠM DIỆT QUỶ: PHÉP MÀU TÌNH THÂN, CHO ĐẾN CHUYẾN ĐẶC
+                    HUẤN CỦA ĐẠI TRỤ] - THANH GƯƠM DIỆT QUỶ TRỞ LẠI VỚI MÙA 4 VÀ
+                    PHẦN ĐIỆN ẢNH ĐẶC BIỆT, HỨA HẸN “CÀN QUÉT” 140 QUỐC GIA TOÀN
+                    CẦU
+                  </p>
+                </div>
+                <div class="new">
+                  <a href="#"></a>
+                  <img src="../image/gaplaichibau.png" alt="gaplaichibau>
+                  <h1>
+                    PHIM TẾT "GẶP LẠI CHỊ BẦU" HÉ LỘ DÀN DIỄN VIÊN CHÍNH THỨC:
+                    ANH TÚ, DIỆU NHI, NGỌC PHƯỚC, QUỐC KHÁNH VÀ LÊ GIANG
+                  </h1>
+                  <p>
+                    Phim Tết Gặp Lại Chị Bầu chính thức công bố dàn diễn viên
+                    chính, bắt đầu màn chạy đà cho cuộc đua phòng vé nhộn nhịp
+                    dịp Tết Giáp Thìn 2024.
+                  </p>
+                </div>
+                <div class="new">
+                  <a href="#"></a>
+                  <img src="../image/hanhtrinhcat(2).png" alt="hanhtrinhcat2" />
+                  <h1>
+                    [Dune: Hành Tinh Cát - Phần Hai] - Phần tiếp theo của "Dune"
+                    hé lộ những hình ảnh đầu tiên: Kiệt tác điện ảnh chính thức
+                    trở lại
+                  </h1>
+                  <p>
+                    Ra mắt vào thời kỳ đại dịch COVID-19 vẫn đang diễn biến căng
+                    thẳng, Dune (tựa Việt: Dune: Hành Tinh Cát) được coi là một
+                    chiến thắng quan trọng tại phòng vé của Warner Bros.
+                    Pictures, nhất là khi nhìn vào số vốn đầu tư khủng mà studio
+                    này dành ra cho siêu phẩm của đạo diễn Denis Villeneuve.
+                    Thông tin phần hai của Dune được bật đèn xanh đã khiến không
+                    ít khán giả hào hứng, và sau hai năm, những hình ảnh đầu
+                    tiên trong kiệt tác điện ảnh này đã chính thức được hé lộ.
+                  </p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="new">
+                  <a href="#"></a>
+                  <img src="../image/spyfamily.png" alt="spyfamily" />
+                  <h1>
+                    [SPY x FAMILY CODE: WHITE] - Phiên bản điện ảnh của bom tấn
+                    anime “SPYxFAMILY” đổ bộ rạp Việt dịp Tết Nguyên đán
+                  </h1>
+                  <p>
+                    Một trong những thương hiệu manga - anime đình đám nhất
+                    trong thời gian gần đây - SPYxFAMILY đã có bản điện ảnh và
+                    sẽ đến với khán giả Việt vào đúng ngày đầu tiên của năm mới
+                    âm lịch. Gia Đình x Điệp Viên Mã: Trắng vừa công bố lịch ra
+                    rạp chính thức vào đúng Mùng 1 Tết Nguyên đán Giáp Thìn, trở
+                    thành "chiến binh" đáng gờm trên đường đua phim Tết vốn đã
+                    cực kỳ nhộn nhịp.
+                  </p>
+                </div>
+                <div class="new">
+                  <a href="#"></a>
+                  <img src="../image/lienhoanphim.png" alt="lienhoanphim" />
+                  <h1>
+                    Đêm khai mạc Liên hoan phim Việt Nam đầy ấn tượng ở phố núi
+                    Đà Lạt
+                  </h1>
+                  <p>
+                    Đêm 21.11 tại Quảng trường Lâm Viên, TP.Đà Lạt (Lâm Đồng),
+                    Liên hoan phim Việt Nam lần thứ 23 đã khai mạc đầy ấn tượng.
+                  </p>
+                </div>
+                <div class="new">
+                  <a href="#"></a>
+                  <img src="../image/aquaman.png" alt="aquaman" />
+                  <h1>
+                    [Aquaman Và Vương Quốc Thất Lạc] - Bom tấn có doanh thu cao
+                    nhất vũ trụ DC “Aquaman” chính thức trở lại màn ảnh rộng với
+                    phần phim tiếp theo
+                  </h1>
+                  <p>
+                    Đêm 14/9 (giờ Việt Nam), phần phim tiếp theo của bom tấn DC
+                    từng làm mưa làm gió phòng vé năm 2018 Aquaman chính thức hé
+                    lộ trailer đầu tiên.
+                  </p>
+                </div>
+                <div class="new">
+                  <a href="#"></a>
+                  <img src="../image/godzilla2.png" alt="godzilla" />
+                  <h1>
+                    [Godzilla x Kong: The New Empire] - Warner Bros. Pictures và
+                    Legendary Pictures đã tiết lộ tựa đề chính thức cho bộ phim
+                    mới nhất của “vũ trụ quái vật” Monsterverse
+                  </h1>
+                  <p>
+                    Ngày hôm nay, Warner Bros. Pictures và Legendary Pictures đã
+                    tiết lộ tựa đề chính thức cho bộ phim mới nhất của "vũ trụ
+                    quái vật" Monsterverse - Godzilla x Kong: The New Empire.
+                    Cùng với đó, một đoạn video bí ẩn tiết lộ tương lai của hai
+                    Titan huyền thoại.
+                  </p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="new">
+                  <a href="#"></a>
+                  <img
+                    src="../image/phimdangchuy2023.png"
+                    alt="phimdangchuy2023"
+                  />
+                  <h1>Các tựa phim Việt đáng chú ý dịp cuối năm 2023</h1>
+                  <p>
+                    Mùa lễ hội cuối năm với loạt sự kiện lớn như lễ Giáng sinh,
+                    Tết Dương lịch và Tết Nguyên đán 2024, hàng loạt tựa phim
+                    Việt được chú ý sẽ lần lượt ra rạp, mang đến cho khán giả
+                    nước nhà những thước phim thú vị, đa dạng cả về thể loại và
+                    nội dung.
+                  </p>
+                </div>
+                <div class="new">
+                  <a href="#"></a>
+                  <img src="../image/hanhtrinhcat(1).png" alt="hanhtrinhcat" />
+                  <h1>
+                    [Dune: Hành Tinh Cát - Phần Hai] - Kiệt tác màn ảnh “Dune:
+                    Hành Tinh Cát - Phần Hai” tung trailer mới choáng ngợp
+                  </h1>
+                  <p>
+                    Kiệt tác điện ảnh được chờ mong nhất năm 2024 của đạo diễn
+                    Denis Villeneuve - Dune: Hành Tinh Cát - Phần Hai tiếp tục
+                    hé lộ những hình ảnh mới xoay quanh cuộc hành trình vĩ đại
+                    của Paul Atreides (Timothée Chalamet thủ vai) trên hành tinh
+                    Arrakis đầy rẫy hiểm nguy.
+                  </p>
+                </div>
+                <div class="new">
+                  <a href="#"></a>
+                  <img src="../image/godzilla.png" alt="godzilla" />
+                  <h1>
+                    [Godzilla x Kong: Đế Chế Mới] - Trailer đầu tiên của siêu
+                    bom tấn 2024 “Godzilla x Kong” chính thức thả xích, hai siêu
+                    quái vật càn quét phòng vé trở lại
+                  </h1>
+                  <p>
+                    Bom tấn hành động được chờ đợi nhất năm 2024 - Godzilla x
+                    Kong: Đế Chế Mới đã chính thức hé lộ những hình ảnh đầu tiên
+                    trong sự phấn khích của người hâm mộ. Từng đối đầu nhau và
+                    làm rung chuyển phòng vé toàn cầu trong phần phim Godzilla
+                    Đại Chiến Kong hồi 2021, giờ đây hai đại titan sẽ có màn bắt
+                    tay huyền thoại, cùng nhau bảo vệ sự sống trên địa cầu.
+                  </p>
+                </div>
+                <div class="new">
+                  <a href="#"></a>
+                  <img src="../image/monngondalat.png" alt="aquaman" />
+                  <h1>
+                    [MÓN NGON ĐÀ LẠT] KHÁM PHÁ ẨM THỰC MÙA LỄ HỘI TẠI NHÀ HÀNG
+                    MÓN NGON ĐÀ LẠT
+                  </h1>
+                  <p>
+                    Trong không khí mát mẻ của tiết trời Đà Lạt, còn gì tuyệt
+                    vời hơn là được cùng gia đình, bạn bè thưởng thức một bữa
+                    tiệc ấm cúng mừng dịp lễ lớn tại Nhà hàng Món ngon Đà Lạt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tuyendung" style="display: none">
+            <ul>
+              <li>
+                <a href="#" onclick="hidetuyendung()"><p>TIN ĐIỆN ẢNH</p></a>
+              </li>
+              <li><p>TUYỂN DỤNG</p></li>
+            </ul>
+            <div id="listtd">
+              <div class="td">
+                <a href="#"></a>
+                <img src="../image/tuyendung.png" alt="tuyendung" />
+                <h1>TH2D - TUYỂN DỤNG NHÂN SỰ</h1>
+                <p>
+                  TH2D tuyển dụng các ứng viên tiềm năng, đam mê phim ảnh giải
+                  trí và làm việc trong môi trường năng động, chuyên nghiệp mong
+                  muốn được cống hiến và phát triển bản thân.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="footer">
+            <img style="width: 100%" src="../image/line-bg.png" alt="" />
+            <div class="container-footer">
+              <div class="logo-footer">
+                <img src="../image/logo-removebg-preview.png" alt="" />
+              </div>
+              <div class="content-footer">
+                <div class="content-footer1">
+                  <h3>LIÊN KẾT</h3>
+                  <ul class="content-lienket">
+                    <li>
+                      <a href=""
+                        ><img src="../image/scl_facebook.png" alt=""
+                      /></a>
+                      <a href=""
+                        ><img src="../image/scl_youtube.png" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content-footer2">
+                  <h3>HỆ THỐNG RẠP</h3>
+                  <ul class="content-hethongrap">
+                    <li><a href="">TH2D Đồng Nai</a></li>
+                    <li><a href="">TH2D Đồng Tháp</a></li>
+                    <li><a href="">TH2D Gia Lai</a></li>
+                    <li><a href="">TH2D Gò Vấp</a></li>
+                  </ul>
+                </div>
+                <div class="content-footer3">
+                  <h3>TH2D</h3>
+                  <ul class="content-TH2D">
+                    <li><a href="">Phim đang chiếu</a></li>
+                    <li><a href="">Phim sắp chiếu</a></li>
+                    <li><a href="">Suất chiếu đặc biệt</a></li>
+                    <li><a href="">Lịch chiếu</a></li>
+                    <li><a href="">Khuyến mãi</a></li>
+                  </ul>
+                </div>
+                <div class="content-footer4">
+                  <h3>THÔNG TIN</h3>
+                  <ul class="content-thongtin">
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Tin tức</a></li>
+                    <li><a href="">Hỏi và đáp</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                  </ul>
+                </div>
+
+                <div class="content-footer5">
+                  <h3>CHÍNH SÁCH VÀ QUY ĐỊNH</h3>
+                  <ul class="content-chinhsach">
+                    <li><a href="">Quy định chung</a></li>
+                    <li><a href="">Điều khoản giao dịch</a></li>
+                    <li><a href="">Chính sách bảo mật</a></li>
+                    <li><a href="">Thông tin công ty</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div id="thanhtoan">
+                <div class="content-thanhtoan">
+                  <h3>Chấp nhận thanh toán</h3>
+                  <ul class="card">
+                    <li>
+                      <a href=""><img src="../image/napas-40.png" alt="" /></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img src="../image/payment-visa.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img src="../image/payment-mastercard.png" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href=""><img src="../image/momo.jpg" alt="" /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="infor-company">
+                <div class="content-infor">
+                  <img src="../image/dathongbao.png" alt="" />
+                  <p>
+                    CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM
+                    TH2D
+                    <br />
+                    ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP,
+                    TP.HCM
+                    <br />
+                    GIẤY CNĐKDN SỐ: 0312742744, ĐĂNG KÝ LẦN ĐẦU NGÀY 18/04/2014,
+                    ĐĂNG KÝ THAY ĐỔI LẦN THỨ 2 NGÀY 15/09/2014, CẤP BỞI SỞ KH&ĐT
+                    TP.HCM
+                    <br />
+                    <br />
+                    2015 © TH2D. ALL RIGHTS RESERVED.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <div id="news">
-            <div id="container-bg">
-                <h1>Tin Tức</h1>
-            <div id="dienanh">
-                <ul>
-                    <li><p>TIN ĐIỆN ẢNH</p></li>
-                    <li><a href="#" onclick="hidedienanh()"><p>TUYỂN DỤNG</p></a></li>
-                </ul>
-                <div id="listnew">
-                    <div class="column">
-                        <div class="new">
-                            <a href="#"></a>
-                            <img src="../image/thanhguomdietquy.png" alt="ThanhGuomDietQuy">
-                            <h1>[THANH GƯƠM DIỆT QUỶ: PHÉP MÀU TÌNH THÂN, CHO ĐẾN CHUYẾN ĐẶC HUẤN CỦA ĐẠI TRỤ] </h1>
-                            <p>
-                                [THANH GƯƠM DIỆT QUỶ: PHÉP MÀU TÌNH THÂN, CHO ĐẾN CHUYẾN ĐẶC HUẤN CỦA ĐẠI TRỤ] - 
-                                THANH GƯƠM DIỆT QUỶ TRỞ LẠI VỚI MÙA 4 VÀ PHẦN ĐIỆN ẢNH ĐẶC BIỆT, HỨA HẸN “CÀN QUÉT” 
-                                140 QUỐC GIA TOÀN CẦU</p>
-                        </div>
-                        <div class="new">
-                            <a href="#"></a>
-                            <img src="../image/gaplaichibau.png" alt="gaplaichibau>
-                            <h1>PHIM TẾT "GẶP LẠI CHỊ BẦU" HÉ LỘ DÀN DIỄN VIÊN CHÍNH THỨC: ANH TÚ, DIỆU NHI, NGỌC PHƯỚC, QUỐC KHÁNH VÀ LÊ GIANG</h1>
-                            <p>
-                                Phim Tết Gặp Lại Chị Bầu chính thức công bố dàn diễn viên chính, bắt đầu màn chạy đà cho cuộc đua phòng vé nhộn nhịp dịp Tết Giáp Thìn 2024.             </p>
-                        </div>
-                        <div class="new">
-                            <a href="#"></a>
-                            <img src="../image/hanhtrinhcat(2).png" alt="hanhtrinhcat2">
-                            <h1>[Dune: Hành Tinh Cát - Phần Hai] - Phần tiếp theo của "Dune" hé lộ những hình ảnh đầu tiên: Kiệt tác điện ảnh chính thức trở lại</h1>
-                            <p>
-                                Ra mắt vào thời kỳ đại dịch COVID-19 vẫn đang diễn biến căng thẳng, Dune (tựa Việt: Dune: Hành Tinh Cát) được coi là một chiến thắng quan trọng tại phòng vé của Warner Bros. Pictures, nhất là khi nhìn vào số vốn đầu tư khủng mà studio này dành ra cho siêu phẩm của đạo diễn Denis Villeneuve. Thông tin phần hai của Dune được bật đèn xanh đã khiến không ít khán giả hào hứng, và sau hai năm, những hình ảnh đầu tiên trong kiệt tác điện ảnh này đã chính thức được hé lộ.              </p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="new">
-                            <a href="#"></a>
-                            <img src="../image/spyfamily.png" alt="spyfamily">
-                            <h1>[SPY x FAMILY CODE: WHITE] - Phiên bản điện ảnh của bom tấn anime “SPYxFAMILY” đổ bộ rạp Việt dịp Tết Nguyên đán</h1>
-                            <p>
-                                Một trong những thương hiệu manga - anime đình đám nhất trong thời gian gần đây - SPYxFAMILY đã có bản điện ảnh và sẽ đến với khán giả Việt vào đúng ngày đầu tiên của năm mới âm lịch. Gia Đình x Điệp Viên Mã: Trắng vừa công bố lịch ra rạp chính thức vào đúng Mùng 1 Tết Nguyên đán Giáp Thìn, trở thành "chiến binh" đáng gờm trên đường đua phim Tết vốn đã cực kỳ nhộn nhịp.             </p>
-                        </div>
-                        <div class="new">
-                            <a href="#"></a>
-                            <img src="../image/lienhoanphim.png" alt="lienhoanphim">
-                            <h1>Đêm khai mạc Liên hoan phim Việt Nam đầy ấn tượng ở phố núi Đà Lạt</h1>
-                            <p>
-                                Đêm 21.11 tại Quảng trường Lâm Viên, TP.Đà Lạt (Lâm Đồng), Liên hoan phim Việt Nam lần thứ 23 đã khai mạc đầy ấn tượng.            </p>
-                        </div>
-                        <div class="new">
-                            <a href="#"></a>
-                            <img src="../image/aquaman.png" alt="aquaman">
-                            <h1>[Aquaman Và Vương Quốc Thất Lạc] - Bom tấn có doanh thu cao nhất vũ trụ DC “Aquaman” chính thức trở lại màn ảnh rộng với phần phim tiếp theo</h1>
-                            <p>
-                                Đêm 14/9 (giờ Việt Nam), phần phim tiếp theo của bom tấn DC từng làm mưa làm gió phòng vé năm 2018 Aquaman chính thức hé lộ trailer đầu tiên.             </p>    
-                        </div>
-                        <div class="new">
-                            <a href="#"></a>
-                            <img src="../image/godzilla2.png" alt="godzilla">
-                            <h1>[Godzilla x Kong: The New Empire] - Warner Bros. Pictures và Legendary Pictures đã tiết lộ tựa đề chính thức cho bộ phim mới nhất của “vũ trụ quái vật” Monsterverse</h1>
-                            <p>
-                                Ngày hôm nay, Warner Bros. Pictures và Legendary Pictures đã tiết lộ tựa đề chính thức cho bộ phim mới nhất của "vũ trụ quái vật" Monsterverse - Godzilla x Kong: The New Empire. Cùng với đó, một đoạn video bí ẩn tiết lộ tương lai của hai Titan huyền thoại. 
-                
-                            </p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="new">
-                            <a href="#"></a>
-                            <img src="../image/phimdangchuy2023.png" alt="phimdangchuy2023">
-                            <h1>Các tựa phim Việt đáng chú ý dịp cuối năm 2023 </h1>
-                            <p> Mùa lễ hội cuối năm với loạt sự kiện lớn như lễ Giáng sinh, Tết Dương lịch và Tết Nguyên đán 2024, hàng loạt tựa phim Việt được chú ý sẽ lần lượt ra rạp, mang đến cho khán giả nước nhà những thước phim thú vị, đa dạng cả về thể loại và nội dung.            </p>
-                        </div>
-                        <div class="new">
-                            <a href="#"></a>
-                            <img src="../image/hanhtrinhcat(1).png" alt="hanhtrinhcat">
-                            <h1>[Dune: Hành Tinh Cát - Phần Hai] - Kiệt tác màn ảnh “Dune: Hành Tinh Cát - Phần Hai” tung trailer mới choáng ngợp</h1>
-                            <p>
-                                Kiệt tác điện ảnh được chờ mong nhất năm 2024 của đạo diễn Denis Villeneuve - Dune: Hành Tinh Cát - Phần Hai tiếp tục hé lộ những hình ảnh mới xoay quanh cuộc hành trình vĩ đại của Paul Atreides (Timothée Chalamet thủ vai) trên hành tinh Arrakis đầy rẫy hiểm nguy.             </p>
-                        </div>
-                        <div class="new">
-                            <a href="#"></a>
-                            <img src="../image/godzilla.png" alt="godzilla">
-                            <h1>[Godzilla x Kong: Đế Chế Mới] - Trailer đầu tiên của siêu bom tấn 2024 “Godzilla x Kong” chính thức thả xích, hai siêu quái vật càn quét phòng vé trở lại</h1>
-                            <p>
-                                Bom tấn hành động được chờ đợi nhất năm 2024 - Godzilla x Kong: Đế Chế Mới đã chính thức hé lộ những hình ảnh đầu tiên trong sự phấn khích của người hâm mộ. Từng đối đầu nhau và làm rung chuyển phòng vé toàn cầu trong phần phim Godzilla Đại Chiến Kong hồi 2021, giờ đây hai đại titan sẽ có màn bắt tay huyền thoại, cùng nhau bảo vệ sự sống trên địa cầu.             </p>
-                        </div>
-                        <div class="new">
-                            <a href="#"></a>
-                            <img src="../image/monngondalat.png" alt="aquaman">
-                            <h1>[MÓN NGON ĐÀ LẠT] KHÁM PHÁ ẨM THỰC MÙA LỄ HỘI TẠI NHÀ HÀNG MÓN NGON ĐÀ LẠT</h1>
-                            <p>Trong không khí mát mẻ của tiết trời Đà Lạt, còn gì tuyệt vời hơn là được cùng gia đình, bạn bè thưởng thức một bữa tiệc ấm cúng mừng dịp lễ lớn tại Nhà hàng Món ngon Đà Lạt.            </p>    
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="tuyendung">
-                <ul>
-                    <li><a href="#" onclick="hidetuyendung()"><p>TIN ĐIỆN ẢNH</p></a></li>
-                    <li><p>TUYỂN DỤNG</p></li>
-                </ul>
-                <div id="listtd">
-                    <div class="td">
-                        <a href="#"></a>
-                        <img src="../image/tuyendung.png" alt="tuyendung">
-                        <h1>TH2D - TUYỂN DỤNG NHÂN SỰ</h1>
-                        <p> TH2D tuyển dụng các ứng viên tiềm năng, đam mê phim ảnh giải trí và làm việc trong môi trường năng động, chuyên nghiệp mong muốn được cống hiến và phát triển bản thân.</p>
-                    </div>
-                </div>
-            </div>
-            <div id="footer">
-                <img style="width: 100%;" src="../image/line-bg.png" alt="">
-                <div class="container-footer">
-                    <div class="logo-footer">
-                        <img src="../image/logo-removebg-preview.png" alt="">
-                    </div>
-                    <div class="content-footer">
-                        <div class="content-footer1">
-                            <h3>LIÊN KẾT</h3>
-                            <ul class="content-lienket">
-                               <li>
-                                    <a href=""><img src="../image/scl_facebook.png" alt=""></a>
-                                    <a href=""><img src="../image/scl_youtube.png" alt=""></a>
-                                </li> 
-                            </ul>
-                        </div>
-                        <div class="content-footer2">
-                            <h3>HỆ THỐNG RẠP</h3>
-                            <ul class="content-hethongrap">
-                                <li><a href="">TH2D Đồng Nai</a></li>
-                                <li><a href="">TH2D Đồng Tháp</a></li>
-                                <li><a href="">TH2D Gia Lai</a></li>
-                                <li><a href="">TH2D Gò Vấp</a></li>
-                            </ul>
-                        </div>
-                        <div class="content-footer3">
-                            <h3>TH2D</h3>
-                            <ul class="content-TH2D">
-                                <li><a href="">Phim đang chiếu</a></li>
-                                <li><a href="">Phim sắp chiếu</a></li>
-                                <li><a href="">Suất chiếu đặc biệt</a></li>
-                                <li><a href="">Lịch chiếu</a></li>
-                                <li><a href="">Khuyến mãi</a></li>
-                            </ul>
-                        </div>
-                        <div class="content-footer4">
-                            <h3>THÔNG TIN</h3>
-                            <ul class="content-thongtin">
-                                <li><a href="">Giới thiệu</a></li>
-                                <li><a href="">Tin tức</a></li>
-                                <li><a href="">Hỏi và đáp</a></li>
-                                <li><a href="">Liên hệ</a></li>
-                            </ul>
-                        </div>
-        
-                        <div class="content-footer5">
-                            <h3>CHÍNH SÁCH VÀ QUY ĐỊNH</h3>
-                            <ul class="content-chinhsach">
-                                <li><a href="">Quy định chung</a></li>
-                                <li><a href="">Điều khoản giao dịch</a></li>
-                                <li><a href="">Chính sách bảo mật</a></li>
-                                <li><a href="">Thông tin công ty</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div id="thanhtoan">
-                        <div class="content-thanhtoan">
-                            <h3>Chấp nhận thanh toán</h3>
-                        <ul class="card">
-                            <li><a href=""><img src="../image/napas-40.png" alt=""></a></li>
-                            <li><a href=""><img src="../image/payment-visa.png" alt=""></a></li>
-                            <li><a href=""><img src="../image/payment-mastercard.png" alt=""></a></li>
-                            <li><a href=""><img src="../image/momo.jpg" alt=""></a></li>
-                        </ul>
-                        </div>
-                    </div>
-                    <div id="infor-company">
-                        <div class="content-infor">
-                            <img src="../image/dathongbao.png" alt="">
-                            <p>
-                                CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM TH2D
-                                <br>
-                                ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
-                                <br>
-                                GIẤY CNĐKDN SỐ: 0312742744, ĐĂNG KÝ LẦN ĐẦU NGÀY 18/04/2014, ĐĂNG KÝ THAY ĐỔI LẦN THỨ 2 NGÀY 15/09/2014, CẤP BỞI SỞ KH&ĐT TP.HCM
-                                <br>
-                                <br>
-                                2015 © TH2D. ALL RIGHTS RESERVED.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>        
+      </div>
     </div>
-</body>
+  </body>
 </html>

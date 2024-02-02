@@ -1,0 +1,36 @@
+#tgdq {
+  width: 90%;
+  background-color: #fff;
+  margin: auto;
+  padding: 60px;
+}
+#tgdq > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#tgdq > img {
+  margin: 30px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#tinlq {
+  margin: auto;
+  width: 90%;
+  display: flex;
+}
+#tinlq .tin {
+  margin: 10px;
+  width: 30%;
+  max-width: 30%;
+  background-color: #fff;
+}
+#tinlq > a {
+  width: 100%;
+}
+#tinlq .tin div {
+  overflow: hidden;
+}
+#tinlq .tin div {
+  float: left;
+}
