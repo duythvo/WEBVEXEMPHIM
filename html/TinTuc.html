@@ -4,31 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TH2D-Hệ thống Rạp chiếu phim toàn quốc</title>
+    <link rel="stylesheet" href="../css/Tin.css" />
     <link rel="stylesheet" href="../css/TinTuc.css" />
     <script src="../js/TinTuc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <style>
+      .hidden {
+        opacity: 0;
+        transition: opacity 0.7s ease-out;
+        pointer-events: none;
+      }
+
+      .active {
+        opacity: 1;
+        transition: opacity 0.7s ease-out;
+        pointer-events: auto;
+      }
+
+      .li-bg {
+        background-color: yellow;
+      }
+
+      .a-cl {
+        color: black;
+      }
+    </style>
   </head>
   <body>
     <div id="container">
-      <div id="header">
-        <div id="top">
-          <div id="TH2D">
+      <div id="header" class="active">
+        <div class="top">
+          <div class="TH2D">
             <a href=""></a>
           </div>
-          <div id="login">
+          <div class="login">
             <a href="">Đăng nhập</a>
             <a href="">Đăng ký</a>
           </div>
 
-          <div id="nav">
+          <div class="nav">
             <a class="logo" href=""></a>
-            <div id="menu">
+            <div class="menu">
               <ul>
                 <li><a href="">PHIM</a></li>
                 <li><a href="">LỊCH CHIẾU</a></li>
                 <li><a href="">RẠP VÀ GIÁ</a></li>
                 <li><a href="">KHUYẾN MÃI</a></li>
                 <li><a href="">HỎI VÀ ĐÁP</a></li>
-                <li style="background-color: orange"><a href="">TIN TỨC</a></li>
+                <li style="background-color: orange">
+                  <a href="../html/TinTuc.html">TIN TỨC</a>
+                </li>
+                <li><a href="">GIỚI THIỆU</a></li>
+                <li><a href="">LIÊN HỆ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="headerhide" class="hidden">
+        <div class="top">
+          <div class="TH2D">
+            <a href=""></a>
+          </div>
+          <div class="nav">
+            <a class="logo" href=""></a>
+            <div class="menu">
+              <ul>
+                <li><a href="">PHIM</a></li>
+                <li><a href="">LỊCH CHIẾU</a></li>
+                <li><a href="">RẠP VÀ GIÁ</a></li>
+                <li><a href="">KHUYẾN MÃI</a></li>
+                <li><a href="">HỎI VÀ ĐÁP</a></li>
+                <li style="background-color: orange">
+                  <a href="../html/TinTuc.html">TIN TỨC</a>
+                </li>
                 <li><a href="">GIỚI THIỆU</a></li>
                 <li><a href="">LIÊN HỆ</a></li>
               </ul>
@@ -70,8 +120,8 @@
                   </p>
                 </div>
                 <div class="new">
-                  <a href="#"></a>
-                  <img src="../image/gaplaichibau.png" alt="gaplaichibau>
+                  <a href="../html/GLCB.html"></a>
+                  <img src="../image/gaplaichibau.png" alt="gaplaichibau">
                   <h1>
                     PHIM TẾT "GẶP LẠI CHỊ BẦU" HÉ LỘ DÀN DIỄN VIÊN CHÍNH THỨC:
                     ANH TÚ, DIỆU NHI, NGỌC PHƯỚC, QUỐC KHÁNH VÀ LÊ GIANG
@@ -83,7 +133,7 @@
                   </p>
                 </div>
                 <div class="new">
-                  <a href="#"></a>
+                  <a href="../html/Dune2.html"></a>
                   <img src="../image/hanhtrinhcat(2).png" alt="hanhtrinhcat2" />
                   <h1>
                     [Dune: Hành Tinh Cát - Phần Hai] - Phần tiếp theo của "Dune"
@@ -121,7 +171,7 @@
                   </p>
                 </div>
                 <div class="new">
-                  <a href="#"></a>
+                  <a href="../html/Khaimac.html"></a>
                   <img src="../image/lienhoanphim.png" alt="lienhoanphim" />
                   <h1>
                     Đêm khai mạc Liên hoan phim Việt Nam đầy ấn tượng ở phố núi
@@ -133,7 +183,7 @@
                   </p>
                 </div>
                 <div class="new">
-                  <a href="#"></a>
+                  <a href="../html/Aquaman.html"></a>
                   <img src="../image/aquaman.png" alt="aquaman" />
                   <h1>
                     [Aquaman Và Vương Quốc Thất Lạc] - Bom tấn có doanh thu cao
@@ -147,7 +197,7 @@
                   </p>
                 </div>
                 <div class="new">
-                  <a href="#"></a>
+                  <a href="../html/Kong2.html"></a>
                   <img src="../image/godzilla2.png" alt="godzilla" />
                   <h1>
                     [Godzilla x Kong: The New Empire] - Warner Bros. Pictures và
@@ -165,7 +215,7 @@
               </div>
               <div class="column">
                 <div class="new">
-                  <a href="#"></a>
+                  <a href="../html/Phim.html"></a>
                   <img
                     src="../image/phimdangchuy2023.png"
                     alt="phimdangchuy2023"
@@ -180,7 +230,7 @@
                   </p>
                 </div>
                 <div class="new">
-                  <a href="#"></a>
+                  <a href="../html/Dune1.html"></a>
                   <img src="../image/hanhtrinhcat(1).png" alt="hanhtrinhcat" />
                   <h1>
                     [Dune: Hành Tinh Cát - Phần Hai] - Kiệt tác màn ảnh “Dune:
@@ -195,7 +245,7 @@
                   </p>
                 </div>
                 <div class="new">
-                  <a href="#"></a>
+                  <a href="../html/Kong1.html"></a>
                   <img src="../image/godzilla.png" alt="godzilla" />
                   <h1>
                     [Godzilla x Kong: Đế Chế Mới] - Trailer đầu tiên của siêu
@@ -212,7 +262,7 @@
                   </p>
                 </div>
                 <div class="new">
-                  <a href="#"></a>
+                  <a href="../html/MNDL.html"></a>
                   <img src="../image/monngondalat.png" alt="aquaman" />
                   <h1>
                     [MÓN NGON ĐÀ LẠT] KHÁM PHÁ ẨM THỰC MÙA LỄ HỘI TẠI NHÀ HÀNG
@@ -236,7 +286,7 @@
             </ul>
             <div id="listtd">
               <div class="td">
-                <a href="#"></a>
+                <a href="../html/Tuyendung.html"></a>
                 <img src="../image/tuyendung.png" alt="tuyendung" />
                 <h1>TH2D - TUYỂN DỤNG NHÂN SỰ</h1>
                 <p>

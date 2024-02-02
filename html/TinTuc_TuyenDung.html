@@ -4,31 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TH2D-Hệ thống Rạp chiếu phim toàn quốc</title>
+    <link rel="stylesheet" href="../css/Tin.css" />
     <link rel="stylesheet" href="../css/TinTuc.css" />
     <script src="../js/TinTuc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <style>
+      .hidden {
+        opacity: 0;
+        transition: opacity 0.7s ease-out;
+        pointer-events: none;
+      }
+
+      .active {
+        opacity: 1;
+        transition: opacity 0.7s ease-out;
+        pointer-events: auto;
+      }
+
+      .li-bg {
+        background-color: yellow;
+      }
+
+      .a-cl {
+        color: black;
+      }
+    </style>
   </head>
   <body>
     <div id="container">
-      <div id="header" style="transform: translateY(-20%)">
-        <div id="top">
-          <div id="TH2D">
+      <div id="header" class="active">
+        <div class="top">
+          <div class="TH2D">
             <a href=""></a>
           </div>
-          <div id="login">
+          <div class="login">
             <a href="">Đăng nhập</a>
             <a href="">Đăng ký</a>
           </div>
 
-          <div id="nav">
+          <div class="nav">
             <a class="logo" href=""></a>
-            <div id="menu">
+            <div class="menu">
               <ul>
                 <li><a href="">PHIM</a></li>
                 <li><a href="">LỊCH CHIẾU</a></li>
                 <li><a href="">RẠP VÀ GIÁ</a></li>
                 <li><a href="">KHUYẾN MÃI</a></li>
                 <li><a href="">HỎI VÀ ĐÁP</a></li>
-                <li style="background-color: orange"><a href="">TIN TỨC</a></li>
+                <li style="background-color: orange">
+                  <a href="../html/TinTuc.html">TIN TỨC</a>
+                </li>
+                <li><a href="">GIỚI THIỆU</a></li>
+                <li><a href="">LIÊN HỆ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="headerhide" class="hidden">
+        <div class="top">
+          <div class="TH2D">
+            <a href=""></a>
+          </div>
+          <div class="nav">
+            <a class="logo" href=""></a>
+            <div class="menu">
+              <ul>
+                <li><a href="">PHIM</a></li>
+                <li><a href="">LỊCH CHIẾU</a></li>
+                <li><a href="">RẠP VÀ GIÁ</a></li>
+                <li><a href="">KHUYẾN MÃI</a></li>
+                <li><a href="">HỎI VÀ ĐÁP</a></li>
+                <li style="background-color: orange">
+                  <a href="../html/TinTuc.html">TIN TỨC</a>
+                </li>
                 <li><a href="">GIỚI THIỆU</a></li>
                 <li><a href="">LIÊN HỆ</a></li>
               </ul>
@@ -39,7 +89,6 @@
       <div class="poster">
         <img src="../image/gap-lai-chi-bau.jpg" alt="" />
       </div>
-
       <div id="news">
         <div id="container-bg">
           <h1>TIN TỨC</h1>
@@ -52,7 +101,7 @@
             </ul>
             <div id="listtd">
               <div class="td">
-                <a href="#"></a>
+                <a href="../html/Tuyendung.html"></a>
                 <img src="../image/tuyendung.png" alt="tuyendung" />
                 <h1>TH2D - TUYỂN DỤNG NHÂN SỰ</h1>
                 <p>
