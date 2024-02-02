@@ -7,10 +7,6 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
-body {
-    overflow-x: hidden;
-  }
-  
 #container{
     background-image: url(../image/bg-body.png);
     background-size: cover;
@@ -20,10 +16,10 @@ body {
 }
 
 #container-bg{
-    background-image: url(../image/bg-footer.jpg) ;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
+    background-image: url(../image/bg-footer.jpg),url(../image/bg-top.png) ;
+    background-repeat: no-repeat no-repeat;
+    background-position: center bottom,center top;
+    background-size: contain, contain;
     position: relative;
     width: 100%;
 }
@@ -36,11 +32,19 @@ a{
     height: 128px;
     position: fixed;
     width: 100%;
-    background-color: black;
     z-index: 20;
 }
 
-#top{
+#headerhide{
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 20;
+}
+
+#headerhide .top,
+#header .top{
     height: 128px;
     display: flex;
     justify-content: space-around;
@@ -49,8 +53,8 @@ a{
     position: relative;
     max-width: 1500px;
 }
-
-#header #nav{
+#headerhide .nav,
+#header .nav{
     display: flex;
     align-self: flex-end;
     margin-bottom: 10px;
@@ -58,8 +62,9 @@ a{
     right: 0;
 }
 
-#header #TH2D{
-    background-image:url(../image/logo.png) ;
+
+#header .TH2D{
+    background-image:url(../image/logo-removebg-preview.png) ;
     position: absolute;
     height: 110px;
     width: 220px;
@@ -68,82 +73,108 @@ a{
     bottom: 0;
     left: 20px;
 }
-#nav .logo{
+
+#headerhide .TH2D{
+    background-image:url(../image/logo-removebg-preview.png) ;
+    position: absolute;
+    height: 110px;
+    width: 170px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 20px;
+    bottom: 5%;
+}
+
+
+#headerhide .nav .logo,
+#header .nav .logo{
     background: url(../image/icon-home.png) no-repeat center 5px;
     height: 50px;
     width: 50px;
     display: inline-block;
     margin-right: 15px;
+    background-position: center -43px;
 }
 
-#nav #menu{
+
+#header .nav .menu{
     border: solid 1px #d8047c;
     border-radius: 30px;
     padding: 3px;
     height: 51px;
 }
+
+
+
+#headerhide .nav .menu{
+    border: solid 1px #d8047c;
+    border-radius: 30px;
+    padding: 3px;
+    height: 51px;
+    margin-bottom: 40px;
+}
+
 ul{
     list-style: none;
 }
-#nav #menu ul{
+.nav .menu ul{
     background-color: #d8047c;
     border-radius: 30px;
 }
 
-#nav #menu >ul>li {
+.nav .menu >ul>li {
     display: inline-block;
     align-self: flex-end;
     height: 42px;
     padding: 5px;
 }
-#nav .logo:hover{
-   background-position: center -43px;
-   transition: 0.5s ease-in-out;
-}
-#nav #menu >ul>li:hover{
+
+.nav .menu >ul>li:hover{
     background-color: orange;  
 }
 
-#nav #menu >ul>li:hover:first-child{
+.nav .menu >ul>li:hover:first-child{
     border-radius: 30px 0 0 30px;
 }
 
-#nav #menu >ul>li:hover:last-child{
+.nav .menu >ul>li:hover:last-child{
     border-radius: 0 30px 30px 0;
 }
 
-#nav #menu >ul> li >a{
+.nav .menu >ul> li >a{
     text-decoration: none;
     color: white;
     padding: 0 10px;
     font-size: 18px;
     line-height: 35px;
+    display: block;
+    
 }
 
-#login{
+.login{
     position: absolute;
     display: block;
     right: 0;
     margin-top: 10px;
 }
 
-#login a{
+.login a{
     text-decoration: none;
     color: white;
     margin-right: 10px;
 }
 
-#login :first-child{
+.login :first-child{
     border-right: solid 1px white;
     padding-right: 10px;
 }
 
-#login a:hover{
+.login a:hover{
     color: orange;
 }
 
 .poster{
-    width: 100vw;
     height: auto;
     position: relative;
     top: 130px;
@@ -151,13 +182,13 @@ ul{
 
 .poster img{
     width: 100vw;
+    max-width: 100%;
     height: auto;
 }
 
 #content{
     height: 100%;
-    max-height: 3969px;
-
+    max-height: 3430px;
     background-image: url(../image/bg-body.png);
     background-size: contain;
     background-repeat: repeat-y;
@@ -168,7 +199,7 @@ ul{
 
 #footer{
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 #footer .container-footer{
@@ -269,9 +300,6 @@ ul{
     text-align: center;
     padding-top: 20px;
 }
-
-
-
 
 #content .box{
     position: relative;
@@ -391,11 +419,12 @@ ul{
     font-weight: normal;
     line-height: 100px;
 }
-#content a{
+/* #content a{
     text-decoration: none;
     color: #f2b819;
     font-size: 18px;
-}
+} */
+
 #content .section-title{
     position: relative;
     width: 100%;
@@ -502,6 +531,11 @@ ul{
     resize: none;
     opacity: 0.8;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2) inset;
+}
+#content textarea:focus,
+#content input[type="text"]:focus{
+    background-color: #e00d7a;
+    transition: 0.5s ease-in-out;
 }
 #content .input-but{
     width: 100%;

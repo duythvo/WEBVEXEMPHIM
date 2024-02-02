@@ -5,31 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TH2D-Hệ thống Rạp chiếu phim toàn quốc</title>
     <link rel="stylesheet" href="../css/lienhe.css">
+    <style>
+        .hidden{
+            opacity: 0;
+            transition: opacity 0.7s ease-out;
+            pointer-events: none;
+        }
+
+        .active{
+            opacity: 1;
+            transition: opacity 0.7s ease-out;
+            pointer-events: auto;
+        }
+    </style>
 </head>
 <body>
     <div id="container">
-        <div id="header">
-            <div id="top">
-                <div id="TH2D">
+        <div id="header" class="active">
+            <div class="top">
+                <div class="TH2D">
                     <a href=""></a>
                 </div>
-                <div id="login">
+                <div class="login">
                     <a href="">Đăng nhập</a>
                     <a href="">Đăng ký</a>
                 </div>
     
-                <div id="nav">
+                <div class="nav">
                     <a class="logo" href=""></a>                
-                    <div id="menu">
+                    <div class="menu">
                         <ul>
                             <li><a href="">PHIM</a></li>
                             <li><a href="">LỊCH CHIẾU</a></li>
                             <li><a href="">RẠP VÀ GIÁ</a></li>
                             <li><a href="">KHUYẾN MÃI</a></li>
                             <li><a href="">HỎI VÀ ĐÁP</a></li>
-                            <li><a href="">TIN TỨC</a></li>
+                            <li><a href="../html/TinTuc.html">TIN TỨC</a></li>
                             <li><a href="">GIỚI THIỆU</a></li>
-                            <li><a href="http://127.0.0.1:5501/WebVeXemPhim/html/Home.html">LIÊN HỆ</a></li>
+                            <li><a href="">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="headerhide" class="hidden">
+            <div class="top">
+                <div class="TH2D">
+                    <a href=""></a>
+                </div>
+                <div class="nav">
+                    <a class="logo" href=""></a>                
+                    <div class="menu">
+                        <ul>
+                            <li><a href="">PHIM</a></li>
+                            <li><a href="">LỊCH CHIẾU</a></li>
+                            <li><a href="">RẠP VÀ GIÁ</a></li>
+                            <li><a href="">KHUYẾN MÃI</a></li>
+                            <li><a href="">HỎI VÀ ĐÁP</a></li>
+                            <li><a href="../html/TinTuc.html">TIN TỨC</a></li>
+                            <li><a href="">GIỚI THIỆU</a></li>
+                            <li><a href="">LIÊN HỆ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -41,43 +77,6 @@
 
         <div id="content">
             <div id="container-bg">
-                <div class="box">
-                    <div class="side">
-                        <div class="block_left">
-                            <div class="ve">
-                                <h2>
-                                    Mua vé
-                                    <br>
-                                    Online
-                                </h2>
-                            </div>
-                        </div>
-        
-                        <div class="block_right">
-                            <div class="select-list">
-                                <div class="select-header bor1">
-                                </div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-header bor2">
-                                   
-                                </div>
-                            </div>
-                            <br>
-                            <div class="select-list">
-                                <div class="select-header bor3">
-                                    
-                                </div>
-                            </div>
-                            <div class="select-list">
-                                <div class="select-header bor4">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                </div> 
-
                 <div class="bg-cover">
                     <img src="../image/content-bg.jpg">
                     <div class="section-title">
@@ -101,7 +100,7 @@
                         <h2 class="hs">Hotline: +84 (28) 7300 7279</h2>
                         <h2>&nbsp;</h2>
                         <img src="../image/social-facebook-box-blue-icon.png" style="width: 20px;height: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="https://www.facebook.com/profile.php?id=100046883654978">https://www.facebook.com/profile.php?id=100046883654978</a>
+                        <a href="https://www.facebook.com/profile.php?id=100046883654978" style="color: orange;">https://www.facebook.com/profile.php?id=100046883654978</a>
                     </div>
                 </div>
 
@@ -112,20 +111,16 @@
                     <form action="">
                         <div style="margin-bottom: 10px;">
                             <div class="input-text name">
-                                <span class="focus-text">họ tên(*)</span>
-                                <input type="text" name="ten">
+                                <input type="text" name="ten" placeholder="HỌ TÊN(*)">
                             </div>
                             <div class="input-text tel">
-                                <span class="focus-text ">điện thoại(*)</span>
-                                <input type="text" name="dt">
+                                <input type="text" name="dt" placeholder="ĐIỆN THOẠI(*)">
                             </div>
                             <div class="input-text email">
-                                <span class="focus-text ">email(*)</span>
-                                <input type="text" name="email">
+                                <input type="text" name="email" placeholder="EMAIL(*)">
                             </div>
                             <div class="input-area">
-                                <span class="focus-text ">nội dung(*)</span>
-                                <textarea></textarea>
+                                <textarea placeholder="NỘI DUNG(*)"></textarea>
                             </div>
                             <div class="input-but">
                                 <input type="submit" name="send" value="GỬI">
@@ -157,8 +152,8 @@
                         <p>EMAIL:ads@TH2D.com.vn</p>
                     </div>
                 </div>
-                <div class="padd"></div>
                 <div id="footer">
+                    <img style="width: 100%;margin-top: 50px;" src="../image/line-bg.png" alt="">
                     <div class="container-footer">
                         <div class="logo-footer">
                             <img src="../image/logo-removebg-preview.png" alt="">
@@ -229,7 +224,7 @@
                                 <p>
                                     CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM TH2D
                                     <br>
-                                    ĐỊA CHỈ: 416/19 DƯƠNG QUẢNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
+                                    ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
                                     <br>
                                     GIẤY CNĐKDN SỐ: 0312742744, ĐĂNG KÝ LẦN ĐẦU NGÀY 18/04/2014, ĐĂNG KÝ THAY ĐỔI LẦN THỨ 2 NGÀY 15/09/2014, CẤP BỞI SỞ KH&ĐT TP.HCM
                                     <br>
@@ -243,5 +238,6 @@
             </div>
         </div>
     </div>
+    <script src="../js/Home.js"></script>
 </body>
 </html>
