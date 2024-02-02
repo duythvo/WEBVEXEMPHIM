@@ -1,15 +1,19 @@
-#tgdq {
+#tin {
   width: 1140px;
   background-color: #fff;
   margin: auto;
   padding: 60px;
 }
-#tgdq > h2 {
+#tin > h2 {
   text-align: center;
   margin-bottom: 20px;
 }
-#tgdq > img {
-  margin: 30px;
+#tin > p {
+  margin: 30px 0;
+}
+#tin > img {
+  max-width: 1020px;
+  margin: auto;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -38,10 +42,9 @@
   margin-right: 10px;
   margin-bottom: 10px;
   float: left;
-  width: 85px;
   height: 100px;
+  max-width: 140px;
 }
-#tinlq .tin div p{
+#tinlq .tin div p {
   font-size: 0.3cm;
 }
-
