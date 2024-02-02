@@ -1,5 +1,5 @@
 #tgdq {
-  width: 90%;
+  width: 1140px;
   background-color: #fff;
   margin: auto;
   padding: 60px;
@@ -16,21 +16,32 @@
 }
 #tinlq {
   margin: auto;
-  width: 90%;
-  display: flex;
+  width: 1140px;
+  /* display: flex;   */
 }
-#tinlq .tin {
-  margin: 10px;
-  width: 30%;
-  max-width: 30%;
+.tin {
+  position: relative;
+  margin: 0px;
   background-color: #fff;
 }
-#tinlq > a {
+.tin > a {
+  position: absolute;
   width: 100%;
+  height: 100%;
 }
 #tinlq .tin div {
+  margin: 10px;
   overflow: hidden;
+  height: 100px;
 }
-#tinlq .tin div {
+#tinlq .tin div img {
+  margin-right: 10px;
+  margin-bottom: 10px;
   float: left;
+  width: 85px;
+  height: 100px;
 }
+#tinlq .tin div p{
+  font-size: 0.3cm;
+}
+
