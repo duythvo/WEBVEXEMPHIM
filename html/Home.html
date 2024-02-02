@@ -5,23 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TH2D-Hệ thống Rạp chiếu phim toàn quốc</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/Home.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/css/swiper.min.css">
+    <style>
+        .hidden{
+            opacity: 0;
+            transition: opacity 0.7s ease-out;
+            pointer-events: none;
+        }
+
+        .active{
+            opacity: 1;
+            transition: opacity 0.7s ease-out;
+            pointer-events: auto;
+        }
+    </style>
 </head>
 <body>
     <div id="container">
-        <div id="header">
-            <div id="top">
-                <div id="TH2D">
+        <div id="header" class="active">
+            <div class="top">
+                <div class="TH2D">
                     <a href=""></a>
                 </div>
-                <div id="login">
+                <div class="login">
                     <a href="">Đăng nhập</a>
                     <a href="">Đăng ký</a>
                 </div>
     
-                <div id="nav">
+                <div class="nav">
                     <a class="logo" href=""></a>                
-                    <div id="menu">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="">PHIM</a></li>
+                            <li><a href="">LỊCH CHIẾU</a></li>
+                            <li><a href="">RẠP VÀ GIÁ</a></li>
+                            <li><a href="">KHUYẾN MÃI</a></li>
+                            <li><a href="">HỎI VÀ ĐÁP</a></li>
+                            <li><a href="../html/TinTuc.html">TIN TỨC</a></li>
+                            <li><a href="">GIỚI THIỆU</a></li>
+                            <li><a href="">LIÊN HỆ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="headerhide" class="hidden">
+            <div class="top">
+                <div class="TH2D">
+                    <a href=""></a>
+                </div>
+                <div class="nav">
+                    <a class="logo" href=""></a>                
+                    <div class="menu">
                         <ul>
                             <li><a href="">PHIM</a></li>
                             <li><a href="">LỊCH CHIẾU</a></li>
@@ -44,19 +80,19 @@
             <div id="container-bg">
                 <div class="content-nav">
                     <ul>
-                        <li style="z-index: 3;"><a href="#" onclick="hideUpcomingMovie()">PHIM ĐANG CHIẾU</a></li>
-                        <li style="z-index: 2;"><a href="#" onclick="hideCurrentMovie()">PHIM SẮP CHIẾU</a></li>
+                        <li style="z-index: 3;"><a href="##" onclick="hideUpcomingMovie()">PHIM ĐANG CHIẾU</a></li>
+                        <li style="z-index: 2;"><a href="##" onclick="hideCurrentMovie()">PHIM SẮP CHIẾU</a></li>
                         <li style="z-index: 1;"><a href="" >SUẤT CHIẾU ĐẶC BIỆT</a></li>
                     </ul>
                 </div>
                 <div class="content-movie">
                     <div class="content-movie-bg">
                         <div class="slide-prev">
-                            <a href=""><img src="../image/icon-start.png" alt=""></a>
+                            <a href="###" ><img src="../image/icon-start.png" alt=""></a>
                         </div>
-                        <div class="current-movie" id="dangchieu">
-                            <div class="list-movie">
-                                <div class="movie-item">
+                        <div class="current-movie swiper-container" id="dangchieu">
+                            <div class="list-movie swiper-wrapper">
+                                <div class="movie-item swiper-slide">
                                     <div class="movie-picture">
                                         <img src="../image/poster-quy-cau2.jpg" alt="" style="width: 220px;">
                                     </div>
@@ -64,7 +100,7 @@
                                         <h3>QUỶ CẨU (T18)</h3>
                                     </div>
                                 </div>
-                                <div class="movie-item">
+                                <div class="movie-item swiper-slide">
                                     <div class="movie-picture">
                                         <img src="../image/teeyod1.jpg" alt="" style="width: 220px;">
                                     </div>
@@ -72,7 +108,7 @@
                                         <h3>QUỶ ĂN TẠNG (T18)</h3>
                                     </div>
                                 </div>
-                                <div class="movie-item">
+                                <div class="movie-item swiper-slide">
                                     <div class="movie-picture">
                                         <img src="../image/da-chieu-hon-chien.jpg" alt="" style="width: 220px;">
                                     </div>
@@ -80,7 +116,7 @@
                                         <h3>ALIENOID 2 (T16): ĐA CHIỀU HỖN CHIẾN</h3>
                                     </div>
                                 </div>
-                                <div class="movie-item">
+                                <div class="movie-item swiper-slide">
                                     <div class="movie-picture">
                                         <img src="../image/mat-vu-ong.jpg" alt="" style="width: 220px;">
                                     </div>
@@ -88,18 +124,28 @@
                                         <h3>MẬT VỤ ONG (T18)</h3>
                                     </div>
                                 </div>
-                                <div class="movie-item">
+                                <div class="movie-item swiper-slide">
                                     <div class="movie-picture">
                                         <img src="../image/ruou-cot-nguoi-poster.jpg" alt="" style="width: 220px;">
+                                    </div>
+                                    <div class="moview-txt">
+                                        <h3>ĐẠI HẢI CHIẾN NORYANG: BIỂN CHẾT (T18)</h3>
+                                    </div>
+                                </div>
+                                <div class="movie-item swiper-slide">
+                                    <div class="movie-picture">
+                                        <img src="../image/noryang-poster.jpg" alt="" style="width: 220px;">
                                     </div>
                                     <div class="moview-txt">
                                         <h3>RƯỢU CỐT NGƯỜI (T16)</h3>
                                     </div>
                                 </div>
+                                <div class="swiper-button-prev" style="background-color: blue;"></div>
+                                <div class="swiper-button-next"></div>
                             </div>
                         </div>
 
-                        <div class="upcoming-movie" id="sapchieu" style="display: none;">
+                        <div class="upcoming-movie" id="sapchieu" style="display:none">
                             <div class="list-movie">
                                 <div class="movie-item">
                                     <div class="movie-picture">
@@ -144,7 +190,7 @@
                             </div>
                         </div>
                         <div class="slide-next">
-                            <a href=""><img src="../image/icon-start.png" alt=""></a>
+                            <a href="###" onclick="nextPhim()"><img src="../image/icon-start.png" alt=""></a>
                         </div>
                     </div>
                     </div>
@@ -279,5 +325,8 @@
             </div>
         </div>
     </div>
+
+    <script src="../js/Home.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js"></script>
 </body>
 </html>
