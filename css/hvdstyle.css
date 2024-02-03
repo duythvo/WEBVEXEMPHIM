@@ -480,12 +480,6 @@ ul {
   text-align: center;
 }
 
-.movie-box .box-content img {
-  width: 100%;
-  max-width: 30px;
-  height: auto;
-  margin-left: 43%;
-}
 
 .phimdangchieu .swiper {
   display: flex;
@@ -514,9 +508,10 @@ ul {
   position: relative;
   width: 100%;
   height: auto;
-  max-width: 230px;
+  max-width: 250px;
   display: block;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .moviebox-img {
@@ -525,7 +520,119 @@ ul {
   height: auto;
   max-width: 202px;
   margin: 0 auto;
+  cursor: pointer;  
+}
+
+.movie-box .box-content .img2d{
+  margin-left: 43%;
+}
+
+.movie-info {
+  width: 100%;
+  height: 100%;
+  background: rgba(22, 17, 17, 0.557);
+  border: 1px solid gold;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.movie-box .movie-info p{
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  padding-top: 5px  ;
+  color: white;
+  text-align: center;
+  display: block;
+}
+
+.movie-box .movie-info span {
+  color: gold;
+}
+
+.movie-box .movie-info a .chitiet {
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+  background-color: orange;
+  border: none;
+  width: 80px;
+  height: 30px;
+  border-radius: 30px;
+  padding: auto;
+  transition: 0.5s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.movie-box .movie-info a input:hover {
+  background-color: rgba(206, 118, 118, 0.8);
   cursor: pointer;
+}
+
+.movie-box .movie-info a .w-trailer{
+  color: white;
+  margin-top: 10px;
+  font-size: 20px;
+  background-color: orange;
+  border: none;
+  width: 140px;
+  height: 50px;
+  padding: auto;
+  transition: 0.5s ease-in-out;
+  border-radius: 20px 20px 20px 0;
+}
+
+.movie-box .movie-info a .b-ticket{
+  padding-right: 50px;
+  box-sizing: border-box;
+  color: white;
+  margin-top: 10px;
+  font-size: 20px;
+  background-color: rgb(206, 118, 118);
+  border: none;
+  width: 140px;
+  height: 50px;
+  padding: auto;
+  transition: 0.5s ease-in-out;
+  border-radius: 0 20px 20px 20px;
+  overflow: hidden;
+}
+
+.movie-box .movie-info a img{
+  top: 330px;
+  right:42px;
+  position:absolute;
+  color: white;
+  font-size: 20px;
+  background-color: orange;
+  border: none;
+  width: 49px;
+  height: 49px;
+  padding: auto;
+  transition: 0.5s ease-in-out;
+  border-radius: 50%
+}
+
+.movie-box .movie-info a:hover .b-ticket {
+  background-color: orange;
+  cursor: pointer;
+}
+
+.movie-box .movie-info a:hover img {
+  background-color: rgb(206, 118, 118);
+  cursor: pointer;
+}
+
+
+.movie-box:hover  .movie-info {
+  opacity: 1;
 }
 
 /* footer */
