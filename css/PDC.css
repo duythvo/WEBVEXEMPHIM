@@ -1,0 +1,180 @@
+.content-movie .content-movie-bg {
+  height: 480px;
+  padding-top: 30px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1520px;
+  margin: auto;
+}
+
+/*  .content-movie .slide-prev img{
+    box-shadow: 0 0 60px rgba(255, 255, 255, 1);
+    width: fit-content;
+    border-radius: 40px;
+    position: relative;
+    top: 35%;
+    margin-left: 40px;
+    right: 0;
+} */
+
+.content-movie .list-movie {
+  margin-top: 20px;
+}
+
+.content-movie .list-movie .movie-item {
+  max-height: 240px;
+  max-width: 388px;
+}
+
+.content-movie .list-movie .movie-item .movie-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+  padding: 25px 20px;
+  text-align: center;
+  max-width: 230px;
+  height: 390px;
+  max-height: 390px;
+}
+
+.content-movie .list-movie .movie-item .movie-over p {
+  color: white;
+}
+
+.content-movie .list-movie .movie-item .movie-over .detail-link {
+  width: fit-content;
+  margin: auto;
+  border-radius: 25px;
+  padding: 10px;
+  color: white;
+  margin-top: 10px;
+}
+
+.content-movie .list-movie .movie-item .movie-over .other-link {
+  margin-top: 50px;
+}
+
+.content-movie .list-movie .movie-item .movie-over .muave .muave-text,
+.content-movie .list-movie .movie-item .movie-over .trailer {
+  background-color: #e8840c;
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 10px;
+  color: white;
+}
+
+.content-movie .list-movie .movie-item .movie-over .muave .muave-text {
+  width: fit-content;
+  margin: auto;
+}
+
+.content-movie .list-movie .movie-item .movie-over .muave .muave-text p {
+  display: block;
+  padding-right: 50px;
+}
+
+.content-movie .list-movie .movie-item .movie-over .muave {
+  margin-top: 10px;
+}
+
+.content-movie .list-movie .movie-item .movie-over .muave .muave-icon {
+  background-color: #d8047c;
+  width: fit-content;
+  position: absolute;
+  border-radius: 25px;
+  z-index: 2;
+  top: 86%;
+  right: 20%;
+}
+
+.content-movie .list-movie .movie-item .movie-over .movie-detail {
+  max-height: 165px;
+  max-width: 190px;
+  overflow: hidden;
+}
+
+.content-movie .list-movie .movie-item .movie-over .trailer:hover,
+.content-movie .list-movie .movie-item .movie-over .detail-link:hover {
+  background-color: #d8047c;
+}
+
+.content-movie .list-movie .movie-item .movie-over .muave a:hover .muave-text {
+  background-color: #d8047c;
+}
+.content-movie .list-movie .movie-item .movie-over .muave a:hover .muave-icon {
+  background-color: #e8840c;
+}
+
+/* .movie-over{
+    display: none;
+} */
+.content-movie .list-movie .movie-item:hover .movie-over {
+  opacity: 1;
+  transition: opacity 0.7s ease-out;
+  pointer-events: auto;
+}
+
+.content-movie .list-movie .movie-item .movie-over .muave img {
+  width: 40px;
+  height: 35px;
+}
+
+.content-movie .list-movie .movie-item img {
+  max-width: 202px;
+  max-height: 300px;
+}
+
+.content-movie .list-movie .movie-item h3 {
+  text-align: center;
+}
+
+.movie-txt {
+  color: white;
+  max-width: 202px;
+}
+
+.movie-txt .icon-2d {
+  margin-top: 10px;
+}
+
+.swiper {
+  width: 1200px;
+  display: flex;
+  position: relative;
+}
+
+.swiper-button-prev {
+  position: relative;
+  margin-left: 60px;
+}
+
+.swiper-button-prev .icon-star {
+  width: fit-content;
+  border-radius: 40px;
+  position: absolute;
+  top: 0%;
+  margin-left: 30px;
+  background-color: #ec9424;
+}
+
+.swiper-button-next .icon-star {
+  width: fit-content;
+  border-radius: 40px;
+  position: absolute;
+  margin-left: 10px;
+  background-color: #ec9424;
+}
+
+.swiper-button-prev .icon-star:hover,
+.swiper-button-next .icon-star:hover {
+  background-color: #e8840c;
+  box-shadow: 0 0 60px rgba(255, 255, 255, 1);
+}
+
+.swiper-button-next {
+  position: relative;
+  margin-right: 120px;
+}
