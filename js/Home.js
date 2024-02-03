@@ -1,23 +1,64 @@
 
+
 function hideCurrentMovie() {
-
-
   var currentmovie = document.getElementById("dangchieu");
   var upcoming = document.getElementById("sapchieu");
+  var navdangchieu = document.getElementById("nav-dangchieu");
+  var navsapchieu = document.getElementById("nav-sapchieu");
+  var navspecial = document.getElementById("nav-special");
+  var btnspecial = document.getElementById("btn");
 
+
+  navdangchieu.style.display="none"; 
   currentmovie.style.display = "none";
+  navspecial.style.display = "none";
+
+  navsapchieu.style.display="block";
+  navsapchieu.style.display="flex";
   upcoming.style.display = "block";
+  btnspecial.style.display="block";
+
 }
 
 function hideUpcomingMovie() {
-
-
   var currentmovie = document.getElementById("dangchieu");
   var upcoming = document.getElementById("sapchieu");
+  var navdangchieu = document.getElementById("nav-dangchieu");
+  var navsapchieu = document.getElementById("nav-sapchieu");
+  var navspecial = document.getElementById("nav-special");
+  var btnspecial = document.getElementById("btn");
+
 
   currentmovie.style.display = "block";
+  navsapchieu.style.display="none";
+  navdangchieu.style.display="block";
+  navspecial.style.display = "none";
+  navdangchieu.style.display="flex";
   upcoming.style.display = "none";
+  btnspecial.style.display="block";
+
 }
+
+function specialMovie(){
+  var currentmovie = document.getElementById("dangchieu");
+  var upcoming = document.getElementById("sapchieu");
+  var navdangchieu = document.getElementById("nav-dangchieu");
+  var navsapchieu = document.getElementById("nav-sapchieu");
+  var navspecial = document.getElementById("nav-special");
+  var btnspecial = document.getElementById("btn");
+
+
+  currentmovie.style.display = "none";
+  navsapchieu.style.display="none";
+  upcoming.style.display = "none";
+  navdangchieu.style.display="none";
+
+  navspecial.style.display="block";
+  navspecial.style.display="flex";
+  btnspecial.style.display="none";
+}
+
+
 
 
 window.addEventListener("scroll", function () {
@@ -40,6 +81,10 @@ window.addEventListener("scroll", function () {
 
 const swiper = new Swiper(".swiper", {
   // Optional parameters
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+  },
   direction: "horizontal",
   loop: true,
   slidesPerView: 5,
@@ -61,3 +106,6 @@ function ClickColor (element) {
     element.classList.add("clicked");
     selectedElement = element;
 }
+
+
+

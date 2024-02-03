@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <style>
+
       .hidden {
         opacity: 0;
         transition: opacity 0.7s ease-out;
@@ -22,12 +23,10 @@
         pointer-events: auto;
       }
 
-      .li-bg {
-        background-color: yellow;
-      }
-
-      .a-cl {
-        color: black;
+      .li-bg,
+      .a-cl{
+        background-color: yellow !important;
+        color: black !important;
       }
     </style>
   </head>
@@ -90,20 +89,44 @@
         <div id="content">
             <div id="container-bg">
                 <div class="content-nav">
-                    <ul>
-                        <li style="z-index: 3;">
-                            <a  href="##" onclick="hideUpcomingMovie() ">PHIM ĐANG CHIẾU</a>
+                    <ul class="list-nav" id="nav-dangchieu" >
+                        <li class="li-bg" style="z-index: 3;">
+                            <a class="a-cl" href="##" onclick="hideUpcomingMovie()">PHIM ĐANG CHIẾU</a>
                         </li>
-                        <li  style="z-index: 2;">
-                            <a href="##" onclick="hideCurrentMovie()">PHIM SẮP CHIẾU</a>
+                        <li style="z-index: 2;">
+                            <a  href="##" onclick="hideCurrentMovie()">PHIM SẮP CHIẾU</a>
                         </li>
-                        <li  style="z-index: 1;">
-                            <a href="##" >SUẤT CHIẾU ĐẶC BIỆT</a>
+                        <li style="z-index: 1;">
+                            <a href="##" onclick="specialMovie()">SUẤT CHIẾU ĐẶC BIỆT</a>
+                        </li>
+                    </ul>
+
+                    <ul class="list-nav" id="nav-sapchieu" style="display: none;">
+                        <li  style="z-index: 3;">
+                            <a href="##" onclick="hideUpcomingMovie()">PHIM ĐANG CHIẾU</a>
+                        </li>
+                        <li class="li-bg" style="z-index: 2;">
+                            <a class="a-cl" href="##" onclick="hideCurrentMovie()">PHIM SẮP CHIẾU</a>
+                        </li>
+                        <li style="z-index: 1;">
+                            <a href="##" onclick="specialMovie()">SUẤT CHIẾU ĐẶC BIỆT</a>
+                        </li>
+                    </ul>
+
+                    <ul id="nav-special" class="list-nav" style="display: none;">
+                        <li  style="z-index: 3;">
+                            <a  href="##" onclick="hideUpcomingMovie()">PHIM ĐANG CHIẾU</a>
+                        </li>
+                        <li style="z-index: 2;">
+                            <a  href="##" onclick="hideCurrentMovie()">PHIM SẮP CHIẾU</a>
+                        </li>
+                        <li class="li-bg" style="z-index: 1;">
+                            <a class="a-cl" href="##" onclick="specialMovie()">SUẤT CHIẾU ĐẶC BIỆT</a>
                         </li>
                     </ul>
                 </div>
                 <div class="content-movie">
-                    <div class="content-movie-bg">
+                    <div class="content-movie-bg" >
                         <div class="current-movie swiper" id="dangchieu">
                             <div class="list-movie swiper-wrapper">
                                 <div class="movie-item swiper-slide">
@@ -943,14 +966,16 @@ Chỉ còn 48 phút trước khi tất cả các bong bóng khí haava được 
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button-prev">
-                            <div class="icon-star">
-                                <img src="../image/icon-start.png" alt="">
+                        <div id="btn">
+                            <div class="swiper-button-prev" >
+                                <div class="icon-star">
+                                    <img src="../image/icon-start.png" alt="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-button-next">
-                            <div class="icon-star">
-                                <img src="../image/icon-start.png" alt="">
+                            <div class="swiper-button-next" >
+                                <div class="icon-star">
+                                    <img src="../image/icon-start.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
