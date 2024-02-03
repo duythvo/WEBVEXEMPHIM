@@ -247,7 +247,6 @@ ul{
     line-height: 74px;
     font-size: 25px;
     color: white;
-
 }
 
 #content .content-movie{
@@ -263,18 +262,10 @@ ul{
     display: flex;
     justify-content: space-around;
     max-width:1520px ;
+    min-width: 1520px;
     margin: auto;
 }
 
-/* #content .content-movie .slide-prev img{
-    box-shadow: 0 0 60px rgba(255, 255, 255, 1);
-    width: fit-content;
-    border-radius: 40px;
-    position: relative;
-    top: 35%;
-    margin-left: 40px;
-    right: 0;
-} */
 
 #content .content-movie .list-movie{
     margin-top: 20px;
@@ -370,9 +361,6 @@ ul{
     background-color: #e8840c;
 }
 
-/* .movie-over{
-    display: none;
-} */
 #content .content-movie .list-movie .movie-item:hover .movie-over{
     opacity: 1;
             transition: opacity 0.7s ease-out;
@@ -444,16 +432,6 @@ ul{
     position: relative;
     margin-right: 120px;
 }
-
-/* #content .content-movie .slide-next img{
-    box-shadow: 0 0 60px rgba(255, 255, 255, 1);
-    width: fit-content;
-    border-radius: 40px;
-    position: relative;
-    top: 35%;
-    margin-left: 40px;
-    right: 80%;
-} */
 
 #content .voucher{
     margin-top: 30px;
