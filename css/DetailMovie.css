@@ -252,8 +252,7 @@ ul{
 }
 
 #content #content-detail-movie{
-    height: 732px;
-    max-height: 732px;
+    height: fit-content;
     background-color: yellow;
     padding-top: 20px;
 }
@@ -277,9 +276,10 @@ ul{
     background-color: #e8840c;
     max-width: 756px;
     width: 756px;
-    height: 666px;
+    height: fit-content;
     padding: 40px;
     box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3), 0 0 50px 0 rgba(0, 0, 0, 0.4) inset;
+    margin-bottom: 10px;
 }
 
 #content #content-detail-movie .movie-detail-infor h3{
@@ -304,8 +304,9 @@ ul{
 #content #content-detail-movie .movie-detail-infor .movie-review .movie-value{
     background-color: white;
     display: table-cell;
-    line-height: 18px;
+    line-height: 22px;
     font-size: 20px;
+    font-weight: bold;
     border-radius: 20px 0 20px 0;
     padding: 12px 30px;
 }
@@ -341,6 +342,7 @@ ul{
     margin-top: 40px;
     max-width: 677px;
     padding-left: 100px;
+    position: relative;
 }
 
 #content #content-detail-movie .movie-detail-infor .movie-item a{
@@ -384,13 +386,12 @@ ul{
 #content #content-detail-movie .movie-detail-infor .movie-item .movie-item-link{
     display: inline-block;
     position: absolute;
-    bottom: 60.8%;
     margin-left: 20px;
+    bottom: 10%;
 }
 
 #content #content-detail-movie .movie-detail-infor .movie-item .movie-item-link .social{
-    display:flex
-
+    display:flex;
 }
 
 #content #content-detail-movie .movie-detail-infor .movie-item .social .facebook{
@@ -399,6 +400,7 @@ ul{
     background-size: contain;
     height: 54px;
     width: 54px;
+
 }
 
 #content #content-detail-movie .movie-detail-infor .movie-item .social .google{
