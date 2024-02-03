@@ -48,3 +48,13 @@ const swiper = new Swiper('.swiper', {
 })
 
 window.addEventListener()
+
+
+let selectedElement = null;
+function ClickColor (element) {
+    if (selectedElement !== null) {
+        selectedElement.classList.remove("clicked");
+    }
+    element.classList.add("clicked");
+    selectedElement = element;
+}

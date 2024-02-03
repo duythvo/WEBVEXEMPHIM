@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TH2D-Hệ thống Rạp chiếu phim toàn quốc</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Mật Vụ Ong(T18)</title>
+    <link rel="stylesheet" href="../css/DetailMovie.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -19,15 +19,6 @@
         .active{
             opacity: 1;
             transition: opacity 0.7s ease-out;
-            pointer-events: auto;
-        }
-
-        .li-bg{
-            background-color: yellow;
-        }
-
-        .a-cl{
-            color: black;
         }
     </style>
 </head>
@@ -86,7 +77,6 @@
         <div class="poster">
             <img src="../image/gap-lai-chi-bau.jpg" alt="">
         </div>
-
         <div id="content">
             <div id="container-bg">
                 <div class="content-nav">
@@ -102,9 +92,62 @@
                         </li>
                     </ul>
                 </div>
-                <div class="content-movie">
-                    <div class="content-movie-bg">
+                <div id="content-detail-movie">
+                    <div class="content-movie">
+                        <img class="movie-picture" src="../image/mat-vu-ong.jpg" alt="">
+                    <div class="movie-detail-infor">
+                        <h3>MẬT VỤ ONG(T18)</h3>
+                        <div class="movie-review">
+                            <span class="movie-title">Khởi chiếu:</span>
+                            <span class="movie-value">Từ 11/01/2024</span>
+                        </div>
+                        <div class="movie-review">
+                            <span class="movie-title">Thể loại:</span>
+                            <span class="movie-value">Hành Động</span>
+                        </div>
+                        <div class="movie-review">
+                            <span class="movie-title">Diễn viên</span>
+                            <span class="movie-value">Jason Statham, Emmy Raver-Lampman, Josh Hutcherson</span>
+                        </div>
+                        <div class="movie-review">
+                            <span class="movie-title">Đạo diễn</span>
+                            <span class="movie-value">David Ayer</span>
+                        </div>
+
+                        <div class="logo-2d"></div>
+                        <p>
+                            Jason Statham vào vai Adam Clay, một người nuôi ong cần mẫn và đơn độc. Anh có mối quan hệ tốt với bà chủ nhà, thậm chí coi bà như người thân duy nhất của mình. Thế nhưng, một sự kiện xảy ra khiến bà qua đời, và “người nuôi ong” Adam Clay quyết định bắt đầu kế hoạch trả thù tàn bạo của mình. Trong khi Clay vạch trần bí mật đằng sau đường dây lừa đảo cỡ lớn và bắt những kẻ có tội phải trả giá, thân phận thật của anh cũng dần được hé lộ.
+                        </p>
+                        <div class="movie-review">
+                            <span class="movie-title">Đánh giá</span>
+                            <span class="rate"></span>
+                            <span class="rate"></span>
+                            <span class="rate"></span>
+                            <span class="rate"></span>
+                            <span class="rate"></span>
+                        </div>
+                        <div class="movie-item">
+                            <a class="movie-trailer" href="">TRAILER</a>
+                            <a class="muave" href="">Mua Vé</a>
+                            <div class="movie-item-link">
+                                <span style="color: white;display: block;text-align: center;">Chia sẻ</span>
+                                <ul class="social">
+                                    <li class="facebook">
+                                        <a href="https://www.facebook.com/profile.php?id=100018852463149"></a>
+                                    </li>
+                                    <li class="google">
+                                        <a href="https://www.facebook.com/profile.php?id=100018852463149"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="content-movie-bg">
+                    <div class="movie">
                         <div class="current-movie swiper" id="dangchieu">
+                            <h1 style="color: white; text-align: center;margin:40px 0px;">CÁC PHIM ĐANG CHIẾU</h1>
                             <div class="list-movie swiper-wrapper">
                                 <div class="movie-item swiper-slide">
                                     <div class="movie-picture">
@@ -193,9 +236,9 @@
                                         <a href="###">
                                             <p class="movie-detail">
                                                 Ean (KIM Tae-ri) bị mắc kẹt ở quá khứ trong khi cố ngăn chặn sự trốn thoát của những tù nhân ngoài hành tinh bị nhốt trong cơ thể con người. Cô cuối cùng đã tìm thấy Gươm Thần, có thể mở ra cánh cổng xuyên thời gian, và giờ phải tìm Thunder (KIM Woo-bin) để trở về hiện tại.
-Trong khi đó, Muruk (RYU Jun-yeol), người giúp Ean thoát khỏi những tình huống nguy hiểm, bắt đầu cảm thấy bất an khi anh nhận thấy sự hiện diện của một sinh vật lạ trong cơ thể mình.
-Trở lại hiện tại, sự phát tán của khí haava bởi Thủ Lĩnh, kẻ lãnh đạo những tù nhân ngoài hành tinh đã khiến hàng ngàn người chết. Min Gaelin (LEE Ha-nee) người tình cờ chứng kiến điều này đã nhận ra rằng đây chỉ là khởi đầu.
-Chỉ còn 48 phút trước khi tất cả các bong bóng khí haava được thiết lập để nổ tung, cánh cửa thời gian cuối cùng được mở ra và Muruk, Thunder, cùng Lam Tử và Hắc Nương được kéo về hiện tại cùng với Ean. Những bí mật động trời dần được hé lộ. Họ phải làm gì để chống lại những sinh vật ngoài hành tinh, ngăn chặn sự nổ tung của khí haava và giải cứu nhân loại?
+        Trong khi đó, Muruk (RYU Jun-yeol), người giúp Ean thoát khỏi những tình huống nguy hiểm, bắt đầu cảm thấy bất an khi anh nhận thấy sự hiện diện của một sinh vật lạ trong cơ thể mình.
+        Trở lại hiện tại, sự phát tán của khí haava bởi Thủ Lĩnh, kẻ lãnh đạo những tù nhân ngoài hành tinh đã khiến hàng ngàn người chết. Min Gaelin (LEE Ha-nee) người tình cờ chứng kiến điều này đã nhận ra rằng đây chỉ là khởi đầu.
+        Chỉ còn 48 phút trước khi tất cả các bong bóng khí haava được thiết lập để nổ tung, cánh cửa thời gian cuối cùng được mở ra và Muruk, Thunder, cùng Lam Tử và Hắc Nương được kéo về hiện tại cùng với Ean. Những bí mật động trời dần được hé lộ. Họ phải làm gì để chống lại những sinh vật ngoài hành tinh, ngăn chặn sự nổ tung của khí haava và giải cứu nhân loại?
                                             </p>
                                             <span style="display: block;color: orange;">...</span>
                                             <span class="detail-link" style="display: block;">Chi tiết</span>
@@ -579,370 +622,6 @@ Chỉ còn 48 phút trước khi tất cả các bong bóng khí haava được 
                                 </div>
                             </div>
                         </div>
-                        <div class="upcoming-movie swiper" id="sapchieu" style="display:none">
-                            <div class="list-movie swiper-wrapper">
-                                <div class="movie-item swiper-slide">
-                                    <div class="movie-picture">
-                                        <img src="../image/tra.jpg" alt="" style="width: 220px;">
-                                    </div>
-                                    <div class="movie-txt">
-                                        <h3>TRÀ</h3>
-                                        <div class="icon-2d" style="text-align: center;">
-                                            <img src="../image/icon-2d.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="movie-over hidden">
-                                        <a href="###">
-                                            <p class="movie-detail">
-                                                Phim điện ảnh Trà của đạo diễn Lê Hoàng thuộc thể loại tâm lý - tình cảm, khai thác một vấn đề hôn nhân vẫn vô cùng “nhức nhối” ở thời điểm hiện tại: Ngoại tình. Bộ phim với sự tham gia diễn xuất của dàn diễn viên thực lực: Việt Hương, NSƯT Trương Minh Quốc Thái cùng tân binh Đoàn Trinh
-                                            </p>
-                                            <span style="display: block;color: orange;">...</span>
-                                            <span class="detail-link" style="display: block;">Chi tiết</span>
-                                        </a>
-                                        <div class="other-link">
-                                            <a class="trailer" href="###">
-                                                XEM TRAILER
-                                            </a>
-                                            <br>
-                                            <div class="muave">
-                                                <a id="" href="###">
-                                                    <div class="muave-text">
-                                                        <p>MUA VÉ</p>
-                                                    </div>
-                                                    <div class="muave-icon">
-                                                        <img src="../image/icon-start.png" alt="">
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="movie-item swiper-slide">
-                                    <div class="movie-picture">
-                                        <img src="../image/spy-x-family.jpeg" alt="" style="width: 220px;">
-                                    </div>
-                                    <div class="movie-txt">
-                                        <h3>GIA ĐÌNH x ĐIỆP VIÊN MÃ: TRẮNG (T13)</h3>
-                                        <div class="icon-2d" style="text-align: center;">
-                                            <img src="../image/icon-2d.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="movie-over hidden">
-                                        <a href="###">
-                                            <p class="movie-detail">
-                                                Bộ phim là phần phim điện ảnh của series anime nổi tiếng Spy x Family. Trong bộ phim lần này, sau khi nhận được yêu cầu thay thế mình trong Chiến dịch Strix, Loid Forger quyết định giúp con gái Anya chiến thắng trong cuộc thi nấu ăn tại Học viện Eden bằng cách nấu bữa ăn yêu thích của hiệu trưởng để tránh bị thay thế khỏi nhiệm vụ mật. Nhưng từ đây, gia đình Forger phát hiện ra bí mật kinh hoàng ảnh hưởng đến hòa bình thế giới
-                                            </p>
-                                            <span style="display: block;color: orange;">...</span>
-                                            <span class="detail-link" style="display: block;">Chi tiết</span>
-                                        </a>
-                                        <div class="other-link">
-                                            <a class="trailer" href="###">
-                                                XEM TRAILER
-                                            </a>
-                                            <br>
-                                            <div class="muave">
-                                                <a id="" href="###">
-                                                    <div class="muave-text">
-                                                        <p>MUA VÉ</p>
-                                                    </div>
-                                                    <div class="muave-icon">
-                                                        <img src="../image/icon-start.png" alt="">
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="movie-item swiper-slide">
-                                    <div class="movie-picture">
-                                        <img src="../image/poster-mai.jpg" alt="" style="width: 220px;">
-                                    </div>
-                                    <div class="movie-txt">
-                                        <h3>MAI (T18)</h3>
-                                        <div class="icon-2d" style="text-align: center;">
-                                            <img src="../image/icon-2d.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="movie-over hidden">
-                                        <a href="###">
-                                            <p class="movie-detail">
-                                                "Mai" xoay quanh cuộc đời của một người phụ nữ đẹp tên Mai (do Phương Anh Đào thủ vai) có số phận rất đặc biệt. Bởi làm nghề mát xa, Mai thường phải đối mặt với ánh nhìn soi mói, phán xét từ những người xung quanh. Và rồi Mai gặp Dương (Tuấn Trần) - chàng trai đào hoa lãng tử. Những tưởng bản thân không còn thiết tha yêu đương và mưu cầu hạnh phúc cho riêng mình thì khao khát được sống một cuộc đời mới trong Mai trỗi dậy khi Dương tấn công cô không khoan nhượng. Họ cho mình những khoảnh khắc tự do, say đắm và tràn đầy tiếng cười. Liệu cặp đôi ấy có nắm giữ được niềm hạnh phúc đó dài lâu khi miệng đời lắm khi cay nghiệt, bất công? "Mai" - một câu chuyện tâm lý, tình cảm pha lẫn nhiều tràng cười vui nhộn với sự đầu tư mạnh tay nhất trong ba phim của Trấn Thành hứa hẹn sẽ đem đến cho khán giả những phút giây thật sự ý nghĩa trong mùa Tết năm nay.
-                                            </p>
-                                            <span style="display: block;color: orange;">...</span>
-                                            <span class="detail-link" style="display: block;">Chi tiết</span>
-                                        </a>
-                                        <div class="other-link">
-                                            <a class="trailer" href="###">
-                                                XEM TRAILER
-                                            </a>
-                                            <br>
-                                            <div class="muave">
-                                                <a id="" href="###">
-                                                    <div class="muave-text">
-                                                        <p>MUA VÉ</p>
-                                                    </div>
-                                                    <div class="muave-icon">
-                                                        <img src="../image/icon-start.png" alt="">
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="movie-item swiper-slide">
-                                    <div class="movie-picture">
-                                        <img src="../image/argylle-sieu-diep-vien.jpg" alt="" style="width: 220px;">
-                                    </div>
-                                    <div class="movie-txt">
-                                        <h3>ARGYLLE SIÊU ĐIỆP VIÊN (T16)</h3>
-                                        <div class="icon-2d" style="text-align: center;">
-                                            <img src="../image/icon-2d.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="movie-over hidden">
-                                        <a href="###">
-                                            <p class="movie-detail">
-                                                Argylle là ai? Duy nhất 1 cách có thể tìm ra câu trả lời. ARGYLLE SIÊU ĐIỆP VIÊN | Dự Kiến Khởi Chiếu - Mùng 1 Tết 10.02.2024
-                                            </p>
-                                            <span style="display: block;color: orange;">...</span>
-                                            <span class="detail-link" style="display: block;">Chi tiết</span>
-                                        </a>
-                                        <div class="other-link">
-                                            <a class="trailer" href="###">
-                                                XEM TRAILER
-                                            </a>
-                                            <br>
-                                            <div class="muave">
-                                                <a id="" href="###">
-                                                    <div class="muave-text">
-                                                        <p>MUA VÉ</p>
-                                                    </div>
-                                                    <div class="muave-icon">
-                                                        <img src="../image/icon-start.png" alt="">
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="movie-item swiper-slide">
-                                    <div class="movie-picture">
-                                        <img src="../image/sang-den.jpg" alt="" style="width: 220px;">
-                                    </div>
-                                    <div class="movie-txt">
-                                        <h3>SÁNG ĐÈN (K)</h3>
-                                        <div class="icon-2d" style="text-align: center;">
-                                            <img src="../image/icon-2d.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="movie-over hidden">
-                                        <a href="###">
-                                            <p class="movie-detail">
-                                                Sau 2 phim Tết thuộc thể loại kinh dị thì năm nay đạo diễn Hoàng Tuấn Cường bất ngờ chuyển hướng với SÁNG ĐÈN. Bộ phim xoay quanh câu chuyện về thời thịnh suy, giao thời của cải lương và những gánh hát lưu diễn khắp miền tây.
-                                            </p>
-                                            <span style="display: block;color: orange;">...</span>
-                                            <span class="detail-link" style="display: block;">Chi tiết</span>
-                                        </a>
-                                        <div class="other-link">
-                                            <a class="trailer" href="###">
-                                                XEM TRAILER
-                                            </a>
-                                            <br>
-                                            <div class="muave">
-                                                <a id="" href="###">
-                                                    <div class="muave-text">
-                                                        <p>MUA VÉ</p>
-                                                    </div>
-                                                    <div class="muave-icon">
-                                                        <img src="../image/icon-start.png" alt="">
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="movie-item swiper-slide">
-                                    <div class="movie-picture">
-                                        <img src="../image/madame-web.jpg" alt="" style="width: 220px;">
-                                    </div>
-                                    <div class="movie-txt">
-                                        <h3>MADAME WEB</h3>
-                                        <div class="icon-2d" style="text-align: center;">
-                                            <img src="../image/icon-2d.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="movie-over hidden">
-                                        <a href="###">
-                                            <p class="movie-detail">
-                                                Tương lai đều được cô kiểm soát Dakota Johnson trong vai #MadameWeb, bộ phim riêng dành cho nhân vật nữ đầu tiên của Sony. Sắp khởi chiếu...
-                                            </p>
-                                            <span style="display: block;color: orange;">...</span>
-                                            <span class="detail-link" style="display: block;">Chi tiết</span>
-                                        </a>
-                                        <div class="other-link">
-                                            <a class="trailer" href="###">
-                                                XEM TRAILER
-                                            </a>
-                                            <br>
-                                            <div class="muave">
-                                                <a id="" href="###">
-                                                    <div class="muave-text">
-                                                        <p>MUA VÉ</p>
-                                                    </div>
-                                                    <div class="muave-icon">
-                                                        <img src="../image/icon-start.png" alt="">
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="movie-item swiper-slide">
-                                    <div class="movie-picture">
-                                        <img src="../image/biet-doi-san-rong.jpg" alt="" style="width: 220px;">
-                                    </div>
-                                    <div class="movie-txt">
-                                        <h3>BIỆT ĐỘI SĂN RỒNG (T16)</h3>
-                                        <div class="icon-2d" style="text-align: center;">
-                                            <img src="../image/icon-2d.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="movie-over hidden">
-                                        <a href="###">
-                                            <p class="movie-detail">
-                                                Sau khi một trận cháy rừng chết chóc quét qua trái đất và khiến không khí tràn ngập chất ô nhiễm, xã hội đang trên bờ vực sụp đổ và tràn ngập bệnh tật. Hy vọng duy nhất dường như nằm ở một truyền thuyết: đó là Slyth, một loài bò sát có thể cải trang thành con người và sở hữu dòng máu có thể chữa khỏi bệnh tật. Cuộc săn bắn bắt đầu.
-                                            </p>
-                                            <span style="display: block;color: orange;">...</span>
-                                            <span class="detail-link" style="display: block;">Chi tiết</span>
-                                        </a>
-                                        <div class="other-link">
-                                            <a class="trailer" href="###">
-                                                XEM TRAILER
-                                            </a>
-                                            <br>
-                                            <div class="muave">
-                                                <a id="" href="###">
-                                                    <div class="muave-text">
-                                                        <p>MUA VÉ</p>
-                                                    </div>
-                                                    <div class="muave-icon">
-                                                        <img src="../image/icon-start.png" alt="">
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="movie-item swiper-slide">
-                                    <div class="movie-picture">
-                                        <img src="../image/pororo.jpg" alt="" style="width: 220px;">
-                                    </div>
-                                    <div class="movie-txt">
-                                        <h3>PORORO HÀNH TRÌNH SIÊU SAO ÂM NHẠC</h3>
-                                        <div class="icon-2d" style="text-align: center;">
-                                            <img src="../image/icon-2d.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="movie-over hidden">
-                                        <a href="###">
-                                            <p class="movie-detail">
-                                                Pororo và những người bạn của anh ấy sắp sửa chiến thắng trong một cuộc thi ca hát mà họ tham gia cho vui. Liệu Pororo và những người bạn của anh ấy có thoát khỏi sự phiền nhiễu của Big Ben và cuối cùng giành chiến thắng trong cuộc thi siêu sao âm nhạc?
-                                            </p>
-                                            <span style="display: block;color: orange;">...</span>
-                                            <span class="detail-link" style="display: block;">Chi tiết</span>
-                                        </a>
-                                        <div class="other-link">
-                                            <a class="trailer" href="###">
-                                                XEM TRAILER
-                                            </a>
-                                            <br>
-                                            <div class="muave">
-                                                <a id="" href="###">
-                                                    <div class="muave-text">
-                                                        <p>MUA VÉ</p>
-                                                    </div>
-                                                    <div class="muave-icon">
-                                                        <img src="../image/icon-start.png" alt="">
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="movie-item swiper-slide">
-                                    <div class="movie-picture">
-                                        <img src="../image/boi-dem.jpg" alt="" style="width: 220px;">
-                                    </div>
-                                    <div class="movie-txt">
-                                        <h3>BƠI ĐÊM (T16)</h3>
-                                        <div class="icon-2d" style="text-align: center;">
-                                            <img src="../image/icon-2d.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="movie-over hidden">
-                                        <a href="###">
-                                            <p class="movie-detail">
-                                                Từ câu chuyện về cuộc sống gia đình bình thường đã biến thành một nỗi ám ảnh kinh hoàng. Không chạy, không lặn, không cứu hộ và không bơi sau khi màn đêm buông xuống. Bơi Đêm chạm đến nỗi sợ hãi sâu thẳm của bất kỳ ai mỗi khi bước xuống hồ bơi rằng họ sẽ bị mắc kẹt dưới nước.
-                                            </p>
-                                            <span style="display: block;color: orange;">...</span>
-                                            <span class="detail-link" style="display: block;">Chi tiết</span>
-                                        </a>
-                                        <div class="other-link">
-                                            <a class="trailer" href="###">
-                                                XEM TRAILER
-                                            </a>
-                                            <br>
-                                            <div class="muave">
-                                                <a id="" href="###">
-                                                    <div class="muave-text">
-                                                        <p>MUA VÉ</p>
-                                                    </div>
-                                                    <div class="muave-icon">
-                                                        <img src="../image/icon-start.png" alt="">
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="movie-item swiper-slide">
-                                    <div class="movie-picture">
-                                        <img src="../image/b4s.jpg" alt="" style="width: 220px;">
-                                    </div>
-                                    <div class="movie-txt">
-                                        <h3>B4S - TRƯỚC GIỜ "YÊU"</h3>
-                                        <div class="icon-2d" style="text-align: center;">
-                                            <img src="../image/icon-2d.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="movie-over hidden">
-                                        <a href="###">
-                                            <p class="movie-detail">
-                                                Bộ phim "nóng bỏng" khai thác về đề tài tình yêu và tình dục của giới trẻ hiện nay.
-                                            </p>
-                                            <span style="display: block;color: orange;">...</span>
-                                            <span class="detail-link" style="display: block;">Chi tiết</span>
-                                        </a>
-                                        <div class="other-link">
-                                            <a class="trailer" href="###">
-                                                XEM TRAILER
-                                            </a>
-                                            <br>
-                                            <div class="muave">
-                                                <a id="" href="###">
-                                                    <div class="muave-text">
-                                                        <p>MUA VÉ</p>
-                                                    </div>
-                                                    <div class="muave-icon">
-                                                        <img src="../image/icon-start.png" alt="">
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="swiper-button-prev">
                             <div class="icon-star">
                                 <img src="../image/icon-start.png" alt="">
@@ -953,52 +632,25 @@ Chỉ còn 48 phút trước khi tất cả các bong bóng khí haava được 
                                 <img src="../image/icon-start.png" alt="">
                             </div>
                         </div>
-                    </div>
+                        <div class="voucher">
+                            <ul class="menu-voucher">
+                                <li>
+                                    <img src="../image/icon-promotion.png" alt="">
+                                    <h2 style="color: white; text-align: center;">ƯU ĐÃI</h2>
+                                </li>
+                                <li>
+                                    <a href=""><img src="../image/WED.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="../image/DATE.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="../image/2024.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>    
                 </div>
-                <div class="voucher">
-                    <ul class="menu-voucher">
-                        <li>
-                            <img src="../image/icon-promotion.png" alt="">
-                            <h2 style="color: white; text-align: center;">ƯU ĐÃI</h2>
-                        </li>
-                        <li>
-                            <a href=""><img src="../image/WED.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="../image/DATE.png" alt=""></a>
-                        </li>
-                        <li>
-                            <a href=""><img src="../image/2024.png" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="news">
-                    <ul class="menu-news">
-                        <li>
-                            <img src="../image/iocn-news.png" alt="">
-                            <h2 style="color: white;text-align: center;">TIN TỨC</h2>
-                        </li>
-                        <li>
-                            <a href=""></a>
-                            <div class="txt">
-                                <h3>TH2D TUYỂN DỤNG NHÂN SỰ</h3>
-                                <p>TH2D tuyển dụng các ứng viên tiềm năng, đam mê trẻ em và làm việc trong môi trường năng động, chuyên nghiệp mong muốn được cống hiến và phát triển bản thân. </p>
-                            </div>
-                            <div class="pic">
-                                <img src="../image/tuyendung.png" alt="">
-                            </div>
-                        </li>
-                        <li>
-                            <a href=""></a>
-                            <div class="txt">
-                                <h3>CÓ THỂ BẠN CHƯA BIẾT TH2D ĐỒNG NAI ĐANG SỬ DỤNG 100% ĐIỆN NĂNG LƯỢNG MẶT TRỜI</h3>
-                                <p>Hướng đến sự phát triển bền vững, khách hàng có thể trải nghiệm những thước phim điện ảnh chất lượng tại TH2D ĐỒNG NAI với 100% điện năng lượng mặt trời thân thiện với môi trường và sẽ đầu tư cho toàn hệ thống trong tương lai.</p>
-                            </div>
-                            <div class="pic">
-                                <img src="../image/cinestar-hue.jpg" alt="">
-                            </div>
-                        </li>
-                    </ul>
                 </div>
                 <div id="footer">
                     <img style="width: 100%;margin-top: 50px;" src="../image/line-bg.png" alt="">
@@ -1083,10 +735,8 @@ Chỉ còn 48 phút trước khi tất cả các bong bóng khí haava được 
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/Home.js"></script>
 </body>

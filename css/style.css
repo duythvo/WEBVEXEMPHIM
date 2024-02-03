@@ -186,7 +186,7 @@ ul{
     height: auto;
 }
 
-#content{
+#content {
     margin-top: 120px;
     height: 100%;
     max-height: 2030px;
@@ -195,59 +195,70 @@ ul{
     background-size: contain;
     background-repeat: repeat-y;
     overflow: hidden;
-}
-
-#content .content-nav{
+  }
+  
+  #content .content-nav {
     margin-bottom: 10px;
     margin-top: 20px;
-}
-
-#content .content-nav ul{
+  }
+  
+  #content .content-nav ul {
     display: flex;
     justify-content: center;
-}
-
-#content .content-nav li{
-    background-color: orange;
+  }
+  
+  #content .content-nav li {
     height: 74px;
     display: block;
-}
-
-#content .content-nav li:first-child{
+  }
+  
+  #content .content-nav li:first-child {
     border-radius: 30px 50px 50px 0px;
     margin-right: -50px;
     box-shadow: 10px 0 0 rgba(0, 0, 0, 0.1);
     padding-right: 40px;
     padding-left: 40px;
-}
-
-#content .content-nav li:nth-child(2){
+  }
+  
+  #content .content-nav li:nth-child(2) {
     border-radius: 0px 50px 50px 0;
     padding-left: 70px;
     padding-right: 30px;
     box-shadow: 10px 0 0 rgba(0, 0, 0, 0.1);
-}
-#content .content-nav li:last-child a,
-#content .content-nav li:last-child{
+  }
+  
+  #content .content-nav li:last-child {
     border-radius: 0 30px 0 0;
     margin-left: -80px;
     padding-left: 100px;
     padding-right: 10px;
-}
-
-#content .content-nav a:hover,
-#content .content-nav li:hover{
-    background-color: yellow;
-    color: black;
-}
-
-
-#content .content-nav li>a{
+  }
+  
+  #content .content-nav li a {
     display: block;
     line-height: 74px;
     font-size: 25px;
+    margin-right: 20px;
+  }
+  
+  #content .content-nav li,
+  #content .content-nav li a {
     color: white;
-}
+    background-color: orange;
+    transition: color 0.5s ease, background-color 0.5s ease;
+  }
+  
+  #content .content-nav li:hover,
+  #content .content-nav li:hover a {
+    color: black;
+    background-color: yellow;
+  }
+  
+  #content .content-nav li.clicked,
+  #content .content-nav li.clicked a {
+    color: black;
+    background-color: yellow;
+  }
 
 #content .content-movie{
     background: #e8840c;
