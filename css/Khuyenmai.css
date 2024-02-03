@@ -207,15 +207,30 @@ swiper-slide > img {
   border-radius: 50px;
 }
 #uudai > div {
-  margin: auto;
+  margin: 20px auto;
   max-width: 1170px;
-  overflow: hidden;
+  display: flex;
 }
 #uudai > div > img {
-  width: 500px;
-  float: left;
+  margin: auto;
+  background-color: #360030;
+  border: 5px solid purple;
+  border-radius: 30px;
+  max-width: 500px;
+  max-height: 263.8px;
 }
-
+#uudai > div > div {
+  border: 5px solid plum;
+  border-radius: 30px;
+  padding: 30px 50px;
+  background-color: #360030;
+}
+#uudai > div > div > h1,
+h2,
+p {
+  color: white;
+  margin: 10px auto;
+}
 #footer {
   width: 100%;
   height: 100%;
