@@ -480,7 +480,6 @@ ul {
   text-align: center;
 }
 
-
 .phimdangchieu .swiper {
   display: flex;
   width: 1200px;
@@ -520,10 +519,10 @@ ul {
   height: auto;
   max-width: 202px;
   margin: 0 auto;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
-.movie-box .box-content .img2d{
+.movie-box .box-content .img2d {
   margin-left: 45%;
 }
 
@@ -543,11 +542,11 @@ ul {
   transition: opacity 0.5s ease-in-out;
 }
 
-.movie-box .movie-info p{
+.movie-box .movie-info p {
   width: 80%;
   height: 200px;
   margin: auto;
-  padding-top: 5px  ;
+  padding-top: 5px;
   color: white;
   text-align: center;
   display: block;
@@ -576,7 +575,7 @@ ul {
   cursor: pointer;
 }
 
-.movie-box .movie-info a .w-trailer{
+.movie-box .movie-info a .w-trailer {
   color: white;
   margin-top: 10px;
   font-size: 20px;
@@ -589,7 +588,7 @@ ul {
   border-radius: 20px 20px 20px 0;
 }
 
-.movie-box .movie-info a .b-ticket{
+.movie-box .movie-info a .b-ticket {
   padding-right: 50px;
   box-sizing: border-box;
   color: white;
@@ -605,10 +604,10 @@ ul {
   overflow: hidden;
 }
 
-.movie-box .movie-info a img{
+.movie-box .movie-info a img {
   top: 330px;
-  right:42px;
-  position:absolute;
+  right: 42px;
+  position: absolute;
   color: white;
   font-size: 20px;
   background-color: orange;
@@ -617,7 +616,7 @@ ul {
   height: 49px;
   padding: auto;
   transition: 0.5s ease-in-out;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .movie-box .movie-info a:hover .b-ticket {
@@ -630,8 +629,7 @@ ul {
   cursor: pointer;
 }
 
-
-.movie-box:hover  .movie-info {
+.movie-box:hover .movie-info {
   opacity: 1;
 }
 
