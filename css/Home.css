@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .full-bg{
     background-image: url(../image/bg-body.png);
     background-size: cover;
@@ -11,7 +16,7 @@
     height: 50px;
     width: 50px;
     display: inline-block;
-    margin-right: 15px;
+    padding-left: 100px;
 }
 
 .logo-home:hover{
@@ -19,45 +24,50 @@
     transition: 0.5s ease-in-out;
 }
 
-nav{
-    max-width: 1500px;
-    margin: auto;
-}
-
 .login{
     background-image: url(../image/ic-header-auth.svg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 30px;
-    width: 30px;
+    background-position: center ;
+    background-size: cotain;
     position: relative;
 }
 
-.login:hover .login-dropdown{
-    display: block;
+.menu-nav .nav-item a{
+    color:white;
+    text-align: center;
+    margin: 0 -10px;
 }
 
-.login-dropdown{
-    display: none;
-    width: 130px;
-    height: 100px;
-    margin-top: 25px;
+.menu-nav .nav-item{
+    width: 100%;
 }
 
-.login-dropdown >li>a{
+
+.menu-nav .nav-item:hover{
+    background-color: orange;
+}
+
+.text-hover{
     color: white;
 }
 
-.login-dropdown >li>a:hover{
+.text-hover:hover{
     color: orange;
 }
 
-.nav-item > a{
-    color:white;
+.button-login:hover{
+    display: block;
 }
 
-.nav-item > a:hover{
-    color: orange;
+#list-sidebar::-webkit-scrollbar{
+    width: 0;
 }
 
+@media screen and (max-width:1200px) {
+    .nav-out-sidebar{
+        display: none;
+    }
+    .nav-in-sidebar{
+        display: block;
+    }
+}

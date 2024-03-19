@@ -125,7 +125,7 @@ ul {
   padding: 5px;
 }
 
-.nav .menu > ul > li:hover {
+.nav .menu > ul > li:hover {  
   background-color: orange;
 }
 
