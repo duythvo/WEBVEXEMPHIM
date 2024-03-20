@@ -1,0 +1,20 @@
+#dienanh {
+  z-index: 1;
+  position: relative;
+  right: -2%;
+  box-shadow: 10px 0px 10px #d9791d;
+  background-color: yellow;
+}
+#tuyendung {
+  background-color: orange;
+  position: relative;
+  left: -2%;
+}
+#tuyendung > a {
+  color: white;
+}
+#tuyendung:hover,
+#tuyendung:hover > a {
+  color: black;
+  background-color: yellow;
+}
