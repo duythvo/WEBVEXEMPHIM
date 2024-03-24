@@ -1,3 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.full-bg {
+  background-image: url(../image/bg-body.png);
+  background-size: cover;
+  background-position: left top;
+  background-repeat: repeat-y;
+  height: 100vh;
+}
+
+.logo-home {
+  background: url(../image/icon-home.png) no-repeat center 5px;
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  padding-left: 100px;
+}
+
+.logo-home:hover {
+  background-position: center -43px;
+  transition: 0.5s ease-in-out;
+}
+
+.login {
+  background-image: url(../image/ic-header-auth.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cotain;
+  position: relative;
+}
+
+.menu-nav .nav-item a {
+  color: white;
+  text-align: center;
+  margin: 0 -10px;
+}
+
+.menu-nav .nav-item {
+  width: 100%;
+}
+
+.menu-nav .nav-item:hover {
+  background-color: orange;
+}
+
+.text-hover {
+  color: white;
+}
+
+.text-hover:hover {
+  color: orange;
+}
+
+.button-login:hover {
+  display: block;
+}
+
+#list-sidebar::-webkit-scrollbar {
+  width: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-out-sidebar {
+    display: none;
+  }
+  .nav-in-sidebar {
+    display: block;
+  }
+}
+
 #dienanh {
   z-index: 1;
   position: relative;
