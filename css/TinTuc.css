@@ -188,25 +188,63 @@ ul {
   overflow: hidden;
 }
 
-#dienanh {
-  z-index: 1;
-  position: relative;
-  right: -2%;
-  box-shadow: 10px 0px 10px #d9791d;
-  background-color: yellow;
-}
-#tuyendung {
-  background-color: orange;
-  position: relative;
-  left: -2%;
-}
-#tuyendung > a {
+#container-bg > h1 {
+  padding: 20px;
+  font-size: 1cm;
+  text-align: center;
   color: white;
 }
-#tuyendung:hover,
-#tuyendung:hover > a {
-  color: black;
+#dienanh,
+#tuyendung {
+  height: 100%;
+}
+#container-bg > #dienanh > ul {
+  width: max-content;
+  position: relative;
+  left: 50%;
+  transform: translateX(-62%);
+  text-align: center;
+  list-style-type: none;
+  display: flex;
+  margin: 20px;
+}
+#container-bg > #dienanh > ul > li {
+  background-color: orange;
+  font-size: 0.7cm;
+  border-radius: 30px 50px 50px 0;
+  width: 280px;
+  height: 70px;
+  text-indent: 20px;
+}
+#container-bg > #dienanh > ul > li:hover {
   background-color: yellow;
+}
+#container-bg > #dienanh > ul > li:first-child {
+  position: relative;
+  background-color: yellow;
+  transform: translateX(20%);
+  box-shadow: 10px 0px 10px #d9791d;
+}
+#container-bg > #dienanh > ul > li:first-child > p {
+  font-weight: bold;
+  transform: translateY(67%);
+  color: black;
+  left: -5%;
+}
+#container-bg > #dienanh > ul > li > a:hover {
+  color: black;
+}
+#container-bg > #dienanh > ul > li > a {
+  position: absolute;
+  width: 220px;
+  height: 70px;
+  left: 60%;
+  color: white;
+  font-weight: bold;
+}
+#container-bg > #dienanh > ul > li > a > p {
+  position: absolute;
+  top: 28%;
 }
 
 #listnew {

@@ -231,11 +231,13 @@ footer .nav h3 {
   right: -2%;
   box-shadow: 10px 0px 10px #d9791d;
   background-color: yellow;
+  cursor: pointer;
 }
 #tuyendung {
   background-color: orange;
   position: relative;
   left: -2%;
+  cursor: pointer;
 }
 #tuyendung > a {
   color: white;
@@ -246,10 +248,10 @@ footer .nav h3 {
   background-color: yellow;
 }
 .small-screen {
-  width: 45%;
-  height: 30%;
+  width: 35%;
+  height: 20%;
 }
 .small-link {
-  font-size: 12px;
+  font-size: 6px;
   vertical-align: middle;
 }
