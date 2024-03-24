@@ -31,127 +31,209 @@
     </style>
   </head>
   <body>
-    <div class="container-fluid full-bg">
-      <header class="fixed-top bg-black bg-opacity-50">
+    <div class="container-fluid web-bg full-bg p-0">
+      <header class="fixed-top bg-black bg-opacity-50 position-relative">
         <nav class="navbar navbar-expand-xl container">
-            <div class="col-3 p-0 d-block">
-                <a><img src="../image/logo-removebg-preview.png" alt=""></a>
+          <div class="col-3 p-0 d-block">
+            <a><img src="../image/logo-removebg-preview.png" alt="" /></a>
+          </div>
+          <div class="col-9 nav-out-sidebar d-xl-block">
+            <div class="row">
+              <ul class="nav justify-content-end login-text">
+                <img
+                  src="../image/ic-header-auth.svg"
+                  alt=""
+                  style="width: 30px"
+                />
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="">Đăng Nhập</a>
+                </li>
+                <li class="nav-item text-white my-auto">/</li>
+                <li class="nav-item me-3">
+                  <a href="" class="nav-link text-hover">Đăng Ký</a>
+                </li>
+                <img
+                  src="../image/footer-vietnam.svg"
+                  alt=""
+                  style="width: 30px"
+                />
+                <span class="text-white ms-2 my-auto">VN</span>
+              </ul>
             </div>
-            <div class="col-9 nav-out-sidebar d-xl-block">
-                <div class="row">
-                    <ul class="nav justify-content-end login-text">
-                        <img src="../image/ic-header-auth.svg" alt="" style="width: 30px;">
-                        <li class="nav-item ">
-                            <a class="nav-link text-hover" href="">Đăng Nhập</a>
-                        </li>
-                        <li class="nav-item text-white my-auto">/</li>
-                        <li class="nav-item me-3">
-                            <a href="" class="nav-link text-hover">Đăng Ký</a>
-                        </li>
-                        <img src="../image/footer-vietnam.svg" alt="" style="width: 30px;">
-                        <span class="text-white ms-2 my-auto">VN</span>
-                    </ul>
-                </div>
-                <div class="row mt-5 TH2D-nav mb-1 ">
-                    <div class="col-1 mt-1 p-0">
-                        <a class="logo-home m-0" href=""></a>
-                    </div>
-                    <div class="col-11 p-1 rounded-5" style="border: #d8047c solid 1px; height: 59px;">
-                        <ul class="nav menu-nav rounded-5 flex-nowrap" style="background-color: #d8047c;height: 50px;">
-                            <li class="nav-item rounded-start-5  text-nowrap">
-                                <a href="" class="nav-link rounded-start-5 " style="line-height: 34px;">PHIM</a>
-                            </li>
-                            <li class="nav-item  text-nowrap">
-                                <a href="" class="nav-link" style="line-height: 34px;">LỊCH CHIẾU</a>
-                            </li>
-                            <li class="nav-item  text-nowrap">
-                                <a href="" class="nav-link " style="line-height: 34px;">RẠP VÀ GIÁ</a>
-                            </li>
-                            <li class="nav-item text-nowrap">
-                                <a href="" class="nav-link" style="line-height: 34px;">KHUYỄN MÃI</a>
-                            </li>
-                            <li class="nav-item  text-nowrap">
-                                <a href="" class="nav-link" style="line-height: 34px;">HỎI VÀ ĐÁP</a>
-                            </li>
-                            <li class="nav-item  text-nowrap">
-                                <a href="" class="nav-link" style="line-height: 34px;">TIN TỨC</a>
-                            </li>
-                            <li class="nav-item  text-nowrap">
-                                <a href="" class="nav-link" style="line-height: 34px;">GIỚI THIỆU</a>
-                            </li>
-                            <li class="nav-item rounded-end-5  text-nowrap">
-                                <a href="" class="nav-link " style="line-height: 34px;">LIÊN HỆ</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="d-flex justify-content-end position-relative">
-                <button id="button-login" class="navbar-toggler">
-                    <img src="../image/ic-header-auth.svg" alt="" style="width: 25px;">
-                    <div id="list-login" class="position-absolute top-100 end-50 d-none" style="width: 140px;">
-                        <ul class="navbar-nav bg-black ps-3 p-3">
-                            <li class="nav-item"><a href="" class="nav-link text-hover text-start"><i class="fa fa-user">Đăng Nhập</i></a></li>
-                            <li class="nav-item"><a href="" class="nav-link text-hover text-start"><i class="fa fa-user">Đăng Ký</i></a></li>
-                        </ul>
-                    </div>  
-                </button>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-
-
-            <div class="offcanvas offcanvas-end bg-black nav-in-sidebar d-xl-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../image/logo-removebg-preview.png" alt=""></h5>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white" href="#">Phim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Lịch Chiếu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Rạp và Giá</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Khuyến Mãi</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Khác
-                      </a>
-                      <ul class="dropdown-menu bg-black">
-                        <li><a class="dropdown-item text-hover" href="#">Hỏi và Đáp</a></li>
-                        <li><a class="dropdown-item text-hover" href="#">Tin Tức</a></li>
-                        <li><a class="dropdown-item text-hover" href="#">Giới Thiệu</a></li>
-                        <li><a class="dropdown-item text-hover" href="#">Liên Hệ</a></li>
-                        
-                      </ul>
-                    </li>
-                  </ul>
-                  <hr class="border">
-                  <ul class="nav">
-                    <li class="nav-item"><img src="../image/footer-vietnam.svg" alt=""></li>
-                    <li class="nav-item text-white ms-3">Vietnamese</li>
-                  </ul>
-                </div>
+            <div class="row mt-5 TH2D-nav mb-1">
+              <div class="col-1 mt-1 p-0">
+                <a class="logo-home m-0" href=""></a>
               </div>
-        </nav>
-    </header>
+              <div
+                class="col-11 p-1 rounded-5"
+                style="border: #d8047c solid 1px; height: 59px"
+              >
+                <ul
+                  class="nav menu-nav rounded-5 flex-nowrap"
+                  style="background-color: #d8047c; height: 50px"
+                >
+                  <li class="nav-item rounded-start-5 text-nowrap">
+                    <a
+                      href=""
+                      class="nav-link rounded-start-5"
+                      style="line-height: 34px"
+                      >PHIM</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >LỊCH CHIẾU</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >RẠP VÀ GIÁ</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >KHUYỄN MÃI</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >HỎI VÀ ĐÁP</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >TIN TỨC</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >GIỚI THIỆU</a
+                    >
+                  </li>
+                  <li class="nav-item rounded-end-5 text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >LIÊN HỆ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-      <div
-        class="container justify-content-center position-relative"
-        style="margin-top: 180px"
-      >
+          <div class="d-flex justify-content-end position-relative">
+            <button id="button-login" class="navbar-toggler">
+              <img
+                src="../image/ic-header-auth.svg"
+                alt=""
+                style="width: 25px"
+              />
+              <div
+                id="list-login"
+                class="position-absolute top-100 end-50 d-none"
+                style="width: 140px"
+              >
+                <ul class="navbar-nav bg-black ps-3 p-3">
+                  <li class="nav-item">
+                    <a href="" class="nav-link text-hover text-start"
+                      ><i class="fa fa-user">Đăng Nhập</i></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link text-hover text-start"
+                      ><i class="fa fa-user">Đăng Ký</i></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-end bg-black nav-in-sidebar d-xl-none"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="../image/logo-removebg-preview.png" alt="" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Phim</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Lịch Chiếu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Rạp và Giá</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Khuyến Mãi</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Khác
+                  </a>
+                  <ul class="dropdown-menu bg-black">
+                    <li>
+                      <a class="dropdown-item text-hover" href="#"
+                        >Hỏi và Đáp</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-hover" href="#">Tin Tức</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-hover" href="#"
+                        >Giới Thiệu</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-hover" href="#">Liên Hệ</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <hr class="border" />
+              <ul class="nav">
+                <li class="nav-item">
+                  <img src="../image/footer-vietnam.svg" alt="" />
+                </li>
+                <li class="nav-item text-white ms-3">Vietnamese</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container justify-content-center position-relative">
         <h1 class="text-center text-white p-3">Tin Tức</h1>
         <div class="justify-content-center d-flex">
           <div id="dienanh" class="px-5 fs-3 p-3 rounded-top-4 rounded-end-5">
@@ -172,6 +254,5 @@
       </div>
     </div>
     <script src="../js/TinTuc.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
