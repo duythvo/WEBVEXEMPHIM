@@ -28,50 +28,67 @@ window.addEventListener("scroll", function () {
   }
 });
 
+function resizeDivs() {
+  var screenWidth = window.innerWidth;
+  if (screenWidth < 760) {
+    document.getElementById("dienanh").classList.add("small-screen");
+    document.getElementById("tuyendung").classList.add("small-screen");
+    document.querySelectorAll(".small-screen a").forEach(function (element) {
+      element.classList.add("small-link");
+    });
+  } else {
+    document.getElementById("dienanh").classList.remove("small-screen");
+    document.getElementById("tuyendung").classList.remove("small-screen");
+    document.querySelectorAll(".small-screen a").forEach(function (element) {
+      element.classList.remove("small-link");
+    });
+  }
+}
 
+// Gọi hàm khi trang được tải và khi cửa sổ thay đổi kích thước
+window.onload = resizeDivs;
+window.addEventListener("resize", resizeDivs);
 
-const buttonLogin = document.getElementById('button-login');
+const buttonLogin = document.getElementById("button-login");
 const width = window.innerWidth;
 
-buttonLogin.addEventListener('mouseover',()=>{
-    var listLogin = document.getElementById('list-login');
-    if(width>600){
-        listLogin.classList.remove('d-none');
+buttonLogin.addEventListener("mouseover", () => {
+  var listLogin = document.getElementById("list-login");
+  if (width > 600) {
+    listLogin.classList.remove("d-none");
+  }
+});
+
+buttonLogin.addEventListener("mouseout", () => {
+  var listLogin = document.getElementById("list-login");
+  if (width > 600) {
+    listLogin.classList.add("d-none");
+  }
+});
+
+buttonLogin.addEventListener("click", () => {
+  if (width <= 600) {
+    var listLogin = document.getElementById("list-login");
+    if (listLogin.classList.contains("d-none")) {
+      listLogin.classList.remove("d-none");
+    } else {
+      listLogin.classList.add("d-none");
     }
-
-})
-
-buttonLogin.addEventListener('mouseout',()=>{
-    var listLogin = document.getElementById('list-login');
-        if(width>600){
-            listLogin.classList.add('d-none');
-        }
-})
-
-buttonLogin.addEventListener('click',()=>{
-    if(width <=600){
-        var listLogin = document.getElementById('list-login');
-        if(listLogin.classList.contains('d-none')){
-            listLogin.classList.remove('d-none');
-        }else {
-            listLogin.classList.add('d-none');
-        }
-    }
-})
+  }
+});
 
 const swiper = new Swiper(".swiper", {
-    // Optional parameters
-    autoplay: {
-      delay: 4500,
-      disableOnInteraction: false,
-    },
-    direction: "horizontal",
-    loop: true,
-    slidesPerView: 5,
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
+  // Optional parameters
+  autoplay: {
+    delay: 4500,
+    disableOnInteraction: false,
+  },
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 5,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

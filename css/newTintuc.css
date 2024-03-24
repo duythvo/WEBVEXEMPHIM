@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.web-bg{
+.web-bg {
   background-image: url(../image/bg-body.png);
   background-size: cover;
   background-position: left top;
@@ -12,7 +12,7 @@
   height: 100%;
 }
 
-.full-bg{
+.full-bg {
   background-image: url(../image/bg-footer.jpg);
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -21,8 +21,7 @@
   width: 100%;
 }
 
-
-.logo-home{
+.logo-home {
   background: url(../image/icon-home.png) no-repeat center 5px;
   height: 50px;
   width: 50px;
@@ -30,75 +29,73 @@
   padding-left: 100px;
 }
 
-.logo-home:hover{
+.logo-home:hover {
   background-position: center -43px;
   transition: 0.5s ease-in-out;
 }
 
-.login{
+.login {
   background-image: url(../image/ic-header-auth.svg);
   background-repeat: no-repeat;
-  background-position: center ;
+  background-position: center;
   background-size: cotain;
   position: relative;
 }
 
-.menu-nav .nav-item a{
-  color:white;
+.menu-nav .nav-item a {
+  color: white;
   text-align: center;
   margin: 0 -10px;
 }
 
-.menu-nav .nav-item{
+.menu-nav .nav-item {
   width: 100%;
 }
 
-
-.menu-nav .nav-item:hover{
+.menu-nav .nav-item:hover {
   background-color: orange;
 }
 
-.text-hover{
+.text-hover {
   color: white;
 }
 
-.text-hover:hover{
+.text-hover:hover {
   color: orange;
 }
 
-.button-login:hover{
+.button-login:hover {
   display: block;
 }
 
-#list-sidebar::-webkit-scrollbar{
+#list-sidebar::-webkit-scrollbar {
   width: 0;
 }
 
-
-.poster img{
-  height:auto;
+.poster img {
+  height: auto;
   margin-top: 165px;
   width: 100vw;
   max-width: 100%;
 }
 
-@media screen and (max-width:1200px) {
-  .nav-out-sidebar{
-      display: none;
+@media screen and (max-width: 1200px) {
+  .nav-out-sidebar {
+    display: none;
   }
-  .nav-in-sidebar{
-      display: block;
+  .nav-in-sidebar {
+    display: block;
   }
 
-  .poster img{
-      height:auto;
-      margin-top: 130px;
-      width: 100vw;
-      max-width: 100%;
+  .poster img {
+    height: auto;
+    margin-top: 130px;
+    width: 100vw;
+    max-width: 100%;
   }
 }
 
-#main-content .current-movie{
+#main-content .current-movie {
   height: 400px;
 }
 .swiper {
@@ -106,12 +103,12 @@
   height: 500px;
 }
 
-.swiper  {
+.swiper {
   max-width: 1200px;
   width: 1200px;
 }
 
-.swiper .swiper-wrapper .swiper-slide img{
+.swiper .swiper-wrapper .swiper-slide img {
   max-height: 300px;
 }
 
@@ -138,29 +135,28 @@
   box-shadow: 0 0 60px rgba(255, 255, 255, 1);
 }
 
-
-#content .vouncher ul >li{
+#content .vouncher ul > li {
   border-radius: 30px 0 30px;
 }
 
-#content .vouncher img{
+#content .vouncher img {
   height: 180px;
 }
 
-#content .vouncher ul li:nth-child(1) img{
+#content .vouncher ul li:nth-child(1) img {
   width: 130px;
   height: 110px;
 }
 
 #content .vouncher ul li:nth-child(4):hover,
-#content .vouncher ul li:nth-child(3):hover,    
-#content .vouncher ul li:nth-child(2):hover{ 
+#content .vouncher ul li:nth-child(3):hover,
+#content .vouncher ul li:nth-child(2):hover {
   filter: brightness(90%);
   background-color: lightgrey;
   border-radius: 30px 0px 30px;
 }
 
-#content .news ul{
+#content .news ul {
   max-width: 1500px;
   height: 100%;
   margin: 0 auto;
@@ -211,24 +207,22 @@
   background-color: orange;
 }
 
-footer .logo-footer{
+footer .logo-footer {
   width: fit-content;
   margin: auto;
 }
 
-footer .nav h3{
-  background-color: #601c5c ;
+footer .nav h3 {
+  background-color: #601c5c;
   padding: 10px;
-  
-  
 }
 
-.text-grey{
+.text-grey {
   color: grey;
   font-size: 18px;
 }
 
-.text-grey:hover{
+.text-grey:hover {
   color: orange;
 }
 #dienanh {
@@ -250,4 +244,12 @@ footer .nav h3{
 #tuyendung:hover > a {
   color: black;
   background-color: yellow;
+}
+.small-screen {
+  width: 45%;
+  height: 30%;
+}
+.small-link {
+  font-size: 12px;
+  vertical-align: middle;
 }
