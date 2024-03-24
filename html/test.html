@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,17 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/Home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="../js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
     <div class="container-fluid web-bg full-bg p-0 ">
         <header class="fixed-top bg-black bg-opacity-50">
             <nav class="navbar navbar-expand-xl container">
                 <div class="col-3 p-0 d-block">
-                    <a><img  src="../image/logo-removebg-preview.png" alt=""></a>
+                    <a><img src="../image/logo-removebg-preview.png" alt=""></a>
                 </div>
                 <div class="col-9 nav-out-sidebar d-xl-block">
                     <div class="row">
@@ -44,22 +47,22 @@
                                 <li class="nav-item  text-nowrap">
                                     <a href="" class="nav-link" style="line-height: 34px;">LỊCH CHIẾU</a>
                                 </li>
-                                <li class="nav-item  text-nowrap" >
+                                <li class="nav-item  text-nowrap">
                                     <a href="" class="nav-link " style="line-height: 34px;">RẠP VÀ GIÁ</a>
                                 </li>
-                                <li class="nav-item text-nowrap" >
+                                <li class="nav-item text-nowrap">
                                     <a href="" class="nav-link" style="line-height: 34px;">KHUYỄN MÃI</a>
                                 </li>
-                                <li class="nav-item  text-nowrap" >
+                                <li class="nav-item  text-nowrap">
                                     <a href="" class="nav-link" style="line-height: 34px;">HỎI VÀ ĐÁP</a>
                                 </li>
-                                <li class="nav-item  text-nowrap" >
+                                <li class="nav-item  text-nowrap">
                                     <a href="" class="nav-link" style="line-height: 34px;">TIN TỨC</a>
                                 </li>
-                                <li class="nav-item  text-nowrap" >
+                                <li class="nav-item  text-nowrap">
                                     <a href="" class="nav-link" style="line-height: 34px;">GIỚI THIỆU</a>
                                 </li>
-                                <li class="nav-item rounded-end-5  text-nowrap" >
+                                <li class="nav-item rounded-end-5  text-nowrap">
                                     <a href="" class="nav-link " style="line-height: 34px;">LIÊN HỆ</a>
                                 </li>
                             </ul>
@@ -68,22 +71,22 @@
                 </div>
 
                 <div class="d-flex justify-content-end position-relative">
-                    <button id="button-login"  class="navbar-toggler">
+                    <button id="button-login" class="navbar-toggler">
                         <img src="../image/ic-header-auth.svg" alt="" style="width: 25px;">
                         <div id="list-login" class="position-absolute top-100 end-50 d-none" style="width: 140px;">
                             <ul class="navbar-nav bg-black ps-3 p-3">
-                                <li class="nav-item"><a href="" class="nav-link text-hover text-start">Đăng Nhập</a></li>
-                                <li class="nav-item"><a href="" class="nav-link text-hover text-start">Đăng Ký</a></li>
+                                <li class="nav-item"><a href="" class="nav-link text-hover text-start"><i class="fa fa-user">Đăng Nhập</i></a></li>
+                                <li class="nav-item"><a href="" class="nav-link text-hover text-start"><i class="fa fa-user">Đăng Ký</i></a></li>
                             </ul>
                         </div>  
                     </button>
-                    <button class="navbar-toggler d-xl-none d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                 </div>
 
 
-                <div class="offcanvas offcanvas-end bg-black d-xl-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                       <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../image/logo-removebg-preview.png" alt=""></h5>
                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -91,36 +94,37 @@
                     <div class="offcanvas-body">
                       <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                          <a class="nav-link text-hover" href="#">HOME</a>
+                          <a class="nav-link text-white" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-hover" href="#">PHIM</a>
+                          <a class="nav-link text-white" href="#">Phim</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-hover" href="#">LỊCH CHIẾU</a>
+                            <a class="nav-link text-white" href="#">Lịch Chiếu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-hover" href="#">RẠP VÀ GIÁ</a>
+                            <a class="nav-link text-white" href="#">Rạp và Giá</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-hover" href="#">KHUYẾN MÃI</a>
+                            <a class="nav-link text-white" href="#">Khuyến Mãi</a>
                         </li>
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle text-white" href="##"  role="button" data-bs-toggle="dropdown">
-                            KHÁC
+                          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Khác
                           </a>
                           <ul class="dropdown-menu bg-black">
-                            <li><a class="dropdown-item text-hover" href="#">HỎI VÀ ĐÁP</a></li>
-                            <li><a class="dropdown-item text-hover" href="#">TIN TỨC</a></li>
-                            <li><a class="dropdown-item text-hover " href="#">GIỚI THIỆU</a></li>
-                            <li><a class="dropdown-item text-hover " href="#">LIÊN HỆ</a></li>
+                            <li><a class="dropdown-item text-hover" href="#">Hỏi và Đáp</a></li>
+                            <li><a class="dropdown-item text-hover" href="#">Tin Tức</a></li>
+                            <li><a class="dropdown-item text-hover" href="#">Giới Thiệu</a></li>
+                            <li><a class="dropdown-item text-hover" href="#">Liên Hệ</a></li>
+                            
                           </ul>
                         </li>
                       </ul>
-                      <hr class="border border-white">
-                      <ul class="d-flex list-unstyled">
-                        <li class="me-4"><img src="../image/footer-vietnam.svg" alt=""></li>
-                        <li class="text-white">Vietnamese</li>
+                      <hr class="border">
+                      <ul class="nav">
+                        <li class="nav-item"><img src="../image/footer-vietnam.svg" alt=""></li>
+                        <li class="nav-item text-white ms-3">Vietnamese</li>
                       </ul>
                     </div>
                   </div>
@@ -352,7 +356,7 @@
                                 <div style="width: fit-content;margin: auto;">
                                     <img src="../image/dathongbao.png" alt="">
                                 </div>
-                                <p class="text-center">
+                                <p class="text-center mt-5 text-white">
                                     CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM TH2D
                                     <br>
                                     ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
@@ -370,4 +374,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/test.js"></script>
 </body>
+
 </html>
