@@ -38,7 +38,7 @@ function resizeDivs() {
     });
   } else {
     document.getElementById("dienanh").classList.remove("small-screen");
-    document.getElementsByClassName("news").classList.remove("small-screen");
+    document.getElementById("tuyendung").classList.remove("small-screen");
     document.querySelectorAll(".small-screen a").forEach(function (element) {
       element.classList.remove("small-link");
     });

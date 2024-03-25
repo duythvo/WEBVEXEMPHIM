@@ -248,10 +248,15 @@ footer .nav h3 {
   background-color: yellow;
 }
 .small-screen {
-  width: 35%;
-  height: 20%;
+  width: 45%;
 }
 .small-link {
-  font-size: 6px;
-  vertical-align: middle;
+  font-size: 12px;
+  text-align: center;
+}
+.hover-yellow {
+  color: black;
+}
+.col-md-4 > a:hover .hover-yellow {
+  background-color: yellow !important;
 }
