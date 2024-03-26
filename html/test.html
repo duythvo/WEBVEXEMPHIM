@@ -78,7 +78,7 @@
                         </div>  
                     </button>
                     <button class="navbar-toggler d-xl-none d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon white"></span>
                     </button>
                 </div>
 
@@ -130,157 +130,193 @@
         <div class="poster">
             <img src="../image/gap-lai-chi-bau.jpg" alt="">
         </div>
-        
+        <!-- Content cho desktop -->
         <div id="content">
             <div id="main-content">
                 <h1 class="text-center text-warning mt-3">PHIM ĐANG CHIẾU</h1>
-                <div class="current-movie mt-3 bg-warning position-relative">
-                    <div class="swiper ">
-                        <div class="swiper-wrapper mt-4">
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/poster-quy-cau2.jpg" alt="">
+                <div class="bg-warning">
+                    <div class="current-movie mt-3 position-relative">
+                        <div class="swiper1 swiper">
+                            <div class="swiper-wrapper mt-4">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/poster-quy-cau2.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/teeyod1.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/da-chieu-hon-chien.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/mat-vu-ong.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/ruou-cot-nguoi-poster.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/noryang-poster.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/tokyo-chim-trong-bien-lua.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/digimon.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/vong-vay-ca-map.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/tron-tim-voi-quy-poster.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/tru-quy.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/katak.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/gap-lai-chi-bau (1).jpg" alt="">
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/teeyod1.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/da-chieu-hon-chien.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/mat-vu-ong.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/ruou-cot-nguoi-poster.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/noryang-poster.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/tokyo-chim-trong-bien-lua.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/digimon.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/vong-vay-ca-map.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/tron-tim-voi-quy-poster.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/tru-quy.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/katak.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/gap-lai-chi-bau (1).jpg" alt="">
-                            </div>
+                            
                         </div>
-                        
-                    </div>
-                    <div class="swiper-button-prev ms-5">
-                        <img src="../image/icon-start.png" alt="">
-                    </div>
+                        <div class="swiper-button-prev ms-5 " id="btn-prev">
+                            <img src="../image/icon-start.png" alt="">
+                        </div>
+    
+                        <div class="swiper-button-next me-5 " id="btn-next">
+                            <img src="../image/icon-start.png" alt="">
+                        </div>
 
-                    <div class="swiper-button-next me-5">
-                        <img src="../image/icon-start.png" alt="">
+                        <div class="swiper1-pagination swiper-pagination d-xl-none" ></div>
                     </div>
                 </div>
 
                 <h1 class="text-center text-warning mt-3">PHIM SẮP CHIẾU</h1>
-                <div class="up-coming bg-black bg-opacity-50 position-relative">
-                    <div class="swiper">
-                        <div class="swiper-wrapper mt-4">
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/tra.jpg" alt="">
+                <div class="bg-black bg-opacity-50 mt-5">
+                    <div class="up-coming position-relative">
+                        <div class="swiper-upcoming swiper">
+                            <div class="swiper-wrapper mt-4">
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/tra.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/spy-x-family.jpeg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/poster-mai.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/argylle-sieu-diep-vien.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/sang-den.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/madame-web.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/biet-doi-san-rong.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/pororo.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/boi-dem.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img-fluid" src="../image/b4s.jpg" alt="">
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/spy-x-family.jpeg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/poster-mai.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/argylle-sieu-diep-vien.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/sang-den.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/madame-web.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/biet-doi-san-rong.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/pororo.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/boi-dem.jpg" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-fluid" src="../image/b4s.jpg" alt="">
-                            </div>
+                            
                         </div>
-                        
-                    </div>
-                    <div class="swiper-button-prev ms-5">
-                        <img src="../image/icon-start.png" alt="">
-                    </div>
-
-                    <div class="swiper-button-next me-5">
-                        <img src="../image/icon-start.png" alt="">
+                        <div class="swiper-upcoming-button-prev ms-5">
+                            <img src="../image/icon-start.png " alt="">
+                        </div>
+                        <div class="swiper-upcoming-button-next me-5">
+                            <img src="../image/icon-start.png" alt="" > 
+                        </div>
+                        <div class="swiper-upcoming-pagination swiper-pagination d-xl-none" ></div>
                     </div>
                 </div>
             </div>
-            <div class="vouncher mt-5">
-                <ul class ="nav d-flex justify-content-between">
-                    <li class="nav-item mt-5">
-                        <img class="ms-4" src="../image/icon-promotion.png" alt="">
-                        <h2 class="text-white text-center">Khuyễn Mãi</h2>
-                    </li>
-                    <li class="nav-item bg-white p-3 pt-4 btn">
-                        <a href="" class="navlink"><img src="../image/WED.png" alt=""></a>
-                    </li>
-                    <li class="nav-item bg-white p-3 pt-4 btn">
-                        <a href="" class="navlink"><img src="../image/DATE.png" alt=""></a>
 
-                    </li>
-                    <li class="nav-item bg-white p-3 pt-4 me-5 btn">
-                        <a href="" class="navlink"><img src="../image/2024.png" alt=""></a>
-                    </li>
-                </ul>
+
+            <div class="vouncher mt-5 d-flex">
+                <div class="logo-vouncher ms-5">
+                    <img src="../image/icon-promotion.png" alt="">
+                    <h3 class="text-white">Khuyễn Mãi</h3>
+                </div>
+                <div class="d-flex list-vouncher d-xl-flex d-none ms-5">
+                    <div class="p-3 bg-white ms-5 list-item">
+                        <a href=""><img class="img-fluid" src="../image/WED.png" alt=""></a>
+                    </div>
+                    <div class="p-3 bg-white ms-5 list-item">
+                        <a href=""><img src="../image/DATE.png" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="p-3 bg-white ms-5 list-item">
+                        <a href=""><img src="../image/2024.png" alt="" class="img-fluid"></a>
+                    </div>
+                </div>
+
+                <div id="carouselExampleControls" class="carousel slide d-xl-none d-block main-list-vouncher" data-bs-ride="carousel" style="width: 400px;margin: auto;">
+                    <div class="carousel-inner list-vouncher">
+                      <div class="carousel-item active list-item p-3 bg-white">
+                        <img src="../image/WED.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item list-item p-3 bg-white">
+                        <img src="../image/DATE.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item list-item p-3 bg-white">
+                        <img src="../image/2024.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
 
-            <div class="news mt-5">
-                <ul class="nav d-flex justify-content-between">
-                    <li class="nav-item mt-5">
-                        <img class="ms-0" src="../image/iocn-news.png" alt="">
-                        <h2 class="text-white text-center" >Tin Tức</h2>
-                    </li>
-                    <li class="nav-item mt-5">
-                        <a class="nav-link d-flex" href="">
+            
+
+            <div class="news mt-5 d-flex position-relative">
+                <div class="me-5 d-flex flex-column justify-content-center logo-new">
+                    <img src="../image/iocn-news.png" alt="">
+                    <h3 class="text-white ">Tin Tức</h3>
+                </div>
+                <div class="d-flex main-new flex-wrap">
+                    <div class="new1 p-3 nav-link me-3" style="background-color: #d8047c;" >
+                        <a class="d-flex nav-link" href="">
                             <div class="txt">
                                 <h5 class="text-white">TH2D TUYỂN DỤNG NHÂN SỰ</h5>
                                 <p class="text-white">TH2D tuyển dụng các ứng viên tiềm năng, đam mê trẻ em và làm việc trong môi trường năng động, chuyên nghiệp mong muốn được cống hiến và phát triển bản thân. </p>
                             </div>
-                            <img class="float-end" src="../image/tuyendung.png" alt="">
+                            <div class="pic d-flex">
+                                <img class="float-end" src="../image/tuyendung.png" alt="">
+                            </div> 
                         </a>
-                    </li>
-                    <li class="nav-item mt-5">
-                        <a class="nav-link d-flex" href="">
+                    </div>
+                    
+                    <div class="new1 p-3 nav-link" style="background-color: #d8047c;" >
+                        <a class="d-flex nav-link" href="">
                             <div class="txt">
                                 <h5 class="text-white">CÓ THỂ BẠN CHƯA BIẾT TH2D ĐỒNG NAI ĐANG SỬ DỤNG 100% ĐIỆN NĂNG LƯỢNG MẶT TRỜI</h5>
                                 <p class="text-white">Hướng đến sự phát triển bền vững, khách hàng có thể trải nghiệm những thước phim điện ảnh chất lượng tại TH2D ĐỒNG NAI với 100% điện năng lượng mặt trời thân thiện với môi trường và sẽ đầu tư cho toàn hệ thống trong tương lai.</p>
                             </div>
-                            <img class="float-end" src="../image/cinestar-hue.jpg" alt="">
+                            <div class="pic d-flex">
+                                <img class="float-end" src="../image/cinestar-hue.jpg" alt="">
+                            </div>
                         </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
-
+ 
         <footer>
             <img style="width: 100%;margin-top: 50px;" src="../image/line-bg.png" alt="">
                     <div class="container-footer">
@@ -297,7 +333,7 @@
                                     </li> 
                                 </ul>
                             </div>
-                            <div class="content-footer2">
+                            <div class="content-footer2 nav-item">
                                 <h3 class="text-center text-white">HỆ THỐNG RẠP</h3>
                                 <ul class="nav flex-column">
                                     <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Đồng Nai</a></li>
@@ -306,7 +342,7 @@
                                     <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Gò Vấp</a></li>
                                 </ul>
                             </div>
-                            <div class="content-footer3">
+                            <div class="content-footer3 nav-item">
                                 <h3 class="text-center text-white">TH2D</h3>
                                 <ul class="content-TH2D nav flex-column">
                                     <li class="nav-item text-center"><a class="nav-link text-grey" href="">Phim đang chiếu</a></li>
@@ -316,7 +352,7 @@
                                     <li class="nav-item text-center"><a class="nav-link text-grey" href="">Khuyến mãi</a></li>
                                 </ul>
                             </div>
-                            <div class="content-footer4">
+                            <div class="content-footer4 nav-item">
                                 <h3 class="text-white text-center">THÔNG TIN</h3>
                                 <ul class="content-thongtin nav flex-column">
                                     <li class="nav-item text-center"><a class="nav-link text-grey" href="">Giới thiệu</a></li>
@@ -326,7 +362,7 @@
                                 </ul>
                             </div>
             
-                            <div class="content-footer5">
+                            <div class="content-footer5 nav-item">
                                 <h3 class="text-center text-white">CHÍNH SÁCH VÀ QUY ĐỊNH</h3>
                                 <ul class="content-chinhsach nav flex-column">
                                     <li class="nav-item text-center"><a class="nav-link text-grey" href="">Quy định chung</a></li>
@@ -338,7 +374,7 @@
                         </div>
                         <div id="thanhtoan">
                             <div class="content-thanhtoan mt-5 bg-black">
-                                <h3 class="text-center">Chấp nhận thanh toán</h3>
+                                <h3 class="text-center text-white">Chấp nhận thanh toán</h3>
                                 <ul class="nav justify-content-center">
                                     <li class="nav-item"><a class="nav-link" href=""><img src="../image/napas-40.png" alt=""></a></li>
                                     <li class="nav-item"><a class="nav-link" href=""><img src="../image/payment-visa.png" alt=""></a></li>
@@ -352,7 +388,7 @@
                                 <div style="width: fit-content;margin: auto;">
                                     <img src="../image/dathongbao.png" alt="">
                                 </div>
-                                <p class="text-center">
+                                <p class="text-center text-white">
                                     CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM TH2D
                                     <br>
                                     ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
