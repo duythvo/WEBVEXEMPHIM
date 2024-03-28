@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   vanBan.forEach(function (vanBan) {
     var mangTu = vanBan.innerText.split(/\s+/);
-    var gioiHanTu = mangTu.slice(0, 48).join(" "); //lấy 48 từ đầu tiên
+    var gioiHanTu = mangTu.slice(0, 20).join(" "); //lấy 48 từ đầu tiên
     vanBan.innerText = gioiHanTu;
   });
 });
