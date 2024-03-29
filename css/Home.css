@@ -4,12 +4,21 @@
     box-sizing: border-box;
 }
 
+
 .web-bg{
     background-image: url(../image/bg-body.png);
     background-size: cover;
     background-position: left top;
     background-repeat: repeat-y;
     height: 100%;
+}
+
+.bg-orange{
+  background-color: #e8840c;
+}
+
+.bg-purple{
+  background-color: #d8047c;
 }
 
 .full-bg{
@@ -19,6 +28,18 @@
     background-size: cover;
     position: relative;
     width: 100%;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.7s ease-out;
+  pointer-events: none;
+}
+
+.activeFilm {
+  opacity: 1;
+  transition: opacity 0.7s ease-out;
+  pointer-events: auto;
 }
 
 
@@ -96,7 +117,7 @@
 
 #main-content .up-coming,
 #main-content .current-movie{
-    height: 400px;
+    height: 450px;
     max-width: 1500px;
     margin: auto;
     overflow: hidden;
@@ -111,8 +132,6 @@
 }
 
 
-
-
 .swiper-upcoming .swiper-wrapper .swiper-slide img, 
 .swiper1 .swiper-wrapper .swiper-slide img{
     max-height: 300px;
@@ -125,6 +144,7 @@
     position: absolute;
     top: 0%;
     margin-left: -10px;
+    margin-top: -10px;
     background-color: #ec9424;
   }
 
@@ -223,6 +243,56 @@
 
   }
 
+  #main-content .title-film {
+    max-width: 200px;
+    height: 350px;
+  }
+
+  #main-content .title-film .logo-2d{
+      margin-left: 80px;
+      height: 35px;
+  }
+
+  #main-content .info-hover{
+    top:0%;
+    width: 230px;
+    height: 390px;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  #main-content .info-hover .detail{
+    width: fit-content;
+    margin: auto;
+  }
+
+  #main-content .info-hover .info-detail{
+    max-width: 200px;
+    max-height: 165px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+
+  #main-content .info-hover .other-link a{
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  #main-content .swiper-slide:hover .info-hover {
+    opacity: 1;
+    transition: opacity 0.7s ease-out;
+    pointer-events: auto;
+  }
+
+  #main-content .info-hover .other-link a:hover,
+  #main-content .info-hover .detail:hover{
+    background-color: #d8047c;
+  }
+
+  #main-content .info-hover .other-link a:hover .logo-star{
+    background-color: #ec9424;
+  }
+ 
+
   #content .vouncher{
     max-width: 1500px;
     margin: auto;
@@ -240,8 +310,8 @@
   }
 
 #content .vouncher img{
-    height: 180px;
-    width: 266px;
+    height: 160px;
+    width: 280px;
 }
 
 
@@ -395,7 +465,7 @@
   }
 
   footer .nav h3{
-    background-color: #601c5c ;
+    /* background-color: #601c5c ; */
     padding: 10px;
   }
 
