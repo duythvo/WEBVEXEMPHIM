@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* html {
+html {
   font-family: Arial, Helvetica, sans-serif;
 }
 #container {
@@ -142,14 +142,14 @@ ul {
   border-radius: 0 30px 30px 0;
 }
 
-/* .nav .menu > ul > li > a {
+.nav .menu > ul > li > a {
   text-decoration: none;
   color: white;
   padding: 0 10px;
   font-size: 18px;
   line-height: 35px;
   display: block;
-} */
+}
 
 .login {
   position: absolute;
@@ -183,7 +183,7 @@ ul {
   width: 100vw;
   max-width: 100%;
   height: auto;
-} */
+}
 
 /* cái thanh vàng vàng */
 #content {
@@ -271,23 +271,11 @@ ul {
 }
 
 /* content phim dang chieu */
-.ds-phim,.container {
+#content .ds-phim {
   margin-top: 10px;
-  width: 80%;
+  width: 100%;
+  position: relative;
   height: fit-content;
-  background-color: aqua;
-  /* position: relative;
-  left: 50%;
-  transform: translateX(-50%); */
-  margin:0 auto;
-  padding-top: 2%;
-}
-
-
-.phim{
- background-color: rgb(244, 219, 197);
- height: 40vh;
- margin-bottom: 2%;
 }
 
 #content .ds-phim .ds-phim-col {
