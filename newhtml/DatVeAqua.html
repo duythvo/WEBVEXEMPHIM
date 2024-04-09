@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/newTintuc.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid web-bg full-bg p-0">
+      <header class="fixed-top bg-black bg-opacity-50">
+        <nav class="navbar navbar-expand-xl container">
+          <div class="col-3 p-0 d-block">
+            <a><img src="../image/logo-removebg-preview.png" alt="" /></a>
+          </div>
+          <div class="col-9 nav-out-sidebar d-xl-block">
+            <div class="row">
+              <ul class="nav justify-content-end login-text">
+                <img
+                  src="../image/ic-header-auth.svg"
+                  alt=""
+                  style="width: 30px"
+                />
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="">Đăng Nhập</a>
+                </li>
+                <li class="nav-item text-white my-auto">/</li>
+                <li class="nav-item me-3">
+                  <a href="" class="nav-link text-hover">Đăng Ký</a>
+                </li>
+                <img
+                  src="../image/footer-vietnam.svg"
+                  alt=""
+                  style="width: 30px"
+                />
+                <span class="text-white ms-2 my-auto">VN</span>
+              </ul>
+            </div>
+            <div class="row mt-5 TH2D-nav mb-1">
+              <div class="col-1 mt-1 p-0">
+                <a class="logo-home m-0" href=""></a>
+              </div>
+              <div
+                class="col-11 p-1 rounded-5"
+                style="border: #d8047c solid 1px; height: 59px"
+              >
+                <ul
+                  class="nav menu-nav rounded-5 flex-nowrap"
+                  style="background-color: #d8047c; height: 50px"
+                >
+                  <li class="nav-item rounded-start-5 text-nowrap">
+                    <a
+                      href=""
+                      class="nav-link rounded-start-5"
+                      style="line-height: 34px"
+                      >PHIM</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >LỊCH CHIẾU</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >RẠP VÀ GIÁ</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >KHUYỄN MÃI</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >HỎI VÀ ĐÁP</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >TIN TỨC</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >GIỚI THIỆU</a
+                    >
+                  </li>
+                  <li class="nav-item rounded-end-5 text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >LIÊN HỆ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end position-relative">
+            <button id="button-login" class="navbar-toggler">
+              <img
+                src="../image/ic-header-auth.svg"
+                alt=""
+                style="width: 25px"
+              />
+              <div
+                id="list-login"
+                class="position-absolute top-100 end-50 d-none"
+                style="width: 140px"
+              >
+                <ul class="navbar-nav bg-black ps-3 p-3">
+                  <li class="nav-item">
+                    <a href="" class="nav-link text-hover text-start"
+                      >Đăng Nhập</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link text-hover text-start"
+                      >Đăng Ký</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <button
+              class="navbar-toggler d-xl-none d-block"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+            >
+              <span>
+                <img
+                  class="img-fluid"
+                  src="../image/hamburger.png"
+                  alt=""
+                  style="width: 35px"
+                />
+              </span>
+            </button>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-end bg-black d-xl-none"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="../image/logo-removebg-preview.png" alt="" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close-white btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">PHIM</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">LỊCH CHIẾU</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">RẠP VÀ GIÁ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">KHUYẾN MÃI</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="##"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    KHÁC
+                  </a>
+                  <ul class="dropdown-menu bg-black">
+                    <li>
+                      <a class="dropdown-item text-hover" href="#"
+                        >HỎI VÀ ĐÁP</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-hover" href="#">TIN TỨC</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-hover" href="#"
+                        >GIỚI THIỆU</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-hover" href="#">LIÊN HỆ</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <hr class="border border-white" />
+              <ul class="d-flex list-unstyled">
+                <li class="me-4">
+                  <img src="../image/footer-vietnam.svg" alt="" />
+                </li>
+                <li class="text-white">Vietnamese</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div
+        id="content"
+        class="container-fluid justify-content-center position-relative"
+      >
+        <div id="poster" style="height: 180px"></div>
+        <h1 class="text-center text-white p-3">Đặt vé</h1>
+        <div class="row justify-content-center g-1">
+          <div
+            class="col-lg-8 p-0 rounded-top-5 pb-3 border position-relative"
+            style="background-color: rgb(216, 4, 124)"
+          >
+            <nav
+              class="nav row border-bottom border-3 text-white p-0 m-0 pb-3 mb-3"
+            >
+              <a
+                class="nav-link col active fs-4 text-white text-center"
+                href="javascript:history.back()"
+                aria-current="page"
+                >Quay lại</a
+              >
+              <p
+                style="cursor: pointer"
+                class="nav-link col fs-4 text-white border-bottom border-3 text-center"
+                href=""
+              >
+                01. Đặt ghế
+              </p>
+              <p
+                style="cursor: pointer"
+                class="nav-link col fs-4 text-white text-center"
+                href=""
+              >
+                02. Thanh Toán
+              </p>
+              <p
+                style="cursor: pointer"
+                class="nav-link col fs-4 text-white text-center"
+                href=""
+              >
+                03. Thông tin vé
+              </p>
+            </nav>
+            <div class="container-fluid">
+              <div class="container-fluid d-flex row">
+                <h4 class="col-3 text-warning my-3 me-4">Ngày chiếu</h4>
+                <a
+                  name=""
+                  id=""
+                  class="col btn border text-dark btn-warning my-3 mx-1"
+                  href="#"
+                  role="button"
+                  >06/05</a
+                >
+                <a
+                  name=""
+                  id=""
+                  class="col btn border text-white my-3 mx-1"
+                  href="#"
+                  role="button"
+                  >07/05</a
+                >
+                <a
+                  name=""
+                  id=""
+                  class="col btn border text-white my-3 mx-1"
+                  href="#"
+                  role="button"
+                  >08/05</a
+                >
+                <a
+                  name=""
+                  id=""
+                  class="col btn border text-white my-3 mx-1"
+                  href="#"
+                  role="button"
+                  >09/05</a
+                >
+                <a
+                  name=""
+                  id=""
+                  class="col btn border text-white my-3 mx-1"
+                  href="#"
+                  role="button"
+                  >10/05</a
+                >
+                <a
+                  name=""
+                  id=""
+                  class="col btn border text-white my-3 mx-1"
+                  href="#"
+                  role="button"
+                  >11/05</a
+                >
+                <a
+                  name=""
+                  id=""
+                  class="col btn border text-white my-3 mx-1"
+                  href="#"
+                  role="button"
+                  >12/05</a
+                >
+              </div>
+              <div class="container-fluid d-flex row">
+                <h4 class="text-warning my-3 me-4 col-3">Suất chiếu</h4>
+                <a
+                  name=""
+                  id=""
+                  class="col-2 btn border text-dark btn-warning my-3 mx-4"
+                  href="#"
+                  role="button"
+                  >13:30</a
+                >
+                <a
+                  name=""
+                  id=""
+                  class="col-2 btn border text-white my-3 mx-4"
+                  href="#"
+                  role="button"
+                  >16:00</a
+                >
+                <a
+                  name=""
+                  id=""
+                  class="col-2 btn border text-white my-3 mx-4"
+                  href="#"
+                  role="button"
+                  >20:30</a
+                >
+              </div>
+
+              <strong class="text-warning"
+                >* Không được bỏ trống 01 ghế bên cạnh hoặc ghế đầu tiên của
+                dãy</strong
+              >
+              <div class="container-fluid row mt-4">
+                <div class="col-3 text-white mt-5">
+                  <img class="my-2" src="../image/GheDonChuaChon.svg" alt="" />
+                  Ghế chưa chọn
+                  <br />
+                  <img class="my-2" src="../image/GheDonDaChon.svg" alt="" />
+                  Ghế đã chọn
+                  <br />
+                  <img class="my-2" src="../image/GheDonDangChon.svg" alt="" />
+                  Ghế đang được chọn
+                </div>
+                <div class="col-9 mt-3">
+                  <div class="container mx-4">
+                    <div
+                      class="row justify-content-center align-items-center g-2"
+                    >
+                      <strong class="col-12 text-white text-center"
+                        >Màn hình</strong
+                      >
+                      <img
+                        class="col-12 mb-3"
+                        src="../image/ManHinh.png"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="row justify-content-center align-items-center g-2 mt-2"
+                    >
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="row justify-content-center align-items-center g-2 mt-2"
+                    >
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="row justify-content-center align-items-center g-2 mt-2"
+                    >
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-1"
+                        src="../image/GheDonChuaChon.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="row justify-content-center align-items-center g-2 mt-2"
+                    >
+                      <img
+                        class="col-2"
+                        src="../image/GheDoiChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-2"
+                        src="../image/GheDoiChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-2"
+                        src="../image/GheDoiChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-2"
+                        src="../image/GheDoiChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-2"
+                        src="../image/GheDoiChuaChon.svg"
+                        alt=""
+                      />
+                      <img
+                        class="col-2"
+                        src="../image/GheDoiChuaChon.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col p-0 rounded-top-5 pb-3 border px-3 pt-3"
+            style="background-color: rgb(179, 5, 104)"
+          >
+            <div
+              id="total"
+              class="container-fluid border-bottom border-3 text-end text-white fs-2"
+            >
+              0đ
+            </div>
+            <div id="title" class="border-bottom border-3">
+              <strong class="fs-5 text-white"
+                >Aquaman Và Vương Quốc Thất Lạc</strong
+              >
+              <p class="fs-5 text-white pb-1 my-1">
+                Thứ Hai, ngày 06/05 13:30 - Rạp 01
+              </p>
+            </div>
+            <div id="ghe" class="row m-0 border-bottom border-3">
+              <p class="col fs-5 text-white my-1 ps-0">Ghế :</p>
+              <p id="tienghe" class="col-1 text-white fs-5 my-1 px-0 mx-0 me-1">
+                0đ
+              </p>
+            </div>
+            <div id="combo" class="row m-0 border-bottom border-3">
+              <button
+                type="button"
+                class="btn col fs-5 text-white my-1 ps-0 text-start"
+                data-bs-toggle="modal"
+                data-bs-target="#modalId"
+              >
+                🍿 Chọn combo :
+              </button>
+              <p
+                id="tiencombo"
+                class="col-1 text-white fs-5 my-1 px-0 mx-0 my-3 me-1"
+              >
+                0đ
+              </p>
+            </div>
+            <h3
+              class="bg-white text-center p-0 m-0 py-2"
+              style="color: #d8047c"
+            >
+              Thông tin đặt vé
+            </h3>
+            <div id="inf" class="my-3">
+              <div class="d-flex">
+                <label
+                  for=""
+                  class="form-label text-white my-2 fw-bold fs-5"
+                  style="width: 200px"
+                  >Họ tên</label
+                >
+                <input
+                  type="text"
+                  class="form-control bg-none"
+                  name=""
+                  id=""
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+              </div>
+              <div class="d-flex my-2">
+                <label
+                  for=""
+                  class="form-label text-white my-2 fw-bold fs-5"
+                  style="width: 200px"
+                  >Điện thoại</label
+                >
+                <input
+                  type="text"
+                  class="form-control bg-none"
+                  name=""
+                  id=""
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+              </div>
+              <div class="d-flex">
+                <label
+                  for=""
+                  class="form-label5 text-white my-2 fw-bold fs-5"
+                  style="width: 200px"
+                  >Email</label
+                >
+                <input
+                  type="text"
+                  class="form-control bg-none"
+                  name=""
+                  id=""
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+              </div>
+            </div>
+            <div
+              id="note"
+              style="height: 300px"
+              class="rounded-4 overflow-scroll overflow-x-hidden bg-white p-3"
+            >
+              <b>Lưu ý:</b>
+              <p>- Vé đã mua không thể đổi hay trả lại.</p>
+              <p>
+                - Khi được yêu cầu, vui lòng xuất trình giấy tờ tùy thân để
+                chứng thực độ tuổi khi xem phim.
+              </p>
+              <p>
+                - Bản sao thông tin vé sẽ được lưu vào mục lịch sử giao dịch
+                trong tài khoản nếu quý khách đã đăng nhập khi mua vé. 1 bản sao
+                khác sẽ gửi đến Email của quý khách. Quý khách vui lòng kiểm tra
+                kỹ cả trong mục spam email.
+              </p>
+              <p>
+                - Quý khách vui lòng lưu lại hoặc chụp ảnh lại để xuất trình khi
+                qua cửa soát vé <b>(KHÔNG CẦN IN VÉ TẠI QUẦY)</b>.
+              </p>
+              <p>
+                - Nếu có kèm mua bắp nước online quý khách được ưu tiên khi xếp
+                hàng để lên thẳng quầy vé in hóa đơn, sau đó xếp hàng ở quầy bắp
+                nước để nhận.
+              </p>
+            </div>
+            <a
+              name=""
+              id=""
+              class="btn mt-3 w-100 mx-0 fs-4 text-white"
+              style="background-color: rgb(59, 180, 59)"
+              href="#"
+              role="button"
+              >ĐẶT VÉ</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal modal-md fade"
+        id="modalId"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="modalTitleId">🍿 COMBO 🥤</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="d-flex">
+                  <img
+                    class="img-fluid rounded-5 me-3"
+                    style="width: 70px; height: 70px"
+                    src="../image/pepngot.png"
+                    alt=""
+                  />
+                  <div style="width: 220px">
+                    <strong>Pepsi + Bắp ngọt</strong>
+                    <p class="my-0 text-secondary">1 Bắp rang bơ + 1 Pepsi</p>
+                    <p class="my-0 text-success">67.000 đ</p>
+                  </div>
+                  <div>
+                    <a name="" id="" class="btn" href="#" role="button">-</a>
+                    <a name="" id="" class="btn border" href="#" role="button"
+                      >0</a
+                    >
+                    <a name="" id="" class="btn" href="#" role="button">+</a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <img
+                    class="img-fluid rounded-5 me-3"
+                    style="width: 70px; height: 70px"
+                    src="../image/pepphomai.png"
+                    alt=""
+                  />
+                  <div style="width: 220px">
+                    <strong>Pepsi + Bắp phô mai</strong>
+                    <p class="my-0 text-secondary">1 Bắp phô mai + 1 Pepsi</p>
+                    <p class="my-0 text-success">72.000 đ</p>
+                  </div>
+                  <div>
+                    <a name="" id="" class="btn" href="#" role="button">-</a>
+                    <a name="" id="" class="btn border" href="#" role="button"
+                      >0</a
+                    >
+                    <a name="" id="" class="btn" href="#" role="button">+</a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <img
+                    class="img-fluid rounded-5 me-3"
+                    style="width: 70px; height: 70px"
+                    src="../image/7upngot.png"
+                    alt=""
+                  />
+                  <div style="width: 220px">
+                    <strong>7Up + Bắp ngọt</strong>
+                    <p class="my-0 text-secondary">1 Bắp rang bơ + 1 7Up</p>
+                    <p class="my-0 text-success">67.000 đ</p>
+                  </div>
+                  <div>
+                    <a name="" id="" class="btn" href="#" role="button">-</a>
+                    <a name="" id="" class="btn border" href="#" role="button"
+                      >0</a
+                    >
+                    <a name="" id="" class="btn" href="#" role="button">+</a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <img
+                    class="img-fluid rounded-5 me-3"
+                    style="width: 70px; height: 70px"
+                    src="../image/7upphomai.png"
+                    alt=""
+                  />
+                  <div style="width: 220px">
+                    <strong>7Up + Bắp phô mai</strong>
+                    <p class="my-0 text-secondary">1 Bắp phô mai + 1 7Up</p>
+                    <p class="my-0 text-success">72.000 đ</p>
+                  </div>
+                  <div>
+                    <a name="" id="" class="btn" href="#" role="button">-</a>
+                    <a name="" id="" class="btn border" href="#" role="button"
+                      >0</a
+                    >
+                    <a name="" id="" class="btn" href="#" role="button">+</a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <img
+                    class="img-fluid rounded-5 me-3"
+                    style="width: 70px; height: 70px"
+                    src="../image/mirindangot.png"
+                    alt=""
+                  />
+                  <div style="width: 220px">
+                    <strong>Mirinda + Bắp ngọt</strong>
+                    <p class="my-0 text-secondary">1 Bắp rang bơ + 1 Mirinda</p>
+                    <p class="my-0 text-success">67.000 đ</p>
+                  </div>
+                  <div>
+                    <a name="" id="" class="btn" href="#" role="button">-</a>
+                    <a name="" id="" class="btn border" href="#" role="button"
+                      >0</a
+                    >
+                    <a name="" id="" class="btn" href="#" role="button">+</a>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <img
+                    class="img-fluid rounded-5 me-3"
+                    style="width: 70px; height: 70px"
+                    src="../image/mirindaphomai.png"
+                    alt=""
+                  />
+                  <div style="width: 220px">
+                    <strong>Mirinda + Bắp phô mai</strong>
+                    <p class="my-0 text-secondary">1 Bắp phô mai + 1 Mirinda</p>
+                    <p class="my-0 text-success">72.000 đ</p>
+                  </div>
+                  <div>
+                    <a name="" id="" class="btn" href="#" role="button">-</a>
+                    <a name="" id="" class="btn border" href="#" role="button"
+                      >0</a
+                    >
+                    <a name="" id="" class="btn" href="#" role="button">+</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        var modalId = document.getElementById("modalId");
+
+        modalId.addEventListener("show.bs.modal", function (event) {
+          // Button that triggered the modal
+          let button = event.relatedTarget;
+          // Extract info from data-bs-* attributes
+          let recipient = button.getAttribute("data-bs-whatever");
+
+          // Use above variables to manipulate the DOM
+        });
+      </script>
+
+      <footer>
+        <img
+          style="width: 100%; margin-top: 50px"
+          src="../image/line-bg.png"
+          alt=""
+        />
+        <div class="container-footer">
+          <div class="logo-footer">
+            <img
+              class="img-fluid mt-3"
+              src="../image/logo-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="d-flex nav justify-content-between flex-wrap mt-5">
+            <div class="nav-item">
+              <h3 class="text-center text-warning">LIÊN KẾT</h3>
+              <ul class="nav">
+                <li class="nav-item d-flex">
+                  <a class="nav-link" href=""
+                    ><img src="../image/scl_facebook.png" alt=""
+                  /></a>
+                  <a class="nav-link" href=""
+                    ><img src="../image/scl_youtube.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer2 nav-item">
+              <h3 class="text-center text-warning">HỆ THỐNG RẠP</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Đồng Nai</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Đồng Tháp</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Gia Lai</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Gò Vấp</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer3 nav-item">
+              <h3 class="text-center text-warning">TH2D</h3>
+              <ul class="content-TH2D nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Phim đang chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Phim sắp chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Suất chiếu đặc biệt</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Lịch chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Khuyến mãi</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer4 nav-item">
+              <h3 class="text-warning text-center">THÔNG TIN</h3>
+              <ul class="content-thongtin nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Giới thiệu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Tin tức</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Hỏi và đáp</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-footer5 nav-item">
+              <h3 class="text-center text-warning">CHÍNH SÁCH VÀ QUY ĐỊNH</h3>
+              <ul class="content-chinhsach nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Quy định chung</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Điều khoản giao dịch</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Chính sách bảo mật</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Thông tin công ty</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="thanhtoan">
+            <div class="content-thanhtoan mt-5">
+              <h3 class="text-center text-white">Chấp nhận thanh toán</h3>
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/napas-40.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/payment-visa.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/payment-mastercard.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/momo.jpg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="infor-company">
+            <div class="content-infor mt-5">
+              <div style="width: fit-content; margin: auto">
+                <img src="../image/dathongbao.png" alt="" />
+              </div>
+              <p class="text-center text-white mb-0">
+                CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM TH2D
+                <br />
+                ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
+                <br />
+                GIẤY CNĐKDN SỐ: 0312742744, ĐĂNG KÝ LẦN ĐẦU NGÀY 18/04/2014,
+                ĐĂNG KÝ THAY ĐỔI LẦN THỨ 2 NGÀY 15/09/2014, CẤP BỞI SỞ KH&ĐT
+                TP.HCM
+                <br />
+                <br />
+                2015 © TH2D. ALL RIGHTS RESERVED.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    '
+    <script src="../js/TinTuc.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/PDC.js"></script>
+  </body>
+</html>
