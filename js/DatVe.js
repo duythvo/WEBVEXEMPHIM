@@ -68,6 +68,7 @@ $(document).ready(function () {
   var pepphomai = 0;
   var upphomai = 0;
   var Mirindaphomai = 0;
+
   $("#plusPN").click(function () {
     pepngot = pepngot + 1;
     $("#pepngot").html(pepngot);
@@ -183,7 +184,7 @@ $(document).ready(function () {
     $("#total").html(GiaGhe + combo + "   đ");
   });
 
-  $("#hoten").on("blur", function (e) {
+  $("#hoten").on("input", function (e) {
     var hoten = $("#hoten").val();
     var checkhoten = /^[A-ZĐ][a-zđà-ỹ]*$/;
     if (checkhoten.test(hoten) && hoten != "") {
@@ -193,8 +194,17 @@ $(document).ready(function () {
       $("#hoten").addClass("is-invalid").removeClass("is-valid");
       $("#errorhoten").text("Họ và tên bắt đầu bằng ký tự chữ hoa");
     }
+    if (
+      $("#hoten").hasClass("is-valid") &&
+      $("#email").hasClass("is-valid") &&
+      $("#sdt").hasClass("is-valid")
+    ) {
+      $("#datve").removeAttr("disabled");
+    } else {
+      $("#datve").prop("disabled", true);
+    }
   });
-  $("#email").on("blur", function (e) {
+  $("#email").on("input", function (e) {
     var email = $("#email").val();
     var checkemail = /[A-Za-z0-9]+@gmail\.com$/;
     if (checkemail.test(email) && email != "") {
@@ -204,8 +214,17 @@ $(document).ready(function () {
       $("#email").addClass("is-invalid").removeClass("is-valid");
       $("#erroremail").text("Email phải đúng định dạng");
     }
+    if (
+      $("#hoten").hasClass("is-valid") &&
+      $("#email").hasClass("is-valid") &&
+      $("#sdt").hasClass("is-valid")
+    ) {
+      $("#datve").removeAttr("disabled");
+    } else {
+      $("#datve").prop("disabled", true);
+    }
   });
-  $("#sdt").on("blur", function (e) {
+  $("#sdt").on("input", function (e) {
     var sdt = $("#sdt").val();
     var checksdt = /^0[0-9]{9}/;
     if (checksdt.test(sdt) && sdt != "") {
@@ -215,10 +234,43 @@ $(document).ready(function () {
       $("#sdt").addClass("is-invalid").removeClass("is-valid");
       $("#errorsdt").text("Số điện thoại phải đúng định dạng");
     }
-  });
-  $("#datve").click(function(){
-    if($("#errorhoten").hasClass("is-valid") && $("#erroremail").hasClass("is-valid") && $("#errorsdt").hasClass("is-valid") ){
-      
+    if (
+      $("#hoten").hasClass("is-valid") &&
+      $("#email").hasClass("is-valid") &&
+      $("#sdt").hasClass("is-valid")
+    ) {
+      $("#datve").removeAttr("disabled");
+    } else {
+      $("#datve").prop("disabled", true);
     }
-  })
+  });
+  $("#datve").click(function () {
+    $("#datghe").addClass("d-none");
+    $("#thanhtoan").removeClass("d-none");
+    $("#tt_thoigian").html($("#film_time").html());
+    $("#tt_ghechon").html(listTenGhe.join(", "));
+    $("#tt_hoten").html($("#hoten").val());
+    $("#tt_email").html($("#email").val());
+    $("#tt_sdt").html($("#sdt").val());
+
+    if(pepngot > 0 || pepphomai > 0 || upngot > 0 || upphomai > 0 || Mirindangot > 0 || Mirindaphomai > 0 ){
+      if (pepngot > 0)
+      $("#tt_combo").append("<p>Pepsi + Bắp Ngọt " + pepngot + " combo </p>");
+    if (pepphomai > 0)
+      $("#tt_combo").append("<p>Pepsi + Bắp Phô Mai " + pepphomai + " combo </p>");
+    if (upngot > 0)
+      $("#tt_combo").append("<p>7Up + Bắp Ngọt " + upngot + " combo </p>");
+    if (upphomai > 0)
+      $("#tt_combo").append("<p>7Up + Bắp Phô Mai " + upphomai + " combo </p>");
+    if (Mirindangot > 0)
+      $("#tt_combo").append("<p>Mirinda + Bắp Ngọt " + Mirindangot + " combo </p>");
+    if (Mirindaphomai > 0)
+      $("#tt_combo").append(
+        "<p>Mirinda + Bắp Phô Mai " + Mirindaphomai + " combo </p>"
+      );
+    }
+    else {
+      $("#tt_combo").html("Không có combo bắp nước nào");
+    }
+  });
 });

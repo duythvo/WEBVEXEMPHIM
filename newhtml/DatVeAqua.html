@@ -229,7 +229,7 @@
       >
         <div id="poster" style="height: 180px"></div>
         <h1 class="text-center text-white p-3">Đặt vé</h1>
-        <div class="row justify-content-center g-1">
+        <div id="datghe" class="row justify-content-center g-1">
           <div
             class="col-lg-8 p-0 rounded-top-5 pb-3 border position-relative me-2"
             style="background-color: rgb(216, 4, 124)"
@@ -268,7 +268,11 @@
             <div class="container-fluid">
               <div class="container-fluid d-flex row">
                 <h4 class="col-3 text-warning my-3 me-4">Ngày chiếu</h4>
-                <select class="col-2 fs-4 rounded-5 border border-3 bg-warning" name="" id="ngaychieu">
+                <select
+                  class="col-2 fs-4 rounded-5 border border-3 bg-warning"
+                  name=""
+                  id="ngaychieu"
+                >
                   <option value="06/04">06/04</option>
                   <option value="07/04">07/04</option>
                   <option value="08/04">08/04</option>
@@ -280,7 +284,11 @@
               </div>
               <div class="container-fluid d-flex row mt-2">
                 <h4 class="text-warning my-3 me-4 col-3">Suất chiếu</h4>
-                <select class="col-2 fs-4 rounded-5 border border-3 bg-warning" name="" id="suatchieu">
+                <select
+                  class="col-2 fs-4 rounded-5 border border-3 bg-warning"
+                  name=""
+                  id="suatchieu"
+                >
                   <option value="12:30">12:30</option>
                   <option value="17:30">17:30</option>
                   <option value="21:30">21:30</option>
@@ -707,7 +715,10 @@
             </div>
             <div id="ghe" class="row m-0 border-bottom border-3">
               <p id="tenghe" class="col fs-5 text-white my-1 ps-0">Ghế :</p>
-              <p id="tienghe" class="col text-end text-white fs-5 my-1 px-0 mx-0 me-1">
+              <p
+                id="tienghe"
+                class="col text-end text-white fs-5 my-1 px-0 mx-0 me-1"
+              >
                 0đ
               </p>
             </div>
@@ -734,7 +745,7 @@
               Thông tin đặt vé
             </h3>
             <div id="inf" class="my-3">
-              <div class="row ">
+              <div class="row">
                 <label
                   for=""
                   class="form-label text-white my-2 fw-bold fs-5 col-4"
@@ -748,7 +759,10 @@
                   aria-describedby="helpId"
                   placeholder=""
                 />
-                <span class="text-danger bg-light col-12 mt-2" id="errorhoten"></span>
+                <span
+                  class="text-danger bg-light col-12 mt-2"
+                  id="errorhoten"
+                ></span>
               </div>
               <div class="row my-2">
                 <label
@@ -764,7 +778,10 @@
                   aria-describedby="helpId"
                   placeholder=""
                 />
-                <span class="text-danger bg-light col-12 mt-2" id="errorsdt"></span>
+                <span
+                  class="text-danger bg-light col-12 mt-2"
+                  id="errorsdt"
+                ></span>
               </div>
               <div class="row">
                 <label
@@ -780,7 +797,10 @@
                   aria-describedby="helpId"
                   placeholder=""
                 />
-                <span class="text-danger bg-light col-12 mt-2" id="erroremail"></span>
+                <span
+                  class="text-danger bg-light col-12 mt-2"
+                  id="erroremail"
+                ></span>
               </div>
             </div>
             <div
@@ -815,7 +835,278 @@
               id="datve"
               class="btn mt-3 w-100 mx-0 fs-4 text-white"
               style="background-color: rgb(59, 180, 59)"
+              disabled
+            >
+              ĐẶT VÉ
+            </button>
+          </div>
+        </div>
+        <div id="thanhtoan" class="row justify-content-center g-1">
+          <div
+            class="col-lg-8 p-0 rounded-top-5 pb-3 border position-relative me-2"
+            style="background-color: rgb(216, 4, 124)"
+          >
+            <nav
+              class="nav row border-bottom border-3 text-white p-0 m-0 pb-3 mb-3"
+            >
+              <a
+                class="nav-link col active fs-4 text-white text-center"
+                href="javascript:history.back()"
+                aria-current="page"
+                >Quay lại</a
               >
+              <p
+                style="cursor: pointer"
+                class="nav-link col fs-4 text-white text-center"
+                href=""
+              >
+                01. Đặt ghế
+              </p>
+              <p
+                style="cursor: pointer"
+                class="nav-link col fs-4 text-white text-center border-bottom border-3"
+                href=""
+              >
+                02. Thanh Toán
+              </p>
+              <p
+                style="cursor: pointer"
+                class="nav-link col fs-4 text-white text-center"
+                href=""
+              >
+                03. Thông tin vé
+              </p>
+            </nav>
+            <div class="container-fluid">
+              <strong class="text-warning"
+                >* Vui lòng kiểm tra kỹ thông tin vé đặt trước khi thanh
+                toán</strong
+              >
+              <div class="row mt-5">
+                <div class="col">
+                  <p
+                    class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                  >
+                    Thông tin vé
+                  </p>
+                  <div class="row">
+                    <p class="text-white fs-5 col-4">Phim:</p>
+                    <p class="text-white fs-5 col fw-bold">
+                      Aquaman Và Vương Quốc Thất Lạc
+                    </p>
+                  </div>
+                  <div class="row">
+                    <p class="text-white fs-5 col-4">Thời gian:</p>
+                    <p class="text-white fs-5 col fw-bold" id="tt_thoigian"></p>
+                  </div>
+                  <div class="row">
+                    <p class="text-white fs-5 col-4">Ghế đã chọn:</p>
+                    <p class="text-white fs-5 col fw-bold" id="tt_ghechon"></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <p
+                    class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                  >
+                    Thông tin đặt vé
+                  </p>
+                  <div class="row">
+                    <p class="text-white fs-5 col-4 mx-0">Họ tên:</p>
+                    <p
+                      class="text-white fs-5 col fw-bold mx-0"
+                      id="tt_hoten"
+                    ></p>
+                  </div>
+                  <div class="row">
+                    <p class="text-white fs-5 col-4 mx-0">Điện thoại:</p>
+                    <p class="text-white fs-5 col fw-bold mx-0" id="tt_sdt"></p>
+                  </div>
+                  <div class="row">
+                    <p class="text-white fs-5 col-4 mx-0">Email:</p>
+                    <p
+                      class="text-white fs-5 col fw-bold mx-0"
+                      id="tt_email"
+                    ></p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p
+                    class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                  >
+                    Thông tin combo bắp nước
+                  </p>
+                  <div class="text-white fs-5 col fw-bold mx-0" id="tt_combo"></div>
+                </div>
+                <div class="col">
+                  <p
+                    class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                  >
+                    Lưu ý
+                  </p>
+                  <p class="text-white fs-6">
+                    - Vé đã mua không thể đổi hay trả lại.
+                  </p>
+                  <p class="text-white fs-6">
+                    - Khi được yêu cầu, vui lòng xuất trình giấy tờ tùy thân để
+                    chứng thực độ tuổi khi xem phim.
+                  </p>
+                  <p class="text-white fs-6">
+                    - Bản sao thông tin vé sẽ được lưu vào mục lịch sử giao dịch
+                    trong tài khoản nếu quý khách đã đăng nhập khi mua vé. 1 bản
+                    sao khác sẽ gửi đến Email của quý khách. Quý khách vui lòng
+                    kiểm tra kỹ cả trong mục spam email.
+                  </p>
+                  <p class="text-white fs-6">
+                    - Quý khách vui lòng lưu lại hoặc chụp ảnh lại để xuất trình
+                    khi qua cửa soát vé <b>(KHÔNG CẦN IN VÉ TẠI QUẦY)</b>.
+                  </p>
+                  <p class="text-white fs-6">
+                    - Nếu có kèm mua bắp nước online quý khách được ưu tiên khi
+                    xếp hàng để lên thẳng quầy vé in hóa đơn, sau đó xếp hàng ở
+                    quầy bắp nước để nhận.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col p-0 rounded-top-5 pb-3 border px-3 pt-3"
+            style="background-color: rgb(179, 5, 104)"
+          >
+            <div id="title" class="border-bottom border-3">
+              <strong class="fs-5 text-white"
+                >Aquaman Và Vương Quốc Thất Lạc</strong
+              >
+              <p id="film_time" class="fs-5 text-white pb-1 my-1">
+                Ngày 06/05 13:30 - Rạp 01
+              </p>
+            </div>
+            <div id="ghe" class="row m-0 border-bottom border-3">
+              <p id="tenghe" class="col fs-5 text-white my-1 ps-0">Ghế :</p>
+              <p
+                id="tienghe"
+                class="col text-end text-white fs-5 my-1 px-0 mx-0 me-1"
+              >
+                0đ
+              </p>
+            </div>
+            <div id="combo" class="row m-0 border-bottom border-3">
+              <button
+                type="button"
+                class="btn col fs-5 text-white my-1 ps-0 text-start"
+                data-bs-toggle="modal"
+                data-bs-target="#modalId"
+              >
+                🍿 Chọn combo :
+              </button>
+              <p
+                id="tiencombo"
+                class="col text-end text-white fs-5 my-1 px-0 mx-0 my-3 me-1"
+              >
+                0đ
+              </p>
+            </div>
+            <h3
+              class="bg-white text-center p-0 m-0 py-2"
+              style="color: #d8047c"
+            >
+              Thông tin đặt vé
+            </h3>
+            <div id="inf" class="my-3">
+              <div class="row">
+                <label
+                  for=""
+                  class="form-label text-white my-2 fw-bold fs-5 col-4"
+                  >Họ tên</label
+                >
+                <input
+                  type="text"
+                  class="form-control bg-none col"
+                  name=""
+                  id="hoten"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <span
+                  class="text-danger bg-light col-12 mt-2"
+                  id="errorhoten"
+                ></span>
+              </div>
+              <div class="row my-2">
+                <label
+                  for=""
+                  class="form-label text-white my-2 fw-bold fs-5 col-4"
+                  >Điện thoại</label
+                >
+                <input
+                  type="text"
+                  class="form-control bg-none col"
+                  name=""
+                  id="sdt"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <span
+                  class="text-danger bg-light col-12 mt-2"
+                  id="errorsdt"
+                ></span>
+              </div>
+              <div class="row">
+                <label
+                  for=""
+                  class="form-label5 text-white my-2 fw-bold fs-5 col-4"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control bg-none col"
+                  name=""
+                  id="email"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <span
+                  class="text-danger bg-light col-12 mt-2"
+                  id="erroremail"
+                ></span>
+              </div>
+            </div>
+            <div
+              id="note"
+              style="height: 300px"
+              class="rounded-4 overflow-scroll overflow-x-hidden bg-white p-3"
+            >
+              <b>Lưu ý:</b>
+              <p>- Vé đã mua không thể đổi hay trả lại.</p>
+              <p>
+                - Khi được yêu cầu, vui lòng xuất trình giấy tờ tùy thân để
+                chứng thực độ tuổi khi xem phim.
+              </p>
+              <p>
+                - Bản sao thông tin vé sẽ được lưu vào mục lịch sử giao dịch
+                trong tài khoản nếu quý khách đã đăng nhập khi mua vé. 1 bản sao
+                khác sẽ gửi đến Email của quý khách. Quý khách vui lòng kiểm tra
+                kỹ cả trong mục spam email.
+              </p>
+              <p>
+                - Quý khách vui lòng lưu lại hoặc chụp ảnh lại để xuất trình khi
+                qua cửa soát vé <b>(KHÔNG CẦN IN VÉ TẠI QUẦY)</b>.
+              </p>
+              <p>
+                - Nếu có kèm mua bắp nước online quý khách được ưu tiên khi xếp
+                hàng để lên thẳng quầy vé in hóa đơn, sau đó xếp hàng ở quầy bắp
+                nước để nhận.
+              </p>
+            </div>
+            <button
+              name=""
+              id="datve"
+              class="btn mt-3 w-100 mx-0 fs-4 text-white"
+              style="background-color: rgb(59, 180, 59)"
+              disabled
+            >
               ĐẶT VÉ
             </button>
           </div>
@@ -854,9 +1145,19 @@
                     <p class="my-0 text-success">67.000 đ</p>
                   </div>
                   <div class="col-4 my-auto row">
-                    <a name="" id="minusPN" class="btn my-auto col"  role="button">-</a>
-                    <p id="pepngot" class="p-3 w-25 border h-100 my-auto col" >0</p>
-                    <a name="" id="plusPN" class="col btn my-auto"  role="button">+</a>
+                    <a
+                      name=""
+                      id="minusPN"
+                      class="btn my-auto col"
+                      role="button"
+                      >-</a
+                    >
+                    <p id="pepngot" class="p-3 w-25 border h-100 my-auto col">
+                      0
+                    </p>
+                    <a name="" id="plusPN" class="col btn my-auto" role="button"
+                      >+</a
+                    >
                   </div>
                 </div>
                 <div class="row mb-2">
@@ -871,9 +1172,19 @@
                     <p class="my-0 text-success">75.000 đ</p>
                   </div>
                   <div class="col-4 my-auto row">
-                    <a name="" id="minusPP" class="btn my-auto col"  role="button">-</a>
-                    <p id="pepphomai" class="p-3 w-25 border h-100 my-auto col" >0</p>
-                    <a name="" id="plusPP" class="col btn my-auto"  role="button">+</a>
+                    <a
+                      name=""
+                      id="minusPP"
+                      class="btn my-auto col"
+                      role="button"
+                      >-</a
+                    >
+                    <p id="pepphomai" class="p-3 w-25 border h-100 my-auto col">
+                      0
+                    </p>
+                    <a name="" id="plusPP" class="col btn my-auto" role="button"
+                      >+</a
+                    >
                   </div>
                 </div>
                 <div class="row mb-2">
@@ -888,9 +1199,19 @@
                     <p class="my-0 text-success">67.000 đ</p>
                   </div>
                   <div class="col-4 my-auto row">
-                    <a name="" id="minus7N" class="btn my-auto col"  role="button">-</a>
-                    <p id="7upngot" class="p-3 w-25 border h-100 my-auto col" >0</p>
-                    <a name="" id="plus7N" class="col btn my-auto"  role="button">+</a>
+                    <a
+                      name=""
+                      id="minus7N"
+                      class="btn my-auto col"
+                      role="button"
+                      >-</a
+                    >
+                    <p id="7upngot" class="p-3 w-25 border h-100 my-auto col">
+                      0
+                    </p>
+                    <a name="" id="plus7N" class="col btn my-auto" role="button"
+                      >+</a
+                    >
                   </div>
                 </div>
                 <div class="row mb-2">
@@ -905,9 +1226,19 @@
                     <p class="my-0 text-success">75.000 đ</p>
                   </div>
                   <div class="col-4 my-auto row">
-                    <a name="" id="minus7P" class="btn my-auto col"  role="button">-</a>
-                    <p id="7upphomai" class="p-3 w-25 border h-100 my-auto col" >0</p>
-                    <a name="" id="plus7P" class="col btn my-auto"  role="button">+</a>
+                    <a
+                      name=""
+                      id="minus7P"
+                      class="btn my-auto col"
+                      role="button"
+                      >-</a
+                    >
+                    <p id="7upphomai" class="p-3 w-25 border h-100 my-auto col">
+                      0
+                    </p>
+                    <a name="" id="plus7P" class="col btn my-auto" role="button"
+                      >+</a
+                    >
                   </div>
                 </div>
                 <div class="row mb-2">
@@ -922,9 +1253,22 @@
                     <p class="my-0 text-success">67.000 đ</p>
                   </div>
                   <div class="col-4 my-auto row">
-                    <a name="" id="minusMN" class="btn my-auto col"  role="button">-</a>
-                    <p id="mirindangot" class="p-3 w-25 border h-100 my-auto col" >0</p>
-                    <a name="" id="plusMN" class="col btn my-auto"  role="button">+</a>
+                    <a
+                      name=""
+                      id="minusMN"
+                      class="btn my-auto col"
+                      role="button"
+                      >-</a
+                    >
+                    <p
+                      id="mirindangot"
+                      class="p-3 w-25 border h-100 my-auto col"
+                    >
+                      0
+                    </p>
+                    <a name="" id="plusMN" class="col btn my-auto" role="button"
+                      >+</a
+                    >
                   </div>
                 </div>
                 <div class="row mb-2">
@@ -939,9 +1283,22 @@
                     <p class="my-0 text-success">75.000 đ</p>
                   </div>
                   <div class="col-4 my-auto row">
-                    <a name="" id="minusMP" class="btn my-auto col"  role="button">-</a>
-                    <p id="mirindaphomai" class="p-3 w-25 border h-100 my-auto col" >0</p>
-                    <a name="" id="plusMP" class="col btn my-auto"  role="button">+</a>
+                    <a
+                      name=""
+                      id="minusMP"
+                      class="btn my-auto col"
+                      role="button"
+                      >-</a
+                    >
+                    <p
+                      id="mirindaphomai"
+                      class="p-3 w-25 border h-100 my-auto col"
+                    >
+                      0
+                    </p>
+                    <a name="" id="plusMP" class="col btn my-auto" role="button"
+                      >+</a
+                    >
                   </div>
                 </div>
               </div>
