@@ -268,89 +268,23 @@
             <div class="container-fluid">
               <div class="container-fluid d-flex row">
                 <h4 class="col-3 text-warning my-3 me-4">Ngày chiếu</h4>
-                <a
-                  name=""
-                  id=""
-                  class="col btn border text-dark btn-warning my-3 mx-1"
-                  href="#"
-                  role="button"
-                  >06/05</a
-                >
-                <a
-                  name=""
-                  id=""
-                  class="col btn border text-white my-3 mx-1"
-                  href="#"
-                  role="button"
-                  >07/05</a
-                >
-                <a
-                  name=""
-                  id=""
-                  class="col btn border text-white my-3 mx-1"
-                  href="#"
-                  role="button"
-                  >08/05</a
-                >
-                <a
-                  name=""
-                  id=""
-                  class="col btn border text-white my-3 mx-1"
-                  href="#"
-                  role="button"
-                  >09/05</a
-                >
-                <a
-                  name=""
-                  id=""
-                  class="col btn border text-white my-3 mx-1"
-                  href="#"
-                  role="button"
-                  >10/05</a
-                >
-                <a
-                  name=""
-                  id=""
-                  class="col btn border text-white my-3 mx-1"
-                  href="#"
-                  role="button"
-                  >11/05</a
-                >
-                <a
-                  name=""
-                  id=""
-                  class="col btn border text-white my-3 mx-1"
-                  href="#"
-                  role="button"
-                  >12/05</a
-                >
+                <select class="col-2 fs-4 rounded-5 border border-3 bg-warning" name="" id="ngaychieu">
+                  <option value="06/04">06/04</option>
+                  <option value="07/04">07/04</option>
+                  <option value="08/04">08/04</option>
+                  <option value="09/04">09/04</option>
+                  <option value="10/04">10/04</option>
+                  <option value="11/04">11/04</option>
+                  <option value="12/04">12/04</option>
+                </select>
               </div>
-              <div class="container-fluid d-flex row">
+              <div class="container-fluid d-flex row mt-2">
                 <h4 class="text-warning my-3 me-4 col-3">Suất chiếu</h4>
-                <a
-                  name=""
-                  id=""
-                  class="col-2 btn border text-dark btn-warning my-3 mx-4"
-                  href="#"
-                  role="button"
-                  >13:30</a
-                >
-                <a
-                  name=""
-                  id=""
-                  class="col-2 btn border text-white my-3 mx-4"
-                  href="#"
-                  role="button"
-                  >16:00</a
-                >
-                <a
-                  name=""
-                  id=""
-                  class="col-2 btn border text-white my-3 mx-4"
-                  href="#"
-                  role="button"
-                  >20:30</a
-                >
+                <select class="col-2 fs-4 rounded-5 border border-3 bg-warning" name="" id="suatchieu">
+                  <option value="12:30">12:30</option>
+                  <option value="17:30">17:30</option>
+                  <option value="21:30">21:30</option>
+                </select>
               </div>
 
               <strong class="text-warning"
@@ -767,13 +701,13 @@
               <strong class="fs-5 text-white"
                 >Aquaman Và Vương Quốc Thất Lạc</strong
               >
-              <p class="fs-5 text-white pb-1 my-1 film_time">
-                Thứ Hai, ngày 06/05 13:30 - Rạp 01
+              <p id="film_time" class="fs-5 text-white pb-1 my-1">
+                Ngày 06/05 13:30 - Rạp 01
               </p>
             </div>
             <div id="ghe" class="row m-0 border-bottom border-3">
               <p id="tenghe" class="col fs-5 text-white my-1 ps-0">Ghế :</p>
-              <p id="tienghe" class="col-2 text-end text-white fs-5 my-1 px-0 mx-0 me-1">
+              <p id="tienghe" class="col text-end text-white fs-5 my-1 px-0 mx-0 me-1">
                 0đ
               </p>
             </div>
@@ -788,7 +722,7 @@
               </button>
               <p
                 id="tiencombo"
-                class="col-2 text-end text-white fs-5 my-1 px-0 mx-0 my-3 me-1"
+                class="col text-end text-white fs-5 my-1 px-0 mx-0 my-3 me-1"
               >
                 0đ
               </p>
@@ -908,124 +842,106 @@
             </div>
             <div class="modal-body">
               <div class="container-fluid">
-                <div class="d-flex">
+                <div class="row mb-2">
                   <img
-                    class="img-fluid rounded-5 me-3"
-                    style="width: 70px; height: 70px"
+                    class="img-fluid col-3 rounded-5"
                     src="../image/pepngot.png"
                     alt=""
                   />
-                  <div style="width: 220px">
+                  <div class="col">
                     <strong>Pepsi + Bắp ngọt</strong>
                     <p class="my-0 text-secondary">1 Bắp rang bơ + 1 Pepsi</p>
                     <p class="my-0 text-success">67.000 đ</p>
                   </div>
-                  <div>
-                    <a name="" id="" class="btn" href="#" role="button">-</a>
-                    <a name="" id="" class="btn border" href="#" role="button"
-                      >0</a
-                    >
-                    <a name="" id="" class="btn" href="#" role="button">+</a>
+                  <div class="col-4 my-auto row">
+                    <a name="" id="minusPN" class="btn my-auto col"  role="button">-</a>
+                    <p id="pepngot" class="p-3 w-25 border h-100 my-auto col" >0</p>
+                    <a name="" id="plusPN" class="col btn my-auto"  role="button">+</a>
                   </div>
                 </div>
-                <div class="d-flex">
+                <div class="row mb-2">
                   <img
-                    class="img-fluid rounded-5 me-3"
-                    style="width: 70px; height: 70px"
+                    class="img-fluid col-3 rounded-5"
                     src="../image/pepphomai.png"
                     alt=""
                   />
-                  <div style="width: 220px">
+                  <div class="col">
                     <strong>Pepsi + Bắp phô mai</strong>
                     <p class="my-0 text-secondary">1 Bắp phô mai + 1 Pepsi</p>
-                    <p class="my-0 text-success">72.000 đ</p>
+                    <p class="my-0 text-success">75.000 đ</p>
                   </div>
-                  <div>
-                    <a name="" id="" class="btn" href="#" role="button">-</a>
-                    <a name="" id="" class="btn border" href="#" role="button"
-                      >0</a
-                    >
-                    <a name="" id="" class="btn" href="#" role="button">+</a>
+                  <div class="col-4 my-auto row">
+                    <a name="" id="minusPP" class="btn my-auto col"  role="button">-</a>
+                    <p id="pepphomai" class="p-3 w-25 border h-100 my-auto col" >0</p>
+                    <a name="" id="plusPP" class="col btn my-auto"  role="button">+</a>
                   </div>
                 </div>
-                <div class="d-flex">
+                <div class="row mb-2">
                   <img
-                    class="img-fluid rounded-5 me-3"
-                    style="width: 70px; height: 70px"
+                    class="img-fluid col-3 rounded-5"
                     src="../image/7upngot.png"
                     alt=""
                   />
-                  <div style="width: 220px">
+                  <div class="col">
                     <strong>7Up + Bắp ngọt</strong>
                     <p class="my-0 text-secondary">1 Bắp rang bơ + 1 7Up</p>
                     <p class="my-0 text-success">67.000 đ</p>
                   </div>
-                  <div>
-                    <a name="" id="" class="btn" href="#" role="button">-</a>
-                    <a name="" id="" class="btn border" href="#" role="button"
-                      >0</a
-                    >
-                    <a name="" id="" class="btn" href="#" role="button">+</a>
+                  <div class="col-4 my-auto row">
+                    <a name="" id="minus7N" class="btn my-auto col"  role="button">-</a>
+                    <p id="7upngot" class="p-3 w-25 border h-100 my-auto col" >0</p>
+                    <a name="" id="plus7N" class="col btn my-auto"  role="button">+</a>
                   </div>
                 </div>
-                <div class="d-flex">
+                <div class="row mb-2">
                   <img
-                    class="img-fluid rounded-5 me-3"
-                    style="width: 70px; height: 70px"
+                    class="img-fluid col-3 rounded-5"
                     src="../image/7upphomai.png"
                     alt=""
                   />
-                  <div style="width: 220px">
+                  <div class="col">
                     <strong>7Up + Bắp phô mai</strong>
                     <p class="my-0 text-secondary">1 Bắp phô mai + 1 7Up</p>
-                    <p class="my-0 text-success">72.000 đ</p>
+                    <p class="my-0 text-success">75.000 đ</p>
                   </div>
-                  <div>
-                    <a name="" id="" class="btn" href="#" role="button">-</a>
-                    <a name="" id="" class="btn border" href="#" role="button"
-                      >0</a
-                    >
-                    <a name="" id="" class="btn" href="#" role="button">+</a>
+                  <div class="col-4 my-auto row">
+                    <a name="" id="minus7P" class="btn my-auto col"  role="button">-</a>
+                    <p id="7upphomai" class="p-3 w-25 border h-100 my-auto col" >0</p>
+                    <a name="" id="plus7P" class="col btn my-auto"  role="button">+</a>
                   </div>
                 </div>
-                <div class="d-flex">
+                <div class="row mb-2">
                   <img
-                    class="img-fluid rounded-5 me-3"
-                    style="width: 70px; height: 70px"
+                    class="img-fluid col-3 rounded-5"
                     src="../image/mirindangot.png"
                     alt=""
                   />
-                  <div style="width: 220px">
+                  <div class="col">
                     <strong>Mirinda + Bắp ngọt</strong>
                     <p class="my-0 text-secondary">1 Bắp rang bơ + 1 Mirinda</p>
                     <p class="my-0 text-success">67.000 đ</p>
                   </div>
-                  <div>
-                    <a name="" id="" class="btn" href="#" role="button">-</a>
-                    <a name="" id="" class="btn border" href="#" role="button"
-                      >0</a
-                    >
-                    <a name="" id="" class="btn" href="#" role="button">+</a>
+                  <div class="col-4 my-auto row">
+                    <a name="" id="minusMN" class="btn my-auto col"  role="button">-</a>
+                    <p id="mirindangot" class="p-3 w-25 border h-100 my-auto col" >0</p>
+                    <a name="" id="plusMN" class="col btn my-auto"  role="button">+</a>
                   </div>
                 </div>
-                <div class="d-flex">
+                <div class="row mb-2">
                   <img
-                    class="img-fluid rounded-5 me-3"
-                    style="width: 70px; height: 70px"
+                    class="img-fluid h-100 my-auto col-3 rounded-5"
                     src="../image/mirindaphomai.png"
                     alt=""
                   />
-                  <div style="width: 220px">
+                  <div class="col">
                     <strong>Mirinda + Bắp phô mai</strong>
                     <p class="my-0 text-secondary">1 Bắp phô mai + 1 Mirinda</p>
-                    <p class="my-0 text-success">72.000 đ</p>
+                    <p class="my-0 text-success">75.000 đ</p>
                   </div>
-                  <div>
-                    <a name="" id="" class="btn" href="#" role="button">-</a>
-                    <a name="" id="" class="btn border" href="#" role="button"
-                      >0</a
-                    >
-                    <a name="" id="" class="btn" href="#" role="button">+</a>
+                  <div class="col-4 my-auto row">
+                    <a name="" id="minusMP" class="btn my-auto col"  role="button">-</a>
+                    <p id="mirindaphomai" class="p-3 w-25 border h-100 my-auto col" >0</p>
+                    <a name="" id="plusMP" class="col btn my-auto"  role="button">+</a>
                   </div>
                 </div>
               </div>
