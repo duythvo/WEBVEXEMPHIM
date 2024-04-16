@@ -342,4 +342,10 @@ $(document).ready(function () {
     $("#thongtinve").removeClass("d-none")
     $("#thanhtoan").addClass("d-none")
   })
+  $(".xacnhan,#datve").click(function(){
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    })
+  })
 });
