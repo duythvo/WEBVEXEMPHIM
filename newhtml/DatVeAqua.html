@@ -841,7 +841,7 @@
             </button>
           </div>
         </div>
-        <div id="thanhtoan" class="row justify-content-center g-1">
+        <div id="thanhtoan" class="d-none row justify-content-center g-1">
           <div
             class="col-lg-8 p-0 rounded-top-5 pb-3 border position-relative me-2"
             style="background-color: rgb(216, 4, 124)"
@@ -937,7 +937,7 @@
                   >
                     Thông tin combo bắp nước
                   </p>
-                  <div class="text-white fs-5 col fw-bold mx-0" id="tt_combo"></div>
+                  <p class="text-white fs-5 col fw-bold mx-0" id="tt_combo"></p>
                 </div>
                 <div class="col">
                   <p
@@ -975,143 +975,507 @@
             class="col p-0 rounded-top-5 pb-3 border px-3 pt-3"
             style="background-color: rgb(179, 5, 104)"
           >
-            <div id="title" class="border-bottom border-3">
-              <strong class="fs-5 text-white"
-                >Aquaman Và Vương Quốc Thất Lạc</strong
+            <div class="row m-0 border-bottom border-3">
+              <p class="col fs-4 text-white my-1 fw-bold ps-0">Tổng cộng :</p>
+              <p
+                id="tt_tongtien"
+                class="col text-end text-white fs-4 fw-bold my-1 px-0 mx-0 me-1"
               >
-              <p id="film_time" class="fs-5 text-white pb-1 my-1">
-                Ngày 06/05 13:30 - Rạp 01
+                0đ
               </p>
             </div>
-            <div id="ghe" class="row m-0 border-bottom border-3">
-              <p id="tenghe" class="col fs-5 text-white my-1 ps-0">Ghế :</p>
+            <div class="row m-0 border-bottom border-3">
+              <p class="col fs-5 text-white my-1 ps-0">Vé ghế :</p>
               <p
-                id="tienghe"
+                id="tt_tienghe"
                 class="col text-end text-white fs-5 my-1 px-0 mx-0 me-1"
               >
                 0đ
               </p>
             </div>
-            <div id="combo" class="row m-0 border-bottom border-3">
-              <button
-                type="button"
-                class="btn col fs-5 text-white my-1 ps-0 text-start"
-                data-bs-toggle="modal"
-                data-bs-target="#modalId"
-              >
-                🍿 Chọn combo :
-              </button>
+            <div class="row m-0 border-bottom border-3">
+              <p class="col fs-5 text-white my-1 ps-0">Combo :</p>
               <p
-                id="tiencombo"
-                class="col text-end text-white fs-5 my-1 px-0 mx-0 my-3 me-1"
+                id="tt_tiencombo"
+                class="col text-end text-white fs-5 my-1 px-0 mx-0 me-1"
               >
                 0đ
               </p>
             </div>
             <h3
-              class="bg-white text-center p-0 m-0 py-2"
+              class="bg-white text-center p-0 m-0 py-2 my-4"
               style="color: #d8047c"
             >
-              Thông tin đặt vé
+              Phương thức thanh toán
             </h3>
-            <div id="inf" class="my-3">
-              <div class="row">
-                <label
-                  for=""
-                  class="form-label text-white my-2 fw-bold fs-5 col-4"
-                  >Họ tên</label
-                >
+            <div class="row py-3 fw-bold text-white">
+              <img
+                src="../image/logo-zalopay.svg"
+                class="bg-white rounded-2 ms-2 py-2 col-1 w-25"
+                alt=""
+              />
+              <p class="col my-auto fw-bold">Thanh toán Zalo Pay</p>
+              <div class="form-check col-1 mx-3 my-auto">
                 <input
-                  type="text"
-                  class="form-control bg-none col"
-                  name=""
-                  id="hoten"
-                  aria-describedby="helpId"
-                  placeholder=""
+                  class="form-check-input"
+                  type="radio"
+                  name="tt"
+                  id="zlpay"
+                  value="zlpaymodal"
                 />
-                <span
-                  class="text-danger bg-light col-12 mt-2"
-                  id="errorhoten"
-                ></span>
-              </div>
-              <div class="row my-2">
-                <label
-                  for=""
-                  class="form-label text-white my-2 fw-bold fs-5 col-4"
-                  >Điện thoại</label
-                >
-                <input
-                  type="text"
-                  class="form-control bg-none col"
-                  name=""
-                  id="sdt"
-                  aria-describedby="helpId"
-                  placeholder=""
-                />
-                <span
-                  class="text-danger bg-light col-12 mt-2"
-                  id="errorsdt"
-                ></span>
-              </div>
-              <div class="row">
-                <label
-                  for=""
-                  class="form-label5 text-white my-2 fw-bold fs-5 col-4"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  class="form-control bg-none col"
-                  name=""
-                  id="email"
-                  aria-describedby="helpId"
-                  placeholder=""
-                />
-                <span
-                  class="text-danger bg-light col-12 mt-2"
-                  id="erroremail"
-                ></span>
               </div>
             </div>
+            <div class="row mt-1 py-3 fw-bold text-white">
+              <img
+                src="../image/momo-logo.png"
+                style="width: 15%"
+                class="bg-white ms-2 rounded-2 py-2 col-1 me-4"
+                alt=""
+              />
+              <p class="col my-auto fw-bold ps-4">&thinsp; Thanh toán MoMo</p>
+              <div class="form-check col-1 mx-3 my-auto">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="tt"
+                  id="momo"
+                  value="momomodal"
+                />
+              </div>
+            </div>
+            <div class="row mt-1 py-3 fw-bold text-white">
+              <img
+                src="../image/QR.png"
+                style="width: 15%"
+                class="bg-white ms-2 rounded-2 py-2 col-1 me-5"
+                alt=""
+              />
+              <p class="col my-auto fw-bold">Thanh toán QR ngân hàng</p>
+              <div class="form-check col-1 mx-3 my-auto">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="tt"
+                  id="qr"
+                  value="qrmodal"
+                />
+              </div>
+            </div>
+            <p class="fw-bold fs-5 text-white my-2">
+              * Bạn cần đọc kỹ các điều khoản thanh toán trực tuyến sau:
+            </p>
             <div
               id="note"
               style="height: 300px"
               class="rounded-4 overflow-scroll overflow-x-hidden bg-white p-3"
             >
-              <b>Lưu ý:</b>
-              <p>- Vé đã mua không thể đổi hay trả lại.</p>
               <p>
-                - Khi được yêu cầu, vui lòng xuất trình giấy tờ tùy thân để
-                chứng thực độ tuổi khi xem phim.
+                Chào mừng quý khách đến với
+                <strong>Rạp phim TH2D</strong>.
               </p>
               <p>
-                - Bản sao thông tin vé sẽ được lưu vào mục lịch sử giao dịch
-                trong tài khoản nếu quý khách đã đăng nhập khi mua vé. 1 bản sao
-                khác sẽ gửi đến Email của quý khách. Quý khách vui lòng kiểm tra
-                kỹ cả trong mục spam email.
+                <strong
+                  >Điều Khoản Thanh Toán Trực Tuyến - Rạp Phim TH2D</strong
+                >
               </p>
+
+              <p><strong>1. Thanh Toán Trực Tuyến:</strong></p>
+
               <p>
-                - Quý khách vui lòng lưu lại hoặc chụp ảnh lại để xuất trình khi
-                qua cửa soát vé <b>(KHÔNG CẦN IN VÉ TẠI QUẦY)</b>.
+                - <strong>Thanh Toán qua Momo:</strong> Khách hàng có thể sử
+                dụng ứng dụng Momo để thanh toán vé xem phim tại Rạp Phim TH2D.
+                Sau khi chọn vé và hoàn tất đặt hàng trên trang web hoặc ứng
+                dụng di động của chúng tôi, khách hàng sẽ được chuyển đến cổng
+                thanh toán của Momo để nhập thông tin thanh toán và hoàn tất
+                giao dịch.
               </p>
+
               <p>
-                - Nếu có kèm mua bắp nước online quý khách được ưu tiên khi xếp
-                hàng để lên thẳng quầy vé in hóa đơn, sau đó xếp hàng ở quầy bắp
-                nước để nhận.
+                - <strong>Thanh Toán qua Zalo Pay:</strong> Rạp Phim TH2D cũng
+                chấp nhận thanh toán qua Zalo Pay. Khách hàng có thể thực hiện
+                thanh toán bằng cách quét mã QR hoặc nhập mã thanh toán trên ứng
+                dụng Zalo Pay của mình. Quá trình thanh toán sẽ được thực hiện
+                một cách nhanh chóng và an toàn.
               </p>
+
+              <p>
+                - <strong>Thanh Toán qua QR Ngân Hàng:</strong> Để đáp ứng nhu
+                cầu thanh toán của khách hàng, Rạp Phim TH2D cung cấp phương
+                thức thanh toán qua mã QR của các ngân hàng địa phương. Khách
+                hàng có thể sử dụng ứng dụng ngân hàng trực tuyến để quét mã QR
+                trên máy tính hoặc thiết bị di động và hoàn tất giao dịch một
+                cách thuận tiện.
+              </p>
+              <p><strong>Hướng Dẫn Giải Quyết Khi Đã Thanh Toán:</strong></p>
+
+              <p>
+                Trong trường hợp đã thanh toán mà có nhu cầu đổi trả vé, khách
+                hàng vui lòng tuân theo hướng dẫn sau:
+              </p>
+
+              <ul>
+                <li>
+                  Liên hệ trực tiếp với Rạp Phim TH2D thông qua số hotline hoặc
+                  đến quầy vé tại rạp để yêu cầu đổi trả vé.
+                </li>
+                <li>
+                  Cung cấp thông tin cần thiết như mã đơn hàng hoặc mã vé để
+                  nhân viên rạp có thể xác nhận giao dịch thanh toán và thực
+                  hiện việc đổi trả vé.
+                </li>
+                <li>
+                  Đối với thanh toán qua Momo, Zalo Pay hoặc QR Ngân Hàng, số
+                  tiền đã thanh toán sẽ được hoàn trả lại vào tài khoản hoặc ví
+                  điện tử tương ứng trong thời gian xử lý đổi trả.
+                </li>
+              </ul>
+
+              <p><strong>Lưu Ý:</strong></p>
+
+              <ul>
+                <li>
+                  Không có phí đổi trả vé cho các trường hợp đổi trước thời gian
+                  chiếu phim ít nhất 2 giờ.
+                </li>
+                <li>
+                  Trong trường hợp đặc biệt, như hủy chiếu phim từ phía rạp,
+                  khách hàng sẽ được hoàn trả toàn bộ số tiền đã thanh toán.
+                </li>
+              </ul>
+
+              <p>
+                Rạp Phim TH2D cam kết đảm bảo quyền lợi của khách hàng và cung
+                cấp dịch vụ đổi trả vé linh hoạt và tiện lợi nhất. Đồng thời,
+                chúng tôi luôn sẵn lòng hỗ trợ và giải quyết mọi vấn đề phát
+                sinh từ quá trình thanh toán và sử dụng dịch vụ của chúng tôi.
+              </p>
+            </div>
+            <div class="form-check mt-2">
+              <input
+                class="form-check-input my-3"
+                type="checkbox"
+                value=""
+                id="dieukhoan"
+              />
+              <label
+                class="form-check-label fw-bold fs-6 text-white my-2"
+                for=""
+              >
+                Tôi ĐÃ ĐỌC và ĐỒNG Ý với điều khoản thanh toán.
+              </label>
             </div>
             <button
               name=""
-              id="datve"
+              id="btn_thanhtoan"
               class="btn mt-3 w-100 mx-0 fs-4 text-white"
               style="background-color: rgb(59, 180, 59)"
               disabled
             >
-              ĐẶT VÉ
+              THANH TOÁN
             </button>
           </div>
         </div>
       </div>
+      <div id="thongtinve" class="d-none justify-content-center g-1">
+        <div
+          class="p-0 rounded-top-5 pb-3 border position-relative me-2"
+          style="background-color: rgb(216, 4, 124)"
+        >
+          <nav
+            class="nav row border-bottom border-3 text-white p-0 m-0 pb-3 mb-3"
+          >
+            <a
+              class="nav-link col active fs-4 text-white text-center"
+              href="javascript:history.back()"
+              aria-current="page"
+              >Quay lại</a
+            >
+            <p
+              style="cursor: pointer"
+              class="nav-link col fs-4 text-white text-center"
+              href=""
+            >
+              01. Đặt ghế
+            </p>
+            <p
+              style="cursor: pointer"
+              class="nav-link col fs-4 text-white text-center"
+              href=""
+            >
+              02. Thanh Toán
+            </p>
+            <p
+              style="cursor: pointer"
+              class="nav-link col fs-4 text-white text-center border-bottom border-3"
+              href=""
+            >
+              03. Thông tin vé
+            </p>
+          </nav>
+          <div class="container-fluid">
+            <strong class="text-warning"
+              >* Thông tin phía dưới là thông tin vé quý khách vừa đặt</strong
+            >
+            <div class="row mt-5">
+              <div class="col">
+                <p
+                  class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                >
+                  Thông tin vé
+                </p>
+                <div class="row">
+                  <p class="text-white fs-5 col-4">Mã đặt vé</p>
+                  <img src="../image/thongtinve.png" class="col" alt="" />
+                </div>
+                <div class="row">
+                  <p class="text-white fs-5 col-4">Phim:</p>
+                  <p class="text-white fs-5 col fw-bold">
+                    Aquaman Và Vương Quốc Thất Lạc
+                  </p>
+                </div>
+                <div class="row">
+                  <p class="text-white fs-5 col-4">Thời gian:</p>
+                  <p class="text-white fs-5 col fw-bold" id="ttv_thoigian"></p>
+                </div>
+                <div class="row">
+                  <p class="text-white fs-5 col-4">Ghế đã chọn:</p>
+                  <p class="text-white fs-5 col fw-bold" id="ttv_ghechon"></p>
+                </div>
+              </div>
+              <div class="col">
+                <p
+                  class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                >
+                  Thông tin đặt vé
+                </p>
+                <div class="row">
+                  <p class="text-white fs-5 col-4 mx-0">Họ tên:</p>
+                  <p
+                    class="text-white fs-5 col fw-bold mx-0"
+                    id="ttv_hoten"
+                  ></p>
+                </div>
+                <div class="row">
+                  <p class="text-white fs-5 col-4 mx-0">Điện thoại:</p>
+                  <p class="text-white fs-5 col fw-bold mx-0" id="ttv_sdt"></p>
+                </div>
+                <div class="row">
+                  <p class="text-white fs-5 col-4 mx-0">Email:</p>
+                  <p
+                    class="text-white fs-5 col fw-bold mx-0"
+                    id="ttv_email"
+                  ></p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p
+                  class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                >
+                  Thông tin combo bắp nước
+                </p>
+                <div
+                  class="text-white fs-5 col fw-bold mx-0"
+                  id="ttv_combo"
+                ></div>
+              </div>
+              <div class="col">
+                <p
+                  class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                >
+                  Thông tin thanh toán
+                </p>
+                <div class="row">
+                  <p class="text-white fs-5 col-4 mx-0">Tổng tiền :</p>
+                  <p
+                    class="text-white fs-5 col fw-bold mx-0"
+                    id="ttv_tongtien"
+                  ></p>
+                </div>
+                <div class="row">
+                  <p class="text-white fs-5 col-4 mx-0">Vé ghế :</p>
+                  <p
+                    class="text-white fs-5 col fw-bold mx-0"
+                    id="ttv_tienghe"
+                  ></p>
+                </div>
+                <div class="row">
+                  <p class="text-white fs-5 col-4 mx-0">Combo :</p>
+                  <p
+                    class="text-white fs-5 col fw-bold mx-0"
+                    id="ttv_tiencombo"
+                  ></p>
+                </div>
+              </div>
+              <div class="col-12">
+                <p
+                  class="fs-3 text-white fw-bold border-bottom border-2 border-white text-center pb-2"
+                >
+                  Chú ý :
+                </p>
+                <h3 class="text-white text-center">
+                  Nếu có thông tin sai sót vui lòng liên hệ ngay !
+                </h3>
+                <h5 class="text-white text-center">Hotline : 0914941896</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modals -->
+      <div class="modal modal-lg" id="zlpaymodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title text-primary">Thanh toán bằng ZaloPay</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body row pt-3">
+              <div class="col-5">
+                <h4 class="my-2 text-center">Thông tin đơn hàng</h4>
+                <h5 class="my-2">Nhà cung cấp</h5>
+                <div class="d-flex">
+                  <img
+                    src="../image/logo-removebg-preview.png"
+                    class="w-75"
+                    alt=""
+                  />
+                </div>
+                <h5 class="my-2">Mô tả</h5>
+                <p class="my-2 fs-6">TH2D - Thanh toan ve xem phim</p>
+                <h5 class="my-2">Tổng tiền</h5>
+                <p class="my-2 fs-3 fw-bold qr_sotien"></p>
+              </div>
+              <div class="col">
+                <img
+                  src="../image/QR_ThanhToanZLPay.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <button
+                  class="xacnhan btn btn-success"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  Xác nhận
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal modal-lg" id="momomodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title" style="color: #d8047c">
+                Thanh toán bằng MoMo
+              </h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body row pt-3">
+              <div class="col-5">
+                <h4 class="my-2 text-center">Thông tin đơn hàng</h4>
+                <h5 class="my-2">Nhà cung cấp</h5>
+                <div class="d-flex">
+                  <img
+                    src="../image/logo-removebg-preview.png"
+                    class="w-75"
+                    alt=""
+                  />
+                </div>
+                <h5 class="my-2">Mô tả</h5>
+                <p class="my-2 fs-6">TH2D - Thanh toan ve xem phim</p>
+                <h5 class="my-2">Tổng tiền</h5>
+                <p class="my-2 fs-3 fw-bold qr_sotien"></p>
+              </div>
+              <div class="col">
+                <img
+                  src="../image/QR_ThanhToanMOMO.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <button
+                  class="xacnhan btn btn-success"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  Xác nhận
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal modal-lg" id="qrmodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title text-success">
+                Thanh toán bằng QR Ngân Hàng
+              </h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body row pt-3">
+              <div class="col-5">
+                <h3 class="my-2 text-center">Thông tin đơn hàng</h3>
+                <h5 class="my-2">Nhà cung cấp</h5>
+                <div class="d-flex">
+                  <img
+                    src="../image/logo-removebg-preview.png"
+                    class="w-75"
+                    alt=""
+                  />
+                </div>
+                <h5 class="my-2">Mô tả</h5>
+                <p class="my-2 fs-6">TH2D - Thanh toan ve xem phim</p>
+                <h5 class="my-2">Tổng tiền</h5>
+                <p class="my-2 fs-3 fw-bold qr_sotien"></p>
+              </div>
+              <div class="col">
+                <img
+                  src="../image/QR_ThanhToanQR.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <button
+                  class="xacnhan btn btn-success"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  Xác nhận
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div
         class="modal modal-md fade"
         id="modalId"

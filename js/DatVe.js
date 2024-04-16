@@ -253,24 +253,93 @@ $(document).ready(function () {
     $("#tt_email").html($("#email").val());
     $("#tt_sdt").html($("#sdt").val());
 
-    if(pepngot > 0 || pepphomai > 0 || upngot > 0 || upphomai > 0 || Mirindangot > 0 || Mirindaphomai > 0 ){
+    $("#tt_tongtien").html(GiaGhe+combo +"  đ")
+    $("#tt_tienghe").html(GiaGhe +"  đ")
+    $("#tt_tiencombo").html($("#tiencombo").html())
+
+    if (
+      pepngot > 0 ||
+      pepphomai > 0 ||
+      upngot > 0 ||
+      upphomai > 0 ||
+      Mirindangot > 0 ||
+      Mirindaphomai > 0
+    ) {
       if (pepngot > 0)
-      $("#tt_combo").append("<p>Pepsi + Bắp Ngọt " + pepngot + " combo </p>");
-    if (pepphomai > 0)
-      $("#tt_combo").append("<p>Pepsi + Bắp Phô Mai " + pepphomai + " combo </p>");
-    if (upngot > 0)
-      $("#tt_combo").append("<p>7Up + Bắp Ngọt " + upngot + " combo </p>");
-    if (upphomai > 0)
-      $("#tt_combo").append("<p>7Up + Bắp Phô Mai " + upphomai + " combo </p>");
-    if (Mirindangot > 0)
-      $("#tt_combo").append("<p>Mirinda + Bắp Ngọt " + Mirindangot + " combo </p>");
-    if (Mirindaphomai > 0)
-      $("#tt_combo").append(
-        "<p>Mirinda + Bắp Phô Mai " + Mirindaphomai + " combo </p>"
-      );
-    }
-    else {
+        $("#tt_combo").append("<p>Pepsi + Bắp Ngọt " + pepngot + " combo </p>");
+      if (pepphomai > 0)
+        $("#tt_combo").append(
+          "<p>Pepsi + Bắp Phô Mai " + pepphomai + " combo </p>"
+        );
+      if (upngot > 0)
+        $("#tt_combo").append("<p>7Up + Bắp Ngọt " + upngot + " combo </p>");
+      if (upphomai > 0)
+        $("#tt_combo").append(
+          "<p>7Up + Bắp Phô Mai " + upphomai + " combo </p>"
+        );
+      if (Mirindangot > 0)
+        $("#tt_combo").append(
+          "<p>Mirinda + Bắp Ngọt " + Mirindangot + " combo </p>"
+        );
+      if (Mirindaphomai > 0)
+        $("#tt_combo").append(
+          "<p>Mirinda + Bắp Phô Mai " + Mirindaphomai + " combo </p>"
+        );
+    } else {
       $("#tt_combo").html("Không có combo bắp nước nào");
     }
   });
+  $("#momo").change(function () {
+    if ($(this).prop("checked")) {
+      $("#btn_thanhtoan").prop("disabled", false);
+    } else {
+      $("#btn_thanhtoan").prop("disabled", true);
+    }
+  });
+  $("#zlpay").change(function () {
+    if ($(this).prop("checked")) {
+      $("#btn_thanhtoan").prop("disabled", false);
+    } else {
+      $("#btn_thanhtoan").prop("disabled", true);
+    }
+  });
+  $("#qr").change(function () {
+    if ($(this).prop("checked")) {
+      $("#btn_thanhtoan").prop("disabled", false);
+    } else {
+      $("#btn_thanhtoan").prop("disabled", true);
+    }
+  });
+  $("#btn_thanhtoan").click(function(){
+    if(!$("#dieukhoan").is(":checked")){
+      alert("Vui lòng đọc và đồng ý điều khoản trước khi thanh toán !")
+    }else{
+      $(".qr_sotien").html(GiaGhe + combo + "  đ")
+      $("#datghe").addClass("d-none");
+      $("#thanhtoan").removeClass("d-none");
+      $("#ttv_thoigian").html($("#film_time").html());
+      $("#ttv_ghechon").html(listTenGhe.join(", "));
+      $("#ttv_hoten").html($("#hoten").val());
+      $("#ttv_email").html($("#email").val());
+      $("#ttv_sdt").html($("#sdt").val());
+      $("#ttv_combo").html($("#tt_combo").html())
+      $("#ttv_tongtien").html(GiaGhe+combo +"  đ")
+      $("#ttv_tienghe").html(GiaGhe +"  đ")
+      $("#ttv_tiencombo").html($("#tt_tiencombo").html())
+      if ($("#momo").prop("checked")) {
+          $("#momomodal").modal("show");
+      }
+      else if ($("#zlpay").prop("checked")) {
+          $("#zlpaymodal").modal("show");
+      }
+      else if ($("#qr").prop("checked")) {
+          $("#qrmodal").modal("show");
+      }
+    }
+  })
+  $(".xacnhan").click(function(){
+    alert("Thanh toán vé xem phim thành công")
+    $("#thongtinve").removeClass("d-none")
+    $("#thanhtoan").addClass("d-none")
+  })
 });
