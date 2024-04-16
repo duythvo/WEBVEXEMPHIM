@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <script src="../js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/newTintuc.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/Lichchieu.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
 
   <body>
@@ -225,261 +228,62 @@
         <img src="../image/gap-lai-chi-bau.jpg" alt="" />
       </div>
 
-      <div
-        id="content"
-        class="container-fluid justify-content-center position-relative"
-      >
-        <h1 class="text-center text-white p-3">Tin Tức</h1>
-        <div class="justify-content-center d-flex mb-5">
-          <div id="dienanh" class="px-5 fs-3 p-3 rounded-top-4 rounded-end-5">
-            <a
-              class="text-decoration-none text-black fw-bold"
-              href="../html/newTinTuc.html"
-              >TIN ĐIỆN ẢNH</a
-            >
+      <div id="content" class="px-5">
+        <div class="row my-4">
+          <div class="col">
+            <h2 class="text-white text-center mb-5">HỆ THỐNG RẠP</h2>
+            <div class="mb-3">
+              <select
+                class="form-select form-select-lg bg-dark text-white py-3 rounded-4"
+                style="
+                  border: 4px solid purple;
+                "
+                name=""
+                id="chon"
+              >
+                <option selected>Chọn rạp phim</option>
+                <option value="gv">Rạp TH2D Gò Vấp</option>
+                <option value="dn">Rạp TH2D Đồng Nai</option>
+                <option value="gl">Rạp TH2D Gia Lai</option>
+                <option value="dt">Rạp TH2D Đồng Tháp</option>
+              </select>
+            </div>
           </div>
-          <div id="tuyendung" class="px-5 fs-3 p-3 rounded-top-4 rounded-end-5">
-            <a
-              class="text-decoration-none fw-bold"
-              href="../html/Tuyendung.html"
-              >&nbsp;&nbsp;TUYỂN DỤNG</a
-            >
+          <div class="col">
+            <img
+              src="../image/logo-removebg-preview.png"
+              class="img-fluid my-5"
+              alt=""
+            />
+          </div>
+          <div class="col">
+            <h2 class="text-white text-center">THÔNG TIN RẠP</h2>
+            <div id="diaChi" class="text-white fs-4"></div>
           </div>
         </div>
-        <div id="listnew" class="container-fluid container-md">
-          <div class="row container-fluid g-3 position-relative">
-            <div class="col-lg col-4">
-              <div class="p-3 bg-white hover-yellow">
-                <a class="h-100 m-100" href="TGDQ.html">
-                  <img
-                    class="img-fluid max-vw-100 w-100"
-                    src="../image/thanhguomdietquy.png"
-                    alt="ThanhGuomDietQuy"
-                  />
-                  <h1 class="fs-5">
-                    [THANH GƯƠM DIỆT QUỶ: PHÉP MÀU TÌNH THÂN, CHO ĐẾN CHUYẾN ĐẶC
-                    HUẤN CỦA ĐẠI TRỤ]
-                  </h1>
-                  <p class="fs-6 lh-1">
-                    [THANH GƯƠM DIỆT QUỶ: PHÉP MÀU TÌNH THÂN, CHO ĐẾN CHUYẾN ĐẶC
-                    HUẤN CỦA ĐẠI TRỤ] - THANH GƯƠM DIỆT QUỶ TRỞ LẠI VỚI MÙA 4 VÀ
-                    PHẦN ĐIỆN ẢNH ĐẶC BIỆT, HỨA HẸN “CÀN QUÉT” 140 QUỐC GIA TOÀN
-                    CẦU
-                  </p>
-                </a>
-              </div>
-              <br />
-              <div class="p-3 bg-white hover-yellow">
-                <a class="h-100 m-100" href="../html/GLCB.html">
-                  <img
-                    class="img-fluid max-vw-100 w-100"
-                    src="../image/gaplaichibau.png"
-                    alt="gaplaichibau"
-                  />
-                  <h1 class="fs-5">
-                    PHIM TẾT "GẶP LẠI CHỊ BẦU" HÉ LỘ DÀN DIỄN VIÊN CHÍNH THỨC:
-                    ANH TÚ, DIỆU NHI, NGỌC PHƯỚC, QUỐC KHÁNH VÀ LÊ GIANG
-                  </h1>
-                  <p class="fs-6 lh-1">
-                    Phim Tết Gặp Lại Chị Bầu chính thức công bố dàn diễn viên
-                    chính, bắt đầu màn chạy đà cho cuộc đua phòng vé nhộn nhịp
-                    dịp Tết Giáp Thìn 2024.
-                  </p>
-                </a>
-              </div>
-              <br />
-              <div class="p-3 bg-white hover-yellow">
-                <a class="h-100 m-100" href="../html/Dune2.html">
-                  <img
-                    src="../image/hanhtrinhcat(2).png"
-                    alt="hanhtrinhcat2"
-                    class="img-fluid max-vw-100 w-100"
-                  />
-                  <h1 class="fs-5">
-                    [Dune: Hành Tinh Cát - Phần Hai] - Phần tiếp theo của "Dune"
-                    hé lộ những hình ảnh đầu tiên: Kiệt tác điện ảnh chính thức
-                    trở lại
-                  </h1>
-                  <p class="fs-6 lh-1">
-                    Ra mắt vào thời kỳ đại dịch COVID-19 vẫn đang diễn biến căng
-                    thẳng, Dune (tựa Việt: Dune: Hành Tinh Cát) được coi là một
-                    chiến thắng quan trọng tại phòng vé của Warner Bros.
-                    Pictures, nhất là khi nhìn vào số vốn đầu tư khủng mà studio
-                    này dành ra cho siêu phẩm của đạo diễn Denis Villeneuve.
-                    Thông tin phần hai của Dune được bật đèn xanh đã khiến không
-                    ít khán giả hào hứng, và sau hai năm, những hình ảnh đầu
-                    tiên trong kiệt tác điện ảnh này đã chính thức được hé lộ.
-                  </p>
-                </a>
-              </div>
+
+        <div>
+            
+        </div>
+
+        <div class="row">
+          <div class="col-2 m-auto">
+            <img src="../image/icon-promotion.png" class="img-fluid" alt="" />
+            <h3 class="text-white">Ưu đãi</h3>
+          </div>
+          <div class="col">
+            <div class="bg-white p-3 rounded-4">
+                <img src="../image/DATE.png" class="img-fluid" alt="">
             </div>
-            <div class="col-4">
-              <div class="p-3 bg-white hover-yellow">
-                <a class="h-100 m-100" href="../html/SPY.html">
-                  <img
-                    src="../image/spyfamily.png"
-                    alt="spyfamily"
-                    class="img-fluid max-vw-100 w-100"
-                  />
-                  <h1 class="fs-5">
-                    [SPY x FAMILY CODE: WHITE] - Phiên bản điện ảnh của bom tấn
-                    anime “SPYxFAMILY” đổ bộ rạp Việt dịp Tết Nguyên đán
-                  </h1>
-                  <p class="fs-6 lh-1">
-                    Một trong những thương hiệu manga - anime đình đám nhất
-                    trong thời gian gần đây - SPYxFAMILY đã có bản điện ảnh và
-                    sẽ đến với khán giả Việt vào đúng ngày đầu tiên của năm mới
-                    âm lịch. Gia Đình x Điệp Viên Mã: Trắng vừa công bố lịch ra
-                    rạp chính thức vào đúng Mùng 1 Tết Nguyên đán Giáp Thìn, trở
-                    thành "chiến binh" đáng gờm trên đường đua phim Tết vốn đã
-                    cực kỳ nhộn nhịp.
-                  </p>
-                </a>
-              </div>
-              <br />
-              <div class="p-3 bg-white hover-yellow">
-                <a class="h-100 m-100" href="../html/Khaimac.html">
-                  <img
-                    src="../image/lienhoanphim.png"
-                    alt="lienhoanphim"
-                    class="img-fluid max-vw-100 w-100"
-                  />
-                  <h1 class="fs-5">
-                    Đêm khai mạc Liên hoan phim Việt Nam đầy ấn tượng ở phố núi
-                    Đà Lạt
-                  </h1>
-                  <p class="fs-6 lh-1">
-                    Đêm 21.11 tại Quảng trường Lâm Viên, TP.Đà Lạt (Lâm Đồng),
-                    Liên hoan phim Việt Nam lần thứ 23 đã khai mạc đầy ấn tượng.
-                  </p>
-                </a>
-              </div>
-              <br />
-              <div class="p-3 bg-white hover-yellow">
-                <a class="h-100 m-100" href="../html/Aquaman.html">
-                  <img
-                    src="../image/aquaman.png"
-                    alt="aquaman"
-                    class="img-fluid max-vw-100 w-100"
-                  />
-                  <h1 class="fs-5">
-                    [Aquaman Và Vương Quốc Thất Lạc] - Bom tấn có doanh thu cao
-                    nhất vũ trụ DC “Aquaman” chính thức trở lại màn ảnh rộng với
-                    phần phim tiếp theo
-                  </h1>
-                  <p class="fs-6 lh-1">
-                    Đêm 14/9 (giờ Việt Nam), phần phim tiếp theo của bom tấn DC
-                    từng làm mưa làm gió phòng vé năm 2018 Aquaman chính thức hé
-                    lộ trailer đầu tiên.
-                  </p>
-                </a>
-              </div>
-              <br />
-              <div class="p-3 bg-white hover-yellow">
-                <a class="h-100 m-100" href="../html/Kong2.html">
-                  <img
-                    src="../image/godzilla2.png"
-                    alt="godzilla"
-                    class="img-fluid max-vw-100 w-100"
-                  />
-                  <h1 class="fs-5">
-                    [Godzilla x Kong: The New Empire] - Warner Bros. Pictures và
-                    Legendary Pictures đã tiết lộ tựa đề chính thức cho bộ phim
-                    mới nhất của “vũ trụ quái vật” Monsterverse
-                  </h1>
-                  <p class="fs-6 lh-1">
-                    Ngày hôm nay, Warner Bros. Pictures và Legendary Pictures đã
-                    tiết lộ tựa đề chính thức cho bộ phim mới nhất của "vũ trụ
-                    quái vật" Monsterverse - Godzilla x Kong: The New Empire.
-                    Cùng với đó, một đoạn video bí ẩn tiết lộ tương lai của hai
-                    Titan huyền thoại.
-                  </p>
-                </a>
-              </div>
+          </div>
+          <div class="col">
+            <div class="bg-white p-3 rounded-4">
+                <img src="../image/WED.png" class="img-fluid" alt="">
             </div>
-            <div class="col-4">
-              <div class="p-3 bg-white hover-yellow">
-                <a class="h-100 m-100" href="../html/Phim.html">
-                  <img
-                    src="../image/phimdangchuy2023.png"
-                    alt="phimdangchuy2023"
-                    class="img-fluid max-vw-100 w-100"
-                  />
-                  <h1 class="fs-5">
-                    Các tựa phim Việt đáng chú ý dịp cuối năm 2023
-                  </h1>
-                  <p class="fs-6 lh-1">
-                    Mùa lễ hội cuối năm với loạt sự kiện lớn như lễ Giáng sinh,
-                    Tết Dương lịch và Tết Nguyên đán 2024, hàng loạt tựa phim
-                    Việt được chú ý sẽ lần lượt ra rạp, mang đến cho khán giả
-                    nước nhà những thước phim thú vị, đa dạng cả về thể loại và
-                    nội dung.
-                  </p>
-                </a>
-              </div>
-              <br />
-              <div class="p-3 bg-white hover-yellow">
-                <a class="h-100 m-100" href="../html/Dune1.html">
-                  <img
-                    src="../image/hanhtrinhcat(1).png"
-                    alt="hanhtrinhcat"
-                    class="img-fluid max-vw-100 w-100"
-                  />
-                  <h1 class="fs-5">
-                    [Dune: Hành Tinh Cát - Phần Hai] - Kiệt tác màn ảnh “Dune:
-                    Hành Tinh Cát - Phần Hai” tung trailer mới choáng ngợp
-                  </h1>
-                  <p class="fs-6 lh-1">
-                    Kiệt tác điện ảnh được chờ mong nhất năm 2024 của đạo diễn
-                    Denis Villeneuve - Dune: Hành Tinh Cát - Phần Hai tiếp tục
-                    hé lộ những hình ảnh mới xoay quanh cuộc hành trình vĩ đại
-                    của Paul Atreides (Timothée Chalamet thủ vai) trên hành tinh
-                    Arrakis đầy rẫy hiểm nguy.
-                  </p>
-                </a>
-              </div>
-              <br />
-              <div class="p-3 bg-white hover-yellow">
-                <a class="h-100 m-100" href="../html/Kong1.html">
-                  <img
-                    src="../image/godzilla.png"
-                    alt="godzilla"
-                    class="img-fluid max-vw-100 w-100"
-                  />
-                  <h1 class="fs-5">
-                    [Godzilla x Kong: Đế Chế Mới] - Trailer đầu tiên của siêu
-                    bom tấn 2024 “Godzilla x Kong” chính thức thả xích, hai siêu
-                    quái vật càn quét phòng vé trở lại
-                  </h1>
-                  <p class="fs-6 lh-1">
-                    Bom tấn hành động được chờ đợi nhất năm 2024 - Godzilla x
-                    Kong: Đế Chế Mới đã chính thức hé lộ những hình ảnh đầu tiên
-                    trong sự phấn khích của người hâm mộ. Từng đối đầu nhau và
-                    làm rung chuyển phòng vé toàn cầu trong phần phim Godzilla
-                    Đại Chiến Kong hồi 2021, giờ đây hai đại titan sẽ có màn bắt
-                    tay huyền thoại, cùng nhau bảo vệ sự sống trên địa cầu.
-                  </p>
-                </a>
-              </div>
-              <br />
-              <div class="p-3 bg-white hover-yellow">
-                <a class="h-100 m-100" href="../html/MNDL.html">
-                  <img
-                    src="../image/monngondalat.png"
-                    alt="aquaman"
-                    class="img-fluid max-vw-100 w-100"
-                  />
-                  <h1 class="fs-5">
-                    [MÓN NGON ĐÀ LẠT] KHÁM PHÁ ẨM THỰC MÙA LỄ HỘI TẠI NHÀ HÀNG
-                    MÓN NGON ĐÀ LẠT
-                  </h1>
-                  <p class="fs-6 lh-1">
-                    Trong không khí mát mẻ của tiết trời Đà Lạt, còn gì tuyệt
-                    vời hơn là được cùng gia đình, bạn bè thưởng thức một bữa
-                    tiệc ấm cúng mừng dịp lễ lớn tại Nhà hàng Món ngon Đà Lạt.
-                  </p>
-                </a>
-              </div>
+          </div>
+          <div class="col">
+            <div class="bg-white p-3 rounded-4">
+                <img src="../image/2024.png" class="img-fluid" alt="">
             </div>
           </div>
         </div>
@@ -635,7 +439,5 @@
         </div>
       </footer>
     </div>
-    <script src="../js/TinTuc.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>
