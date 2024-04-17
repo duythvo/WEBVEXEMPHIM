@@ -495,11 +495,13 @@ footer .nav h3{
   position: relative;
   cursor: pointer;
 }
-
+#tddienanh > a,
 #tuyendung > a {
   color: white;
 }
 
+#tddienanh:hover,
+#tddienanh:hover > a,
 #tuyendung:hover,
 #tuyendung:hover > a {
   color: black;
@@ -514,6 +516,26 @@ footer .nav h3{
   background-color: yellow !important;
 }
 
+#tddienanh {
+  position: relative;
+  right: -2%;
+  background-color: orange;
+  box-shadow: 10px 0px 10px rgb(231, 231, 0);
+  cursor: pointer;
+  z-index: 1;
+  font-size: 2vw;
+}
+
+#tdtuyendung {
+  background-color: yellow;
+  font-size: 2vw;
+  position: relative;
+  cursor: pointer;
+}
+
+.hover-yellow:hover {
+  background-color: yellow !important;
+}
 #tin {
   width: 1140px;
   background-color: #fff;
