@@ -197,11 +197,6 @@ ul {
 #tv {
   height: 1170px;
 }
-.mySwiper {
-  margin: auto;
-  width: 1170px;
-  padding: 50px;
-}
 swiper-slide > img {
   border: 5px solid purple;
   border-radius: 50px;
