@@ -186,7 +186,7 @@ $(document).ready(function () {
 
   $("#hoten").on("input", function (e) {
     var hoten = $("#hoten").val();
-    var checkhoten = /^[A-ZĐ][a-zđà-ỹ]*$/;
+    var checkhoten = /^[A-ZĐ][a-zđà-ỹ]*(\s+[A-ZĐ][a-zđà-ỹ]+)*\s*/;
     if (checkhoten.test(hoten) && hoten != "") {
       $("#hoten").addClass("is-valid").removeClass("is-invalid");
       $("#errorhoten").text("");
@@ -253,9 +253,9 @@ $(document).ready(function () {
     $("#tt_email").html($("#email").val());
     $("#tt_sdt").html($("#sdt").val());
 
-    $("#tt_tongtien").html(GiaGhe+combo +"  đ")
-    $("#tt_tienghe").html(GiaGhe +"  đ")
-    $("#tt_tiencombo").html($("#tiencombo").html())
+    $("#tt_tongtien").html(GiaGhe + combo + "  đ");
+    $("#tt_tienghe").html(GiaGhe + "  đ");
+    $("#tt_tiencombo").html($("#tiencombo").html());
 
     if (
       pepngot > 0 ||
@@ -310,11 +310,11 @@ $(document).ready(function () {
       $("#btn_thanhtoan").prop("disabled", true);
     }
   });
-  $("#btn_thanhtoan").click(function(){
-    if(!$("#dieukhoan").is(":checked")){
-      alert("Vui lòng đọc và đồng ý điều khoản trước khi thanh toán !")
-    }else{
-      $(".qr_sotien").html(GiaGhe + combo + "  đ")
+  $("#btn_thanhtoan").click(function () {
+    if (!$("#dieukhoan").is(":checked")) {
+      alert("Vui lòng đọc và đồng ý điều khoản trước khi thanh toán !");
+    } else {
+      $(".qr_sotien").html(GiaGhe + combo + "  đ");
       $("#datghe").addClass("d-none");
       $("#thanhtoan").removeClass("d-none");
       $("#ttv_thoigian").html($("#film_time").html());
@@ -322,30 +322,28 @@ $(document).ready(function () {
       $("#ttv_hoten").html($("#hoten").val());
       $("#ttv_email").html($("#email").val());
       $("#ttv_sdt").html($("#sdt").val());
-      $("#ttv_combo").html($("#tt_combo").html())
-      $("#ttv_tongtien").html(GiaGhe+combo +"  đ")
-      $("#ttv_tienghe").html(GiaGhe +"  đ")
-      $("#ttv_tiencombo").html($("#tt_tiencombo").html())
+      $("#ttv_combo").html($("#tt_combo").html());
+      $("#ttv_tongtien").html(GiaGhe + combo + "  đ");
+      $("#ttv_tienghe").html(GiaGhe + "  đ");
+      $("#ttv_tiencombo").html($("#tt_tiencombo").html());
       if ($("#momo").prop("checked")) {
-          $("#momomodal").modal("show");
-      }
-      else if ($("#zlpay").prop("checked")) {
-          $("#zlpaymodal").modal("show");
-      }
-      else if ($("#qr").prop("checked")) {
-          $("#qrmodal").modal("show");
+        $("#momomodal").modal("show");
+      } else if ($("#zlpay").prop("checked")) {
+        $("#zlpaymodal").modal("show");
+      } else if ($("#qr").prop("checked")) {
+        $("#qrmodal").modal("show");
       }
     }
-  })
-  $(".xacnhan").click(function(){
-    alert("Thanh toán vé xem phim thành công")
-    $("#thongtinve").removeClass("d-none")
-    $("#thanhtoan").addClass("d-none")
-  })
-  $(".xacnhan,#datve").click(function(){
+  });
+  $(".xacnhan").click(function () {
+    alert("Thanh toán vé xem phim thành công");
+    $("#thongtinve").removeClass("d-none");
+    $("#thanhtoan").addClass("d-none");
+  });
+  $(".xacnhan,#datve").click(function () {
     window.scrollTo({
-      top:0,
-      behavior: 'smooth'
-    })
-  })
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 });
