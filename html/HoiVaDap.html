@@ -9,46 +9,182 @@
   <link rel="stylesheet" href="../css/hvdstyle.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <!-- dan link nay -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <script src="../js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="../css/PDC.css" />
+    <link rel="stylesheet" href="../css/Home.css" />
+    <style>
+      .hidden {
+        opacity: 0;
+        transition: opacity 0.7s ease-out;
+        pointer-events: none;
+      }
+
+      .active {
+        opacity: 1;
+        transition: opacity 0.7s ease-out;
+        pointer-events: auto;
+      }
+
+      .li-bg {
+        background-color: yellow;
+      }
+
+      .a-cl {
+        color: black;
+      }
+    </style>
 </head>
 
 <body>
-  <div id="container">
-    <!-- navbar -->
-    <!-- <div id="header">
-      <div id="top">
-        <div id="TH2D">
-          <a href=""></a>
-        </div>
-        <div id="login">
-          <a href="">Đăng nhập</a>
-          <a href="">Đăng ký</a>
-        </div>
-
-        <div id="nav">
-          <a class="logo" href=""></a>
-          <div id="menu">
-            <ul>
-              <li><a href="">PHIM</a></li>
-              <li><a href="">LỊCH CHIẾU</a></li>
-              <li><a href="">RẠP VÀ GIÁ</a></li>
-              <li><a href="">KHUYẾN MÃI</a></li>
-              <li style="background-color: orange">
-                <a href="">HỎI VÀ ĐÁP</a>
-              </li>
-              <li><a href="">TIN TỨC</a></li>
-              <li><a href="">GIỚI THIỆU</a></li>
-              <li><a href="">LIÊN HỆ</a></li>
-            </ul>
+  <div class="container-fluid web-bg full-bg p-0">
+    <header class="fixed-top bg-black bg-opacity-50">
+      <nav class="navbar navbar-expand-xl container">
+          <div class="col-3 p-0 d-block">
+              <a><img src="../image/logo-removebg-preview.png" alt="" /></a>
           </div>
-        </div>
-      </div>
-    </div> -->
-    <div class="poster">
+          <div class="col-9 nav-out-sidebar d-xl-block">
+              <div class="row">
+                  <ul class="nav justify-content-end login-text">
+                      <img src="../image/ic-header-auth.svg" alt="" style="width: 30px" />
+                      <li class="nav-item">
+                          <a class="nav-link text-hover" href="">Đăng Nhập</a>
+                      </li>
+                      <li class="nav-item text-white my-auto">/</li>
+                      <li class="nav-item me-3">
+                          <a href="" class="nav-link text-hover">Đăng Ký</a>
+                      </li>
+                      <img src="../image/footer-vietnam.svg" alt="" style="width: 30px" />
+                      <span class="text-white ms-2 my-auto">VN</span>
+                  </ul>
+              </div>
+              <div class="row mt-5 TH2D-nav mb-1">
+                  <div class="col-1 mt-1 p-0">
+                      <a class="logo-home m-0" href=""></a>
+                  </div>
+                  <div class="col-11 p-1 rounded-5" style="border: #d8047c solid 1px; height: 59px">
+                      <ul class="nav menu-nav rounded-5 flex-nowrap"
+                          style="background-color: #d8047c; height: 50px">
+                          <li class="nav-item rounded-start-5 text-nowrap">
+                              <a href="" class="nav-link rounded-start-5" style="line-height: 34px">PHIM</a>
+                          </li>
+                          <li class="nav-item text-nowrap">
+                              <a href="" class="nav-link" style="line-height: 34px">LỊCH CHIẾU</a>
+                          </li>
+                          <li class="nav-item text-nowrap">
+                              <a href="" class="nav-link" style="line-height: 34px">RẠP VÀ GIÁ</a>
+                          </li>
+                          <li class="nav-item text-nowrap">
+                              <a href="" class="nav-link" style="line-height: 34px">KHUYỄN MÃI</a>
+                          </li>
+                          <li class="nav-item text-nowrap">
+                              <a href="" class="nav-link" style="line-height: 34px">HỎI VÀ ĐÁP</a>
+                          </li>
+                          <li class="nav-item text-nowrap">
+                              <a href="" class="nav-link" style="line-height: 34px">TIN TỨC</a>
+                          </li>
+                          <li class="nav-item text-nowrap">
+                              <a href="" class="nav-link" style="line-height: 34px">GIỚI THIỆU</a>
+                          </li>
+                          <li class="nav-item rounded-end-5 text-nowrap">
+                              <a href="" class="nav-link" style="line-height: 34px">LIÊN HỆ</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+          <div class="d-flex justify-content-end position-relative">
+              <button id="button-login" class="navbar-toggler">
+                  <img src="../image/ic-header-auth.svg" alt="" style="width: 25px" />
+                  <div id="list-login" class="position-absolute top-100 end-50 d-none" style="width: 140px">
+                      <ul class="navbar-nav bg-black ps-3 p-3">
+                          <li class="nav-item">
+                              <a href="" class="nav-link text-hover text-start">Đăng Nhập</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="" class="nav-link text-hover text-start">Đăng Ký</a>
+                          </li>
+                      </ul>
+                  </div>
+              </button>
+              <button class="navbar-toggler d-xl-none d-block" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar">
+                  <span>
+                      <img class="img-fluid" src="../image/hamburger.png" alt="" style="width: 35px;">
+                  </span>
+              </button>
+          </div>
+
+          <div class="offcanvas offcanvas-end bg-black d-xl-none" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                      <img src="../image/logo-removebg-preview.png" alt="" />
+                  </h5>
+                  <button type="button" class="btn-close-white btn-close" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                          <a class="nav-link text-hover" href="#">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-hover" href="#">PHIM</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-hover" href="#">LỊCH CHIẾU</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-hover" href="#">RẠP VÀ GIÁ</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-hover" href="#">KHUYẾN MÃI</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle text-white" href="##" role="button"
+                              data-bs-toggle="dropdown">
+                              KHÁC
+                          </a>
+                          <ul class="dropdown-menu bg-black">
+                              <li>
+                                  <a class="dropdown-item text-hover" href="#">HỎI VÀ ĐÁP</a>
+                              </li>
+                              <li>
+                                  <a class="dropdown-item text-hover" href="#">TIN TỨC</a>
+                              </li>
+                              <li>
+                                  <a class="dropdown-item text-hover" href="#">GIỚI THIỆU</a>
+                              </li>
+                              <li>
+                                  <a class="dropdown-item text-hover" href="#">LIÊN HỆ</a>
+                              </li>
+                          </ul>
+                      </li>
+                  </ul>
+                  <hr class="border border-white" />
+                  <ul class="d-flex list-unstyled">
+                      <li class="me-4">
+                          <img src="../image/footer-vietnam.svg" alt="" />
+                      </li>
+                      <li class="text-white">Vietnamese</li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+  <div class="poster">
       <img src="../image/gap-lai-chi-bau.jpg" alt="" />
-    </div>
+  </div>
 
     <div id="container-bg">
       <div id="content">
@@ -367,408 +503,116 @@
           </div>
         </section>
         <!-- PHIM ĐANG CHIẾU -->
-        <section class="phimdangchieu" id="phimdangchieu">
-          <div class="p-heading">
-            <h1 class="heading-title">CÁC PHIM ĐANG CHIẾU</h1>
-          </div>
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <!-- box1 -->
-              <div class="swiper-slide" style="color: white">
-                <div class="movie-box">
-                  <a href="">
-                    <img src="../image/tren-ban-nhau-duoi-ban-muu-poster.jpg" alt="" class="moviebox-img" />
-                  </a>
-                  <div class="box-content">
-                    <h2 class="movie title">TRÊN BÀN NHẬU DƯỚI BÀN MƯU</h2>
-                    <img src="https://cinestar.com.vn/catalog/view/theme/default/images/icon-2d.png" alt=""
-                      class="img2d" />
-                  </div>
-                  <a href="">
-                    <div class="movie-info">
-                      <p>
-                        Bối cảnh của bộ phim là một quán rượu đậm chất Hàn
-                        Quốc với câu mở đầu "Cuộc sống đâu cần gì, chỉ cần ai
-                        đó kề bên và rượu bia làm cớ". Phim khai thác về
-                        chuyện "bàn nhậu" của giới trẻ hiện nay và những yếu
-                        tố khác.
-                        <br />
-                        <span>...</span>
-                      </p>
-                      <a href=""><input type="button" value="Chi tiết" class="chitiet" /></a>
-                      <a href=""><input type="button" value="Xem trailer" class="w-trailer" /></a>
-                      <a href=""><input type="button" value="Mua vé" class="b-ticket" />
-                        <img src="../image/icon-start.png" alt="" />
-                      </a>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <!-- box2 -->
-              <div class="swiper-slide" style="color: white">
-                <div class="movie-box">
-                  <img src="../image/poster-nguoi-vo-cuoi-cung.jpg" alt="" class="moviebox-img" />
-                  <div class="box-content">
-                    <h2 class="movie title">NGƯỜI VỢ CUỐI CÙNG</h2>
-                    <img src="https://cinestar.com.vn/catalog/view/theme/default/images/icon-2d.png" alt=""
-                      class="img2d" />
-                    <a href="">
-                      <div class="movie-info">
-                        <p>
-                          Người Vợ Cuối Cùng sẽ lấy bối cảnh gia đình quan lại
-                          thời nhà Nguyễn đầu thế kỉ 19 để kể về câu chuyện
-                          thân phận đau khổ của người phụ nữ dưới xã hội thời
-                          bấy giờ.
-                          <br />
-                          <span>...</span>
-                        </p>
-                        <a href=""><input type="button" value="Chi tiết" class="chitiet" /></a>
-                        <a href=""><input type="button" value="Xem trailer" class="w-trailer" /></a>
-                        <a href=""><input type="button" value="Mua vé" class="b-ticket" />
-                          <img src="../image/icon-start.png" alt="" />
-                        </a>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- box3 -->
-              <div class="swiper-slide" style="color: white">
-                <div class="movie-box">
-                  <img src="../image/poster-quy-cau2.jpg" alt="" class="moviebox-img" />
-                  <div class="box-content">
-                    <h2 class="movie title">QUỶ CẨU</h2>
-                    <img src="https://cinestar.com.vn/catalog/view/theme/default/images/icon-2d.png" alt=""
-                      class="img2d" />
-                  </div>
-                  <a href="">
-                    <div class="movie-info">
-                      <p>
-                        Sau cái chết kỳ lạ của ông chủ lò mổ chó danh tiếng,
-                        những hiện tượng ma quái trong nhà liên tục xuất hiện.
-                        Nam_con trai của ông bắt đầu tìm hiểu và nhận ra mọi
-                        thứ có liên quan đến con chó .
-                        <br />
-                        <span>...</span>
-                      </p>
-                      <a href=""><input type="button" value="Chi tiết" class="chitiet" /></a>
-                      <a href=""><input type="button" value="Xem trailer" class="w-trailer" /></a>
-                      <a href=""><input type="button" value="Mua vé" class="b-ticket" />
-                        <img src="../image/icon-start.png" alt="" />
-                      </a>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <!-- box4 -->
-              <div class="swiper-slide" style="color: white">
-                <div class="movie-box">
-                  <img src="../image/mat-vu-ong.jpg" alt="" class="moviebox-img" />
-                  <div class="box-content">
-                    <h2 class="movie title">MẬT VỤ ONG</h2>
-                    <img src="https://cinestar.com.vn/catalog/view/theme/default/images/icon-2d.png" alt=""
-                      class="img2d" />
-                  </div>
-                  <a href="">
-                    <div class="movie-info">
-                      <p>
-                        Jason Statham vào vai Adam Clay, một người nuôi ong
-                        cần mẫn và đơn độc. Anh có mối quan hệ tốt với bà chủ
-                        nhà, thậm chí coi bà như người thân duy nhất của mình.
-                        Thế nhưng, một sự kiện xảy ra
-                        <br />
-                        <span>...</span>
-                      </p>
-                      <a href=""><input type="button" value="Chi tiết" class="chitiet" /></a>
-                      <a href=""><input type="button" value="Xem trailer" class="w-trailer" /></a>
-                      <a href=""><input type="button" value="Mua vé" class="b-ticket" />
-                        <img src="../image/icon-start.png" alt="" />
-                      </a>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <!-- box5 -->
-              <div class="swiper-slide" style="color: white">
-                <div class="movie-box">
-                  <img src="../image/ruou-cot-nguoi-poster.jpg" alt="" class="moviebox-img" />
-                  <div class="box-content">
-                    <h2 class="movie title">RƯỢU CỐT NGƯỜI</h2>
-                    <img src="https://cinestar.com.vn/catalog/view/theme/default/images/icon-2d.png" alt=""
-                      class="img2d" />
-                  </div>
-                  <a href="">
-                    <div class="movie-info">
-                      <p>
-                        Nhân vật chính trong Rượu Cốt Người là Trương Tử Kiệt
-                        (Lư Hãn Đình), một chàng trai quyết định tham gia tour
-                        du lịch trên đảo hoang cùng bạn bè để quên đi nỗi đau
-                        trước cái chết đột ngột của bạn gái
-                        <br />
-                        <span>...</span>
-                      </p>
-                      <a href=""><input type="button" value="Chi tiết" class="chitiet" /></a>
-                      <a href=""><input type="button" value="Xem trailer" class="w-trailer" /></a>
-                      <a href=""><input type="button" value="Mua vé" class="b-ticket" />
-                        <img src="../image/icon-start.png" alt="" />
-                      </a>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <!-- box6 -->
-              <div class="swiper-slide" style="color: white">
-                <div class="movie-box">
-                  <img src="../image/noryang-poster.jpg" alt="" class="moviebox-img" />
-                  <div class="box-content">
-                    <h2 class="movie title">ĐẠI HẢI CHIỀN NORYANG</h2>
-                    <img src="https://cinestar.com.vn/catalog/view/theme/default/images/icon-2d.png" alt=""
-                      class="img2d" />
-                  </div>
-                  <a href="">
-                    <div class="movie-info">
-                      <p>
-                        Trận đại hải chiến cuối cùng để chấm dứt cuộc chiến
-                        tranh 7 năm Nhật Bản - Triều Tiên, hạm đội liên minh
-                        của Đô Đốc Yin Sun-shin và quân đội nhà Minh cùng
-                        chống lại kẻ thù đông gần gấp 3 lần trong một
-                        <br />
-                        <span>...</span>
-                      </p>
-                      <a href=""><input type="button" value="Chi tiết" class="chitiet" /></a>
-                      <a href=""><input type="button" value="Xem trailer" class="w-trailer" /></a>
-                      <a href=""><input type="button" value="Mua vé" class="b-ticket" />
-                        <img src="../image/icon-start.png" alt="" />
-                      </a>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <!-- box7 -->
-              <div class="swiper-slide" style="color: white">
-                <div class="movie-box">
-                  <img src="../image/tokyo-chim-trong-bien-lua.jpg" alt="" class="moviebox-img" />
-                  <div class="box-content">
-                    <h2 class="movie title">CHÌM TRONG BIỂN LỬA</h2>
-                    <img src="https://cinestar.com.vn/catalog/view/theme/default/images/icon-2d.png" alt=""
-                      class="img2d" />
-                  </div>
-                  <a href="">
-                    <div class="movie-info">
-                      <p>
-                        Một cuộc xung đột nở ra khi một sự kiện chưa từng có
-                        xảy ra ở Yokohama sau khi một quả bom phát nổ ở
-                        Landmark Tower, khiến hàng nghìn người phải đấu tranh
-                        để chạy trốn. Bác sĩ Kitami muốn
-                        <br />
-                        <span>...</span>
-                      </p>
-                      <a href=""><input type="button" value="Chi tiết" class="chitiet" /></a>
-                      <a href=""><input type="button" value="Xem trailer" class="w-trailer" /></a>
-                      <a href=""><input type="button" value="Mua vé" class="b-ticket" />
-                        <img src="../image/icon-start.png" alt="" />
-                      </a>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <!-- box8 -->
-              <div class="swiper-slide" style="color: white">
-                <div class="movie-box">
-                  <img src="../image/digimon.jpg" alt="" class="moviebox-img" />
-                  <div class="box-content">
-                    <h2 class="movie title">
-                      DIGIMON ADVENTURE 02 (K): THE BEGINNING
-                    </h2>
-                    <img src="https://cinestar.com.vn/catalog/view/theme/default/images/icon-2d.png" alt=""
-                      class="img2d" />
-                  </div>
-                  <a href="">
-                    <div class="movie-info">
-                      <p>
-                        Tựa phim mà tuổi thơ 8x, 9x đời đầu với tên gọi Cuộc
-                        Phiêu Lưu Của Các Con Thú sẽ trở lại trên màn ảnh rộng
-                        mang tựa Digimon Adventure 02: The Beginning vào tháng
-                        1 này. Phần phim này kể về
-                        <br />
-                        <span>...</span>
-                      </p>
-                      <a href=""><input type="button" value="Chi tiết" class="chitiet" /></a>
-                      <a href=""><input type="button" value="Xem trailer" class="w-trailer" /></a>
-                      <a href=""><input type="button" value="Mua vé" class="b-ticket" />
-                        <img src="../image/icon-start.png" alt="" />
-                      </a>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <!-- box9 -->
-              <div class="swiper-slide" style="color: white">
-                <div class="movie-box">
-                  <img src="../image/vong-vay-ca-map.jpg" alt="" class="moviebox-img" />
-                  <div class="box-content">
-                    <h2 class="movie title">VÒNG VÂY CÁ MẬP</h2>
-                    <img src="https://cinestar.com.vn/catalog/view/theme/default/images/icon-2d.png" alt=""
-                      class="img2d" />
-                  </div>
-                  <a href="">
-                    <div class="movie-info">
-                      <p>
-                        "No Way Up" xoay quanh các nhân vật có xuất thân rất
-                        khác nhau gặp nhau khi chiếc máy bay họ đang di chuyển
-                        đâm xuống Thái Bình Dương. Chiếc máy bay gặp sự cố
-                        phải dừng lại một cách nguy hiểm
-                        <br />
-                        <span>...</span>
-                      </p>
-                      <a href=""><input type="button" value="Chi tiết" class="chitiet" /></a>
-                      <a href=""><input type="button" value="Xem trailer" class="w-trailer" /></a>
-                      <a href=""><input type="button" value="Mua vé" class="b-ticket" />
-                        <img src="../image/icon-start.png" alt="" />
-                      </a>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <!-- box10 -->
-              <div class="swiper-slide" style="color: white">
-                <div class="movie-box">
-                  <img src="../image/tron-tim-voi-quy-poster.jpg" alt="" class="moviebox-img" />
-                  <div class="box-content">
-                    <h2 class="movie title">TRỒN TÌM VỚI QUỶ</h2>
-                    <img src="https://cinestar.com.vn/catalog/view/theme/default/images/icon-2d.png" alt=""
-                      class="img2d" />
-                  </div>
-                  <a href="">
-                    <div class="movie-info">
-                      <p>
-                        Trốn Tìm Với Quỷ hé lộ câu chuyện rùng rợn xoay quanh
-                        một nhóm thanh thiếu niên tình cờ nhặt một con dao bị
-                        nguyền rủa với dòng chữ điêu khắc “I will play, i
-                        won’t quit” (tạm dịch: Tôi sẽ chơi, tôi sẽ
-                        <br />
-                        <span>...</span>
-                      </p>
-                      <a href=""><input type="button" value="Chi tiết" class="chitiet" /></a>
-                      <a href=""><input type="button" value="Xem trailer" class="w-trailer" /></a>
-                      <a href=""><input type="button" value="Mua vé" class="b-ticket" />
-                        <img src="../image/icon-start.png" alt="" />
-                      </a>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </section>
+      
 
         <!-- FOOTER -->
-        <div id="footer">
-          <div class="logo-footer">
-            <img src="../image/logo.jpg" alt="" />
-          </div>
-          <div class="content-footer">
-            <div class="content-footer1">
-              <h3>LIÊN KẾT</h3>
-              <ul class="content-lienket">
-                <li>
-                  <a href=""><img src="../image/scl_facebook.png" alt="" /></a>
-                  <a href=""><img src="../image/scl_youtube.png" alt="" /></a>
-                </li>
-              </ul>
-            </div>
-            <div class="content-footer2">
-              <h3>HỆ THỐNG RẠP</h3>
-              <ul class="content-hethongrap">
-                <li><a href="">TH2D Đồng Nai</a></li>
-                <li><a href="">TH2D Đồng Tháp</a></li>
-                <li><a href="">TH2D Gia Lai</a></li>
-                <li><a href="">TH2D Gò Vấp</a></li>
-              </ul>
-            </div>
-            <div class="content-footer3">
-              <h3>TH2D</h3>
-              <ul class="content-TH2D">
-                <li><a href="">Phim đang chiếu</a></li>
-                <li><a href="">Phim sắp chiếu</a></li>
-                <li><a href="">Suất chiếu đặc biệt</a></li>
-                <li><a href="">Lịch chiếu</a></li>
-                <li><a href="">Khuyến mãi</a></li>
-              </ul>
-            </div>
-            <div class="content-footer4">
-              <h3>THÔNG TIN</h3>
-              <ul class="content-thongtin">
-                <li><a href="">Giới thiệu</a></li>
-                <li><a href="">Tin tức</a></li>
-                <li><a href="">Hỏi và đáp</a></li>
-                <li><a href="">Liên hệ</a></li>
-              </ul>
-            </div>
-
-            <div class="content-footer5">
-              <h3>CHÍNH SÁCH VÀ QUY ĐỊNH</h3>
-              <ul class="content-chinhsach">
-                <li><a href="">Quy định chung</a></li>
-                <li><a href="">Điều khoản giao dịch</a></li>
-                <li><a href="">Chính sách bảo mật</a></li>
-                <li><a href="">Thông tin công ty</a></li>
-              </ul>
-            </div>
-          </div>
-          <div id="thanhtoan">
-            <div class="content-thanhtoan">
-              <h3>Chấp nhận thanh toán</h3>
-              <ul class="card">
-                <li>
-                  <a href=""><img src="../image/napas-40.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href=""><img src="../image/payment-visa.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href=""><img src="../image/payment-mastercard.png" alt="" /></a>
-                </li>
-                <li>
-                  <a href=""><img src="../image/momo.jpg" alt="" /></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div id="infor-company">
-            <div class="content-infor">
-              <img src="../image/dathongbao.png" alt="" />
-              <p>
-                CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM TH2D
-                <br />
-                ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
-                <br />
-                GIẤY CNĐKDN SỐ: 0312742744, ĐĂNG KÝ LẦN ĐẦU NGÀY 18/04/2014,
-                ĐĂNG KÝ THAY ĐỔI LẦN THỨ 2 NGÀY 15/09/2014, CẤP BỞI SỞ KH&ĐT
-                TP.HCM
-                <br />
-                <br />
-                2015 © TH2D. ALL RIGHTS RESERVED.
-              </p>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
+    <footer>
+      <img style="width: 100%;margin-top: 50px;" src="../image/line-bg.png" alt="">
+      <div class="container-footer">
+          <div class="logo-footer ">
+              <img class="img-fluid mt-3" src="../image/logo-removebg-preview.png" alt="">
+          </div>
+          <div class="d-flex nav justify-content-between flex-wrap mt-5">
+              <div class="nav-item">
+                  <h3 class="text-center text-warning">LIÊN KẾT</h3>
+                  <ul class="nav">
+                      <li class="nav-item d-flex">
+                          <a class="nav-link" href=""><img src="../image/scl_facebook.png" alt=""></a>
+                          <a class="nav-link" href=""><img src="../image/scl_youtube.png" alt=""></a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="content-footer2 nav-item">
+                  <h3 class="text-center text-warning ">HỆ THỐNG RẠP</h3>
+                  <ul class="nav flex-column">
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Đồng Nai</a>
+                      </li>
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Đồng Tháp</a>
+                      </li>
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Gia Lai</a></li>
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Gò Vấp</a></li>
+                  </ul>
+              </div>
+              <div class="content-footer3 nav-item">
+                  <h3 class="text-center text-warning">TH2D</h3>
+                  <ul class="content-TH2D nav flex-column">
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">Phim đang chiếu</a>
+                      </li>
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">Phim sắp chiếu</a>
+                      </li>
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">Suất chiếu đặc
+                              biệt</a></li>
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">Lịch chiếu</a></li>
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">Khuyến mãi</a></li>
+                  </ul>
+              </div>
+              <div class="content-footer4 nav-item">
+                  <h3 class="text-warning text-center">THÔNG TIN</h3>
+                  <ul class="content-thongtin nav flex-column">
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">Giới thiệu</a></li>
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">Tin tức</a></li>
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">Hỏi và đáp</a></li>
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">Liên hệ</a></li>
+                  </ul>
+              </div>
+
+              <div class="content-footer5 nav-item">
+                  <h3 class="text-center text-warning">CHÍNH SÁCH VÀ QUY ĐỊNH</h3>
+                  <ul class="content-chinhsach nav flex-column">
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">Quy định chung</a>
+                      </li>
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">Điều khoản giao
+                              dịch</a></li>
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">Chính sách bảo
+                              mật</a></li>
+                      <li class="nav-item text-center"><a class="nav-link text-grey" href="">Thông tin công ty</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div id="thanhtoan">
+              <div class="content-thanhtoan mt-5 ">
+                  <h3 class="text-center text-white">Chấp nhận thanh toán</h3>
+                  <ul class="nav justify-content-center">
+                      <li class="nav-item"><a class="nav-link" href=""><img src="../image/napas-40.png"
+                                  alt=""></a></li>
+                      <li class="nav-item"><a class="nav-link" href=""><img src="../image/payment-visa.png"
+                                  alt=""></a></li>
+                      <li class="nav-item"><a class="nav-link" href=""><img src="../image/payment-mastercard.png"
+                                  alt=""></a></li>
+                      <li class="nav-item"><a class="nav-link" href=""><img src="../image/momo.jpg" alt=""></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div id="infor-company">
+              <div class="content-infor mt-5">
+                  <div style="width: fit-content;margin: auto;">
+                      <img src="../image/dathongbao.png" alt="">
+                  </div>
+                  <p class="text-center text-white mb-0">
+                      CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM TH2D
+                      <br>
+                      ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
+                      <br>
+                      GIẤY CNĐKDN SỐ: 0312742744, ĐĂNG KÝ LẦN ĐẦU NGÀY 18/04/2014, ĐĂNG KÝ THAY ĐỔI LẦN THỨ 2 NGÀY
+                      15/09/2014, CẤP BỞI SỞ KH&ĐT TP.HCM
+                      <br>
+                      <br>
+                      2015 © TH2D. ALL RIGHTS RESERVED.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
   </div>
   <!-- dan link nay -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../js/hvd.js"></script>
+  <script src="../js/PDC.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,6 @@ buttonLogin.addEventListener('mouseover',()=>{
     if(width>600){
         listLogin.classList.remove('d-none');
     }
-
 })
 
 buttonLogin.addEventListener('mouseout',()=>{
@@ -82,4 +81,13 @@ window.addEventListener('resize',function(){
       }
   }
   swiper.update()
+})
+
+
+const infohover = document.querySelectorAll('info-hover')
+
+infohover.addEventListener('click',()=>{
+  if(window.innerWidth <=600){
+    infohover.classList.add('d-none')
+  }
 })
