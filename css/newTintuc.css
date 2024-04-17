@@ -486,9 +486,11 @@ footer .nav h3{
   box-shadow: 10px 0px 10px #d9791d;
   background-color: yellow;
   cursor: pointer;
+  font-size: 2vw;
 }
 
 #tuyendung {
+  font-size: 2vw;
   background-color: orange;
   position: relative;
   cursor: pointer;
