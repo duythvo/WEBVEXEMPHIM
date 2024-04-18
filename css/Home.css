@@ -13,6 +13,14 @@
   height: 100%;
 }
 
+.bg-orange{
+background-color: #e8840c;
+}
+
+.bg-purple{
+background-color: #d8047c;
+}
+
 .full-bg{
   background-image: url(../image/bg-footer.jpg);
   background-repeat: no-repeat;
@@ -22,6 +30,18 @@
   width: 100%;
 }
 
+.hidden {
+opacity: 0;
+transition: opacity 0.7s ease-out;
+pointer-events: none;
+}
+
+.activeFilm {
+opacity: 1;
+transition: opacity 0.7s ease-out;
+pointer-events: auto;
+}
+
 
 .logo-home{
   background: url(../image/icon-home.png) no-repeat center 5px;
@@ -29,6 +49,10 @@
   width: 50px;
   display: inline-block;
   padding-left: 100px;
+}
+
+.logo-home-inhome{
+  background-position: center -43px;
 }
 
 .logo-home:hover{
@@ -95,12 +119,12 @@
   }
 }
 
-#main-content .up-coming,
-#main-content .current-movie{
-    height: 400px;
-    max-width: 1500px;
-    margin: auto;
-    overflow: hidden;
+.up-coming,
+.current-movie{
+  height: 450px;
+  max-width: 1500px;
+  margin: auto;
+  overflow: hidden;
 } 
 
 
@@ -119,13 +143,14 @@
 
 
 .swiper-button-prev img {
-    width: fit-content;
-    border-radius: 40px;
-    position: absolute;
-    top: 0%;
-    margin-left: -10px;
-    background-color: #ec9424;
-  }
+  width: fit-content;
+  border-radius: 40px;
+  position: absolute;
+  top: 0%;
+  margin-left: -10px;
+  margin-top: -10px;
+  background-color: #ec9424;
+}
 
 .swiper-upcoming-button-prev img{
   width: fit-content;
@@ -163,35 +188,34 @@
 
 @media screen and (max-width:1400px) and (min-width:1000px){
 
-    #main-content .up-coming,
-    #main-content .current-movie{
-      height: 400px;
-      max-width: 1000px;
-      margin: auto;
-      overflow: hidden;
-    }
-    
-    .swiper-upcoming,
-    .swiper1{
-      height: 500px;
-      max-width: 1200px; 
-      width: 700px;
-    }
+.up-coming,
+.current-movie{
+    height: 400px;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .swiper-upcoming,
+  .swiper1{
+    height: 500px;
+    max-width: 1200px; 
+    width: 700px;
+  }
 
   .swiper-pagination{
     display: none;
   }
 }
 
-  @media screen and (max-width :1000px) and (min-width:800px){
-
-    #main-content .up-coming,
-    #main-content .current-movie{
-      height: 400px;
-      max-width: 800px;
-      margin: auto;
-      overflow: hidden;
-    }
+@media screen and (max-width :1000px) and (min-width:800px){
+.up-coming,
+.current-movie{
+    height: 400px;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+  }
 
   .swiper-upcoming,
   .swiper1{
@@ -220,7 +244,57 @@
   }
 
 
-  }
+}
+
+.title-film {
+  max-width: 200px;
+  height: 350px;
+}
+
+.title-film .logo-2d{
+    margin-left: 80px;
+    height: 35px;
+}
+
+.info-hover{
+  top:0%;
+  width: 230px;
+  height: 390px;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+ .info-hover .detail{
+  width: fit-content;
+  margin: auto;
+}
+
+.info-hover .info-detail{
+  max-width: 200px;
+  max-height: 165px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+ .info-hover .other-link a{
+  width: fit-content;
+  margin: 0 auto;
+}
+
+ .swiper-slide:hover .info-hover {
+  opacity: 1;
+  transition: opacity 0.7s ease-out;
+  pointer-events: auto;
+}
+
+ .info-hover .other-link a:hover,
+ .info-hover .detail:hover{
+  background-color: #d8047c;
+}
+
+ .info-hover .other-link a:hover .logo-star{
+  background-color: #ec9424;
+}
+
 
 #content .vouncher{
   max-width: 1500px;
@@ -239,8 +313,8 @@
 }
 
 #content .vouncher img{
-    height: 180px;
-    width: 266px;
+  height: 160px;
+  width: 280px;
 }
 
 
@@ -250,6 +324,13 @@
   filter: brightness(90%);
   background-color: lightgrey;
   border-radius: 30px 0px 30px;
+}
+
+@media screen and (max-width :1200px){
+.logo-vouncher{
+  margin-bottom: 20px !important;
+  margin: auto !important;
+}
 }
 
 @media screen  and (max-width:700px){
@@ -288,7 +369,7 @@ width: fit-content;
 
 #content .new1 .txt{
   width: 500px;
-  margin: auto 0;
+  margin: 0 0;
 }
 
 #content .new1 .pic img{
@@ -376,19 +457,20 @@ width: fit-content;
   }
 }
 
-  footer .container-footer{
-    max-width: 1500px;
-    margin: auto;
-  }
-  footer .logo-footer{
-    width: fit-content;
-    margin: auto;
-  }
+footer .container-footer{
+  max-width: 1500px;
+  margin: auto;
+}
 
-  footer .nav h3{
-    background-color: #601c5c ;
-    padding: 10px;
-  }
+footer .logo-footer{
+  width: fit-content;
+  margin: auto;
+}
+
+footer .nav h3{
+  /* background-color: #601c5c ; */
+  padding: 10px;
+}
 
 
 .text-grey{
@@ -396,6 +478,6 @@ width: fit-content;
   font-size: 18px;
 }
 
-  .text-grey:hover{
-    color: orange;
-  }
+.text-grey:hover{
+  color: orange;
+}

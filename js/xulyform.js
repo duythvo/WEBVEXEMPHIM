@@ -262,3 +262,15 @@ $(document).ready(function() {
         }
     });  
 });
+
+
+window.addEventListener('resize',function(){
+    var register = document.getElementById('#register')
+    if(this.window.innerWidth <1000){
+        register.classList.remove('modal-lg')
+        register.classList.add('modal-sm')
+    }else{
+        register.classList.remove('modal-sm')
+        register.classList.add('modal-lg')
+    }
+})
