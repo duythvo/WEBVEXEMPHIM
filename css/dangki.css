@@ -19,22 +19,22 @@
     margin-top: 40px;
     color: #EEEEEE;
 }
-#content .group {
+ .group {
   display: flex;
   justify-content: center; 
 }
-#content .group label{
+ .group label{
   color: #EEEEEE;
 }
-#content .group input{
+ .group input{
   border-radius: 5px;
 }
-#content .txt {
+ .txt {
   width: 590px;
   height: 40px;
   padding: 10px;
 }
-#content .custom-card{
+ .custom-card{
     width: 580px;
     max-height: 200px;
     overflow: auto;
@@ -65,7 +65,7 @@
 .register-button:hover::before {
   left: 0;
 }
-#content .btn-dk{
+ .btn-dk{
     width: 400px;
     height: 50px;
     font-weight: bold;
