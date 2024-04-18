@@ -1,0 +1,64 @@
+.modal-bg{
+  background-color: #34374C;
+}
+.modal{
+  color: white;
+}
+.register-button {
+  padding: 10px 20px;
+  background-color: purple;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  }
+  .register-button::before {
+  content: "";
+  position: absolute;
+  background-color: orange;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition: left 0.5s;
+  behavior: smooth;
+  z-index: -1;
+  }
+  .register-button:hover::before {
+  left: 0;
+  }
+  #content .btn-dk{
+    width: 400px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#content .txt {
+  width: 500px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  }
+#content .icon_re a{
+  margin: auto 5px;
+  border-radius: 50px;
+  padding: 7px;
+}
+#content .icon_re a:hover{
+  background-color: white;
+}
+#content .icon_re img{
+  width: 60px;
+  height: 60px;
+}
+#content .forget-mk {
+  text-decoration: none;
+  color: white;
+}
+#content .forget-mk:hover{
+  color: #e8840c;
+  font-weight: bold;
+}

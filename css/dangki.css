@@ -1,0 +1,81 @@
+.modal-dialog {
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.modal-body {
+    overflow-y: auto;
+}
+.modal-body::-webkit-scrollbar {
+    display: none;
+}
+.moda-content{
+    overflow: auto;
+}
+.modal-bg{
+    background-color: #34374C;
+}
+.modal-body h2{
+    margin-top: 40px;
+    color: #EEEEEE;
+}
+#content .group {
+  display: flex;
+  justify-content: center; 
+}
+#content .group label{
+  color: #EEEEEE;
+}
+#content .group input{
+  border-radius: 5px;
+}
+#content .txt {
+  width: 590px;
+  height: 40px;
+  padding: 10px;
+}
+#content .custom-card{
+    width: 580px;
+    max-height: 200px;
+    overflow: auto;
+}
+.register-button {
+  padding: 10px 20px;
+  background-color: purple;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.register-button::before {
+  content: "";
+  position: absolute;
+  background-color: orange;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition: left 0.5s;
+  behavior: smooth;
+  z-index: 0;
+}
+.register-button:hover::before {
+  left: 0;
+}
+#content .btn-dk{
+    width: 400px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.form a{
+    color: white;
+}
+.form a:hover{
+    color: orange;
+    font-weight: bold;
+}
