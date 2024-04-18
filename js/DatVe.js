@@ -197,7 +197,7 @@ $(document).ready(function () {
     if (
       $("#hoten").hasClass("is-valid") &&
       $("#email").hasClass("is-valid") &&
-      $("#sdt").hasClass("is-valid")
+      $("#sdt").hasClass("is-valid") 
     ) {
       $("#datve").removeAttr("disabled");
     } else {
