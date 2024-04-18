@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GioiThieu</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/newTintuc.css" />
+  </head>
+  <style>
+    .hidden {
+      opacity: 0;
+      transition: opacity 0.7s ease-out;
+      pointer-events: none;
+    }
+
+    .active {
+      opacity: 1;
+      transition: opacity 0.7s ease-out;
+      pointer-events: auto;
+    }
+    .background-image::before {
+      content: "";
+      background: rgba(158, 77, 165, 0.5); 
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <body>
+    <div class="container-fluid web-bg full-bg p-0">
+      <header class="fixed-top bg-black bg-opacity-50 position-relative">
+        <nav class="navbar navbar-expand-xl container">
+          <div class="col-3 p-0 d-block">
+            <a><img src="../image/logo-removebg-preview.png" alt="" /></a>
+          </div>
+          <div class="col-9 nav-out-sidebar d-xl-block">
+            <div class="row">
+              <ul class="nav justify-content-end login-text">
+                <img
+                  src="../image/ic-header-auth.svg"
+                  alt=""
+                  style="width: 30px"
+                />
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="">Đăng Nhập</a>
+                </li>
+                <li class="nav-item text-white my-auto">/</li>
+                <li class="nav-item me-3">
+                  <a href="" class="nav-link text-hover">Đăng Ký</a>
+                </li>
+                <img
+                  src="../image/footer-vietnam.svg"
+                  alt=""
+                  style="width: 30px"
+                />
+                <span class="text-white ms-2 my-auto">VN</span>
+              </ul>
+            </div>
+            <div class="row mt-5 TH2D-nav mb-1">
+              <div class="col-1 mt-1 p-0">
+                <a class="logo-home m-0" href=""></a>
+              </div>
+              <div
+                class="col-11 p-1 rounded-5"
+                style="border: #d8047c solid 1px; height: 59px"
+              >
+                <ul
+                  class="nav menu-nav rounded-5 flex-nowrap"
+                  style="background-color: #d8047c; height: 50px"
+                >
+                  <li class="nav-item rounded-start-5 text-nowrap">
+                    <a
+                      href=""
+                      class="nav-link rounded-start-5"
+                      style="line-height: 34px"
+                      >PHIM</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >LỊCH CHIẾU</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >RẠP VÀ GIÁ</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >KHUYỄN MÃI</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >HỎI VÀ ĐÁP</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >TIN TỨC</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >GIỚI THIỆU</a
+                    >
+                  </li>
+                  <li class="nav-item rounded-end-5 text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >LIÊN HỆ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end position-relative">
+            <button id="button-login" class="navbar-toggler">
+              <img
+                src="../image/ic-header-auth.svg"
+                alt=""
+                style="width: 25px"
+              />
+              <div
+                id="list-login"
+                class="position-absolute top-100 end-50 d-none"
+                style="width: 140px"
+              >
+                <ul class="navbar-nav bg-black ps-3 p-3">
+                  <li class="nav-item">
+                    <a href="" class="nav-link text-hover text-start"
+                      ><i class="fa fa-user">Đăng Nhập</i></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link text-hover text-start"
+                      ><i class="fa fa-user">Đăng Ký</i></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-end bg-black nav-in-sidebar d-xl-none"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="../image/logo-removebg-preview.png" alt="" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Phim</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Lịch Chiếu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Rạp và Giá</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Khuyến Mãi</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Khác
+                  </a>
+                  <ul class="dropdown-menu bg-black">
+                    <li>
+                      <a class="dropdown-item text-hover" href="#"
+                        >Hỏi và Đáp</a
+                      >
+                    </li>
+                    <li class="">
+                      <a class="dropdown-item text-hover" href="#">Tin Tức</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-hover" href="#"
+                        >Giới Thiệu</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-hover" href="#">Liên Hệ</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <hr class="border" />
+              <ul class="nav">
+                <li class="nav-item">
+                  <img src="../image/footer-vietnam.svg" alt="" />
+                </li>
+                <li class="nav-item text-white ms-3">Vietnamese</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="content">
+        <h1 class="text-center my-4 text-white">GIỚI THIỆU</h1>
+        <div
+          class="container w-75 p-5 position-relative background-image"
+          style="
+            background-image: url(../image/GioiThieu.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        >
+          <h3 class="text-center text-white fw-bold position-relative">
+            HỆ THỐNG CỤM RẠP TRÊN TOÀN QUỐC
+          </h3>
+          <p class="text-white text-center position-relative">
+            TH2D là một trong những hệ thống rạp chiếu phim được yêu thích nhất
+            tại Việt Nam, cung cấp nhiều mô hình giải trí hấp dẫn bao gồm Các
+            Cụm Rạp Chiếu Phim hiện đại, Nhà hát, Khu vui chơi trẻ em Kidzone,
+            Bowling, Billiards, Games, Phòng Gym, Nhà Hàng, và Phố Bia Beer. Với
+            mục tiêu trở thành điểm đến giải trí cho mọi gia đình Việt Nam, TH2D
+            đang được biết đến là cụm rạp ủng hộ phim Việt, góp phần phát triển
+            điện ảnh Việt. Không chỉ chiếu các bộ phim bom tấn quốc tế, TH2D còn
+            đồng hành cùng các nhà làm phim Việt Nam, đưa những tác phẩm điện
+            ảnh đặc sắc của Việt Nam đến gần hơn với khán giả.
+          </p>
+        </div>
+        <h1 class="text-center my-4 text-white">SỨ MỆNH</h1>
+        <div class="row w-75 mx-auto">
+          <div
+            class="col m-2 p-3 rounded-5 border border-2"
+            style="background-color: rgb(157, 88, 192)"
+          >
+            <h2 class="text-center text-light fw-bold">01</h2>
+            <p class="text-center text-white fs-6">
+              Góp phần tăng trưởng thị phần điện ảnh, văn hóa, giải trí của
+              người Việt Nam
+            </p>
+          </div>
+          <div
+            class="col m-2 p-3 rounded-5 border border-2"
+            style="background-color: rgb(157, 88, 192)"
+          >
+            <h2 class="text-center text-light fw-bold">02</h2>
+            <p class="text-center text-white fs-6">
+              Phát triển dịch vụ xuất sắc với mức giá tối ưu, phù hợp với thu
+              nhập người Việt Nam.
+            </p>
+          </div>
+          <div
+            class="col m-2 p-3 rounded-5 border border-2"
+            style="background-color: rgb(157, 88, 192)"
+          >
+            <h2 class="text-center text-light fw-bold">03</h2>
+            <p class="text-center text-white fs-6">
+              Mang nghệ thuật điện ảnh, văn hóa Việt Nam hội nhập quốc tế.
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <img
+          style="width: 100%; margin-top: 50px"
+          src="../image/line-bg.png"
+          alt=""
+        />
+        <div class="container-footer">
+          <div class="logo-footer">
+            <img
+              class="img-fluid mt-3"
+              src="../image/logo-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="d-flex nav justify-content-between flex-wrap mt-5">
+            <div class="nav-item">
+              <h3 class="text-center text-warning">LIÊN KẾT</h3>
+              <ul class="nav">
+                <li class="nav-item d-flex">
+                  <a class="nav-link" href=""
+                    ><img src="../image/scl_facebook.png" alt=""
+                  /></a>
+                  <a class="nav-link" href=""
+                    ><img src="../image/scl_youtube.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer2 nav-item">
+              <h3 class="text-center text-warning">HỆ THỐNG RẠP</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Đồng Nai</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Đồng Tháp</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Gia Lai</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Gò Vấp</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer3 nav-item">
+              <h3 class="text-center text-warning">TH2D</h3>
+              <ul class="content-TH2D nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Phim đang chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Phim sắp chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Suất chiếu đặc biệt</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Lịch chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Khuyến mãi</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer4 nav-item">
+              <h3 class="text-warning text-center">THÔNG TIN</h3>
+              <ul class="content-thongtin nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Giới thiệu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Tin tức</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Hỏi và đáp</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-footer5 nav-item">
+              <h3 class="text-center text-warning">CHÍNH SÁCH VÀ QUY ĐỊNH</h3>
+              <ul class="content-chinhsach nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Quy định chung</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Điều khoản giao dịch</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Chính sách bảo mật</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Thông tin công ty</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="thanhtoan">
+            <div class="content-thanhtoan mt-5">
+              <h3 class="text-center text-white">Chấp nhận thanh toán</h3>
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/napas-40.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/payment-visa.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/payment-mastercard.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/momo.jpg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="infor-company">
+            <div class="content-infor mt-5">
+              <div style="width: fit-content; margin: auto">
+                <img src="../image/dathongbao.png" alt="" />
+              </div>
+              <p class="text-center text-white mb-0">
+                CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM TH2D
+                <br />
+                ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
+                <br />
+                GIẤY CNĐKDN SỐ: 0312742744, ĐĂNG KÝ LẦN ĐẦU NGÀY 18/04/2014,
+                ĐĂNG KÝ THAY ĐỔI LẦN THỨ 2 NGÀY 15/09/2014, CẤP BỞI SỞ KH&ĐT
+                TP.HCM
+                <br />
+                <br />
+                2015 © TH2D. ALL RIGHTS RESERVED.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

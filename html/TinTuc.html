@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/newTintuc.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid web-bg full-bg p-0">
+      <header class="fixed-top bg-black bg-opacity-50">
+        <nav class="navbar navbar-expand-xl container">
+          <div class="col-3 p-0 d-block">
+            <a><img src="../image/logo-removebg-preview.png" alt="" /></a>
+          </div>
+          <div class="col-9 nav-out-sidebar d-xl-block">
+            <div class="row">
+              <ul class="nav justify-content-end login-text">
+                <img
+                  src="../image/ic-header-auth.svg"
+                  alt=""
+                  style="width: 30px"
+                />
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="">Đăng Nhập</a>
+                </li>
+                <li class="nav-item text-white my-auto">/</li>
+                <li class="nav-item me-3">
+                  <a href="" class="nav-link text-hover">Đăng Ký</a>
+                </li>
+                <img
+                  src="../image/footer-vietnam.svg"
+                  alt=""
+                  style="width: 30px"
+                />
+                <span class="text-white ms-2 my-auto">VN</span>
+              </ul>
+            </div>
+            <div class="row mt-5 TH2D-nav mb-1">
+              <div class="col-1 mt-1 p-0">
+                <a class="logo-home m-0" href=""></a>
+              </div>
+              <div
+                class="col-11 p-1 rounded-5"
+                style="border: #d8047c solid 1px; height: 59px"
+              >
+                <ul
+                  class="nav menu-nav rounded-5 flex-nowrap"
+                  style="background-color: #d8047c; height: 50px"
+                >
+                  <li class="nav-item rounded-start-5 text-nowrap">
+                    <a
+                      href=""
+                      class="nav-link rounded-start-5"
+                      style="line-height: 34px"
+                      >PHIM</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >LỊCH CHIẾU</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >RẠP VÀ GIÁ</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >KHUYỄN MÃI</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >HỎI VÀ ĐÁP</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >TIN TỨC</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >GIỚI THIỆU</a
+                    >
+                  </li>
+                  <li class="nav-item rounded-end-5 text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >LIÊN HỆ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end position-relative">
+            <button id="button-login" class="navbar-toggler">
+              <img
+                src="../image/ic-header-auth.svg"
+                alt=""
+                style="width: 25px"
+              />
+              <div
+                id="list-login"
+                class="position-absolute top-100 end-50 d-none"
+                style="width: 140px"
+              >
+                <ul class="navbar-nav bg-black ps-3 p-3">
+                  <li class="nav-item">
+                    <a href="" class="nav-link text-hover text-start"
+                      >Đăng Nhập</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link text-hover text-start"
+                      >Đăng Ký</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <button
+              class="navbar-toggler d-xl-none d-block"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+            >
+              <span>
+                <img
+                  class="img-fluid"
+                  src="../image/hamburger.png"
+                  alt=""
+                  style="width: 35px"
+                />
+              </span>
+            </button>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-end bg-black d-xl-none"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="../image/logo-removebg-preview.png" alt="" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close-white btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">PHIM</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">LỊCH CHIẾU</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">RẠP VÀ GIÁ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">KHUYẾN MÃI</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="##"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    KHÁC
+                  </a>
+                  <ul class="dropdown-menu bg-black">
+                    <li>
+                      <a class="dropdown-item text-hover" href="#"
+                        >HỎI VÀ ĐÁP</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-hover" href="#">TIN TỨC</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-hover" href="#"
+                        >GIỚI THIỆU</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-hover" href="#">LIÊN HỆ</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <hr class="border border-white" />
+              <ul class="d-flex list-unstyled">
+                <li class="me-4">
+                  <img src="../image/footer-vietnam.svg" alt="" />
+                </li>
+                <li class="text-white">Vietnamese</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="poster">
+        <img src="../image/gap-lai-chi-bau.jpg" alt="" />
+      </div>
+
+      <div
+        id="content"
+        class="container-fluid justify-content-center position-relative"
+      >
+        <h1 class="text-center text-white p-3">Tin Tức</h1>
+        <div class="justify-content-center d-flex mb-5">
+          <div id="dienanh" class="px-5 fs-3 p-3 rounded-top-4 rounded-end-5">
+            <a
+              class="text-decoration-none text-black fw-bold"
+              href="../html/newTinTuc.html"
+              >TIN ĐIỆN ẢNH</a
+            >
+          </div>
+          <div id="tuyendung" class="px-5 fs-3 p-3 rounded-top-4 rounded-end-5">
+            <a
+              class="text-decoration-none fw-bold"
+              href="../html/TinTuc_TuyenDung.html"
+              >&nbsp;&nbsp;TUYỂN DỤNG</a
+            >
+          </div>
+        </div>
+        <div id="listnew" class="container-fluid container-md">
+          <div class="row container-fluid g-3 position-relative">
+            <div class="col-lg col-4">
+              <div class="p-3 bg-white hover-yellow">
+                <a class="h-100 m-100" href="TGDQ.html">
+                  <img
+                    class="img-fluid max-vw-100 w-100"
+                    src="../image/thanhguomdietquy.png"
+                    alt="ThanhGuomDietQuy"
+                  />
+                  <h1 class="fs-5">
+                    [THANH GƯƠM DIỆT QUỶ: PHÉP MÀU TÌNH THÂN, CHO ĐẾN CHUYẾN ĐẶC
+                    HUẤN CỦA ĐẠI TRỤ]
+                  </h1>
+                  <p class="fs-6 lh-1">
+                    [THANH GƯƠM DIỆT QUỶ: PHÉP MÀU TÌNH THÂN, CHO ĐẾN CHUYẾN ĐẶC
+                    HUẤN CỦA ĐẠI TRỤ] - THANH GƯƠM DIỆT QUỶ TRỞ LẠI VỚI MÙA 4 VÀ
+                    PHẦN ĐIỆN ẢNH ĐẶC BIỆT, HỨA HẸN “CÀN QUÉT” 140 QUỐC GIA TOÀN
+                    CẦU
+                  </p>
+                </a>
+              </div>
+              <br />
+              <div class="p-3 bg-white hover-yellow">
+                <a class="h-100 m-100" href="../html/GLCB.html">
+                  <img
+                    class="img-fluid max-vw-100 w-100"
+                    src="../image/gaplaichibau.png"
+                    alt="gaplaichibau"
+                  />
+                  <h1 class="fs-5">
+                    PHIM TẾT "GẶP LẠI CHỊ BẦU" HÉ LỘ DÀN DIỄN VIÊN CHÍNH THỨC:
+                    ANH TÚ, DIỆU NHI, NGỌC PHƯỚC, QUỐC KHÁNH VÀ LÊ GIANG
+                  </h1>
+                  <p class="fs-6 lh-1">
+                    Phim Tết Gặp Lại Chị Bầu chính thức công bố dàn diễn viên
+                    chính, bắt đầu màn chạy đà cho cuộc đua phòng vé nhộn nhịp
+                    dịp Tết Giáp Thìn 2024.
+                  </p>
+                </a>
+              </div>
+              <br />
+              <div class="p-3 bg-white hover-yellow">
+                <a class="h-100 m-100" href="../html/Dune2.html">
+                  <img
+                    src="../image/hanhtrinhcat(2).png"
+                    alt="hanhtrinhcat2"
+                    class="img-fluid max-vw-100 w-100"
+                  />
+                  <h1 class="fs-5">
+                    [Dune: Hành Tinh Cát - Phần Hai] - Phần tiếp theo của "Dune"
+                    hé lộ những hình ảnh đầu tiên: Kiệt tác điện ảnh chính thức
+                    trở lại
+                  </h1>
+                  <p class="fs-6 lh-1">
+                    Ra mắt vào thời kỳ đại dịch COVID-19 vẫn đang diễn biến căng
+                    thẳng, Dune (tựa Việt: Dune: Hành Tinh Cát) được coi là một
+                    chiến thắng quan trọng tại phòng vé của Warner Bros.
+                    Pictures, nhất là khi nhìn vào số vốn đầu tư khủng mà studio
+                    này dành ra cho siêu phẩm của đạo diễn Denis Villeneuve.
+                    Thông tin phần hai của Dune được bật đèn xanh đã khiến không
+                    ít khán giả hào hứng, và sau hai năm, những hình ảnh đầu
+                    tiên trong kiệt tác điện ảnh này đã chính thức được hé lộ.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 bg-white hover-yellow">
+                <a class="h-100 m-100" href="../html/SPY.html">
+                  <img
+                    src="../image/spyfamily.png"
+                    alt="spyfamily"
+                    class="img-fluid max-vw-100 w-100"
+                  />
+                  <h1 class="fs-5">
+                    [SPY x FAMILY CODE: WHITE] - Phiên bản điện ảnh của bom tấn
+                    anime “SPYxFAMILY” đổ bộ rạp Việt dịp Tết Nguyên đán
+                  </h1>
+                  <p class="fs-6 lh-1">
+                    Một trong những thương hiệu manga - anime đình đám nhất
+                    trong thời gian gần đây - SPYxFAMILY đã có bản điện ảnh và
+                    sẽ đến với khán giả Việt vào đúng ngày đầu tiên của năm mới
+                    âm lịch. Gia Đình x Điệp Viên Mã: Trắng vừa công bố lịch ra
+                    rạp chính thức vào đúng Mùng 1 Tết Nguyên đán Giáp Thìn, trở
+                    thành "chiến binh" đáng gờm trên đường đua phim Tết vốn đã
+                    cực kỳ nhộn nhịp.
+                  </p>
+                </a>
+              </div>
+              <br />
+              <div class="p-3 bg-white hover-yellow">
+                <a class="h-100 m-100" href="../html/Khaimac.html">
+                  <img
+                    src="../image/lienhoanphim.png"
+                    alt="lienhoanphim"
+                    class="img-fluid max-vw-100 w-100"
+                  />
+                  <h1 class="fs-5">
+                    Đêm khai mạc Liên hoan phim Việt Nam đầy ấn tượng ở phố núi
+                    Đà Lạt
+                  </h1>
+                  <p class="fs-6 lh-1">
+                    Đêm 21.11 tại Quảng trường Lâm Viên, TP.Đà Lạt (Lâm Đồng),
+                    Liên hoan phim Việt Nam lần thứ 23 đã khai mạc đầy ấn tượng.
+                  </p>
+                </a>
+              </div>
+              <br />
+              <div class="p-3 bg-white hover-yellow">
+                <a class="h-100 m-100" href="../html/Aquaman.html">
+                  <img
+                    src="../image/aquaman.png"
+                    alt="aquaman"
+                    class="img-fluid max-vw-100 w-100"
+                  />
+                  <h1 class="fs-5">
+                    [Aquaman Và Vương Quốc Thất Lạc] - Bom tấn có doanh thu cao
+                    nhất vũ trụ DC “Aquaman” chính thức trở lại màn ảnh rộng với
+                    phần phim tiếp theo
+                  </h1>
+                  <p class="fs-6 lh-1">
+                    Đêm 14/9 (giờ Việt Nam), phần phim tiếp theo của bom tấn DC
+                    từng làm mưa làm gió phòng vé năm 2018 Aquaman chính thức hé
+                    lộ trailer đầu tiên.
+                  </p>
+                </a>
+              </div>
+              <br />
+              <div class="p-3 bg-white hover-yellow">
+                <a class="h-100 m-100" href="../html/Kong2.html">
+                  <img
+                    src="../image/godzilla2.png"
+                    alt="godzilla"
+                    class="img-fluid max-vw-100 w-100"
+                  />
+                  <h1 class="fs-5">
+                    [Godzilla x Kong: The New Empire] - Warner Bros. Pictures và
+                    Legendary Pictures đã tiết lộ tựa đề chính thức cho bộ phim
+                    mới nhất của “vũ trụ quái vật” Monsterverse
+                  </h1>
+                  <p class="fs-6 lh-1">
+                    Ngày hôm nay, Warner Bros. Pictures và Legendary Pictures đã
+                    tiết lộ tựa đề chính thức cho bộ phim mới nhất của "vũ trụ
+                    quái vật" Monsterverse - Godzilla x Kong: The New Empire.
+                    Cùng với đó, một đoạn video bí ẩn tiết lộ tương lai của hai
+                    Titan huyền thoại.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="p-3 bg-white hover-yellow">
+                <a class="h-100 m-100" href="../html/Phim.html">
+                  <img
+                    src="../image/phimdangchuy2023.png"
+                    alt="phimdangchuy2023"
+                    class="img-fluid max-vw-100 w-100"
+                  />
+                  <h1 class="fs-5">
+                    Các tựa phim Việt đáng chú ý dịp cuối năm 2023
+                  </h1>
+                  <p class="fs-6 lh-1">
+                    Mùa lễ hội cuối năm với loạt sự kiện lớn như lễ Giáng sinh,
+                    Tết Dương lịch và Tết Nguyên đán 2024, hàng loạt tựa phim
+                    Việt được chú ý sẽ lần lượt ra rạp, mang đến cho khán giả
+                    nước nhà những thước phim thú vị, đa dạng cả về thể loại và
+                    nội dung.
+                  </p>
+                </a>
+              </div>
+              <br />
+              <div class="p-3 bg-white hover-yellow">
+                <a class="h-100 m-100" href="../html/Dune1.html">
+                  <img
+                    src="../image/hanhtrinhcat(1).png"
+                    alt="hanhtrinhcat"
+                    class="img-fluid max-vw-100 w-100"
+                  />
+                  <h1 class="fs-5">
+                    [Dune: Hành Tinh Cát - Phần Hai] - Kiệt tác màn ảnh “Dune:
+                    Hành Tinh Cát - Phần Hai” tung trailer mới choáng ngợp
+                  </h1>
+                  <p class="fs-6 lh-1">
+                    Kiệt tác điện ảnh được chờ mong nhất năm 2024 của đạo diễn
+                    Denis Villeneuve - Dune: Hành Tinh Cát - Phần Hai tiếp tục
+                    hé lộ những hình ảnh mới xoay quanh cuộc hành trình vĩ đại
+                    của Paul Atreides (Timothée Chalamet thủ vai) trên hành tinh
+                    Arrakis đầy rẫy hiểm nguy.
+                  </p>
+                </a>
+              </div>
+              <br />
+              <div class="p-3 bg-white hover-yellow">
+                <a class="h-100 m-100" href="../html/Kong1.html">
+                  <img
+                    src="../image/godzilla.png"
+                    alt="godzilla"
+                    class="img-fluid max-vw-100 w-100"
+                  />
+                  <h1 class="fs-5">
+                    [Godzilla x Kong: Đế Chế Mới] - Trailer đầu tiên của siêu
+                    bom tấn 2024 “Godzilla x Kong” chính thức thả xích, hai siêu
+                    quái vật càn quét phòng vé trở lại
+                  </h1>
+                  <p class="fs-6 lh-1">
+                    Bom tấn hành động được chờ đợi nhất năm 2024 - Godzilla x
+                    Kong: Đế Chế Mới đã chính thức hé lộ những hình ảnh đầu tiên
+                    trong sự phấn khích của người hâm mộ. Từng đối đầu nhau và
+                    làm rung chuyển phòng vé toàn cầu trong phần phim Godzilla
+                    Đại Chiến Kong hồi 2021, giờ đây hai đại titan sẽ có màn bắt
+                    tay huyền thoại, cùng nhau bảo vệ sự sống trên địa cầu.
+                  </p>
+                </a>
+              </div>
+              <br />
+              <div class="p-3 bg-white hover-yellow">
+                <a class="h-100 m-100" href="../html/MNDL.html">
+                  <img
+                    src="../image/monngondalat.png"
+                    alt="aquaman"
+                    class="img-fluid max-vw-100 w-100"
+                  />
+                  <h1 class="fs-5">
+                    [MÓN NGON ĐÀ LẠT] KHÁM PHÁ ẨM THỰC MÙA LỄ HỘI TẠI NHÀ HÀNG
+                    MÓN NGON ĐÀ LẠT
+                  </h1>
+                  <p class="fs-6 lh-1">
+                    Trong không khí mát mẻ của tiết trời Đà Lạt, còn gì tuyệt
+                    vời hơn là được cùng gia đình, bạn bè thưởng thức một bữa
+                    tiệc ấm cúng mừng dịp lễ lớn tại Nhà hàng Món ngon Đà Lạt.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <img
+          style="width: 100%; margin-top: 50px"
+          src="../image/line-bg.png"
+          alt=""
+        />
+        <div class="container-footer">
+          <div class="logo-footer">
+            <img
+              class="img-fluid mt-3"
+              src="../image/logo-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="d-flex nav justify-content-between flex-wrap mt-5">
+            <div class="nav-item">
+              <h3 class="text-center text-warning">LIÊN KẾT</h3>
+              <ul class="nav">
+                <li class="nav-item d-flex">
+                  <a class="nav-link" href=""
+                    ><img src="../image/scl_facebook.png" alt=""
+                  /></a>
+                  <a class="nav-link" href=""
+                    ><img src="../image/scl_youtube.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer2 nav-item">
+              <h3 class="text-center text-warning">HỆ THỐNG RẠP</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Đồng Nai</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Đồng Tháp</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Gia Lai</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Gò Vấp</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer3 nav-item">
+              <h3 class="text-center text-warning">TH2D</h3>
+              <ul class="content-TH2D nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Phim đang chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Phim sắp chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Suất chiếu đặc biệt</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Lịch chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Khuyến mãi</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer4 nav-item">
+              <h3 class="text-warning text-center">THÔNG TIN</h3>
+              <ul class="content-thongtin nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Giới thiệu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Tin tức</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Hỏi và đáp</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-footer5 nav-item">
+              <h3 class="text-center text-warning">CHÍNH SÁCH VÀ QUY ĐỊNH</h3>
+              <ul class="content-chinhsach nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Quy định chung</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Điều khoản giao dịch</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Chính sách bảo mật</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Thông tin công ty</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="thanhtoan">
+            <div class="content-thanhtoan mt-5">
+              <h3 class="text-center text-white">Chấp nhận thanh toán</h3>
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/napas-40.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/payment-visa.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/payment-mastercard.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/momo.jpg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="infor-company">
+            <div class="content-infor mt-5">
+              <div style="width: fit-content; margin: auto">
+                <img src="../image/dathongbao.png" alt="" />
+              </div>
+              <p class="text-center text-white mb-0">
+                CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM TH2D
+                <br />
+                ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
+                <br />
+                GIẤY CNĐKDN SỐ: 0312742744, ĐĂNG KÝ LẦN ĐẦU NGÀY 18/04/2014,
+                ĐĂNG KÝ THAY ĐỔI LẦN THỨ 2 NGÀY 15/09/2014, CẤP BỞI SỞ KH&ĐT
+                TP.HCM
+                <br />
+                <br />
+                2015 © TH2D. ALL RIGHTS RESERVED.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/TinTuc.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>

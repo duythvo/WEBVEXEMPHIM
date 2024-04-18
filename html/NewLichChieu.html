@@ -1,502 +1,797 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hoi Va Dap</title>
-  <!-- css hoi va dap -->
-  <link rel="stylesheet" href="../css/hvdstyle.css" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <!-- dan link nay -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <script src="../js/bootstrap.bundle.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
-  <link rel="stylesheet" href="../css/Home.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/Lichchieu.css">
+    <link rel="stylesheet" href="../css/newTintuc.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
   <style>
     .hidden {
       opacity: 0;
       transition: opacity 0.7s ease-out;
       pointer-events: none;
     }
-
     .active {
       opacity: 1;
       transition: opacity 0.7s ease-out;
-      pointer-events: auto;
-    }
-
-    .li-bg {
-      background-color: yellow;
-    }
-
-    .a-cl {
-      color: black;
     }
   </style>
-</head>
-
-<body>
-  <div class="container-fluid web-bg full-bg p-0">
-    <header class="fixed-top bg-black bg-opacity-50">
-      <nav class="navbar navbar-expand-xl container">
-        <div class="col-3 p-0 d-block">
-          <a><img src="../image/logo-removebg-preview.png" alt="" /></a>
-        </div>
-        <div class="col-9 nav-out-sidebar d-xl-block">
-          <div class="row">
-            <ul class="nav justify-content-end login-text">
-              <img src="../image/ic-header-auth.svg" alt="" style="width: 30px" />
-              <li class="nav-item">
-                <a class="nav-link text-hover" href="">Đăng Nhập</a>
-              </li>
-              <li class="nav-item text-white my-auto">/</li>
-              <li class="nav-item me-3">
-                <a href="" class="nav-link text-hover">Đăng Ký</a>
-              </li>
-              <img src="../image/footer-vietnam.svg" alt="" style="width: 30px" />
-              <span class="text-white ms-2 my-auto">VN</span>
-            </ul>
+  <body>
+    <div class="container-fluid web-bg full-bg p-0">
+      <header class="fixed-top bg-black bg-opacity-50">
+        <nav class="navbar navbar-expand-xl container">
+          <div class="col-3 p-0 d-block">
+            <a><img src="../image/logo-removebg-preview.png" alt="" /></a>
           </div>
-          <div class="row mt-5 TH2D-nav mb-1">
-            <div class="col-1 mt-1 p-0">
-              <a class="logo-home m-0" href=""></a>
-            </div>
-            <div class="col-11 p-1 rounded-5" style="border: #d8047c solid 1px; height: 59px">
-              <ul class="nav menu-nav rounded-5 flex-nowrap" style="background-color: #d8047c; height: 50px">
-                <li class="nav-item rounded-start-5 text-nowrap">
-                  <a href="" class="nav-link rounded-start-5" style="line-height: 34px">PHIM</a>
+          <div class="col-9 nav-out-sidebar d-xl-block">
+            <div class="row">
+              <ul class="nav justify-content-end login-text">
+                <img
+                  src="../image/ic-header-auth.svg"
+                  alt=""
+                  style="width: 30px"
+                />
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="">Đăng Nhập</a>
                 </li>
-                <li class="nav-item text-nowrap">
-                  <a href="" class="nav-link" style="line-height: 34px">LỊCH CHIẾU</a>
+                <li class="nav-item text-white my-auto">/</li>
+                <li class="nav-item me-3">
+                  <a href="" class="nav-link text-hover">Đăng Ký</a>
                 </li>
-                <li class="nav-item text-nowrap">
-                  <a href="" class="nav-link" style="line-height: 34px">RẠP VÀ GIÁ</a>
-                </li>
-                <li class="nav-item text-nowrap">
-                  <a href="" class="nav-link" style="line-height: 34px">KHUYỄN MÃI</a>
-                </li>
-                <li class="nav-item text-nowrap">
-                  <a href="../html/HoiVaDap.html" class="nav-link" style="line-height: 34px">HỎI VÀ ĐÁP</a>
-                </li>
-                <li class="nav-item text-nowrap">
-                  <a href="" class="nav-link" style="line-height: 34px">TIN TỨC</a>
-                </li>
-                <li class="nav-item text-nowrap">
-                  <a href="" class="nav-link" style="line-height: 34px">GIỚI THIỆU</a>
-                </li>
-                <li class="nav-item rounded-end-5 text-nowrap">
-                  <a href="" class="nav-link" style="line-height: 34px">LIÊN HỆ</a>
-                </li>
+                <img
+                  src="../image/footer-vietnam.svg"
+                  alt=""
+                  style="width: 30px"
+                />
+                <span class="text-white ms-2 my-auto">VN</span>
               </ul>
             </div>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-end position-relative">
-          <button id="button-login" class="navbar-toggler">
-            <img src="../image/ic-header-auth.svg" alt="" style="width: 25px" />
-            <div id="list-login" class="position-absolute top-100 end-50 d-none" style="width: 140px">
-              <ul class="navbar-nav bg-black ps-3 p-3">
-                <li class="nav-item">
-                  <a href="" class="nav-link text-hover text-start">Đăng Nhập</a>
-                </li>
-                <li class="nav-item">
-                  <a href="" class="nav-link text-hover text-start">Đăng Ký</a>
-                </li>
-              </ul>
-            </div>
-          </button>
-          <button class="navbar-toggler d-xl-none d-block" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar">
-            <span>
-              <img class="img-fluid" src="../image/hamburger.png" alt="" style="width: 35px;">
-            </span>
-          </button>
-        </div>
-
-        <div class="offcanvas offcanvas-end bg-black d-xl-none" tabindex="-1" id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              <img src="../image/logo-removebg-preview.png" alt="" />
-            </h5>
-            <button type="button" class="btn-close-white btn-close" data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link text-hover" href="#">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-hover" href="#">PHIM</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-hover" href="#">LỊCH CHIẾU</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-hover" href="#">RẠP VÀ GIÁ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-hover" href="#">KHUYẾN MÃI</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="##" role="button" data-bs-toggle="dropdown">
-                  KHÁC
-                </a>
-                <ul class="dropdown-menu bg-black">
-                  <li>
-                    <a class="dropdown-item text-hover" href="#">HỎI VÀ ĐÁP</a>
+            <div class="row mt-5 TH2D-nav mb-1">
+              <div class="col-1 mt-1 p-0">
+                <a class="logo-home m-0" href=""></a>
+              </div>
+              <div
+                class="col-11 p-1 rounded-5"
+                style="border: #d8047c solid 1px; height: 59px"
+              >
+                <ul
+                  class="nav menu-nav rounded-5 flex-nowrap"
+                  style="background-color: #d8047c; height: 50px"
+                >
+                  <li class="nav-item rounded-start-5 text-nowrap">
+                    <a
+                      href=""
+                      class="nav-link rounded-start-5"
+                      style="line-height: 34px"
+                      >PHIM</a
+                    >
                   </li>
-                  <li>
-                    <a class="dropdown-item text-hover" href="#">TIN TỨC</a>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >LỊCH CHIẾU</a
+                    >
                   </li>
-                  <li>
-                    <a class="dropdown-item text-hover" href="#">GIỚI THIỆU</a>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >RẠP VÀ GIÁ</a
+                    >
                   </li>
-                  <li>
-                    <a class="dropdown-item text-hover" href="#">LIÊN HỆ</a>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >KHUYỄN MÃI</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >HỎI VÀ ĐÁP</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >TIN TỨC</a
+                    >
+                  </li>
+                  <li class="nav-item text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >GIỚI THIỆU</a
+                    >
+                  </li>
+                  <li class="nav-item rounded-end-5 text-nowrap">
+                    <a href="" class="nav-link" style="line-height: 34px"
+                      >LIÊN HỆ</a
+                    >
                   </li>
                 </ul>
-              </li>
-            </ul>
-            <hr class="border border-white" />
-            <ul class="d-flex list-unstyled">
-              <li class="me-4">
-                <img src="../image/footer-vietnam.svg" alt="" />
-              </li>
-              <li class="text-white">Vietnamese</li>
-            </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
 
-    <div class="poster">
-      <img src="../image/gap-lai-chi-bau.jpg" alt="" />
-    </div>
-
-    <div id="container-bg">
-      <div id="content">
-        <section class="contact" id="contact">
-          <div class="title">
-            <h1>Hỏi và Đáp</h1>
+          <div class="d-flex justify-content-end position-relative">
+            <button id="button-login" class="navbar-toggler">
+              <img
+                src="../image/ic-header-auth.svg"
+                alt=""
+                style="width: 25px"
+              />
+              <div
+                id="list-login"
+                class="position-absolute top-100 end-50 d-none"
+                style="width: 140px"
+              >
+                <ul class="navbar-nav bg-black ps-3 p-3">
+                  <li class="nav-item">
+                    <a href="" class="nav-link text-hover text-start"
+                      >Đăng Nhập</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link text-hover text-start"
+                      >Đăng Ký</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <button
+              class="navbar-toggler d-xl-none d-block"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+            >
+              <span>
+                <img
+                  class="img-fluid"
+                  src="../image/hamburger.png"
+                  alt=""
+                  style="width: 35px"
+                />
+              </span>
+            </button>
           </div>
-          <div class="listquestion">
-            <div class="question">
-              <ul>
-                <li>
-                  <div class="ask" onclick=" toggleAnswer(this)">
-                    <span class="number">01</span>
-                    <h3>Làm thế nào để mua vé
-                      online?</h3>
-                    <span><i class="bx bx-chevron-up"></i></span>
-                  </div>
-                  <div class="answer">
-                    <div class="box">
-                      <div class="left">
-                        <h1>Trả lời</h1>
-                      </div>
-                      <div class="right">
-                        <h4 style="margin-top: 10px">
-                          Hướng dẫn mua vé ONLINE
-                        </h4>
-                        <h5>Điều kiện</h5>
-                        <p>-Bạn là thành viên TH2D</p>
-                        <p>
-                          -Nếu không là thành viên vui lòng đăng ký thành viên
-                          trên website để được mua vé
-                        </p>
-                        <h5>Bước 2:</h5>
-                        <p>Đăng nhập tài khoản thành viên</p>
-                        <p style="margin-top: 5px">Đăng nhập</p>
-                        <p>
-                          Trường hợp khách không đăng nhập được vui lòng liên
-                          hệ:
-                        </p>
-                        <p>- Rạp TH2D Gò Vấp</p>
-                        <p>- Rạp TH2D Đồng Nai</p>
-                        <p>- Rạp TH2D Đồng Tháp</p>
-                        <h5>Bước 3:</h5>
-                        <p>-Chọn loại vé và số lượng</p>
-                        <h5>Bước 4:</h5>
-                        <p style="margin-top: 10px">Chọn ghế:</p>
-                        <p>Chọn thức ăn:</p>
-                        <h5>Bước 5:</h5>
-                        <p>- Đồng ý</p>
-                        <p>- Đồng ý các điều khoản</p>
-                        <p>- Chọn loại thẻ thanh toán</p>
-                        <p>- Thanh toán</p>
-                        <h5>
-                          Bước 6: Nhập thông tin để thanh toán việc mua online
-                        </h5>
-                        <h4 style="margin-top: 10px">Hoàn tất</h4>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="ask" onclick=" toggleAnswer(this)">
-                    <span class="number">02</span>
-                    <h3>
-                      Thủ tục đặt vé online và phương thức thanh toán như thế
-                      nào?
-                    </h3>
-                    <span><i class="bx bx-chevron-up"></i></span>
-                  </div>
-                  <div class="answer">
-                    <div class="box">
-                      <div class="left">
-                        <h1>Trả lời</h1>
-                      </div>
-                      <div class="right">
-                        <h3 style="margin-top: 5px; font-size: 15px">
-                          CÁCH ĐẶT VÉ ONLINE
-                        </h3>
-                        <p>
-                          1/Đặt vé online trên mục MUA VÉ ONLINE ở trang chủ
-                          TH2D
-                        </p>
-                        <p>2/Chọn Phim, Rạp, Ngày và Suất Chiếu</p>
-                        <p>3/Bạn trọn vị trí ghế, nhập thông tin liên hệ</p>
-                        <p>4/Bạn chọn phương thức thanh toán</p>
-                        <p>
-                          5/Sau khi hoàn tất thanh toán hệ thống sẽ gửi thông
-                          tin đến liên hệ của bạn.Vui lòng xuất thông tin đặt
-                          vé khi đến rạp
-                        </p>
-                        <h3 style="margin-top: 5px; font-size: 15px">
-                          CHÚC BẠN XEM PHIM VUI VẺ
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="ask" onclick=" toggleAnswer(this)">
-                    <span class="number">03</span>
-                    <h3>Làm sao để được cấp thẻ thành viên?</h3>
-                    <span><i class="bx bx-chevron-up"></i></span>
-                  </div>
-                  <div class="answer">
-                    <div class="box">
-                      <div class="left">
-                        <h1>Trả lời</h1>
-                      </div>
-                      <div class="right">
-                        <p>
-                          Bạn chỉ cần mua 02 vé xem phim bất kỳ tại rạp
-                          Cinestar là đã có thể tạo thẻ D'Friend và thẻ chỉ có
-                          giá trị sử dụng từ lần giao dịch sau. khi bạn tích
-                          đủ 10,000 điểm tích lũy thì sẽ được nâng lên thẻ
-                          D'vip
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="ask" onclick=" toggleAnswer(this)">
-                    <span class="number">04</span>
-                    <h3>Lợi ích khi tham gia thẻ thành viên là gì?</h3>
-                    <span><i class="bx bx-chevron-up"></i></span>
-                  </div>
-                  <div class="answer">
-                    <div class="box">
-                      <div class="left">
-                        <h1>Trả lời</h1>
-                      </div>
-                      <div class="right">
-                        <p>
-                          Thẻ thành viên của TH2D bao gồm 2 hạng mục là
-                          D'Friend và D'Vip. Cụ thể quyền lợi như sau
-                        </p>
-                        <p>
-                          Khi điểm của thẻ đạt mức như sau sẽ có thể đổi được
-                          phần thưởng tương ứng.
-                        </p>
-                        <p>
-                          Khi điểm tích lũy của thẻ đạt 10.000 sẽ được nâng
-                          cấp lên thẻ D'Vip (Điểm tích lũy = tổng điểm cộng
-                          dồn từ trước đến giờ, không phải điểm còn lại của
-                          thẻ)
-                        </p>
-                        <p><b>Thẻ D’Friend:</b></p>
-                        <p>
-                          - Được cấp lần đầu khi mua 2 vé xem phim bất kỳ tại
-                          Cinestar.
-                        </p>
-                        <p>
-                          - Được tích lũy điểm theo giá trị mua hàng hóa dịch
-                          vụ như trên.
-                        </p>
-                        <p>
-                          - Được giảm 10% trực tiếp trên giá trị hóa đơn bắp
-                          nước khi mua tại quầy.
-                        </p>
-                        <p>
-                          - Được tặng 1 vé xem phim 2D vào tuần sinh nhật
-                          (tính từ Thứ Hai đến Chủ Nhật), Điều kiện: tối thiểu
-                          có 500 điểm tích lũy
-                        </p>
-                        <p>
-                          - Được tham gia các chương trình dành cho thành
-                          viên.
-                        </p>
 
-                        <p><b>Thẻ D’VIP:</b></p>
-
-                        <p>
-                          - Được nâng cấp từ thẻ D’Friend khi tích lũy đủ
-                          10.000 điểm.
-                        </p>
-
-                        <p>
-                          - Được tích lũy điểm theo giá trị mua hàng hóa dịch
-                          vụ như trên.
-                        </p>
-
-                        <p>
-                          - Được giảm 10% trực tiếp trên giá trị hóa đơn bắp
-                          nước khi mua tại quầy.
-                        </p>
-
-                        <p>
-                          - Được tặng 1 vé xem phim 2D vào tuần sinh nhật
-                          (tính từ Thứ Hai đến Chủ Nhật), Điều kiện: tối thiểu
-                          có 500 điểm tích lũy
-                        </p>
-
-                        <p>
-                          - Được tham gia các chương trình dành cho thành viên
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+          <div
+            class="offcanvas offcanvas-end bg-black d-xl-none"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="../image/logo-removebg-preview.png" alt="" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close-white btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">HOME</a>
                 </li>
-                <li>
-                  <div class="ask" onclick=" toggleAnswer(this)">
-                    <span class="number">05 </span>
-                    <h3>Làm sao để biết được số điểm đã tích lũy?</h3>
-                    <span><i class="bx bx-chevron-up"></i></span>
-                  </div>
-                  <div class="answer">
-                    <div class="box">
-                      <div class="left">
-                        <h1>Trả lời</h1>
-                      </div>
-                      <div class="right">
-                        <p>
-                          ​Khách hàng có thể hỏi nhân viên lúc sử dụng thẻ
-                          thành viên để mua vé hoặc kiểm tra thông tin khách
-                          hàng trên website cinestar.com.vn bằng tài khoản
-                          online.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">PHIM</a>
                 </li>
-                <li>
-                  <div class="ask" onclick=" toggleAnswer(this)">
-                    <span class="number">06</span>
-                    <h3>
-                      Làm thế nào để đăng nhập vào website khi đã có thẻ thành
-                      viên
-                    </h3>
-                    <span><i class="bx bx-chevron-up"></i></span>
-                  </div>
-                  <div class="answer">
-                    <div class="box">
-                      <div class="left">
-                        <h1>Trả lời</h1>
-                      </div>
-                      <div class="right">
-                        <p>
-                          <b><i><u>ĐỐI VỚI THẺ D'FRIEND:</u></i></b>
-                        </p>
-                        <p>
-                          <span> <b>Ví dụ:</b> </span> thẻ của bạn là
-                          DF22701371
-                        </p>
-                        <p>Bạn đăng nhập là: DF22701371</p>
-                        <p>Mật khẩu(Giống tên đăng nhập): DF22701371</p>
-                        <br />
-
-                        <p>
-                          <span><b><i><u>ĐỐI VỚI THẺ D'VIP:</u></i></b></span>
-                          Bạn thêm "CV" vào trước mã thẻ và thêm 1 số 0 vào
-                          dãy số 0
-                        </p>
-                        <p>
-                          <span> <b>Ví dụ:</b> </span> thẻ của bạn là 22701371
-                        </p>
-                        <p>Bạn đăng nhập là: CV227001371</p>
-                        <p>Mật khẩu(Giống tên đăng nhập): CV227001371</p>
-                      </div>
-                    </div>
-                  </div>
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">LỊCH CHIẾU</a>
                 </li>
-                <li>
-                  <div class="ask" onclick=" toggleAnswer(this)">
-                    <span class="number">07</span>
-                    <h3>Dobly Atmos là gì?</h3>
-                    <span><i class="bx bx-chevron-up"></i></span>
-                  </div>
-                  <div class="answer">
-                    <div class="box">
-                      <div class="left">
-                        <h1>Trả lời</h1>
-                      </div>
-                      <div class="right">
-                        <p>
-                          Atmos là một hệ thống âm thanh được phát triển bởi
-                          Dolby, về cơ bản, nó thay đổi cách âm thanh được
-                          thiết kế cho các bộ phim và thể hiện chúng trong rạp
-                          chiếu phim. Với Dolby Atmos, nhà làm phim có thể
-                          định vị trí và đưa âm thanh đi khắp nơi trong một
-                          rạp hát, thậm chí lên phía trên đầu, đề cao chủ
-                          nghĩa hiện thực và tác động từ mỗi cảnh phim đem
-                          lại. Atmos dùng một phương pháp tiếp cận dựa trên
-                          đối tượng để thiết kế âm thanh, thay vì chỉ bao gồm
-                          các kênh âm thanh (channel), trong đó, nhà làm phim
-                          được tự do sáng tạo cho âm thanh "bay quanh" khán
-                          giả trong không gian 3 chiều (3D).
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">RẠP VÀ GIÁ</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link text-hover" href="#">KHUYẾN MÃI</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="##"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    KHÁC
+                  </a>
+                  <ul class="dropdown-menu bg-black">
+                    <li>
+                      <a class="dropdown-item text-hover" href="#"
+                        >HỎI VÀ ĐÁP</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-hover" href="#">TIN TỨC</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-hover" href="#"
+                        >GIỚI THIỆU</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item text-hover" href="#">LIÊN HỆ</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <hr class="border border-white" />
+              <ul class="d-flex list-unstyled">
+                <li class="me-4">
+                  <img src="../image/footer-vietnam.svg" alt="" />
+                </li>
+                <li class="text-white">Vietnamese</li>
               </ul>
             </div>
           </div>
-          <div class="title" style="margin-top: -6.5%;">
-            <h1>Gửi câu hỏi</h1>
+        </nav>
+      </header>
+
+      <div class="poster">
+        <img src="../image/gap-lai-chi-bau.jpg" alt="" />
+      </div>
+
+      <div id="content" class="px-5">
+        <div class="row my-4">
+          <div class="col">
+            <h2 class="text-white text-center mb-5">HỆ THỐNG RẠP</h2>
+            <div class="mb-3">
+              <select
+                class="form-select form-select-lg bg-dark text-white py-3 rounded-4"
+                style="border: 4px solid purple"
+                name=""
+                id="chon"
+              >
+                <option selected>Chọn rạp phim</option>
+                <option value="gv">Rạp TH2D Gò Vấp</option>
+                <option value="dn">Rạp TH2D Đồng Nai</option>
+                <option value="gl">Rạp TH2D Gia Lai</option>
+                <option value="dt">Rạp TH2D Đồng Tháp</option>
+              </select>
+            </div>
           </div>
-          <div class="form-input" id="form-input">
-            <form id="myForm" class="row g-3 justify-content-center">
-              <div class="col-12">
-                <input type="text" id="name" class="form-control" placeholder="Họ tên(*)" aria-label="name">
-              </div>
-              <div class="col-lg-6">
-                <input type="tel" id="phone" class="form-control" placeholder="Điện Thoai(*)" aria-label="tel">
-              </div>
-              <div class="col-lg-6">
-                <input type="email" id="email" class="form-control" placeholder="Email(*)" aria-label="Email">
-              </div>
-              <div class="col-12">
-                <textarea id="contents" class="form-control" rows="6" placeholder="Nội dung(*)"></textarea>
-              </div>
-              <div class="col-auto">
-                <button type="button" onclick="submitForm()">Gửi</button>
-              </div>
-            </form>
+          <div class="col">
+            <img
+              src="../image/logo-removebg-preview.png"
+              class="img-fluid my-5"
+              alt=""
+            />
           </div>
-        </section>
-        <!-- PHIM ĐANG CHIẾU -->
+          <div class="col">
+            <h2 class="text-white text-center">THÔNG TIN RẠP</h2>
+            <div id="diaChi" class="text-white fs-4"></div>
+          </div>
+        </div>
+
+        <div id="rapgv" class="d-none">
+          <div class="ds-phim">
+            <div class="ds-phim-col">
+              <div class="col-movie d-block">
+                <!-- film 1 -->
+                <div class="row">
+                  <div class="film col">
+                    <a href="">
+                      <div class="film-picture">
+                        <img
+                          src="../image/tren-ban-nhau-duoi-ban-muu-poster.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="film-text">
+                        <h3>TRÊN BÀN NHẬU DƯỚI BÀN MƯU (T18)</h3>
+                        <p class="limitedText">
+                          Bối cảnh của bộ phim là một quán rượu đậm chất Hàn
+                          Quốc với câu mở đầu "Cuộc sống đâu cần gì, chỉ cần ai
+                          đó kề bên và rượu bia làm cớ". Phim khai thác về
+                          chuyện "bàn nhậu" của giới trẻ hiện nay và những yếu
+                          tố khác.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="col-sm-12 col-lg ms-lg-5 my-sm-3 d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="rounded-5 my-auto p-3"
+                      style="
+                        border: 5px solid rgb(235, 212, 169);
+                        background-color: rgb(209, 145, 26);
+                      "
+                    >
+                      <h5 class="text-white">Ngày chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">06/04</button>
+                        <button class="btn border text-light m-1">07/04</button>
+                        <button class="btn border text-light m-1">08/04</button>
+                        <button class="btn border text-light m-1">09/04</button>
+                        <button class="btn border text-light m-1">10/04</button>
+                        <button class="btn border text-light m-1">11/04</button>
+                        <button class="btn border text-light m-1">12/04</button>
+                      </div>
+                      <h5 class="text-white">Giờ chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">12:30</button>
+                        <button class="btn border text-light m-1">17:30</button>
+                        <button class="btn border text-light m-1">21:30</button>
+                      </div>
+                      <a
+                        name=""
+                        id=""
+                        class="btn btn-success w-50 border border-2 rounded-5 fw-bold fs-4 my-4 float-end"
+                        href="#"
+                        role="button"
+                        >Đặt vé</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- film 2 -->
+                <div class="row">
+                  <div
+                    class="film col"
+                    style="background-color: rgb(95, 20, 68)"
+                  >
+                    <a href="">
+                      <div class="film-picture">
+                        <img
+                          src="../image/poster-nguoi-vo-cuoi-cung.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="film-text">
+                        <h3>người vợ cuối cùng (T18)</h3>
+                        <p class="limitedText">
+                          Người Vợ Cuối Cùng sẽ lấy bối cảnh gia đình quan lại
+                          thời nhà Nguyễn đầu thế kỉ 19 để kể về câu chuyện thân
+                          phận đau khổ của người phụ nữ dưới xã hội thời bấy
+                          giờ.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="col-sm-12 col-lg ms-lg-5 my-sm-3 d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="rounded-5 my-auto p-3"
+                      style="
+                        border: 5px solid rgba(211, 198, 207, 0.678);
+                        background-color: rgb(95, 20, 68);
+                      "
+                    >
+                      <h5 class="text-white">Ngày chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">06/04</button>
+                        <button class="btn border text-light m-1">07/04</button>
+                        <button class="btn border text-light m-1">08/04</button>
+                        <button class="btn border text-light m-1">09/04</button>
+                        <button class="btn border text-light m-1">10/04</button>
+                        <button class="btn border text-light m-1">11/04</button>
+                        <button class="btn border text-light m-1">12/04</button>
+                      </div>
+                      <h5 class="text-white">Giờ chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">12:30</button>
+                        <button class="btn border text-light m-1">17:30</button>
+                        <button class="btn border text-light m-1">21:30</button>
+                      </div>
+                      <a
+                        name=""
+                        id=""
+                        class="btn btn-success w-50 border border-2 rounded-5 fw-bold fs-4 my-4 float-end"
+                        href="#"
+                        role="button"
+                        >Đặt vé</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="rapdn" class="d-none">
+          <div class="ds-phim">
+            <div class="ds-phim-col">
+              <div class="col-movie d-block">
+                <div class="row">
+                  <!-- film 3 -->
+                  <div
+                    class="film col"
+                    style="background-color: rgb(145, 30, 103)"
+                  >
+                    <a href="">
+                      <div class="film-picture">
+                        <img src="../image/poster-quy-cau2.jpg" alt="" />
+                      </div>
+                      <div class="film-text">
+                        <h3>quỷ cẩu (T18)</h3>
+                        <p class="limitedText">
+                          Sau cái chết kỳ lạ của ông chủ lò mổ chó danh tiếng,
+                          những hiện tượng ma quái trong nhà liên tục xuất hiện.
+                          Nam_con trai của ông bắt đầu tìm hiểu và nhận ra mọi
+                          thứ có liên quan đến con chó trắng mũi đỏ đang nuôi
+                          trong nhà. Cũng tại đây, anh vén màn những bí mật
+                          khủng khiếp mà gia đình đã che giấu bấy lâu nay.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="col-sm-12 col-lg ms-lg-5 my-sm-3 d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="rounded-5 my-auto p-3"
+                      style="
+                        border: 5px solid rgba(211, 198, 207, 0.678);
+                        background-color: rgb(145, 30, 103);
+                      "
+                    >
+                      <h5 class="text-white">Ngày chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">06/04</button>
+                        <button class="btn border text-light m-1">07/04</button>
+                        <button class="btn border text-light m-1">08/04</button>
+                        <button class="btn border text-light m-1">09/04</button>
+                        <button class="btn border text-light m-1">10/04</button>
+                        <button class="btn border text-light m-1">11/04</button>
+                        <button class="btn border text-light m-1">12/04</button>
+                      </div>
+                      <h5 class="text-white">Giờ chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">12:30</button>
+                        <button class="btn border text-light m-1">17:30</button>
+                        <button class="btn border text-light m-1">21:30</button>
+                      </div>
+                      <a
+                        name=""
+                        id=""
+                        class="btn btn-success w-50 border border-2 rounded-5 fw-bold fs-4 my-4 float-end"
+                        href="#"
+                        role="button"
+                        >Đặt vé</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- film 4 -->
+                <div class="row">
+                  <div class="film col" style="background-color: #c0346c">
+                    <a href="">
+                      <div class="film-picture">
+                        <img src="../image/teeyod1.jpg" alt="" />
+                      </div>
+                      <div class="film-text">
+                        <h3>quỷ ăn tạng (T18)</h3>
+                        <p class="limitedText">
+                          Vào năm 1972, một sự việc kinh hoàng nhất đã xảy ra.
+                          Một cô gái trẻ ở một ngôi làng hẻo lánh ở tỉnh
+                          Kanchanaburi đã qua đời một cách bí ẩn. Khi nghe thấy
+                          một giọng nói dựng tóc gáy "Tee Yod... Tee Yod..."
+                          vang lên trong đêm. Sau khi Yak (Nadech Kugimiya) xuất
+                          ngũ, anh trở về phụ
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="col-sm-12 col-lg ms-lg-5 my-sm-3 d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="rounded-5 my-auto p-3"
+                      style="
+                        border: 5px solid #ffcce0;
+                        background-color: #c0346c;
+                      "
+                    >
+                      <h5 class="text-white">Ngày chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">06/04</button>
+                        <button class="btn border text-light m-1">07/04</button>
+                        <button class="btn border text-light m-1">08/04</button>
+                        <button class="btn border text-light m-1">09/04</button>
+                        <button class="btn border text-light m-1">10/04</button>
+                        <button class="btn border text-light m-1">11/04</button>
+                        <button class="btn border text-light m-1">12/04</button>
+                      </div>
+                      <h5 class="text-white">Giờ chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">12:30</button>
+                        <button class="btn border text-light m-1">17:30</button>
+                        <button class="btn border text-light m-1">21:30</button>
+                      </div>
+                      <a
+                        name=""
+                        id=""
+                        class="btn btn-success w-50 border border-2 rounded-5 fw-bold fs-4 my-4 float-end"
+                        href="#"
+                        role="button"
+                        >Đặt vé</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="rapdt" class="d-none">
+          <div class="ds-phim">
+            <div class="ds-phim-col">
+              <div class="col-movie">
+                <!-- film 5 -->
+                <div class="row">
+                  <div class="film col">
+                    <a href="">
+                      <div class="film-picture">
+                        <img src="../image/da-chieu-hon-chien.jpg" alt="" />
+                      </div>
+                      <div class="film-text">
+                        <h3>alienoid 2 (T16)</h3>
+                        <p class="limitedText">
+                          Ean (KIM Tae-ri) bị mắc kẹt ở quá khứ trong khi cố
+                          ngăn chặn sự trốn thoát của những tù nhân ngoài hành
+                          tinh bị nhốt trong cơ thể con người. Cô cuối cùng đã
+                          tìm thấy Gươm Thần, có thể mở ra cánh cổng xuyên thời
+                          gian, và giờ phải tìm Thunder (KIM Woo-bin) để trở về
+                          hiện tại. Trong khi đó, Muruk (RYU Jun-yeol), người
+                          giúp Ean thoát khỏi những tình huống nguy hiểm, bắt
+                          đầu cảm thấy bất an khi anh nhận thấy sự hiện diện của
+                          một sinh vật lạ trong cơ thể mình. Trở lại hiện tại,
+                          sự phát tán của khí haava bởi Thủ Lĩnh, kẻ lãnh đạo
+                          những tù nhân ngoài hành tinh đã khiến hàng ngàn người
+                          chết. Min Gaelin (LEE Ha-nee) người tình cờ chứng kiến
+                          điều này đã nhận ra rằng đây chỉ là khởi đầu. Chỉ còn
+                          48 phút trước khi tất cả các bong bóng khí haava được
+                          thiết lập để nổ tung, cánh cửa thời gian cuối cùng
+                          được mở ra và Muruk, Thunder, cùng Lam Tử và Hắc Nương
+                          được kéo về hiện tại cùng với Ean. Những bí mật động
+                          trời dần được hé lộ. Họ phải làm gì để chống lại những
+                          sinh vật ngoài hành tinh, ngăn chặn sự nổ tung của khí
+                          haava và giải cứu nhân loại?
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="col-sm-12 col-lg ms-lg-5 my-sm-3 d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="rounded-5 my-auto p-3"
+                      style="
+                        border: 5px solid rgb(235, 212, 169);
+                        background-color: rgb(209, 145, 26);
+                      "
+                    >
+                      <h5 class="text-white">Ngày chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">06/04</button>
+                        <button class="btn border text-light m-1">07/04</button>
+                        <button class="btn border text-light m-1">08/04</button>
+                        <button class="btn border text-light m-1">09/04</button>
+                        <button class="btn border text-light m-1">10/04</button>
+                        <button class="btn border text-light m-1">11/04</button>
+                        <button class="btn border text-light m-1">12/04</button>
+                      </div>
+                      <h5 class="text-white">Giờ chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">12:30</button>
+                        <button class="btn border text-light m-1">17:30</button>
+                        <button class="btn border text-light m-1">21:30</button>
+                      </div>
+                      <a
+                        name=""
+                        id=""
+                        class="btn btn-success w-50 border border-2 rounded-5 fw-bold fs-4 my-4 float-end"
+                        href="#"
+                        role="button"
+                        >Đặt vé</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- film 6 -->
+                <div class="row">
+                  <div
+                    class="film col"
+                    style="background-color: rgb(95, 20, 68)"
+                  >
+                    <a href="">
+                      <div class="film-picture">
+                        <img src="../image/mat-vu-ong.jpg" alt="" />
+                      </div>
+                      <div class="film-text">
+                        <h3>Mật vụ ong (T18)</h3>
+                        <p class="limitedText">
+                          Jason Statham vào vai Adam Clay, một người nuôi ong
+                          cần mẫn và đơn độc. Anh có mối quan hệ tốt với bà chủ
+                          nhà, thậm chí coi bà như người thân duy nhất của mình.
+                          Thế nhưng, một sự kiện xảy ra khiến bà qua đời, và
+                          “người nuôi ong” Adam Clay quyết định bắt đầu kế hoạch
+                          trả thù tàn bạo của mình. Trong khi Clay vạch trần bí
+                          mật đằng sau đường dây lừa đảo cỡ lớn và bắt những kẻ
+                          có tội phải trả giá, thân phận thật của anh cũng dần
+                          được hé lộ.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="col-sm-12 col-lg ms-lg-5 my-sm-3 d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="rounded-5 my-auto p-3"
+                      style="
+                        border: 5px solid rgba(211, 198, 207, 0.678);
+                        background-color: rgb(95, 20, 68);
+                      "
+                    >
+                      <h5 class="text-white">Ngày chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">06/04</button>
+                        <button class="btn border text-light m-1">07/04</button>
+                        <button class="btn border text-light m-1">08/04</button>
+                        <button class="btn border text-light m-1">09/04</button>
+                        <button class="btn border text-light m-1">10/04</button>
+                        <button class="btn border text-light m-1">11/04</button>
+                        <button class="btn border text-light m-1">12/04</button>
+                      </div>
+                      <h5 class="text-white">Giờ chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">12:30</button>
+                        <button class="btn border text-light m-1">17:30</button>
+                        <button class="btn border text-light m-1">21:30</button>
+                      </div>
+                      <a
+                        name=""
+                        id=""
+                        class="btn btn-success w-50 border border-2 rounded-5 fw-bold fs-4 my-4 float-end"
+                        href="#"
+                        role="button"
+                        >Đặt vé</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="rapgl" class="d-none">
+          <div class="ds-phim">
+            <div class="ds-phim-col">
+              <div class="col-movie d-block">
+                <div class="row">
+                  <!-- film 3 -->
+                  <div
+                    class="film col"
+                    style="background-color: rgb(145, 30, 103)"
+                  >
+                    <a href="">
+                      <div class="film-picture">
+                        <img src="../image/ruou-cot-nguoi-poster.jpg" alt="" />
+                      </div>
+                      <div class="film-text">
+                        <h3>Rượu cốt người (T18)</h3>
+                        <p class="limitedText">
+                          Nhân vật chính trong Rượu Cốt Người là Trương Tử Kiệt
+                          (Lư Hãn Đình), một chàng trai quyết định tham gia tour
+                          du lịch trên đảo hoang cùng bạn bè để quên đi nỗi đau
+                          trước cái chết đột ngột của bạn gái Ava (Viên Lễ Lâm).
+                          Nhưng chuyến hành trình về miền hoang dã lại không vui
+                          như kì vọng. Bốn người bạn bắt đầu gặp thấy những điều
+                          kì lạ, rồi những sự kiện siêu nhiên đáng sợ lần lượt
+                          xảy ra. Không lâu sau, họ phát hiện sự tồn tại của một
+                          thế lực tà ác cổ xưa và nó đang rình rập, theo dõi họ
+                          mọi lúc mọi nơi. Chuyến đi tưởng chừng rất vui vẻ lại
+                          trở thành nỗi kinh hoàng chết chóc.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="col-sm-12 col-lg ms-lg-5 my-sm-3 d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="rounded-5 my-auto p-3"
+                      style="
+                        border: 5px solid rgba(211, 198, 207, 0.678);
+                        background-color: rgb(145, 30, 103);
+                      "
+                    >
+                      <h5 class="text-white">Ngày chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">06/04</button>
+                        <button class="btn border text-light m-1">07/04</button>
+                        <button class="btn border text-light m-1">08/04</button>
+                        <button class="btn border text-light m-1">09/04</button>
+                        <button class="btn border text-light m-1">10/04</button>
+                        <button class="btn border text-light m-1">11/04</button>
+                        <button class="btn border text-light m-1">12/04</button>
+                      </div>
+                      <h5 class="text-white">Giờ chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">12:30</button>
+                        <button class="btn border text-light m-1">17:30</button>
+                        <button class="btn border text-light m-1">21:30</button>
+                      </div>
+                      <a
+                        name=""
+                        id=""
+                        class="btn btn-success w-50 border border-2 rounded-5 fw-bold fs-4 my-4 float-end"
+                        href="#"
+                        role="button"
+                        >Đặt vé</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- film 4 -->
+                <div class="row">
+                  <div class="film col" style="background-color: #c0346c">
+                    <a href="">
+                      <div class="film-picture">
+                        <img src="../image/noryang-poster.jpg" alt="" />
+                      </div>
+                      <div class="film-text">
+                        <h3>ĐẠI HẢI CHIẾN NORYANG: BIỂN CHẾT (T18)</h3>
+                        <p class="limitedText">
+                          Trận đại hải chiến cuối cùng để chấm dứt cuộc chiến
+                          tranh 7 năm Nhật Bản - Triều Tiên, hạm đội liên minh
+                          của Đô Đốc Yin Sun-shin và quân đội nhà Minh cùng
+                          chống lại kẻ thù đông gần gấp 3 lần trong một trận
+                          chiến dài 100 phút mãn nhãn và nghẹt thở!
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="col-sm-12 col-lg ms-lg-5 my-sm-3 d-flex justify-content-center align-items-center"
+                  >
+                    <div
+                      class="rounded-5 my-auto p-3"
+                      style="
+                        border: 5px solid #ffcce0;
+                        background-color: #c0346c;
+                      "
+                    >
+                      <h5 class="text-white">Ngày chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">06/04</button>
+                        <button class="btn border text-light m-1">07/04</button>
+                        <button class="btn border text-light m-1">08/04</button>
+                        <button class="btn border text-light m-1">09/04</button>
+                        <button class="btn border text-light m-1">10/04</button>
+                        <button class="btn border text-light m-1">11/04</button>
+                        <button class="btn border text-light m-1">12/04</button>
+                      </div>
+                      <h5 class="text-white">Giờ chiếu</h5>
+                      <div>
+                        <button class="btn border text-light m-1">12:30</button>
+                        <button class="btn border text-light m-1">17:30</button>
+                        <button class="btn border text-light m-1">21:30</button>
+                      </div>
+                      <a
+                        name=""
+                        id=""
+                        class="btn btn-success w-50 border border-2 rounded-5 fw-bold fs-4 my-4 float-end"
+                        href="#"
+                        role="button"
+                        >Đặt vé</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <h1 class="text-center text-warning mt-3">PHIM ĐANG CHIẾU</h1>
         <div class="bg-warning" style="height: 450px;">
           <div class="current-movie mt-3 position-relative">
@@ -1153,105 +1448,181 @@
             </div>
           </div>
         </div>
-
-        <!-- FOOTER -->
-
       </div>
-    </div>
-    <footer>
-      <img style="width: 100%;margin-top: 50px;" src="../image/line-bg.png" alt="">
-      <div class="container-footer">
-        <div class="logo-footer ">
-          <img class="img-fluid mt-3" src="../image/logo-removebg-preview.png" alt="">
-        </div>
-        <div class="d-flex nav justify-content-between flex-wrap mt-5">
-          <div class="nav-item">
-            <h3 class="text-center text-warning">LIÊN KẾT</h3>
-            <ul class="nav">
-              <li class="nav-item d-flex">
-                <a class="nav-link" href=""><img src="../image/scl_facebook.png" alt=""></a>
-                <a class="nav-link" href=""><img src="../image/scl_youtube.png" alt=""></a>
-              </li>
-            </ul>
+      <footer>
+        <img
+          style="width: 100%; margin-top: 50px"
+          src="../image/line-bg.png"
+          alt=""
+        />
+        <div class="container-footer">
+          <div class="logo-footer">
+            <img
+              class="img-fluid mt-3"
+              src="../image/logo-removebg-preview.png"
+              alt=""
+            />
           </div>
-          <div class="content-footer2 nav-item">
-            <h3 class="text-center text-warning ">HỆ THỐNG RẠP</h3>
-            <ul class="nav flex-column">
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Đồng Nai</a></li>
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Đồng Tháp</a></li>
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Gia Lai</a></li>
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Gò Vấp</a></li>
-            </ul>
-          </div>
-          <div class="content-footer3 nav-item">
-            <h3 class="text-center text-warning">TH2D</h3>
-            <ul class="content-TH2D nav flex-column">
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">Phim đang chiếu</a></li>
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">Phim sắp chiếu</a></li>
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">Suất chiếu đặc biệt</a></li>
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">Lịch chiếu</a></li>
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">Khuyến mãi</a></li>
-            </ul>
-          </div>
-          <div class="content-footer4 nav-item">
-            <h3 class="text-warning text-center">THÔNG TIN</h3>
-            <ul class="content-thongtin nav flex-column">
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">Giới thiệu</a></li>
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">Tin tức</a></li>
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">Hỏi và đáp</a></li>
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">Liên hệ</a></li>
-            </ul>
-          </div>
-
-          <div class="content-footer5 nav-item">
-            <h3 class="text-center text-warning">CHÍNH SÁCH VÀ QUY ĐỊNH</h3>
-            <ul class="content-chinhsach nav flex-column">
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">Quy định chung</a></li>
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">Điều khoản giao dịch</a></li>
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">Chính sách bảo mật</a></li>
-              <li class="nav-item text-center"><a class="nav-link text-grey" href="">Thông tin công ty</a></li>
-            </ul>
-          </div>
-        </div>
-        <div id="thanhtoan">
-          <div class="content-thanhtoan mt-5 ">
-            <h3 class="text-center text-white">Chấp nhận thanh toán</h3>
-            <ul class="nav justify-content-center">
-              <li class="nav-item"><a class="nav-link" href=""><img src="../image/napas-40.png" alt=""></a></li>
-              <li class="nav-item"><a class="nav-link" href=""><img src="../image/payment-visa.png" alt=""></a></li>
-              <li class="nav-item"><a class="nav-link" href=""><img src="../image/payment-mastercard.png" alt=""></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href=""><img src="../image/momo.jpg" alt=""></a></li>
-            </ul>
-          </div>
-        </div>
-        <div id="infor-company">
-          <div class="content-infor mt-5">
-            <div style="width: fit-content;margin: auto;">
-              <img src="../image/dathongbao.png" alt="">
+          <div class="d-flex nav justify-content-between flex-wrap mt-5">
+            <div class="nav-item">
+              <h3 class="text-center text-warning">LIÊN KẾT</h3>
+              <ul class="nav">
+                <li class="nav-item d-flex">
+                  <a class="nav-link" href=""
+                    ><img src="../image/scl_facebook.png" alt=""
+                  /></a>
+                  <a class="nav-link" href=""
+                    ><img src="../image/scl_youtube.png" alt=""
+                  /></a>
+                </li>
+              </ul>
             </div>
-            <p class="text-center text-white mb-0">
-              CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM TH2D
-              <br>
-              ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
-              <br>
-              GIẤY CNĐKDN SỐ: 0312742744, ĐĂNG KÝ LẦN ĐẦU NGÀY 18/04/2014, ĐĂNG KÝ THAY ĐỔI LẦN THỨ 2 NGÀY 15/09/2014,
-              CẤP BỞI SỞ KH&ĐT TP.HCM
-              <br>
-              <br>
-              2015 © TH2D. ALL RIGHTS RESERVED.
-            </p>
+            <div class="content-footer2 nav-item">
+              <h3 class="text-center text-warning">HỆ THỐNG RẠP</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Đồng Nai</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Đồng Tháp</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Gia Lai</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Gò Vấp</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer3 nav-item">
+              <h3 class="text-center text-warning">TH2D</h3>
+              <ul class="content-TH2D nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Phim đang chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Phim sắp chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Suất chiếu đặc biệt</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Lịch chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Khuyến mãi</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer4 nav-item">
+              <h3 class="text-warning text-center">THÔNG TIN</h3>
+              <ul class="content-thongtin nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Giới thiệu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Tin tức</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Hỏi và đáp</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-footer5 nav-item">
+              <h3 class="text-center text-warning">CHÍNH SÁCH VÀ QUY ĐỊNH</h3>
+              <ul class="content-chinhsach nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Quy định chung</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Điều khoản giao dịch</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Chính sách bảo mật</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Thông tin công ty</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="thanhtoan">
+            <div class="content-thanhtoan mt-5">
+              <h3 class="text-center text-white">Chấp nhận thanh toán</h3>
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/napas-40.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/payment-visa.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/payment-mastercard.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/momo.jpg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="infor-company">
+            <div class="content-infor mt-5">
+              <div style="width: fit-content; margin: auto">
+                <img src="../image/dathongbao.png" alt="" />
+              </div>
+              <p class="text-center text-white mb-0">
+                CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM TH2D
+                <br />
+                ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
+                <br />
+                GIẤY CNĐKDN SỐ: 0312742744, ĐĂNG KÝ LẦN ĐẦU NGÀY 18/04/2014,
+                ĐĂNG KÝ THAY ĐỔI LẦN THỨ 2 NGÀY 15/09/2014, CẤP BỞI SỞ KH&ĐT
+                TP.HCM
+                <br />
+                <br />
+                2015 © TH2D. ALL RIGHTS RESERVED.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/Lichchieu.js"></script>
+    <script src="../js/PDC.js"></script>
+    <script>
+      let selectedElement = null;
+      function ClickColor(element) {
+        if (selectedElement !== null) {
+          selectedElement.classList.remove("clicked");
+        }
+        element.classList.add("clicked");
+        selectedElement = element;
+      }
 
+      document.addEventListener("DOMContentLoaded", function () {
+        var vanBan = document.querySelectorAll(".limitedText");
 
-  </div>
-  <!-- dan link nay -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="../js/hvd.js"></script>
-  <script src="../js/test.js"></script>
-</body>
-
+        vanBan.forEach(function (vanBan) {
+          var mangTu = vanBan.innerText.split(/\s+/);
+          var gioiHanTu = mangTu.slice(0, 100).join(" "); //lấy 48 từ đầu tiên
+          vanBan.innerText = gioiHanTu;
+        });
+      });
+    </script>
+  </body>
 </html>
