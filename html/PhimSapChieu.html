@@ -1,933 +1,939 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Phim</title>
-    <link rel="stylesheet" href="../css/psc.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phim Sap Chieu</title>
+  <link rel="stylesheet" href="../css/psc.css" />
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/Home.css" />
+  <link rel="stylesheet" href="../css/Home.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <script src="../js/bootstrap.bundle.min.js"></script>
   <script src="../js/test.js"></script>
-  </head>
-  <body>
-    <div class="container-fluid web-bg full-bg p-0">
-      <header class="fixed-top bg-black bg-opacity-50">
-        <nav class="navbar navbar-expand-xl container">
-            <div class="col-3 p-0 d-block">
-                <a><img src="../image/logo-removebg-preview.png" alt="" /></a>
+</head>
+
+<body>
+  <div class="container-fluid web-bg full-bg p-0">
+    <header class="fixed-top bg-black bg-opacity-50">
+      <nav class="navbar navbar-expand-xl container">
+        <div class="col-3 p-0 d-block">
+          <a><img src="../image/logo-removebg-preview.png" alt="" /></a>
+        </div>
+        <div class="col-9 nav-out-sidebar d-xl-block">
+          <div class="row">
+            <ul class="nav justify-content-end login-text">
+              <img src="../image/ic-header-auth.svg" alt="" style="width: 30px" />
+              <li class="nav-item">
+                <a class="nav-link text-hover" href="">Đăng Nhập</a>
+              </li>
+              <li class="nav-item text-white my-auto">/</li>
+              <li class="nav-item me-3">
+                <a href="" class="nav-link text-hover">Đăng Ký</a>
+              </li>
+              <img src="../image/footer-vietnam.svg" alt="" style="width: 30px" />
+              <span class="text-white ms-2 my-auto">VN</span>
+            </ul>
+          </div>
+          <div class="row mt-5 TH2D-nav mb-1">
+            <div class="col-1 mt-1 p-0">
+              <a class="logo-home m-0" href=""></a>
             </div>
-            <div class="col-9 nav-out-sidebar d-xl-block">
-                <div class="row">
-                    <ul class="nav justify-content-end login-text">
-                        <img src="../image/ic-header-auth.svg" alt="" style="width: 30px" />
-                        <li class="nav-item">
-                            <a class="nav-link text-hover" href="">Đăng Nhập</a>
-                        </li>
-                        <li class="nav-item text-white my-auto">/</li>
-                        <li class="nav-item me-3">
-                            <a href="" class="nav-link text-hover">Đăng Ký</a>
-                        </li>
-                        <img src="../image/footer-vietnam.svg" alt="" style="width: 30px" />
-                        <span class="text-white ms-2 my-auto">VN</span>
-                    </ul>
-                </div>
-                <div class="row mt-5 TH2D-nav mb-1">
-                    <div class="col-1 mt-1 p-0">
-                        <a class="logo-home m-0" href=""></a>
-                    </div>
-                    <div class="col-11 p-1 rounded-5" style="border: #d8047c solid 1px; height: 59px">
-                        <ul class="nav menu-nav rounded-5 flex-nowrap"
-                            style="background-color: #d8047c; height: 50px">
-                            <li class="nav-item rounded-start-5 text-nowrap">
-                                <a href="" class="nav-link rounded-start-5" style="line-height: 34px">PHIM</a>
-                            </li>
-                            <li class="nav-item text-nowrap">
-                                <a href="" class="nav-link" style="line-height: 34px">LỊCH CHIẾU</a>
-                            </li>
-                            <li class="nav-item text-nowrap">
-                                <a href="" class="nav-link" style="line-height: 34px">RẠP VÀ GIÁ</a>
-                            </li>
-                            <li class="nav-item text-nowrap">
-                                <a href="" class="nav-link" style="line-height: 34px">KHUYỄN MÃI</a>
-                            </li>
-                            <li class="nav-item text-nowrap">
-                                <a href="" class="nav-link" style="line-height: 34px">HỎI VÀ ĐÁP</a>
-                            </li>
-                            <li class="nav-item text-nowrap">
-                                <a href="" class="nav-link" style="line-height: 34px">TIN TỨC</a>
-                            </li>
-                            <li class="nav-item text-nowrap">
-                                <a href="" class="nav-link" style="line-height: 34px">GIỚI THIỆU</a>
-                            </li>
-                            <li class="nav-item rounded-end-5 text-nowrap">
-                                <a href="" class="nav-link" style="line-height: 34px">LIÊN HỆ</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-  
-            <div class="d-flex justify-content-end position-relative">
-                <button id="button-login" class="navbar-toggler">
-                    <img src="../image/ic-header-auth.svg" alt="" style="width: 25px" />
-                    <div id="list-login" class="position-absolute top-100 end-50 d-none" style="width: 140px">
-                        <ul class="navbar-nav bg-black ps-3 p-3">
-                            <li class="nav-item">
-                                <a href="" class="nav-link text-hover text-start">Đăng Nhập</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="" class="nav-link text-hover text-start">Đăng Ký</a>
-                            </li>
-                        </ul>
-                    </div>
-                </button>
-                <button class="navbar-toggler d-xl-none d-block" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar">
-                    <span>
-                        <img class="img-fluid" src="../image/hamburger.png" alt="" style="width: 35px;">
-                    </span>
-                </button>
-            </div>
-  
-            <div class="offcanvas offcanvas-end bg-black d-xl-none" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                        <img src="../image/logo-removebg-preview.png" alt="" />
-                    </h5>
-                    <button type="button" class="btn-close-white btn-close" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link text-hover" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-hover" href="#">PHIM</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-hover" href="#">LỊCH CHIẾU</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-hover" href="#">RẠP VÀ GIÁ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-hover" href="#">KHUYẾN MÃI</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="##" role="button"
-                                data-bs-toggle="dropdown">
-                                KHÁC
-                            </a>
-                            <ul class="dropdown-menu bg-black">
-                                <li>
-                                    <a class="dropdown-item text-hover" href="#">HỎI VÀ ĐÁP</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item text-hover" href="#">TIN TỨC</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item text-hover" href="#">GIỚI THIỆU</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item text-hover" href="#">LIÊN HỆ</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <hr class="border border-white" />
-                    <ul class="d-flex list-unstyled">
-                        <li class="me-4">
-                            <img src="../image/footer-vietnam.svg" alt="" />
-                        </li>
-                        <li class="text-white">Vietnamese</li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-  
-    <div class="poster">
-        <img src="../image/gap-lai-chi-bau.jpg" alt="" />
-    </div>
-    <div class="justify-content-center d-flex mb-5 mt-5">
-    <div id="phimdangchieu" class="px-5 fs-3 p-3 rounded-top-4 rounded-end-5">
-      <a
-        class="text-decoration-none text-black fw-bold"
-        href="../html/PhimDangChieu.html"
-        >PHIM ĐANG CHIẾU</a
-      >
-    </div>
-    <div id="phimsapchieu" class="px-5 fs-3 p-3 rounded-top-4 rounded-end-5">
-      <a
-        class="text-decoration-none fw-bold"
-        href="../html/PhimSapChieu.html"
-        >&nbsp;&nbsp;PHIM SẮP CHIẾU</a
-      >
-    </div>
-  </div>
-      <div id="content">
-        <!-- <div id="container-bg"> -->
-        <div class="ds-phim">
-          <div class="ds-phim-col">
-            <div class="col-movie">
-              <!-- film 1 -->
-              <div class="film">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/poster-mai.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>MAI (T18)</h3>
-                    <p class="limitedText">
-                      "Mai" xoay quanh cuộc đời của một người phụ nữ đẹp tên Mai
-                      (do Phương Anh Đào thủ vai) có số phận rất đặc biệt. Bởi
-                      làm nghề mát xa, Mai thường phải đối mặt với ánh nhìn soi
-                      mói, phán xét từ những người xung quanh. Và rồi Mai gặp
-                      Dương (Tuấn Trần) - chàng trai đào hoa lãng tử. Những
-                      tưởng bản thân không còn thiết tha yêu đương và mưu cầu
-                      hạnh phúc cho riêng mình thì khao khát được sống một cuộc
-                      đời mới trong Mai trỗi dậy khi Dương tấn công cô không
-                      khoan nhượng. Họ cho mình những khoảnh khắc tự do, say đắm
-                      và tràn đầy tiếng cười. Liệu cặp đôi ấy có nắm giữ được
-                      niềm hạnh phúc đó dài lâu khi miệng đời lắm khi cay
-                      nghiệt, bất công? "Mai" - một câu chuyện tâm lý, tình cảm
-                      pha lẫn nhiều tràng cười vui nhộn với sự đầu tư mạnh tay
-                      nhất trong ba phim của Trấn Thành hứa hẹn sẽ đem đến cho
-                      khán giả những phút giây thật sự ý nghĩa trong mùa Tết năm
-                      nay.
-                    </p>
-                    <span>Khởi chiếu: Từ 01/02/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 2 -->
-              <div class="film" style="background-color: rgb(95, 20, 68)">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/sang-den.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>SÁNG ĐÈN (K)</h3>
-                    <p class="limitedText">
-                      Sau 2 phim Tết thuộc thể loại kinh dị thì năm nay đạo diễn
-                      Hoàng Tuấn Cường bất ngờ chuyển hướng với SÁNG ĐÈN. Bộ
-                      phim xoay quanh câu chuyện về thời thịnh suy, giao thời
-                      của cải lương và những gánh hát lưu diễn khắp miền tây.
-                    </p>
-                    <span>Khởi chiếu: Từ 01/02/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 3 -->
-              <div class="film" style="background-color: rgb(145, 30, 103)">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/argylle-sieu-diep-vien.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>ARGYLLE SIÊU ĐIỆP VIÊN (T16)</h3>
-                    <p class="limitedText">
-                      Argylle là ai? Duy nhất 1 cách có thể tìm ra câu trả lời.
-                      ARGYLLE SIÊU ĐIỆP VIÊN | Dự Kiến Khởi Chiếu - Mùng 1 Tết
-                      10.02.2024
-                    </p>
-                    <span>Khởi chiếu: Từ 10/02/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 4 -->
-              <div class="film" style="background-color: #c0346c">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/tra.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>TRÀ</h3>
-                    <p class="limitedText">
-                      Phim điện ảnh Trà của đạo diễn Lê Hoàng thuộc thể loại tâm
-                      lý - tình cảm, khai thác một vấn đề hôn nhân vẫn vô cùng
-                      “nhức nhối” ở thời điểm hiện tại: Ngoại tình. Bộ phim với
-                      sự tham gia diễn xuất của dàn diễn viên thực lực: Việt
-                      Hương, NSƯT Trương Minh Quốc Thái cùng tân binh Đoàn Trinh
-                    </p>
-                    <span>Khởi chiếu: Từ 10/02/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 5 -->
-              <div class="film">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/spy-x-family.jpeg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>GIA ĐÌNH x ĐIỆP VIÊN MÃ: TRẮNG (T13)</h3>
-                    <p class="limitedText">
-                      Bộ phim là phần phim điện ảnh của series anime nổi tiếng
-                      Spy x Family. Trong bộ phim lần này, sau khi nhận được yêu
-                      cầu thay thế mình trong Chiến dịch Strix, Loid Forger
-                      quyết định giúp con gái Anya chiến thắng trong cuộc thi
-                      nấu ăn tại Học viện Eden bằng cách nấu bữa ăn yêu thích
-                      của hiệu trưởng để tránh bị thay thế khỏi nhiệm vụ mật.
-                      Nhưng từ đây, gia đình Forger phát hiện ra bí mật kinh
-                      hoàng ảnh hưởng đến hòa bình thế giới
-                    </p>
-                    <span>Khởi chiếu: Từ 10/02/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <hr />
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 6 -->
-              <div class="film" style="background-color: rgb(95, 20, 68)">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/madame-web.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>MADAME WEB</h3>
-                    <p class="limitedText">
-                      Tương lai đều được cô kiểm soát Dakota Johnson trong vai
-                      #MadameWeb, bộ phim riêng dành cho nhân vật nữ đầu tiên
-                      của Sony. Sắp khởi chiếu...
-                    </p>
-                    <span>Khởi chiếu: Từ 14/02/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 7 -->
-              <div class="film" style="background-color: rgb(145, 30, 103)">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/biet-doi-san-rong.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>BIỆT ĐỘI SĂN RỒNG (T16)</h3>
-                    <p class="limitedText">
-                      Sau khi một trận cháy rừng chết chóc quét qua trái đất và
-                      khiến không khí tràn ngập chất ô nhiễm, xã hội đang trên
-                      bờ vực sụp đổ và tràn ngập bệnh tật. Hy vọng duy nhất
-                      dường như nằm ở một truyền thuyết: đó là Slyth, một loài
-                      bò sát có thể cải trang thành con người và sở hữu dòng máu
-                      có thể chữa khỏi bệnh tật. Cuộc săn bắn bắt đầu.
-                    </p>
-                    <span>Khởi chiếu: Từ 16/02/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 8 -->
-              <div class="film" style="background-color: #c0346c">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/pororo.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>PORORO HÀNH TRÌNH SIÊU SAO ÂM NHẠC</h3>
-                    <p class="limitedText">
-                      Pororo và những người bạn của anh ấy sắp sửa chiến thắng
-                      trong một cuộc thi ca hát mà họ tham gia cho vui. Liệu
-                      Pororo và những người bạn của anh ấy có thoát khỏi sự
-                      phiền nhiễu của Big Ben và cuối cùng giành chiến thắng
-                      trong cuộc thi siêu sao âm nhạc?
-                    </p>
-                    <span>Khởi chiếu: Từ 16/02/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 9 -->
-              <div class="film">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/demon-slayer.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>
-                      THANH GƯƠM DIỆT QUỶ: PHÉP MÀU TÌNH THÂN, CHO ĐẾN CHUYẾN
-                      ĐẶC HUẤN CỦA ĐẠI TRỤ
-                    </h3>
-                    <p class="limitedText">
-                      Phim lấy bối cảnh ở làng thợ rèn, kể về
-                    </p>
-                    <span>Khởi chiếu: Từ 23/02/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 10 -->
-              <div class="film" style="background-color: rgb(95, 20, 68)">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/boi-dem.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>BƠI ĐÊM (T16)</h3>
-                    <p class="limitedText">
-                      Từ câu chuyện về cuộc sống gia đình bình thường đã biến
-                      thành một nỗi ám ảnh kinh hoàng. Không chạy, không lặn,
-                      không cứu hộ và không bơi sau khi màn đêm buông xuống. Bơi
-                      Đêm chạm đến nỗi sợ hãi sâu thẳm của bất kỳ ai mỗi khi
-                      bước xuống hồ bơi rằng họ sẽ bị mắc kẹt dưới nước.
-                    </p>
-                    <span>Khởi chiếu: Từ 23/02/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 11 -->
-              <div class="film" style="background-color: rgb(145, 30, 103)">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/b4s.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>B4S - TRƯỚC GIỜ "YÊU"</h3>
-                    <p class="limitedText">
-                      Bộ phim "nóng bỏng" khai thác về đề tài tình yêu và tình
-                      dục của giới trẻ hiện nay.
-                    </p>
-                    <span>Khởi chiếu: Từ 23/02/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 12 -->
-              <div class="film" style="background-color: #c0346c">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/le-tru-ta.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>LỄ TRỪ TÀ</h3>
-                    <p class="limitedText">
-                      3 linh mục được triệu tập đến nhà thờ để thực hiện lễ trừ
-                      tà liên tục 3 ngày 3 đêm cho cô bé bị quỷ dữ chiếm lấy
-                      thân xác. Nó trở thành một cái bẫy để lũ quỷ từ địa ngục
-                      đưa lời tuyên chiến đến thế giới. Liệu các linh mục có
-                      chặn đứng được hay sẽ biến trái đất thành cuộc chiến giữ
-                      thiên đàng và địa ngục?
-                    </p>
-                    <span>Khởi chiếu: Từ 23/02/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 13 -->
-              <div class="film">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/dune-hanh-tinh-cat.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>HÀNH TINH CÁT PHẦN 2 (T13)</h3>
-                    <p class="limitedText">
-                      “Dune: Hành Tinh Cát – Phần 2” sẽ tiếp tục khám phá hành
-                      trình đậm chất thần thoại của Paul Atreides khi anh đồng
-                      hành cùng Chani và những người Fremen trên chặng đường trả
-                      thù những kẻ đã hủy hoại gia đình mình. Đối mặt với những
-                      lựa chọn giữa tình yêu của cuộc đời mình và số phận của vũ
-                      trụ, Paul phải ngăn chặn viễn cảnh tương lai tồi tệ chỉ
-                      mình anh nhìn thấy.
-                    </p>
-                    <span>Khởi chiếu: Từ 01/03/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 14 -->
-              <div class="film" style="background-color: rgb(95, 20, 68)">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/kung-fu-panda-4.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>KUNG FU PANDA 4</h3>
-                    <p class="limitedText">
-                      Po sau khi chiến đấu với Kai, kẻ phản diện gây nỗi khiếp
-                      sợ cho mọi người trong phần 3, trong phần 4 này cậu "sẽ
-                      đối diện với thử thách lớn nhất của mình. Nhưng liệu cậu
-                      ta có sống sót qua thử thách ấy hay không?".
-                    </p>
-                    <span>Khởi chiếu: Từ 08/03/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 15 -->
-              <div class="film" style="background-color: rgb(145, 30, 103)">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/biet-doi-san-ma.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>BIỆT ĐỘI SĂN MA: KỶ NGUYÊN BĂNG GIÁ</h3>
-                    <p class="limitedText">
-                      Sau các sự kiện của Ghostbusters: Afterlife, gia đình
-                      Spengler đang tìm kiếm cuộc sống mới ở Thành phố New York.
-                      Nhóm săn ma bao gồm Ray, Winston và Podcast sử dụng công
-                      nghệ mới để chống lại các mối đe dọa chết người cổ xưa
-                      đang ẩn náu trong các vật dụng hàng ngày. Thế nhưng, họ sẽ
-                      phải đối đầu với một thế lực đen tối hùng mạnh mới.
-                    </p>
-                    <span>Khởi chiếu: Từ 29/03/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 16 -->
-              <div class="film" style="background-color: #c0346c">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/godzilla-x-kong.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>GODZILLA VS KONG: ĐẾ CHẾ MỚI</h3>
-                    <p class="limitedText">
-                      Bom tấn hành động Godzilla x Kong: Đế Chế Mới tung trailer
-                      đầu tiên. Từng đối đầu nhau và làm rung chuyển phòng vé
-                      toàn cầu trong phần phim Godzilla Đại Chiến Kong, giờ đây
-                      trong Godzilla x Kong: Đế Chế Mới hai đại titan sẽ có màn
-                      bắt tay huyền thoại, cùng nhau bảo vệ sự sống trên địa
-                      cầu.
-                    </p>
-                    <span>Khởi chiếu: Từ 12/04/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 17 -->
-              <div class="film">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/tarot.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>TAROT</h3>
-                    <p class="limitedText">
-                      Bạn sẽ nhìn thấy ai khi trút hơi thở cuối cùng?
-                    </p>
-                    <span>Khởi chiếu: Từ 10/05/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 18 -->
-              <div class="film" style="background-color: rgb(95, 20, 68)">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/furiosa.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>FURIOSA</h3>
-                    <p class="limitedText">
-                      Furiosa: A Mad Max Saga kể về hành trình Furiosa bị bắt
-                      cóc khỏi Vùng Xanh của Những người mẹ và phải vật lộn tồn
-                      tại qua những sa mạc rộng lớn - nơi đói khát nhiên liệu.
-                    </p>
-                    <span>Khởi chiếu: Từ 24/05/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 19 -->
-              <div class="film" style="background-color: rgb(145, 30, 103)">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/meo-beo-sieu-quay.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>GARFIELD - MÈO BÉO SIÊU QUẬY</h3>
-                    <p class="limitedText">
-                      Mèo vàng Garfield siêu quậy quay trở lại trong bộ phim mới
-                      nhất Garfield Movie. Đón xem ngay vào dịp hè năm 2024 nhé!
-                    </p>
-                    <span>Khởi chiếu: Từ 24/05/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 20 -->
-              <div class="film" style="background-color: #c0346c">
-                <a href="">
-                  <div class="film-picture">
-                    <img
-                      src="../image/ngay-xua-co-mot-chuyen-tinh.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="film-text">
-                    <h3>NGÀY XƯA CÓ MỘT CHUYỆN TÌNH</h3>
-                    <p class="limitedText"></p>
-                    <span>Khởi chiếu: Từ 14/06/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- film 21 -->
-              <div class="film">
-                <a href="">
-                  <div class="film-picture">
-                    <img src="../image/inside-out-2.jpg" alt="" />
-                  </div>
-                  <div class="film-text">
-                    <h3>NHỮNG MẢNH GHÉP CẢM XÚC 2</h3>
-                    <p class="limitedText">
-                      ĐÓN CHỜ NHỮNG MẢNH GHÉP CẢM XÚC 2 (INSIDE OUT 2) - DỰ KIẾN
-                      KHỞI CHIẾU 6/2024
-                    </p>
-                    <span>Khởi chiếu: Từ 14/06/2024</span>
-                  </div>
-                </a>
-                <div class="film-type">
-                  <img src="../image/icon-2d.png" alt="" />
-                </div>
-                <div class="film-button">
-                  <a href="" class="a1">
-                    <img src="../image/icon-YouTube.png" alt="" />
-                    <input type="button" value="Trailer" />
-                  </a>
-                  <a href="" class="a2">
-                    <input type="button" value="Mua vé" />
-                  </a>
-                </div>
-              </div>
-              <!-- add here -->
+            <div class="col-11 p-1 rounded-5" style="border: #d8047c solid 1px; height: 59px">
+              <ul class="nav menu-nav rounded-5 flex-nowrap" style="background-color: #d8047c; height: 50px">
+                <li class="nav-item rounded-start-5 text-nowrap">
+                  <a href="" class="nav-link rounded-start-5" style="line-height: 34px">PHIM</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                  <a href="" class="nav-link" style="line-height: 34px">LỊCH CHIẾU</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                  <a href="" class="nav-link" style="line-height: 34px">RẠP VÀ GIÁ</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                  <a href="" class="nav-link" style="line-height: 34px">KHUYỄN MÃI</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                  <a href="" class="nav-link" style="line-height: 34px">HỎI VÀ ĐÁP</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                  <a href="" class="nav-link" style="line-height: 34px">TIN TỨC</a>
+                </li>
+                <li class="nav-item text-nowrap">
+                  <a href="" class="nav-link" style="line-height: 34px">GIỚI THIỆU</a>
+                </li>
+                <li class="nav-item rounded-end-5 text-nowrap">
+                  <a href="" class="nav-link" style="line-height: 34px">LIÊN HỆ</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <footer>
-          <img style="width: 100%;margin-top: 50px;" src="../image/line-bg.png" alt="">
-          <div class="container-footer">
-              <div class="logo-footer ">
-                  <img class="img-fluid mt-3" src="../image/logo-removebg-preview.png" alt="">
-              </div>
-              <div class="d-flex nav justify-content-between flex-wrap mt-5">
-                  <div class="nav-item">
-                      <h3 class="text-center text-warning">LIÊN KẾT</h3>
-                      <ul class="nav">
-                          <li class="nav-item d-flex">
-                              <a class="nav-link" href=""><img src="../image/scl_facebook.png" alt=""></a>
-                              <a class="nav-link" href=""><img src="../image/scl_youtube.png" alt=""></a>
-                          </li>
-                      </ul>
-                  </div>
-                  <div class="content-footer2 nav-item">
-                      <h3 class="text-center text-warning ">HỆ THỐNG RẠP</h3>
-                      <ul class="nav flex-column">
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Đồng Nai</a>
-                          </li>
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Đồng Tháp</a>
-                          </li>
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Gia Lai</a></li>
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Gò Vấp</a></li>
-                      </ul>
-                  </div>
-                  <div class="content-footer3 nav-item">
-                      <h3 class="text-center text-warning">TH2D</h3>
-                      <ul class="content-TH2D nav flex-column">
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">Phim đang chiếu</a>
-                          </li>
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">Phim sắp chiếu</a>
-                          </li>
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">Suất chiếu đặc
-                                  biệt</a></li>
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">Lịch chiếu</a></li>
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">Khuyến mãi</a></li>
-                      </ul>
-                  </div>
-                  <div class="content-footer4 nav-item">
-                      <h3 class="text-warning text-center">THÔNG TIN</h3>
-                      <ul class="content-thongtin nav flex-column">
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">Giới thiệu</a></li>
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">Tin tức</a></li>
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">Hỏi và đáp</a></li>
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">Liên hệ</a></li>
-                      </ul>
-                  </div>
-    
-                  <div class="content-footer5 nav-item">
-                      <h3 class="text-center text-warning">CHÍNH SÁCH VÀ QUY ĐỊNH</h3>
-                      <ul class="content-chinhsach nav flex-column">
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">Quy định chung</a>
-                          </li>
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">Điều khoản giao
-                                  dịch</a></li>
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">Chính sách bảo
-                                  mật</a></li>
-                          <li class="nav-item text-center"><a class="nav-link text-grey" href="">Thông tin công ty</a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <div id="thanhtoan">
-                  <div class="content-thanhtoan mt-5 ">
-                      <h3 class="text-center text-white">Chấp nhận thanh toán</h3>
-                      <ul class="nav justify-content-center">
-                          <li class="nav-item"><a class="nav-link" href=""><img src="../image/napas-40.png"
-                                      alt=""></a></li>
-                          <li class="nav-item"><a class="nav-link" href=""><img src="../image/payment-visa.png"
-                                      alt=""></a></li>
-                          <li class="nav-item"><a class="nav-link" href=""><img src="../image/payment-mastercard.png"
-                                      alt=""></a></li>
-                          <li class="nav-item"><a class="nav-link" href=""><img src="../image/momo.jpg" alt=""></a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <div id="infor-company">
-                  <div class="content-infor mt-5">
-                      <div style="width: fit-content;margin: auto;">
-                          <img src="../image/dathongbao.png" alt="">
-                      </div>
-                      <p class="text-center text-white mb-0">
-                          CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM TH2D
-                          <br>
-                          ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
-                          <br>
-                          GIẤY CNĐKDN SỐ: 0312742744, ĐĂNG KÝ LẦN ĐẦU NGÀY 18/04/2014, ĐĂNG KÝ THAY ĐỔI LẦN THỨ 2 NGÀY
-                          15/09/2014, CẤP BỞI SỞ KH&ĐT TP.HCM
-                          <br>
-                          <br>
-                          2015 © TH2D. ALL RIGHTS RESERVED.
-                      </p>
-                  </div>
-              </div>
+
+        <div class="d-flex justify-content-end position-relative">
+          <button id="button-login" class="navbar-toggler">
+            <img src="../image/ic-header-auth.svg" alt="" style="width: 25px" />
+            <div id="list-login" class="position-absolute top-100 end-50 d-none" style="width: 140px">
+              <ul class="navbar-nav bg-black ps-3 p-3">
+                <li class="nav-item">
+                  <a href="" class="nav-link text-hover text-start">Đăng Nhập</a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link text-hover text-start">Đăng Ký</a>
+                </li>
+              </ul>
+            </div>
+          </button>
+          <button class="navbar-toggler d-xl-none d-block" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar">
+            <span>
+              <img class="img-fluid" src="../image/hamburger.png" alt="" style="width: 35px;">
+            </span>
+          </button>
+        </div>
+
+        <div class="offcanvas offcanvas-end bg-black d-xl-none" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="../image/logo-removebg-preview.png" alt="" />
+            </h5>
+            <button type="button" class="btn-close-white btn-close" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
           </div>
-      </footer>
-      </div>
-      <!-- </div> -->
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link text-hover" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-hover" href="#">PHIM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-hover" href="#">LỊCH CHIẾU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-hover" href="#">RẠP VÀ GIÁ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-hover" href="#">KHUYẾN MÃI</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="##" role="button" data-bs-toggle="dropdown">
+                  KHÁC
+                </a>
+                <ul class="dropdown-menu bg-black">
+                  <li>
+                    <a class="dropdown-item text-hover" href="#">HỎI VÀ ĐÁP</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-hover" href="#">TIN TỨC</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-hover" href="#">GIỚI THIỆU</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-hover" href="#">LIÊN HỆ</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <hr class="border border-white" />
+            <ul class="d-flex list-unstyled">
+              <li class="me-4">
+                <img src="../image/footer-vietnam.svg" alt="" />
+              </li>
+              <li class="text-white">Vietnamese</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="poster">
+      <img src="../image/gap-lai-chi-bau.jpg" alt="" />
     </div>
-    <script src="../js/phim.js"></script>
-  </body>
+    <div class="justify-content-center d-flex mb-5 mt-5">
+      <div id="phimdangchieu" class="px-5 fs-3 p-3 rounded-top-4 rounded-end-5">
+        <a class="text-decoration-none  fw-bold" href="../html/PhimDangChieu.html">PHIM ĐANG CHIẾU</a>
+      </div>
+      <div id="phimsapchieu" class="px-5 fs-3 p-3 rounded-top-4 rounded-end-5">
+        <a class="text-decoration-none text-black fw-bold" href="../html/PhimSapChieu.html">&nbsp;&nbsp;PHIM SẮP
+          CHIẾU</a>
+      </div>
+    </div>
+    <div id="content">
+      <!-- <div id="container-bg"> -->
+      <div class="ds-phim">
+        <div class="ds-phim-col">
+          <div class="col-movie">
+            <!-- film 1 -->
+            <div class="film">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/poster-mai.jpg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>MAI (T18)</h3>
+                  <p class="limitedText">
+                    "Mai" xoay quanh cuộc đời của một người phụ nữ đẹp tên Mai
+                    (do Phương Anh Đào thủ vai) có số phận rất đặc biệt. Bởi
+                    làm nghề mát xa, Mai thường phải đối mặt với ánh nhìn soi
+                    mói, phán xét từ những người xung quanh. Và rồi Mai gặp
+                    Dương (Tuấn Trần) - chàng trai đào hoa lãng tử. Những
+                    tưởng bản thân không còn thiết tha yêu đương và mưu cầu
+                    hạnh phúc cho riêng mình thì khao khát được sống một cuộc
+                    đời mới trong Mai trỗi dậy khi Dương tấn công cô không
+                    khoan nhượng. Họ cho mình những khoảnh khắc tự do, say đắm
+                    và tràn đầy tiếng cười. Liệu cặp đôi ấy có nắm giữ được
+                    niềm hạnh phúc đó dài lâu khi miệng đời lắm khi cay
+                    nghiệt, bất công? "Mai" - một câu chuyện tâm lý, tình cảm
+                    pha lẫn nhiều tràng cười vui nhộn với sự đầu tư mạnh tay
+                    nhất trong ba phim của Trấn Thành hứa hẹn sẽ đem đến cho
+                    khán giả những phút giây thật sự ý nghĩa trong mùa Tết năm
+                    nay.
+                  </p>
+                  <span>Khởi chiếu: Từ 01/02/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_mai">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- film 2 -->
+            <div class="film" style="background-color: rgb(95, 20, 68)">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/sang-den.jpg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>SÁNG ĐÈN (K)</h3>
+                  <p class="limitedText">
+                    Sau 2 phim Tết thuộc thể loại kinh dị thì năm nay đạo diễn
+                    Hoàng Tuấn Cường bất ngờ chuyển hướng với SÁNG ĐÈN. Bộ
+                    phim xoay quanh câu chuyện về thời thịnh suy, giao thời
+                    của cải lương và những gánh hát lưu diễn khắp miền tây.
+                  </p>
+                  <span>Khởi chiếu: Từ 01/02/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_sangden">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- film 3 -->
+            <div class="film" style="background-color: rgb(145, 30, 103)">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/argylle-sieu-diep-vien.jpg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>ARGYLLE SIÊU ĐIỆP VIÊN (T16)</h3>
+                  <p class="limitedText">
+                    Argylle là ai? Duy nhất 1 cách có thể tìm ra câu trả lời.
+                    ARGYLLE SIÊU ĐIỆP VIÊN | Dự Kiến Khởi Chiếu - Mùng 1 Tết
+                    10.02.2024
+                  </p>
+                  <span>Khởi chiếu: Từ 10/02/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_sieudiepvien">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- film 4 -->
+            <div class="film" style="background-color: #c0346c">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/tra.jpg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>TRÀ</h3>
+                  <p class="limitedText">
+                    Phim điện ảnh Trà của đạo diễn Lê Hoàng thuộc thể loại tâm
+                    lý - tình cảm, khai thác một vấn đề hôn nhân vẫn vô cùng
+                    “nhức nhối” ở thời điểm hiện tại: Ngoại tình. Bộ phim với
+                    sự tham gia diễn xuất của dàn diễn viên thực lực: Việt
+                    Hương, NSƯT Trương Minh Quốc Thái cùng tân binh Đoàn Trinh
+                  </p>
+                  <span>Khởi chiếu: Từ 10/02/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_tra">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- film 5 -->
+            <div class="film">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/spy-x-family.jpeg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>GIA ĐÌNH x ĐIỆP VIÊN MÃ: TRẮNG (T13)</h3>
+                  <p class="limitedText">
+                    Bộ phim là phần phim điện ảnh của series anime nổi tiếng
+                    Spy x Family. Trong bộ phim lần này, sau khi nhận được yêu
+                    cầu thay thế mình trong Chiến dịch Strix, Loid Forger
+                    quyết định giúp con gái Anya chiến thắng trong cuộc thi
+                    nấu ăn tại Học viện Eden bằng cách nấu bữa ăn yêu thích
+                    của hiệu trưởng để tránh bị thay thế khỏi nhiệm vụ mật.
+                    Nhưng từ đây, gia đình Forger phát hiện ra bí mật kinh
+                    hoàng ảnh hưởng đến hòa bình thế giới
+                  </p>
+                  <span>Khởi chiếu: Từ 10/02/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <hr />
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_trang">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- film 6 -->
+            <div class="film" style="background-color: rgb(95, 20, 68)">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/madame-web.jpg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>MADAME WEB</h3>
+                  <p class="limitedText">
+                    Tương lai đều được cô kiểm soát Dakota Johnson trong vai
+                    #MadameWeb, bộ phim riêng dành cho nhân vật nữ đầu tiên
+                    của Sony. Sắp khởi chiếu...
+                  </p>
+                  <span>Khởi chiếu: Từ 14/02/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_madame">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- film 7 -->
+            <div class="film" style="background-color: rgb(145, 30, 103)">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/biet-doi-san-rong.jpg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>BIỆT ĐỘI SĂN RỒNG (T16)</h3>
+                  <p class="limitedText">
+                    Sau khi một trận cháy rừng chết chóc quét qua trái đất và
+                    khiến không khí tràn ngập chất ô nhiễm, xã hội đang trên
+                    bờ vực sụp đổ và tràn ngập bệnh tật. Hy vọng duy nhất
+                    dường như nằm ở một truyền thuyết: đó là Slyth, một loài
+                    bò sát có thể cải trang thành con người và sở hữu dòng máu
+                    có thể chữa khỏi bệnh tật. Cuộc săn bắn bắt đầu.
+                  </p>
+                  <span>Khởi chiếu: Từ 16/02/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_sanrong">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- film 8 -->
+            <div class="film" style="background-color: #c0346c">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/pororo.jpg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>PORORO HÀNH TRÌNH SIÊU SAO ÂM NHẠC</h3>
+                  <p class="limitedText">
+                    Pororo và những người bạn của anh ấy sắp sửa chiến thắng
+                    trong một cuộc thi ca hát mà họ tham gia cho vui. Liệu
+                    Pororo và những người bạn của anh ấy có thoát khỏi sự
+                    phiền nhiễu của Big Ben và cuối cùng giành chiến thắng
+                    trong cuộc thi siêu sao âm nhạc?
+                  </p>
+                  <span>Khởi chiếu: Từ 16/02/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_pororo">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- film 9 -->
+            <div class="film">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/demon-slayer.jpg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>
+                    THANH GƯƠM DIỆT QUỶ: PHÉP MÀU TÌNH THÂN, CHO ĐẾN CHUYẾN
+                    ĐẶC HUẤN CỦA ĐẠI TRỤ
+                  </h3>
+                  <p class="limitedText">
+                    Phim lấy bối cảnh ở làng thợ rèn, kể về
+                  </p>
+                  <span>Khởi chiếu: Từ 23/02/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_dietquy">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- film 10 -->
+            <div class="film" style="background-color: rgb(95, 20, 68)">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/boi-dem.jpg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>BƠI ĐÊM (T16)</h3>
+                  <p class="limitedText">
+                    Từ câu chuyện về cuộc sống gia đình bình thường đã biến
+                    thành một nỗi ám ảnh kinh hoàng. Không chạy, không lặn,
+                    không cứu hộ và không bơi sau khi màn đêm buông xuống. Bơi
+                    Đêm chạm đến nỗi sợ hãi sâu thẳm của bất kỳ ai mỗi khi
+                    bước xuống hồ bơi rằng họ sẽ bị mắc kẹt dưới nước.
+                  </p>
+                  <span>Khởi chiếu: Từ 23/02/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_boidem">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- film 11 -->
+            <div class="film" style="background-color: rgb(145, 30, 103)">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/b4s.jpg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>B4S - TRƯỚC GIỜ "YÊU"</h3>
+                  <p class="limitedText">
+                    Bộ phim "nóng bỏng" khai thác về đề tài tình yêu và tình
+                    dục của giới trẻ hiện nay.
+                  </p>
+                  <span>Khởi chiếu: Từ 23/02/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_b4s">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- film 12 -->
+            <div class="film" style="background-color: #c0346c">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/le-tru-ta.jpg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>LỄ TRỪ TÀ</h3>
+                  <p class="limitedText">
+                    3 linh mục được triệu tập đến nhà thờ để thực hiện lễ trừ
+                    tà liên tục 3 ngày 3 đêm cho cô bé bị quỷ dữ chiếm lấy
+                    thân xác. Nó trở thành một cái bẫy để lũ quỷ từ địa ngục
+                    đưa lời tuyên chiến đến thế giới. Liệu các linh mục có
+                    chặn đứng được hay sẽ biến trái đất thành cuộc chiến giữ
+                    thiên đàng và địa ngục?
+                  </p>
+                  <span>Khởi chiếu: Từ 23/02/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_truta">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- film 13 -->
+            <div class="film">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/dune-hanh-tinh-cat.jpg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>HÀNH TINH CÁT PHẦN 2 (T13)</h3>
+                  <p class="limitedText">
+                    “Dune: Hành Tinh Cát – Phần 2” sẽ tiếp tục khám phá hành
+                    trình đậm chất thần thoại của Paul Atreides khi anh đồng
+                    hành cùng Chani và những người Fremen trên chặng đường trả
+                    thù những kẻ đã hủy hoại gia đình mình. Đối mặt với những
+                    lựa chọn giữa tình yêu của cuộc đời mình và số phận của vũ
+                    trụ, Paul phải ngăn chặn viễn cảnh tương lai tồi tệ chỉ
+                    mình anh nhìn thấy.
+                  </p>
+                  <span>Khởi chiếu: Từ 01/03/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_dune">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- film 14 -->
+            <div class="film" style="background-color: rgb(95, 20, 68)">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/kung-fu-panda-4.jpg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>KUNG FU PANDA 4</h3>
+                  <p class="limitedText">
+                    Po sau khi chiến đấu với Kai, kẻ phản diện gây nỗi khiếp
+                    sợ cho mọi người trong phần 3, trong phần 4 này cậu "sẽ
+                    đối diện với thử thách lớn nhất của mình. Nhưng liệu cậu
+                    ta có sống sót qua thử thách ấy hay không?".
+                  </p>
+                  <span>Khởi chiếu: Từ 08/03/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_panda">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- film 15 -->
+            <div class="film" style="background-color: rgb(145, 30, 103)">
+              <a href="">
+                <div class="film-picture">
+                  <img src="../image/biet-doi-san-ma.jpg" alt="" />
+                </div>
+                <div class="film-text">
+                  <h3>BIỆT ĐỘI SĂN MA: KỶ NGUYÊN BĂNG GIÁ</h3>
+                  <p class="limitedText">
+                    Sau các sự kiện của Ghostbusters: Afterlife, gia đình
+                    Spengler đang tìm kiếm cuộc sống mới ở Thành phố New York.
+                    Nhóm săn ma bao gồm Ray, Winston và Podcast sử dụng công
+                    nghệ mới để chống lại các mối đe dọa chết người cổ xưa
+                    đang ẩn náu trong các vật dụng hàng ngày. Thế nhưng, họ sẽ
+                    phải đối đầu với một thế lực đen tối hùng mạnh mới.
+                  </p>
+                  <span>Khởi chiếu: Từ 29/03/2024</span>
+                </div>
+              </a>
+              <div class="film-type">
+                <img src="../image/icon-2d.png" alt="" />
+              </div>
+              <div class="film-button">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_sanma">
+                  <img src="../image/icon-YouTube.png" alt="" />
+                  <input type="button" value="Trailer" />
+                </a>
+                <a href="" class="a2">
+                  <input type="button" value="Mua vé" />
+                </a>
+              </div>
+            </div>
+            <!-- add here -->
+          </div>
+        </div>
+      </div>
+      <footer>
+        <img style="width: 100%;margin-top: 50px;" src="../image/line-bg.png" alt="">
+        <div class="container-footer">
+          <div class="logo-footer ">
+            <img class="img-fluid mt-3" src="../image/logo-removebg-preview.png" alt="">
+          </div>
+          <div class="d-flex nav justify-content-between flex-wrap mt-5">
+            <div class="nav-item">
+              <h3 class="text-center text-warning">LIÊN KẾT</h3>
+              <ul class="nav">
+                <li class="nav-item d-flex">
+                  <a class="nav-link" href=""><img src="../image/scl_facebook.png" alt=""></a>
+                  <a class="nav-link" href=""><img src="../image/scl_youtube.png" alt=""></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer2 nav-item">
+              <h3 class="text-center text-warning ">HỆ THỐNG RẠP</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Đồng Nai</a>
+                </li>
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Đồng Tháp</a>
+                </li>
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Gia Lai</a></li>
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">TH2D Gò Vấp</a></li>
+              </ul>
+            </div>
+            <div class="content-footer3 nav-item">
+              <h3 class="text-center text-warning">TH2D</h3>
+              <ul class="content-TH2D nav flex-column">
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">Phim đang chiếu</a>
+                </li>
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">Phim sắp chiếu</a>
+                </li>
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">Suất chiếu đặc
+                    biệt</a></li>
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">Lịch chiếu</a></li>
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">Khuyến mãi</a></li>
+              </ul>
+            </div>
+            <div class="content-footer4 nav-item">
+              <h3 class="text-warning text-center">THÔNG TIN</h3>
+              <ul class="content-thongtin nav flex-column">
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">Giới thiệu</a></li>
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">Tin tức</a></li>
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">Hỏi và đáp</a></li>
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">Liên hệ</a></li>
+              </ul>
+            </div>
+
+            <div class="content-footer5 nav-item">
+              <h3 class="text-center text-warning">CHÍNH SÁCH VÀ QUY ĐỊNH</h3>
+              <ul class="content-chinhsach nav flex-column">
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">Quy định chung</a>
+                </li>
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">Điều khoản giao
+                    dịch</a></li>
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">Chính sách bảo
+                    mật</a></li>
+                <li class="nav-item text-center"><a class="nav-link text-grey" href="">Thông tin công ty</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="thanhtoan">
+            <div class="content-thanhtoan mt-5 ">
+              <h3 class="text-center text-white">Chấp nhận thanh toán</h3>
+              <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href=""><img src="../image/napas-40.png" alt=""></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><img src="../image/payment-visa.png" alt=""></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><img src="../image/payment-mastercard.png" alt=""></a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href=""><img src="../image/momo.jpg" alt=""></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="infor-company">
+            <div class="content-infor mt-5">
+              <div style="width: fit-content;margin: auto;">
+                <img src="../image/dathongbao.png" alt="">
+              </div>
+              <p class="text-center text-white mb-0">
+                CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM TH2D
+                <br>
+                ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
+                <br>
+                GIẤY CNĐKDN SỐ: 0312742744, ĐĂNG KÝ LẦN ĐẦU NGÀY 18/04/2014, ĐĂNG KÝ THAY ĐỔI LẦN THỨ 2 NGÀY
+                15/09/2014, CẤP BỞI SỞ KH&ĐT TP.HCM
+                <br>
+                <br>
+                2015 © TH2D. ALL RIGHTS RESERVED.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal" id="trailer_mai">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/EX6clvId19s"
+                title="MAI | MAIN TRAILER | PHIM TẾT 2024 CỦA TRẤN THÀNH" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="trailer_sangden">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/jBC0GDOScSk"
+                title="Phim SÁNG ĐÈN || FINAL TRAILER | KHỞI CHIẾU 22.03.2024" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="trailer_sieudiepvien">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/3cnA-ENpZVo"
+                title="ARGYLLE SIÊU ĐIỆP VIÊN | TVC Love Houdini | Khởi chiếu: MÙNG 1 TẾT - 10.02.2024 #argylle"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="trailer_tra">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/FYyjIQJghmI"
+                title="Official Trailer | Trà | Beta Cinemas | Khởi chiếu mùng 1 Tết 2024" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="trailer_trang">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/ktrGubs6274"
+                title="(Official Trailer) SPY x FAMILY CODE: WHITE | GIA ĐÌNH x ĐIỆP VIÊN MÃ: TRẮNG | DKKC: 10.02.2024"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="trailer_madame">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/FKhKm3X6CiQ"
+                title="MADAME WEB - OFFICIAL TRAILER - DKKC: 2024" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="trailer_sanrong">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/EuYDJ2Csq7I"
+                title="Phim &quot;Biệt Đội Săn Rồng&quot; Trailer | Khởi Chiếu 15.03.2024" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="trailer_pororo">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/UGq70nzS_Lw"
+                title="PORORO HÀNH TRÌNH SIÊU SAO ÂM NHẠC TRAILER - KC 16/02/2024" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="trailer_dietquy">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/DgrSpdLlVPE" title="Trailer - Thanh gươm Diệt quỷ: Phép màu tình thân, cho đến chuyến đặc huấn của Đại Trụ [Việt sub]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal" id="trailer_boidem">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/KSlwz924sE4"
+                title="Bơi Đêm | Trailer Chính Thức 2 (Universal Studios) - HD" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="trailer_b4s">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/JJ_SyVWN9g0"
+                title="B4S - TRƯỚC GIỜ &quot;YÊU&quot; | OFFICIAL TRAILER | DỰ KIẾN KHỞI CHIẾU: 19.04.2024"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="trailer_truta">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/8QzL_SODMNk"
+                title="LỄ TRỪ TÀ | MAIN Trailer | Khởi Chiếu 23.02.2024" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="trailer_dune">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/U2Qp5pL3ovA"
+                title="Dune: Part Two | Official Trailer 3" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="trailer_panda">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/_inKs4eeHiI"
+                title="KUNG FU PANDA 4 | Official Trailer" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="trailer_sanma">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div>
+              <iframe width="800" height="575" src="https://www.youtube.com/embed/XDXgU6u3WXk"
+                title="Ghostbusters - Biệt đội săn ma: Kỷ nguyên băng giá || Official Trailer || Dự kiến tại rạp 12.04.2024"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- </div> -->
+  </div>
+  <script src="../js/phim.js"></script>
+</body>
+
 </html>

@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Phim</title>
-  <link rel="stylesheet" href="../css/phim.css" />
+  <title>Phim Dang Chieu</title>
+  <link rel="stylesheet" href="../css/pdc2.css" />
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/Home.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
@@ -156,6 +156,22 @@
   <div class="poster">
       <img src="../image/gap-lai-chi-bau.jpg" alt="" />
   </div>
+  <div class="justify-content-center d-flex mb-5 mt-5 ">
+    <div id="phimdangchieu" class="px-5 fs-3 p-3 rounded-top-4 rounded-end-5">
+      <a
+        class="text-decoration-none text-black fw-bold"
+        href="../html/PhimDangChieu.html"
+        >PHIM ĐANG CHIẾU</a
+      >
+    </div>
+    <div id="phimsapchieu" class="px-5 fs-3 p-3 rounded-top-4 rounded-end-5">
+      <a
+        class="text-decoration-none fw-bold"
+        href="../html/PhimSapChieu.html"
+        >&nbsp;&nbsp;PHIM SẮP CHIẾU</a
+      >
+    </div>
+  </div>
   
     <div id="content">
       <!-- <div id="container-bg"> -->
@@ -182,7 +198,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_tbn">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -210,7 +226,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_nvcc">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -241,7 +257,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_quycau">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -271,7 +287,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_quyantang">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -316,7 +332,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_alienoid2">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -349,7 +365,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_matvuong">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -385,7 +401,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_ruoucotnguoi">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -415,7 +431,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_bienchet">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -446,7 +462,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_tokyomer">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -486,7 +502,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_digimon">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -518,7 +534,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_vongvaycamap">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -553,7 +569,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_trontimvoiquy">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -581,7 +597,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_truquy">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -613,7 +629,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_katak">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -643,7 +659,7 @@
                 <img src="../image/icon-2d.png" alt="" />
               </div>
               <div class="film-button">
-                <a href="" class="a1">
+                <a href="" class="a1" data-bs-toggle="modal" data-bs-target="#trailer_gaplaichibau">
                   <img src="../image/icon-YouTube.png" alt="" />
                   <input type="button" value="Trailer" />
                 </a>
@@ -757,6 +773,156 @@
           </div>
       </div>
   </footer>
+
+  <div class="modal" id="trailer_quycau">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="395" src="https://www.youtube.com/embed/cYCOcxWgPVU" title="QUỶ CẨU - Official Trailer | KC: 29.12.2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>         
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="trailer_tbn">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="575" src="https://www.youtube.com/embed/rZYVIK0R6sg" title="TRÊN BÀN NHẬU, DƯỚI BÀN MƯU - OFFICIAL TRAILER | DỰ KIẾN KHỞI CHIẾU: 29.12.2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>         
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="trailer_nvcc">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="575" src="https://www.youtube.com/embed/ygvNCEbMusE" title="Người Vợ Cuối Cùng | Trailer Chính Thức | Khởi chiếu tại rạp 03.11.2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>      
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="modal" id="trailer_quyantang">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="575" src="https://www.youtube.com/embed/dBlxxhcbqog" title="QUỶ ĂN TẠNG - Teaser Trailer | Khởi chiếu: 29.12.2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>         
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="trailer_alienoid2">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="575" src="https://www.youtube.com/embed/NOppyZPNyMo" title="ALIENOID 2: ĐA CHIỀU HỖN CHIẾN - Main Trailer | Khởi chiếu: 12.01.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>         
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="trailer_matvuong">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="575" src="https://www.youtube.com/embed/Jd-1Qn8yLoE" title="MẬT VỤ ONG - TRAILER | DKKC: 12.01.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>         
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="trailer_ruoucotnguoi">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="575" src="https://www.youtube.com/embed/563qMSvqkZ8" title="PHIM KINH DỊ TÀ THUẬT RƯỢU CỐT NGƯỜI || OFFICIAL TRAILER || KHỞI CHIẾU TẠI RẠP 19.01.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>         
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="trailer_bienchet">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="575" src="https://www.youtube.com/embed/gr-GOc7WoWY" title="(Official Trailer) ĐẠI HẢI CHIẾN NORYANG: BIỂN CHẾT | DKKC: 19.01.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>         
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="trailer_tokyomer">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="575" src="https://www.youtube.com/embed/gtN888JwtKw" title="TOKYO MER: MOBILE EMERGENCY ROOM/TOKYO MER: CHÌM TRONG BIỂN LỬA| OFFICIAL TRAILER | DKKC: 19.01.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>         
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="trailer_digimon">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="575" src="https://www.youtube.com/embed/Wa4LSkY_RjE" title="Digimon Animation - Official 25th Anniversary Special Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>         
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="trailer_vongvaycamap">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="575" src="https://www.youtube.com/embed/Csm-d-T7FSk" title="VÒNG VÂY CÁ MẬP | Trailer Chính Thức | Khởi Chiếu Tại Rạp: 26.01.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>         
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="trailer_trontimvoiquy">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="575" src="https://www.youtube.com/embed/7BjidHoHjyg" title="TRỐN TÌM VỚI QUỶ - Teaser Trailer | Khởi chiếu: 26.01.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>         
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="trailer_truquy">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="575" src="https://www.youtube.com/embed/kMevbCSgi1M" title="TRÚ QUỶ: Truyền Thuyết Ma Kéo Giò | Trailer | 26.01.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>         
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="trailer_katak">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="575" src="https://www.youtube.com/embed/zdMatDQNJ-A" title="Phim &quot;Katak Và Sứ Mệnh Đại Dương&quot; Trailer | Khởi Chiếu 26.01.2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>         
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="trailer_gaplaichibau">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div>
+          <iframe width="800" height="575" src="https://www.youtube.com/embed/Gggw9jwr1h4" title="GẶP LẠI CHỊ BẦU - OFFICAL TRAILER | DKKC: MÙNG 1 TẾT 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>         
+      </div>
+    </div>
+  </div>
     <!-- </div> -->
   </div>
   <script src="../js/phim.js"></script>
