@@ -1,0 +1,210 @@
+/* cái thanh vàng vàng */
+#phimdangchieu {
+    z-index: 1;
+    position: relative;
+    right: -2%;
+    box-shadow: 10px 0px 10px #d9791d;
+    background-color: yellow;
+    cursor: pointer;
+    font-size: 2vw;
+  }
+  
+  #phimsapchieu {
+    font-size: 2vw;
+    background-color: orange;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  #phimsapchieu> a {
+    color: white;
+  }
+  
+  
+  #phimsapchieu:hover,
+  #phimsapchieu:hover > a {
+      color: black;
+    background-color: yellow;
+  }
+  
+  .hover-yellow {
+      color: black;
+  }
+  
+  .hover-yellow:hover {
+    background-color: yellow !important;
+  }
+  /* content phim dang chieu */
+  #content .ds-phim {
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    height: fit-content;
+  }
+  
+  #content .ds-phim .ds-phim-col {
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film {
+    margin-top: 20px;
+    background-color: rgb(209, 145, 26);
+    width: 600px;
+    height: fit-content;
+    box-shadow: 5px 5px 5px 3px rgba(8, 9, 1, 0.461);
+    position: relative;
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film .film-picture {
+    width: 50%;
+    float: left;
+    padding: 20px;
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film .film-picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    cursor: pointer;
+    border: 2px solid rgba(222, 236, 17, 0.777);
+    box-shadow: 5px 5px 0 0 rgba(8, 9, 1, 0.461);
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film .film-text {
+    width: 50%;
+    align-items: center;
+    float: left;
+    height: auto;
+    padding-left: 10px;
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film .film-text h3 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 23px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film .film-text p {
+    width: 95%;
+    max-width: 80%;
+    height: fit-content;
+    max-height: 25% ;
+    color: white;
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 4px;
+    padding-right: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    text-overflow: ellipsis;
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film .film-text span {
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 4px;
+    padding-right: 10px;
+    overflow: hidden;
+  
+    text-overflow: ellipsis;
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film .film-type {
+    width: 275px;
+    max-width: 43%;
+    float: left;
+    border-right: 10px;
+    border-top: 1px dotted white;
+    margin-left: 15px;
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film .film-type img {
+    width: 45px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 0 0 rgba(8, 9, 1, 0.301);
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film .film-button {
+    padding-top: 2vh;
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5vh;
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film .film-button .a1 input {
+    width: 40vw;
+    max-width: 290px;
+    height: 50px;
+    background-color: rgba(8, 9, 1, 0.499);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0 10px 10px 30px;
+    padding-left: 2px;
+    margin-left: 10px;
+    position: absolute;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film .film-button .a1 img {
+    margin-top: 11px;
+    margin-left: 20px;
+    width: 35px;
+    height: 27px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film .film-button .a2 input {
+    width: 40vw;
+    max-width: 320px;
+    height: 50px;
+    background-color: rgb(206, 98, 98);
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 30px 0 30px 30px;
+    padding-left: 10px;
+    position: absolute;
+    margin-left: 45%;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film .film-button .a2 input:hover {
+    background-color: rgb(208, 218, 139);
+  }
+  
+  #content .ds-phim .ds-phim-col .col-movie .film .film-button .a1 input:hover {
+    background-color: rgb(6, 6, 6);
+  }
+  
+  /* cái footer */
+  
+  

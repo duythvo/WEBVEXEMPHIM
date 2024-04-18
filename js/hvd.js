@@ -1,3 +1,4 @@
+//js hoi dap
 function toggleAnswer(element) {
   var answer = element.nextElementSibling;
   var allAnswers = document.querySelectorAll(".answer");
@@ -33,46 +34,33 @@ function toggleAnswer(element) {
   window.scrollTo({ bottom: offsetBottom, behavior: "smooth" });
 }
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 10,
+function submitForm() {
+  var name = document.getElementById("name").value;
+  var phone = document.getElementById("phone").value;
+  var email = document.getElementById("email").value;
+  var content = document.getElementById("contents").value;
 
-  autoplay: {
-    delay: 4500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    280: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    510: {
-      slidesPerView: 2,
-      spaceBetween: 10,
-    },
-    658: {
-      slidesPerView: 3,
-      spaceBetween: 10,
-    },
-    758: {
-      slidesPerView: 4,
-      spaceBetween: 10,
-    },
-    900: {
-      slidesPerView: 5,
-      spaceBetween: 5,
-    },
-  },
-});
+  var regexPhone = /^\d{10}$/; 
+  var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+
+  if (name === "") {
+    alert("Vui lòng điền thông tin Họ tên.");
+    return; 
+  }else if (phone === "") {
+    alert("Vui lòng điền thông tin Điện Thoại.");
+    return; 
+  }else if (!regexPhone.test(phone)) {
+      alert("Số điện thoại không hợp lệ. Vui lòng nhập lại.");
+      return; 
+  }else if (email === "") {
+    alert("Vui lòng điền thông tin Email.");
+    return; 
+  }else if (!regexEmail.test(email)) {
+      alert("Email không hợp lệ. Vui lòng nhập lại.");
+      return; 
+  }else if (content === "") {
+    alert("Vui lòng điền thông tin Nội dung.");
+    return; 
+}
+
+}
