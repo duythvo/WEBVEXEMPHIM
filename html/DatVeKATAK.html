@@ -1,0 +1,2221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/dangnhap.css">
+  <link rel="stylesheet" href="../css/dangki.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/newTintuc.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container-fluid web-bg full-bg p-0">
+      <header class="fixed-top bg-black bg-opacity-50">
+        <nav class="navbar navbar-expand-xl container">
+            <div class="col-3 p-0 d-block">
+                <a><img src="../image/logo-removebg-preview.png" alt="" /></a>
+            </div>
+            <div class="col-9 nav-out-sidebar d-xl-block">
+                <div class="row">
+                    <ul class="nav justify-content-end login-text">
+                        <img src="../image/ic-header-auth.svg" alt="" style="width: 30px" />
+                        <li class="nav-item">
+                            <a class="nav-link text-hover" href="" data-bs-toggle="modal" 
+                            data-bs-target="#login">Đăng Nhập</a>
+                        </li>
+                        <li class="nav-item text-white my-auto">/</li>
+                        <li class="nav-item me-3">
+                            <a href="" class="nav-link text-hover" data-bs-toggle="modal" data-bs-target="#register">Đăng Ký</a>
+                        </li>
+                        <img src="../image/footer-vietnam.svg" alt="" style="width: 30px" />
+                        <span class="text-white ms-2 my-auto">VN</span>
+                    </ul>
+                </div>
+                <div class="row mt-5 TH2D-nav mb-1">
+                    <div class="col-1 mt-1 p-0">
+                        <a class="logo-home m-0" href="../newhtml/test.html"></a>
+                    </div>
+                    <div class="col-11 p-1 rounded-5" style="border: #d8047c solid 1px; height: 59px">
+                        <ul class="nav menu-nav rounded-5 flex-nowrap"
+                            style="background-color: #d8047c; height: 50px">
+                            <li class="nav-item rounded-start-5 text-nowrap">
+                                <a href="../html/PhimDangChieu.html" class="nav-link rounded-start-5" style="line-height: 34px">PHIM</a>
+                            </li>
+                            <li class="nav-item text-nowrap">
+                                <a href="../html/NewLichChieu.html" class="nav-link" style="line-height: 34px">LỊCH CHIẾU</a>
+                            </li>
+                            <li class="nav-item text-nowrap">
+                                <a href="../html/Rap.html" class="nav-link" style="line-height: 34px">RẠP</a>
+                            </li>
+                            <li class="nav-item text-nowrap">
+                                <a href="../html/KhuyenMai.html" class="nav-link" style="line-height: 34px">KHUYỄN MÃI</a>
+                            </li>
+                            <li class="nav-item text-nowrap">
+                                <a href="../html/HoiVaDap.html" class="nav-link" style="line-height: 34px">HỎI VÀ ĐÁP</a>
+                            </li>
+                            <li class="nav-item text-nowrap">
+                                <a href="../html/TinTuc.html" class="nav-link" style="line-height: 34px">TIN TỨC</a>
+                            </li>
+                            <li class="nav-item text-nowrap">
+                                <a href="../html/GioiThieu.html" class="nav-link" style="line-height: 34px">GIỚI THIỆU</a>
+                            </li>
+                            <li class="nav-item rounded-end-5 text-nowrap">
+                                <a href="../html/lienhe.html" class="nav-link" style="line-height: 34px">LIÊN HỆ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="d-flex justify-content-end position-relative">
+                <button id="button-login" class="navbar-toggler">
+                    <img src="../image/ic-header-auth.svg" alt="" style="width: 25px" />
+                    <div id="list-login" class="position-absolute top-100 end-50 d-none" style="width: 140px">
+                        <ul class="navbar-nav bg-black ps-3 p-3">
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-hover text-start">Đăng Nhập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link text-hover text-start">Đăng Ký</a>
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+                <button class="navbar-toggler d-xl-none d-block" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar">
+                    <span>
+                        <img class="img-fluid" src="../image/hamburger.png" alt="" style="width: 35px;">
+                    </span>
+                </button>
+            </div>
+  
+            <div class="offcanvas offcanvas-end bg-black d-xl-none" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="../image/logo-removebg-preview.png" alt="" />
+                    </h5>
+                    <button type="button" class="btn-close-white btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-hover" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-hover" href="#">PHIM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-hover" href="#">LỊCH CHIẾU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-hover" href="#">RẠP VÀ GIÁ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-hover" href="#">KHUYẾN MÃI</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="##" role="button"
+                                data-bs-toggle="dropdown">
+                                KHÁC
+                            </a>
+                            <ul class="dropdown-menu bg-black">
+                                <li>
+                                    <a class="dropdown-item text-hover" href="#">HỎI VÀ ĐÁP</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-hover" href="#">TIN TỨC</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-hover" href="#">GIỚI THIỆU</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-hover" href="#">LIÊN HỆ</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <hr class="border border-white" />
+                    <ul class="d-flex list-unstyled">
+                        <li class="me-4">
+                            <img src="../image/footer-vietnam.svg" alt="" />
+                        </li>
+                        <li class="text-white">Vietnamese</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       
+    </header>
+    <div class="modal fade modal-lg" id="login">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal-bg">
+              <div class="modal-body">
+                  <form action="">
+                      <div class="tile d-flex justify-content-center mt-3 mb-3">
+                          <h1 class="text-uppercase fw-bold">đăng nhập</h1>
+                      </div>
+                      <div class="d-flex justify-content-center mb-3">
+                          <div>
+                              <label class="title" for="">Tên đăng nhập:</label>
+                              <span class="text-danger">*</span> <br>
+                              <input id="loginName" class="txt" type="text"> <br>
+                              <span id="errLogName" class="text-danger"></span>
+                          </div>
+                      </div>
+                      
+                      <div class="d-flex justify-content-center mb-3">
+                          <div>
+                              <label class="title" for="">Mật khẩu:</label>
+                              <span class="text-danger">*</span> <br>
+                              <input id="loginPassword" class="txt" type="password"> <br>
+                              <span id="errLogPass" class="text-danger"></span>
+                          </div>
+                      </div>
+                      <div class="d-flex justify-content-center">
+                          <a class="forget-mk" href="">Quên mật khẩu?</a>
+                      </div>
+                      <div class=" mt-2 d-flex justify-content-center">
+                          <button style="position: relative;z-index: 2;" class="register-button btn-dk" href="" id="btnLogin">
+                              ĐĂNG NHẬP
+                          </button>
+                      </div>
+                      <div class="mt-4 mb-3 d-flex justify-content-center">
+                          <span class="title text-decoration-none">Hoặc đăng nhập bằng</span>
+                      </div>
+                      <div class="icon_re d-flex justify-content-center">
+                          
+                          <a href="" class="interact d-flex justify-content-center align-items-center">
+                              <img src="../image/Google__G__logo.svg.webp" alt="">
+                          </a>
+                          <a href="" class="interact d-flex justify-content-center align-items-center">
+                              <img src="../image/scl_facebook.png" alt="">
+                          </a>
+                          <a href="" class="interact d-flex justify-content-center align-items-center">
+                              <img src="../image/X_icon.svg.png" alt="">
+                          </a>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="modal fade modal-lg" id="register">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content modal-bg" id="noscroll">
+            <div class="modal-body">
+                <form class="form" id="register_form">
+                    <div class="form-title w-100 h-auto text-center">
+                        <h2 class="fw-bold text-uppercase">đăng kí tài khoản</h2> 
+                    </div>
+                    <div class="group mt-3 mb-2">
+                        <div>
+                            <label for="name">Họ và tên:</label> 
+                            <span class="text-danger">*</span> <br>
+                            <input id="name" class="txt" type="text" placeholder="hãy nhập họ và tên của bạn"> <br>
+                            <span class="text-danger" id="errName"></span>
+                        </div>
+                    </div>
+                    <div class="group mt-3 mb-2">
+                        <div>
+                            <label for="birthdate">Ngày sinh:</label> 
+                            <span class="text-danger">*</span> <br>
+                            <input id="birthdate" class="txt" type="date"> <br>
+                            <span class="text-danger" id="errBirthdate"></span>
+                        </div>
+                    </div>
+                    <div class="group mt-3 mb-2">
+                        <div>
+                            <label for="phone">Số điện thoại:</label> 
+                            <span class="text-danger">*</span> <br>
+                            <input id="phone" class="txt" type="text" placeholder="Nhập số điện thoại của bạn"> <br>
+                            <span class="text-danger" id="errPhone"></span>
+                        </div>
+                    </div>
+                    <div class="group mt-3 mb-2">
+                        <div>
+                            <label for="cc">Nhập CCCD/CMND:</label> 
+                            <span class="text-danger">*</span> <br>
+                            <input id="cc" class="txt" type="text" placeholder="Nhập CCCD/CMND của bạn"> <br>
+                            <span class="text-danger" id="errCc"></span>
+                        </div>
+                    </div>
+                    <div class="group mt-3 mb-2">
+                        <div>
+                            <label for="mail"> Nhập email:</label> 
+                            <span class="text-danger">*</span> <br>
+                            <input id="email" class="txt" type="text" placeholder="Nhập email của bạn"> <br>
+                            <span class="text-danger" id="errMail"></span> 
+                        </div>
+                    </div>
+                    <div class="group mt-3 mb-2">
+                        <div>
+                            <label for="username">Tên đăng nhập:</label> 
+                            <span class="text-danger">*</span> <br>
+                            <input id="username" class="txt" type="text" placeholder="Nhập Tên đăng nhập mà bạn muốn"> <br>
+                            <span class="text-danger" id="errUsername"></span> 
+                        </div>
+                    </div>
+                    <div class="group mt-3 mb-2">
+                        <div>
+                            <label for="password">Nhập mật khẩu: </label> 
+                            <span class="text-danger">*</span> <br>
+                            <input id="password" class="txt" type="password" placeholder="Nhập mật khẩu của bạn"> <br>
+                            <span  class="text-danger" id="errPassword">
+                        </div>
+                    </div>
+                    <div class="group mt-3 mb-2">
+                        <div>
+                            <label for="repassword">Nhập lại mật khẩu: </label> 
+                            <span class="text-danger">*</span> <br>
+                            <input id="repassword" class="txt" type="password" placeholder="Nhập lại mật khẩu của bạn"> <br>
+                            <span class="text-danger" id="errRepassword"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-center ">
+                            <a style="width: 150px;" class="d-flex justify-content-center text-decoration-none" href="#chinhsach" data-bs-toggle="collapse">
+                                Chính sách bảo mật
+                            </a>
+                        </div>
+  
+                        <div class="d-flex justify-content-center">
+                            <div class="collapse" id="chinhsach">
+                                <div class="card card-body custom-card">
+                                    <p style="color: black;">
+                                        1. TỔNG QUAN VỀ CHÍNH SÁCH BẢO MẬT
+  
+  
+  CINESTAR hiểu rằng Khách Hàng quan tâm đến việc dữ liệu cá nhân của Khách Hàng sẽ được sử dụng và chia sẻ như thế nào. CINESTAR rất coi trọng sự tin tưởng của Khách Hàng, vì vậy CINESTAR sẽ sử dụng những dữ liệu mà Khách Hàng cung cấp một cách cẩn thận và hợp lý, phù hợp với quy định của pháp luật.
+  
+  
+  
+  Website: www.cinestar.com.vn thuộc quyền sở hữu của Công ty Cổ phần Giải trí – Phát hành phim – Rạp chiếu phim Ngôi Sao (CINESTAR), địa chỉ: 135 Hai Bà Trưng, phường Bến Nghé, Quận 1, TP.HCM. Website này được quản lý điều hành bởi CINESTAR. Website này được sử dụng cho các hoạt động của CINESTAR, các chi nhánh trực thuộc, các công ty thành viên và các tổ chức liên quan (được gọi là CINESTAR trong văn bản này).
+  
+  
+  
+  CINESTAR cam kết tôn trọng quyền riêng tư và những vấn đề cá nhân của tất cả Khách Hàng trên website của CINESTAR (sau đây gọi là "Website”). CINESTAR nhận thức được tầm quan trọng của các dữ liệu cá nhân mà Khách Hàng đã cung cấp cho CINESTAR và tin rằng trách nhiệm của CINESTAR là quản lý đúng cách, bảo vệ và xử lý dữ liệu cá nhân của Khách Hàng.
+  
+  
+  
+  Chính Sách Bảo Mật Dữ Liệu Cá Nhân (sau đây gọi tắt là "Chính Sách Bảo Mật" hay "Chính Sách") được tạo ra nhằm cung cấp các thông tin tổng quát về việc CINESTAR sẽ xử lý dữ liệu cá nhân bao gồm việc: thu thập, ghi, phân tích, xác nhận, lưu trữ, chỉnh sửa, công khai, kết hợp, truy cập, truy xuất, thu hồi, mã hóa, giải mã, sao chép, chia sẻ, truyền đưa, cung cấp, chuyển giao, xóa, hủy dữ liệu cá nhân hoặc các hành động khác có liên quan mà Khách Hàng đã cung cấp cho CINESTAR khi tham gia truy cập, giao dịch trên Website của CINESTAR như thế nào, cho dù ở hiện tại hay trong tương lai; cũng như cách mà CINESTAR sẽ hỗ trợ Khách Hàng trước khi đưa ra bất cứ quyết định nào liên quan đến việc cung cấp dữ liệu cá nhân của Khách Hàng cho CINESTAR.
+  
+  
+  
+  "Dữ liệu cá nhân" là các thông tin dưới dạng ký hiệu, chữ viết, chữ số, hình ảnh, âm thanh hoặc dạng tương tự trên môi trường điện tử gắn liền với một con người cụ thể hoặc giúp xác định một con người cụ thể. Dữ liệu cá nhân bao gồm dữ liệu cá nhân cơ bản và dữ liệu cá nhân nhạy cảm. Dữ liệu cá nhân của Khách Hàng sau đây được gọi chung là “Thông Tin Khách Hàng”.
+  
+  
+  
+  Bằng cách sử dụng dịch vụ, đăng ký tài khoản với CINESTAR, ghé thăm Website của CINESTAR, hoặc truy cập vào dịch vụ, thực hiện giao dịch trên Website của CINESTAR hoặc các sản phẩm liên quan của CINESTAR và đánh dấu vào ô đồng ý với nội dung Chính Sách được hiểu là Khách Hàng
+  
+  đã được đọc, hiểu, thừa nhận và đồng ý các yêu cầu, và/hoặc các Chính Sách, thực tiễn áp dụng nêu trong Chính Sách Bảo Mật này (kể cả các phiên bản sửa đổi, bổ sung của Chính Sách), và Khách Hàng đồng ý với CINESTAR về việc xử lý dữ liệu cá nhân của Khách Hàng theo cách được mô tả trong tài liệu này.
+  
+  
+  
+  Nếu Khách Hàng không đồng ý với Chính Sách Bảo Mật này, vui lòng không sử dụng dịch vụ của CINESTAR hoặc truy cập Website của CINESTAR. Nếu CINESTAR thay đổi Chính Sách Bảo Mật, CINESTAR sẽ cập nhật thay đổi hoặc sửa đổi đó trên Website của CINESTAR. Phiên bản sửa đổi, bổ sung Chính Sách này (nếu có) sẽ có hiệu lực kể từ ngày việc sửa đổi, bổ sung Chính Sách được đăng tải, thông báo trên Website. CINESTAR bảo lưu quyền sửa đổi Chính Sách Bảo Mật này vào bất cứ lúc nào.
+  
+  
+  
+  CINESTAR kính mong Khách Hàng vui lòng đọc Chính Sách Bảo Mật một cách cẩn thận. Nếu Khách Hàng có bất kỳ câu hỏi liên quan đến các thông tin này hoặc thực tiễn bảo mật của CINESTAR, xin vui lòng liên hệ với CINESTAR theo thông tin ở phần cuối của Chính Sách Bảo Mật này.
+  
+  
+  
+  2. PHẠM VI XỬ LÝ THÔNG TIN
+  
+  
+  Thông tin do Khách Hàng cung cấp: CINESTAR thu thập tất cả những thông tin, dữ liệu cá nhân (“Thông Tin Khách Hàng”) mà Khách Hàng đăng tải hoặc các thao tác mà Khách Hàng thực hiện trên Website của CINESTAR.
+  
+  
+  
+  Dữ liệu cá nhân được thu thập trong phạm vi thực hiện Chính Sách này là “Dữ liệu cá nhân cơ bản” bao gồm 09 thông tin cá nhân được liệt kê sau đây:
+  
+  
+  
+  1. Họ và tên;
+  
+  2. Ngày, tháng, năm sinh;
+  
+  3. Giới tính
+  
+  4. Địa chỉ cư trú;
+  
+  5. Số điện thoại;
+  
+  6. Số chứng minh nhân dân, số định danh cá nhân, số hộ chiếu, số giấy phép lái xe;
+  
+  7. Thông tin về tài khoản số thanh toán của cá nhân; và
+  
+  8. Địa chỉ email.
+  
+  
+  
+  Khách Hàng cam kết cung cấp đầy đủ, chính xác dữ liệu cá nhân khi đồng ý với Chính Sách Bảo Mật này. Trong trường hợp (các) dữ liệu được cung cấp không chính xác thì Khách Hàng tự chịu trách nhiệm đối với mọi thiệt hại phát sinh cho CINESTAR và/hoặc bên thứ ba bất kỳ và tự chịu trách nhiệm trước pháp luật.
+  
+  
+  
+  Lưu ý: Khách Hàng là người dưới 16 tuổi chỉ được đánh dấu vào ô đồng ý sau khi được sự đồng ý của cha, mẹ hoặc người giám hộ hợp pháp. Bằng việc đánh dấu vào ô đồng ý, CINESTAR được hiểu rằng Khách Hàng và người người giám hộ hợp pháp của mình đã đồng ý với Chính Sách Bảo Mật này và do đó CINESTAR được quyền miễn trừ mọi hậu quả pháp lý phát sinh (nếu có) trong trường hợp phát hiện có sự gian dối, không trung thực từ phía Khách Hàng tại mục này.
+  
+  
+  
+  3. MỤC ĐÍCH XỬ LÝ THÔNG TIN
+  
+  
+  Mục đích thu thập, xử lý Thông Tin Khách Hàng bao gồm các hoạt động sau đây:
+  
+  
+  
+  1. Cung cấp các dịch vụ, sản phẩm theo nhu cầu của Khách Hàng;
+  
+  2. Liên hệ xác nhận khi Khách Hàng đăng ký sử dụng dịch vụ, xác lập giao dịch trên Website;
+  
+  3. Thực hiện việc quản lý Website, gửi thông tin cập nhật về Website, các chương trình khuyến mại, ưu đãi/tri ân tới Khách Hàng;
+  
+  4. Bảo đảm quyền lợi của Khách Hàng khi phát hiện các hành động giả mạo, phá hoại tài khoản, lừa đảo Khách Hàng;
+  
+  5. Liên lạc, hỗ trợ, giải quyết với Khách Hàng trong các trường hợp đặc biệt.
+  
+  
+  
+  CINESTAR chỉ sử dụng Thông Tin Khách Hàng cho các mục đích nêu trên hoặc mục đích khác (nếu có) với điều kiện đã thông báo và được sự đồng ý của Khách Hàng.
+  
+  
+  
+  Khách Hàng hiểu và đồng ý rằng CINESTAR có nghĩa vụ phải cung cấp Thông Tin Khách Hàng theo yêu cầu/quyết định của Cơ quan nhà nước có thẩm quyền và/hoặc quy định pháp luật.
+  
+  CINESTAR sẽ được miễn trừ mọi trách nhiệm liên quan đến bảo mật thông tin trong trường hợp này.
+  
+  
+  
+  Để tránh nghi ngờ, trong quá trình giao dịch thanh toán tại Website, CINESTAR chỉ lưu giữ thông tin chi tiết về đơn hàng đã thanh toán của khách hàng, các thông tin về tài khoản ngân hàng của khách hàng sẽ không được lưu giữ.
+  
+  
+  
+  4. LƯU GIỮ VÀ BẢO MẬT THÔNG TIN
+  
+  
+  - Thông Tin Khách Hàng, cũng như các thông tin trao đổi giữa Khách Hàng và CINESTAR, đều được lưu giữ và bảo mật bởi hệ thống của CINESTAR.
+  
+  
+  
+  - CINESTAR sẽ lưu trữ Thông Tin Khách Hàng theo quy định pháp luật hiện hành. Nếu Khách Hàng ngừng sử dụng Website, hoặc việc cho phép Khách Hàng sử dụng Website và/hoặc các dịch vụ bị chấm dứt, CINESTAR có thể tiếp tục lưu trữ, sử dụng và/hoặc tiết lộ Thông Tin Khách Hàng phù hợp với Chính Sách Bảo Mật và nghĩa vụ của CINESTAR theo quy định của pháp luật.
+  
+  
+  
+  - Khách Hàng tuyệt đối không được có bất kỳ hành vi sử dụng công cụ, chương trình để can thiệp trái phép vào hệ thống hay làm thay đổi cấu trúc dữ liệu của CINESTAR, cũng như bất kỳ hành vi nào khác nhằm phát tán, cổ vũ cho các hoạt động với mục đích can thiệp, phá hoại hay xâm nhập vào dữ liệu của hệ thống CINESTAR, cũng như các các hành vi mà pháp luật Việt Nam nghiêm cấm. Trong trường hợp CINESTAR phát hiện Khách Hàng có hành vi cố tình giả mạo, gian lận, phát tán các thông tin trái phép,… CINESTAR có quyền chuyển Thông Tin Khách Hàng theo yêu cầu của cơ quan có thẩm quyền để xử lý theo quy định pháp luật.
+  
+  
+  
+  5. THỜI GIAN LƯU TRỮ THÔNG TIN
+  
+  
+  Thông Tin Khách Hàng sẽ được lưu trữ cho đến khi có yêu cầu hủy bỏ hoặc tự thành viên đăng nhập và thực hiện đóng tài khoản. Đối với các tài khoản đã đóng, CINESTAR vẫn lưu trữ Thông Tin Khách Hàng và truy cập của Khách Hàng để phục vụ cho mục đích phòng chống gian lận, điều tra, giải đáp thắc mắc ...
+  
+  Các thông tin này sẽ được CINESTAR lưu trữ trong hệ thống máy chủ tối đa mười hai (12) tháng kể từ ngày Khách Hàng đóng tài khoản trên CINESTAR. Sau khi thời hạn này kết thúc, CINESTAR có thể tiến hành xóa vĩnh viễn thông tin cá nhân của Khách Hàng.
+  
+  
+  
+  6. TỔ CHỨC, CÁ NHÂN ĐƯỢC XỬ LÝ THÔNG TIN
+  
+  
+  CINESTAR và các công ty thành viên, các chi nhánh của mình sẽ thực hiện xử lý dữ liệu thông tin cá nhân của Khách Hàng theo các mục nêu trên. CINESTAR không cung cấp Thông Tin Khách Hàng cho bất kỳ bên thứ ba nào khác trừ các trường hợp ngoại lệ không cần sự đồng ý của Khách Hàng theo quy định của pháp luật.
+  
+  
+  
+  Các tổ chức, cá nhân được liệt kê sau đây có thể được xử lý dữ liệu cá nhân sau khi được sự đồng ý của Khách Hàng:
+  
+  
+  
+  - Nhà thầu, đại lý, nhà cung cấp dịch vụ và các bên thứ ba khác mà CINESTAR sử dụng để hỗ trợ hoạt động kinh doanh của CINESTAR
+  
+  - Các đối tác có ký kết thỏa thuận liên kết chăm sóc khách hàng với CINESTAR. Việc chia sẻ này giúp CINESTAR có thể cung cấp cho Khách Hàng các thông tin về các sản phẩm và dịch vụ, liên quan đến hàng hóa, dịch vụ và vấn đề khác mà Khách Hàng có thể quan tâm. Trong trường hợp các chi nhánh, công ty thành viên của CINESTAR và các công ty liên kết của CINESTAR được cấp quyền truy cập Thông Tin Khách Hàng, họ sẽ phải tuân thủ nghiêm ngặt các quy định được mô tả trong Chính Sách Bảo Mật này.
+  
+  - Các bên thứ ba là đối tác, đại lý của CINESTAR: CINESTAR có thể chuyển Thông Tin Khách Hàng cho các đại lý và nhà thầu phụ để làm phân tích dữ liệu, tiếp thị, quảng cáo và hỗ trợ dịch vụ khách hàng.
+  
+  - Các đơn vị kinh doanh khác mà CINESTAR có kế hoạch sáp nhập hoặc mua lại: Trong trường hợp này, CINESTAR sẽ yêu cầu những đơn vị đó tuân thủ nghiêm ngặt theo Chính Sách Bảo Mật này.
+  
+  
+  
+  Chính Sách Bảo Mật này không phải là một lời hứa rằng dữ liệu cá nhân của Khách Hàng sẽ không bao giờ được tiết lộ, ngoại trừ như được mô tả trong Chính Sách Bảo Mật này.
+  
+  
+  
+  7. QUYỀN VÀ NGHĨA VỤ CỦA KHÁCH HÀNG
+  
+  
+  Trừ trường hợp pháp luật có quy định khác, quyền và nghĩa vụ của Khách Hàng đối với dữ liệu cá nhân được quy định chi tiết như sau:
+  
+  
+  
+  A. Quyền của Khách Hàng
+  
+  1. Quyền được biết
+  
+  Khách Hàng được biết về hoạt động xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.
+  
+  2. Quyền đồng ý
+  
+  Khách Hàng được đồng ý hoặc không đồng ý cho phép xử lý dữ liệu cá nhân của mình, trừ trường hợp pháp luật cho phép CINESTAR xử lý mà không cần có sự đồng ý của Khách Hàng.
+  
+  3. Quyền truy cập
+  
+  Khách Hàng được truy cập để xem, chỉnh sửa hoặc yêu cầu chỉnh sửa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.
+  
+  4. Quyền rút lại sự đồng ý
+  
+  Khách Hàng được quyền rút lại sự đồng ý của mình, trừ trường hợp luật có quy định khác.
+  
+  5. Quyền xóa dữ liệu
+  
+  Khách Hàng được xóa hoặc yêu cầu xóa dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.
+  
+  6. Quyền hạn chế xử lý dữ liệu
+  
+  a) Khách Hàng được yêu cầu hạn chế xử lý dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác;
+  
+  b) Việc hạn chế xử lý dữ liệu được thực hiện trong 72 giờ sau khi có yêu cầu của Khách Hàng, với toàn bộ dữ liệu cá nhân mà chủ thể dữ liệu yêu cầu hạn chế, trừ trường hợp luật có quy định khác.
+  
+  7. Quyền cung cấp dữ liệu
+  
+  Khách Hàng được yêu cầu CINESTAR và các bên liên quan cung cấp cho bản thân dữ liệu cá nhân của mình, trừ trường hợp luật có quy định khác.
+  
+  8. Quyền phản đối xử lý dữ liệu
+  
+  a) Khách Hàng được phản đối CINESTAR và các bên liên quan nhằm ngăn chặn hoặc hạn chế tiết lộ dữ liệu cá nhân hoặc sử dụng cho mục đích quảng cáo, tiếp thị, trừ trường hợp luật có quy định khác;
+  
+  b) CINESTAR và các bên liên quan thực hiện yêu cầu của Khách Hàng trong 72 giờ sau khi nhận được yêu cầu, trừ trường hợp luật có quy định khác.
+  
+  9. Quyền khiếu nại, tố cáo, khởi kiện
+  
+  Khách Hàng có quyền khiếu nại, tố cáo hoặc khởi kiện theo quy định của pháp luật.
+  
+  10. Quyền yêu cầu bồi thường thiệt hại
+  
+  Khách Hàng có quyền yêu cầu bồi thường thiệt hại theo quy định của pháp luật khi xảy ra vi phạm quy định về bảo vệ dữ liệu cá nhân của mình, trừ trường hợp các bên có thỏa thuận khác hoặc luật có quy định khác.
+  
+  11. Quyền tự bảo vệ
+  
+  Khách Hàng có quyền tự bảo vệ theo quy định của Bộ luật Dân sự, luật khác có liên quan, hoặc yêu cầu cơ quan, tổ chức có thẩm quyền thực hiện các phương thức bảo vệ quyền dân sự theo quy định tại Điều 11 Bộ luật Dân sự.
+  
+  
+  
+  B. Nghĩa vụ của Khách Hàng
+  
+  1. Tự bảo vệ dữ liệu cá nhân của mình; yêu cầu các tổ chức, cá nhân khác có liên quan bảo vệ dữ liệu cá nhân của mình.
+  
+  2. Tôn trọng, bảo vệ dữ liệu cá nhân của người khác.
+  
+  3. Cung cấp đầy đủ, chính xác dữ liệu cá nhân khi đồng ý cho phép xử lý dữ liệu cá nhân.
+  
+  4. Tham gia tuyên truyền, phổ biến kỹ năng bảo vệ dữ liệu cá nhân.
+  
+  5. Thực hiện quy định của pháp luật về bảo vệ dữ liệu cá nhân và tham gia phòng, chống các hành vi vi phạm quy định về bảo vệ dữ liệu cá nhân.
+  
+  
+  
+  8. THÔNG BÁO VÀ SỬA ĐỔI
+  
+  
+  Do CINESTAR liên tục cải thiện dịch vụ và sản phẩm để phục vụ Khách Hàng tốt hơn, nên Chính Sách Bảo Mật, Điều Kiện và Điều Khoản Giao Dịch, Quy Định Chung sẽ thường xuyên được thay đổi và cập nhật. CINESTAR có thể đăng tải trên Website hoặc có thể gửi email thông báo cho Khách Hàng về những thay đổi trong những chính sách của CINESTAR. Tuy nhiên, CINESTAR cũng khuyến khích Khách Hàng thường xuyên theo dõi trên Website để cập nhật những thay đổi trong chính sách của CINESTAR. Trừ trường hợp có văn bản với nội dung khác, Chính Sách Bảo Mật hiện tại của CINESTAR được áp dụng cho tất cả những thông tin mà CINESTAR có trong phạm vi xử lý Thông Tin Khách Hàng.
+  
+  
+  
+  9. CAM KẾT CHUNG
+  
+  
+  Mọi thông tin cá nhân của Khách Hàng thu thập được từ Website sẽ được lưu giữ an toàn, chỉ có Khách Hàng mới có thể truy cập vào tài khoản cá nhân của mình bằng tên đăng nhập và mật khẩu do Khách Hàng chọn.
+  
+  
+  
+  CINESTAR cam kết bảo mật thông tin, không chia sẻ, tiết lộ, chuyển giao Thông Tin Khách Hàng, thông tin giao dịch trực tuyến trên Website cho bất kỳ bên thứ ba nào khi chưa được sự đồng ý của Khách Hàng, trừ các trường hợp pháp luật cho phép CINESTAR xử lý thông tin mà không cần đến sự đồng ý của Khách Hàng.
+  
+  
+  
+  CINESTAR, bằng nỗ lực tốt nhất của mình, sẽ áp dụng các giải pháp công nghệ để ngăn chặn các hành vi đánh cắp hoặc tiếp cận thông tin trái phép; sử dụng, thay đổi hoặc phá hủy thông tin trái phép. Tuy nhiên, CINESTAR không thể cam kết sẽ ngăn chặn được tất cả các hành vi xâm phạm, sử dụng thông tin cá nhân trái phép nằm ngoài khả năng kiểm soát của CINESTAR. CINESTAR sẽ không chịu trách nhiệm dưới bất kỳ hình thức nào đối với bất kỳ khiếu nại, tranh chấp hoặc thiệt hại nào phát sinh từ hoặc liên quan đến việc truy cập, xâm nhập, sử dụng thông tin trái phép như vậy.
+  
+  
+  
+  Trường hợp máy chủ lưu trữ thông tin bị hacker tấn công dẫn đến mất mát Thông Tin Khách Hàng, gây ảnh hưởng xấu đến Khách Hàng, CINESTAR sẽ ngay lập tức thông báo cho Khách Hàng và trình vụ việc cho cơ quan chức năng điều tra xử lý.
+  
+  
+  
+  Khách Hàng có nghĩa vụ bảo mật tên đăng ký, mật khẩu và hộp thư điện tử của mình. CINESTAR sẽ không chịu trách nhiệm dưới bất kỳ hình thức nào đối với các thiệt hại, tổn thất (nếu có) do Khách Hàng không tuân thủ quy định bảo mật này.
+  
+  
+  
+  Khách Hàng tuyệt đối không được có các hành vi sử dụng công cụ, chương trình để can thiệp trái phép vào hệ thống hay làm thay dổi dữ liệu của CINESTAR. Trong trường hợp CINESTAR phát hiện Khách Hàng có hành vi cố tình giả mạo, gian lận, phát tán thông tin cá nhân trái phép… CINESTAR có quyền chuyển thông tin cá nhân của Khách Hàng cho các cơ quan có thẩm quyền để xử lý theo quy định của pháp luật.
+  
+  
+  
+  10. THÔNG TIN LIÊN HỆ
+  
+  
+  Bất kỳ lúc nào Khách Hàng có bất kỳ câu hỏi, cần hỗ trợ, cần giải thích, khiếu nại hoặc quan tâm về việc bảo mật của CINESTAR hoặc các giao dịch của Khách Hàng với CINESTAR, xin vui lòng liên hệ CINESTAR theo thông tin sau:
+  
+  
+  
+  CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM – RẠP CHIẾU PHIM NGÔI SAO
+  
+  Mã số thuế: 0312742744
+  
+  Địa chỉ: 135 Hai Bà Trưng, phường Bến Nghé, Quận 1, TP.HCM
+  
+  Hotline: 028.7300 8881
+  
+  Email: cskh@cinestar.com.vn
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="align-items-center justify-content-center d-flex mt-3">
+                            <div class="text-start">
+                                <div>
+                                    <input class="form-check-input" type="checkbox" name="yeser" id="check"> &nbsp;&nbsp;   
+                                    <label style="color: white;" class="form-check-label" for="">
+                                        Khách hàng đã đồng ý các điều khoản, điều kiện của thành viên Cinestar <br>
+                                    </label> <br>
+                                </div>
+                                <div>
+                                    <span style="margin-left: 33px;" class="text-danger" id="errCheckbox"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button id="btnRegister" class="btn-dk register-button">
+                            <span style="position: relative;z-index: 1;">ĐĂNG KÍ</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div>
+
+      <div
+        id="content"
+        class="container-fluid justify-content-center position-relative"
+      >
+        <div id="poster" style="height: 180px"></div>
+        <h1 class="text-center text-white p-3">Đặt vé</h1>
+        <div id="datghe" class="row justify-content-center g-1">
+          <div
+            class="col-lg-8 p-0 rounded-top-5 pb-3 border position-relative me-2"
+            style="background-color: rgb(216, 4, 124)"
+          >
+            <nav
+              class="nav row border-bottom border-3 text-white p-0 m-0 pb-3 mb-3"
+            >
+              <a
+                class="nav-link col active fs-4 text-white text-center"
+                href="javascript:history.back()"
+                aria-current="page"
+                >Quay lại</a
+              >
+              <p
+                style="cursor: pointer"
+                class="nav-link col fs-4 text-white border-bottom border-3 text-center"
+                href=""
+              >
+                01. Đặt ghế
+              </p>
+              <p
+                style="cursor: pointer"
+                class="nav-link col fs-4 text-white text-center"
+                href=""
+              >
+                02. Thanh Toán
+              </p>
+              <p
+                style="cursor: pointer"
+                class="nav-link col fs-4 text-white text-center"
+                href=""
+              >
+                03. Thông tin vé
+              </p>
+            </nav>
+            <div class="container-fluid">
+              <div class="container-fluid d-flex row">
+                <h4 class="col-3 text-warning my-3 me-4">Ngày chiếu</h4>
+                <select
+                  class="col fs-4 rounded-5 border border-3 bg-warning"
+                  name=""
+                  id="ngaychieu"
+                >
+                  <option value="06/04">06/04</option>
+                  <option value="07/04">07/04</option>
+                  <option value="08/04">08/04</option>
+                  <option value="09/04">09/04</option>
+                  <option value="10/04">10/04</option>
+                  <option value="11/04">11/04</option>
+                  <option value="12/04">12/04</option>
+                </select>
+              </div>
+              <div class="container-fluid d-flex row mt-2">
+                <h4 class="text-warning my-3 me-4 col-3">Suất chiếu</h4>
+                <select
+                  class="col fs-4 rounded-5 border border-3 bg-warning"
+                  name=""
+                  id="suatchieu"
+                >
+                  <option value="12:30">12:30</option>
+                  <option value="17:30">17:30</option>
+                  <option value="21:30">21:30</option>
+                </select>
+              </div>
+
+              <strong class="text-warning"
+                >* Không được bỏ trống 01 ghế bên cạnh hoặc ghế đầu tiên của
+                dãy</strong
+              >
+              <div class="container-fluid row mt-4">
+                <div class="col-3 text-white mt-5">
+                  <img class="my-2" src="../image/GheDonChuaChon.svg" alt="" />
+                  Ghế chưa chọn
+                  <br />
+                  <img class="my-2" src="../image/GheDonDaChon.svg" alt="" />
+                  Ghế đã chọn
+                  <br />
+                  <img class="my-2" src="../image/GheDonDangChon.svg" alt="" />
+                  Ghế đang được chọn
+                </div>
+                <div class="col-9 mt-3">
+                  <div class="container mx-4">
+                    <div
+                      class="row justify-content-center align-items-center g-2"
+                    >
+                      <strong class="col-12 text-white text-center"
+                        >Màn hình</strong
+                      >
+                      <img
+                        class="col-12 mb-3"
+                        src="../image/ManHinh.png"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="A1"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="A2"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="A3"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="A4"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="A5"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="A6"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="A7"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="A8"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="A9"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="A10"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="A11"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="row justify-content-center align-items-center g-2 mt-2"
+                    >
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="B1"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="B2"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="B3"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="B4"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="B5"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="B6"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="B7"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="B8"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="B9"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="B10"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="B11"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="row justify-content-center align-items-center g-2 mt-2"
+                    >
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="C1"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="C2"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="C3"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="C4"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="C5"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonDaChon.svg"
+                        data-soGhe="C6"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonDaChon.svg"
+                        data-soGhe="C7"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="C8"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="C9"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="C10"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="C11"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="row justify-content-center align-items-center g-2 mt-2"
+                    >
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="D1"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="D2"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="D3"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="D4"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="D5"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="D6"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="D7"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="D8"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="D9"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonChuaChon.svg"
+                        data-soGhe="D10"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                      <img
+                        class="col-1 ghe"
+                        src="../image/GheDonDaChon.svg"
+                        data-soGhe="D11"
+                        data-giaTien="49000"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="row justify-content-center align-items-center g-2 mt-2"
+                    >
+                      <img
+                        class="col-2 ghedoi"
+                        src="../image/GheDoiChuaChon.svg"
+                        data-soGhe="CP1"
+                        data-giaTien="119000"
+                        alt=""
+                      />
+                      <img
+                        class="col-2 ghedoi"
+                        src="../image/GheDoiDaChon.svg"
+                        data-soGhe="CP2"
+                        data-giaTien="119000"
+                        alt=""
+                      />
+                      <img
+                        class="col-2 ghedoi"
+                        src="../image/GheDoiChuaChon.svg"
+                        data-soGhe="CP3"
+                        data-giaTien="119000"
+                        alt=""
+                      />
+                      <img
+                        class="col-2 ghedoi"
+                        src="../image/GheDoiChuaChon.svg"
+                        data-soGhe="CP4"
+                        data-giaTien="119000"
+                        alt=""
+                      />
+                      <img
+                        class="col-2 ghedoi"
+                        src="../image/GheDoiChuaChon.svg"
+                        data-soGhe="CP5"
+                        data-giaTien="119000"
+                        alt=""
+                      />
+                      <img
+                        class="col-2 ghedoi"
+                        src="../image/GheDoiChuaChon.svg"
+                        data-soGhe="CP6"
+                        data-giaTien="119000"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col p-0 rounded-top-5 pb-3 border px-3 pt-3"
+            style="background-color: rgb(179, 5, 104)"
+          >
+            <div
+              id="total"
+              class="container-fluid border-bottom border-3 text-end text-white fs-2"
+            >
+              0đ
+            </div>
+            <div id="title" class="border-bottom border-3">
+              <strong class="fs-5 text-white"
+                >KATAK: SỨ MỆNH CHINH PHỤC ĐẠI DƯƠNG</strong
+              >
+              <p id="film_time" class="fs-5 text-white pb-1 my-1">
+                Ngày 06/05 13:30 - Rạp 01
+              </p>
+            </div>
+            <div id="ghe" class="row m-0 border-bottom border-3">
+              <p id="tenghe" class="col fs-5 text-white my-1 ps-0">Ghế :</p>
+              <p
+                id="tienghe"
+                class="col text-end text-white fs-5 my-1 px-0 mx-0 me-1"
+              >
+                0đ
+              </p>
+            </div>
+            <div id="combo" class="row m-0 border-bottom border-3">
+              <button
+                type="button"
+                class="btn col fs-5 text-white my-1 ps-0 text-start"
+                data-bs-toggle="modal"
+                data-bs-target="#modalId"
+              >
+                🍿 Chọn combo :
+              </button>
+              <p
+                id="tiencombo"
+                class="col text-end text-white fs-5 my-1 px-0 mx-0 my-3 me-1"
+              >
+                0đ
+              </p>
+            </div>
+            <h3
+              class="bg-white text-center p-0 m-0 py-2"
+              style="color: #d8047c"
+            >
+              Thông tin đặt vé
+            </h3>
+            <div id="inf" class="my-3">
+              <div class="row">
+                <label
+                  for=""
+                  class="form-label text-white my-2 fw-bold fs-5 col-4"
+                  >Họ tên</label
+                >
+                <input
+                  type="text"
+                  class="form-control bg-none col"
+                  name=""
+                  id="hoten"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <span
+                  class="text-danger bg-light col-12 mt-2"
+                  id="errorhoten"
+                ></span>
+              </div>
+              <div class="row my-2">
+                <label
+                  for=""
+                  class="form-label text-white my-2 fw-bold fs-5 col-4"
+                  >Điện thoại</label
+                >
+                <input
+                  type="text"
+                  class="form-control bg-none col"
+                  name=""
+                  id="sdt"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <span
+                  class="text-danger bg-light col-12 mt-2"
+                  id="errorsdt"
+                ></span>
+              </div>
+              <div class="row">
+                <label
+                  for=""
+                  class="form-label5 text-white my-2 fw-bold fs-5 col-4"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control bg-none col"
+                  name=""
+                  id="email"
+                  aria-describedby="helpId"
+                  placeholder=""
+                />
+                <span
+                  class="text-danger bg-light col-12 mt-2"
+                  id="erroremail"
+                ></span>
+              </div>
+            </div>
+            <div
+              id="note"
+              style="height: 300px"
+              class="rounded-4 overflow-scroll overflow-x-hidden bg-white p-3"
+            >
+              <b>Lưu ý:</b>
+              <p>- Vé đã mua không thể đổi hay trả lại.</p>
+              <p>
+                - Khi được yêu cầu, vui lòng xuất trình giấy tờ tùy thân để
+                chứng thực độ tuổi khi xem phim.
+              </p>
+              <p>
+                - Bản sao thông tin vé sẽ được lưu vào mục lịch sử giao dịch
+                trong tài khoản nếu quý khách đã đăng nhập khi mua vé. 1 bản sao
+                khác sẽ gửi đến Email của quý khách. Quý khách vui lòng kiểm tra
+                kỹ cả trong mục spam email.
+              </p>
+              <p>
+                - Quý khách vui lòng lưu lại hoặc chụp ảnh lại để xuất trình khi
+                qua cửa soát vé <b>(KHÔNG CẦN IN VÉ TẠI QUẦY)</b>.
+              </p>
+              <p>
+                - Nếu có kèm mua bắp nước online quý khách được ưu tiên khi xếp
+                hàng để lên thẳng quầy vé in hóa đơn, sau đó xếp hàng ở quầy bắp
+                nước để nhận.
+              </p>
+            </div>
+            <button
+              name=""
+              id="datve"
+              class="btn mt-3 w-100 mx-0 fs-4 text-white"
+              style="background-color: rgb(59, 180, 59)"
+              disabled
+            >
+              ĐẶT VÉ
+            </button>
+          </div>
+        </div>
+        <div id="thanhtoan" class="d-none row justify-content-center g-1">
+          <div
+            class="col-lg-8 p-0 rounded-top-5 pb-3 border position-relative me-2"
+            style="background-color: rgb(216, 4, 124)"
+          >
+            <nav
+              class="nav row border-bottom border-3 text-white p-0 m-0 pb-3 mb-3"
+            >
+              <a
+                class="nav-link col active fs-4 text-white text-center"
+                href="javascript:history.back()"
+                aria-current="page"
+                >Quay lại</a
+              >
+              <p
+                style="cursor: pointer"
+                class="nav-link col fs-4 text-white text-center"
+                href=""
+              >
+                01. Đặt ghế
+              </p>
+              <p
+                style="cursor: pointer"
+                class="nav-link col fs-4 text-white text-center border-bottom border-3"
+                href=""
+              >
+                02. Thanh Toán
+              </p>
+              <p
+                style="cursor: pointer"
+                class="nav-link col fs-4 text-white text-center"
+                href=""
+              >
+                03. Thông tin vé
+              </p>
+            </nav>
+            <div class="container-fluid">
+              <strong class="text-warning"
+                >* Vui lòng kiểm tra kỹ thông tin vé đặt trước khi thanh
+                toán</strong
+              >
+              <div class="row mt-5">
+                <div class="col">
+                  <p
+                    class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                  >
+                    Thông tin vé
+                  </p>
+                  <div class="row">
+                    <p class="text-white fs-5 col-4">Phim:</p>
+                    <p class="text-white fs-5 col fw-bold">
+                      KATAK: SỨ MỆNH CHINH PHỤC ĐẠI DƯƠNG
+                    </p>
+                  </div>
+                  <div class="row">
+                    <p class="text-white fs-5 col-4">Thời gian:</p>
+                    <p class="text-white fs-5 col fw-bold" id="tt_thoigian"></p>
+                  </div>
+                  <div class="row">
+                    <p class="text-white fs-5 col-4">Ghế đã chọn:</p>
+                    <p class="text-white fs-5 col fw-bold" id="tt_ghechon"></p>
+                  </div>
+                </div>
+                <div class="col">
+                  <p
+                    class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                  >
+                    Thông tin đặt vé
+                  </p>
+                  <div class="row">
+                    <p class="text-white fs-5 col-4 mx-0">Họ tên:</p>
+                    <p
+                      class="text-white fs-5 col fw-bold mx-0"
+                      id="tt_hoten"
+                    ></p>
+                  </div>
+                  <div class="row">
+                    <p class="text-white fs-5 col-4 mx-0">Điện thoại:</p>
+                    <p class="text-white fs-5 col fw-bold mx-0" id="tt_sdt"></p>
+                  </div>
+                  <div class="row">
+                    <p class="text-white fs-5 col-4 mx-0">Email:</p>
+                    <p
+                      class="text-white fs-5 col fw-bold mx-0"
+                      id="tt_email"
+                    ></p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p
+                    class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                  >
+                    Thông tin combo bắp nước
+                  </p>
+                  <p class="text-white fs-5 col fw-bold mx-0" id="tt_combo"></p>
+                </div>
+                <div class="col">
+                  <p
+                    class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                  >
+                    Lưu ý
+                  </p>
+                  <p class="text-white fs-6">
+                    - Vé đã mua không thể đổi hay trả lại.
+                  </p>
+                  <p class="text-white fs-6">
+                    - Khi được yêu cầu, vui lòng xuất trình giấy tờ tùy thân để
+                    chứng thực độ tuổi khi xem phim.
+                  </p>
+                  <p class="text-white fs-6">
+                    - Bản sao thông tin vé sẽ được lưu vào mục lịch sử giao dịch
+                    trong tài khoản nếu quý khách đã đăng nhập khi mua vé. 1 bản
+                    sao khác sẽ gửi đến Email của quý khách. Quý khách vui lòng
+                    kiểm tra kỹ cả trong mục spam email.
+                  </p>
+                  <p class="text-white fs-6">
+                    - Quý khách vui lòng lưu lại hoặc chụp ảnh lại để xuất trình
+                    khi qua cửa soát vé <b>(KHÔNG CẦN IN VÉ TẠI QUẦY)</b>.
+                  </p>
+                  <p class="text-white fs-6">
+                    - Nếu có kèm mua bắp nước online quý khách được ưu tiên khi
+                    xếp hàng để lên thẳng quầy vé in hóa đơn, sau đó xếp hàng ở
+                    quầy bắp nước để nhận.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col p-0 rounded-top-5 pb-3 border px-3 pt-3"
+            style="background-color: rgb(179, 5, 104)"
+          >
+            <div class="row m-0 border-bottom border-3">
+              <p class="col fs-4 text-white my-1 fw-bold ps-0">Tổng cộng :</p>
+              <p
+                id="tt_tongtien"
+                class="col text-end text-white fs-4 fw-bold my-1 px-0 mx-0 me-1"
+              >
+                0đ
+              </p>
+            </div>
+            <div class="row m-0 border-bottom border-3">
+              <p class="col fs-5 text-white my-1 ps-0">Vé ghế :</p>
+              <p
+                id="tt_tienghe"
+                class="col text-end text-white fs-5 my-1 px-0 mx-0 me-1"
+              >
+                0đ
+              </p>
+            </div>
+            <div class="row m-0 border-bottom border-3">
+              <p class="col fs-5 text-white my-1 ps-0">Combo :</p>
+              <p
+                id="tt_tiencombo"
+                class="col text-end text-white fs-5 my-1 px-0 mx-0 me-1"
+              >
+                0đ
+              </p>
+            </div>
+            <h3
+              class="bg-white text-center p-0 m-0 py-2 my-4"
+              style="color: #d8047c"
+            >
+              Phương thức thanh toán
+            </h3>
+            <div class="row py-3 fw-bold text-white">
+              <img
+                src="../image/logo-zalopay.svg"
+                class="bg-white rounded-2 ms-2 py-2 col-1 w-25"
+                alt=""
+              />
+              <p class="col my-auto fw-bold">Thanh toán Zalo Pay</p>
+              <div class="form-check col-1 mx-3 my-auto">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="tt"
+                  id="zlpay"
+                  value="zlpaymodal"
+                />
+              </div>
+            </div>
+            <div class="row mt-1 py-3 fw-bold text-white">
+              <img
+                src="../image/momo-logo.png"
+                style="width: 15%"
+                class="bg-white ms-2 rounded-2 py-2 col-1 me-4"
+                alt=""
+              />
+              <p class="col my-auto fw-bold ps-4">&thinsp; Thanh toán MoMo</p>
+              <div class="form-check col-1 mx-3 my-auto">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="tt"
+                  id="momo"
+                  value="momomodal"
+                />
+              </div>
+            </div>
+            <div class="row mt-1 py-3 fw-bold text-white">
+              <img
+                src="../image/QR.png"
+                style="width: 15%"
+                class="bg-white ms-2 rounded-2 py-2 col-1 me-5"
+                alt=""
+              />
+              <p class="col my-auto fw-bold">Thanh toán QR ngân hàng</p>
+              <div class="form-check col-1 mx-3 my-auto">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="tt"
+                  id="qr"
+                  value="qrmodal"
+                />
+              </div>
+            </div>
+            <p class="fw-bold fs-5 text-white my-2">
+              * Bạn cần đọc kỹ các điều khoản thanh toán trực tuyến sau:
+            </p>
+            <div
+              id="note"
+              style="height: 300px"
+              class="rounded-4 overflow-scroll overflow-x-hidden bg-white p-3"
+            >
+              <p>
+                Chào mừng quý khách đến với
+                <strong>Rạp phim TH2D</strong>.
+              </p>
+              <p>
+                <strong
+                  >Điều Khoản Thanh Toán Trực Tuyến - Rạp Phim TH2D</strong
+                >
+              </p>
+
+              <p><strong>1. Thanh Toán Trực Tuyến:</strong></p>
+
+              <p>
+                - <strong>Thanh Toán qua Momo:</strong> Khách hàng có thể sử
+                dụng ứng dụng Momo để thanh toán vé xem phim tại Rạp Phim TH2D.
+                Sau khi chọn vé và hoàn tất đặt hàng trên trang web hoặc ứng
+                dụng di động của chúng tôi, khách hàng sẽ được chuyển đến cổng
+                thanh toán của Momo để nhập thông tin thanh toán và hoàn tất
+                giao dịch.
+              </p>
+
+              <p>
+                - <strong>Thanh Toán qua Zalo Pay:</strong> Rạp Phim TH2D cũng
+                chấp nhận thanh toán qua Zalo Pay. Khách hàng có thể thực hiện
+                thanh toán bằng cách quét mã QR hoặc nhập mã thanh toán trên ứng
+                dụng Zalo Pay của mình. Quá trình thanh toán sẽ được thực hiện
+                một cách nhanh chóng và an toàn.
+              </p>
+
+              <p>
+                - <strong>Thanh Toán qua QR Ngân Hàng:</strong> Để đáp ứng nhu
+                cầu thanh toán của khách hàng, Rạp Phim TH2D cung cấp phương
+                thức thanh toán qua mã QR của các ngân hàng địa phương. Khách
+                hàng có thể sử dụng ứng dụng ngân hàng trực tuyến để quét mã QR
+                trên máy tính hoặc thiết bị di động và hoàn tất giao dịch một
+                cách thuận tiện.
+              </p>
+              <p><strong>Hướng Dẫn Giải Quyết Khi Đã Thanh Toán:</strong></p>
+
+              <p>
+                Trong trường hợp đã thanh toán mà có nhu cầu đổi trả vé, khách
+                hàng vui lòng tuân theo hướng dẫn sau:
+              </p>
+
+              <ul>
+                <li>
+                  Liên hệ trực tiếp với Rạp Phim TH2D thông qua số hotline hoặc
+                  đến quầy vé tại rạp để yêu cầu đổi trả vé.
+                </li>
+                <li>
+                  Cung cấp thông tin cần thiết như mã đơn hàng hoặc mã vé để
+                  nhân viên rạp có thể xác nhận giao dịch thanh toán và thực
+                  hiện việc đổi trả vé.
+                </li>
+                <li>
+                  Đối với thanh toán qua Momo, Zalo Pay hoặc QR Ngân Hàng, số
+                  tiền đã thanh toán sẽ được hoàn trả lại vào tài khoản hoặc ví
+                  điện tử tương ứng trong thời gian xử lý đổi trả.
+                </li>
+              </ul>
+
+              <p><strong>Lưu Ý:</strong></p>
+
+              <ul>
+                <li>
+                  Không có phí đổi trả vé cho các trường hợp đổi trước thời gian
+                  chiếu phim ít nhất 2 giờ.
+                </li>
+                <li>
+                  Trong trường hợp đặc biệt, như hủy chiếu phim từ phía rạp,
+                  khách hàng sẽ được hoàn trả toàn bộ số tiền đã thanh toán.
+                </li>
+              </ul>
+
+              <p>
+                Rạp Phim TH2D cam kết đảm bảo quyền lợi của khách hàng và cung
+                cấp dịch vụ đổi trả vé linh hoạt và tiện lợi nhất. Đồng thời,
+                chúng tôi luôn sẵn lòng hỗ trợ và giải quyết mọi vấn đề phát
+                sinh từ quá trình thanh toán và sử dụng dịch vụ của chúng tôi.
+              </p>
+            </div>
+            <div class="form-check mt-2">
+              <input
+                class="form-check-input my-3"
+                type="checkbox"
+                value=""
+                id="dieukhoan"
+              />
+              <label
+                class="form-check-label fw-bold fs-6 text-white my-2"
+                for=""
+              >
+                Tôi ĐÃ ĐỌC và ĐỒNG Ý với điều khoản thanh toán.
+              </label>
+            </div>
+            <button
+              name=""
+              id="btn_thanhtoan"
+              class="btn mt-3 w-100 mx-0 fs-4 text-white"
+              style="background-color: rgb(59, 180, 59)"
+              disabled
+            >
+              THANH TOÁN
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="thongtinve" class="d-none justify-content-center g-1">
+        <div
+          class="p-0 rounded-top-5 pb-3 border position-relative me-2"
+          style="background-color: rgb(216, 4, 124)"
+        >
+          <nav
+            class="nav row border-bottom border-3 text-white p-0 m-0 pb-3 mb-3"
+          >
+            <a
+              class="nav-link col active fs-4 text-white text-center"
+              href="javascript:history.back()"
+              aria-current="page"
+              >Quay lại</a
+            >
+            <p
+              style="cursor: pointer"
+              class="nav-link col fs-4 text-white text-center"
+              href=""
+            >
+              01. Đặt ghế
+            </p>
+            <p
+              style="cursor: pointer"
+              class="nav-link col fs-4 text-white text-center"
+              href=""
+            >
+              02. Thanh Toán
+            </p>
+            <p
+              style="cursor: pointer"
+              class="nav-link col fs-4 text-white text-center border-bottom border-3"
+              href=""
+            >
+              03. Thông tin vé
+            </p>
+          </nav>
+          <div class="container-fluid">
+            <strong class="text-warning"
+              >* Thông tin phía dưới là thông tin vé quý khách vừa đặt</strong
+            >
+            <div class="row mt-5">
+              <div class="col">
+                <p
+                  class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                >
+                  Thông tin vé
+                </p>
+                <div class="row">
+                  <p class="text-white fs-5 col-4">Mã đặt vé</p>
+                  <img src="../image/thongtinve.png" class="col" alt="" />
+                </div>
+                <div class="row">
+                  <p class="text-white fs-5 col-4">Phim:</p>
+                  <p class="text-white fs-5 col fw-bold">
+                    KATAK: SỨ MỆNH CHINH PHỤC ĐẠI DƯƠNG
+                  </p>
+                </div>
+                <div class="row">
+                  <p class="text-white fs-5 col-4">Thời gian:</p>
+                  <p class="text-white fs-5 col fw-bold" id="ttv_thoigian"></p>
+                </div>
+                <div class="row">
+                  <p class="text-white fs-5 col-4">Ghế đã chọn:</p>
+                  <p class="text-white fs-5 col fw-bold" id="ttv_ghechon"></p>
+                </div>
+              </div>
+              <div class="col">
+                <p
+                  class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                >
+                  Thông tin đặt vé
+                </p>
+                <div class="row">
+                  <p class="text-white fs-5 col-4 mx-0">Họ tên:</p>
+                  <p
+                    class="text-white fs-5 col fw-bold mx-0"
+                    id="ttv_hoten"
+                  ></p>
+                </div>
+                <div class="row">
+                  <p class="text-white fs-5 col-4 mx-0">Điện thoại:</p>
+                  <p class="text-white fs-5 col fw-bold mx-0" id="ttv_sdt"></p>
+                </div>
+                <div class="row">
+                  <p class="text-white fs-5 col-4 mx-0">Email:</p>
+                  <p
+                    class="text-white fs-5 col fw-bold mx-0"
+                    id="ttv_email"
+                  ></p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p
+                  class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                >
+                  Thông tin combo bắp nước
+                </p>
+                <div
+                  class="text-white fs-5 col fw-bold mx-0"
+                  id="ttv_combo"
+                ></div>
+              </div>
+              <div class="col">
+                <p
+                  class="fs-3 text-white fw-bold border-bottom border-2 border-white pb-2"
+                >
+                  Thông tin thanh toán
+                </p>
+                <div class="row">
+                  <p class="text-white fs-5 col-4 mx-0">Tổng tiền :</p>
+                  <p
+                    class="text-white fs-5 col fw-bold mx-0"
+                    id="ttv_tongtien"
+                  ></p>
+                </div>
+                <div class="row">
+                  <p class="text-white fs-5 col-4 mx-0">Vé ghế :</p>
+                  <p
+                    class="text-white fs-5 col fw-bold mx-0"
+                    id="ttv_tienghe"
+                  ></p>
+                </div>
+                <div class="row">
+                  <p class="text-white fs-5 col-4 mx-0">Combo :</p>
+                  <p
+                    class="text-white fs-5 col fw-bold mx-0"
+                    id="ttv_tiencombo"
+                  ></p>
+                </div>
+              </div>
+              <div class="col-12">
+                <p
+                  class="fs-3 text-white fw-bold border-bottom border-2 border-white text-center pb-2"
+                >
+                  Chú ý :
+                </p>
+                <h3 class="text-white text-center">
+                  Nếu có thông tin sai sót vui lòng liên hệ ngay !
+                </h3>
+                <h5 class="text-white text-center">Hotline : 0914941896</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modals -->
+      <div class="modal modal-lg" id="zlpaymodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title text-primary">Thanh toán bằng ZaloPay</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body row pt-3">
+              <div class="col-5">
+                <h4 class="my-2 text-center">Thông tin đơn hàng</h4>
+                <h5 class="my-2">Nhà cung cấp</h5>
+                <div class="d-flex">
+                  <img
+                    src="../image/logo-removebg-preview.png"
+                    class="w-75"
+                    alt=""
+                  />
+                </div>
+                <h5 class="my-2">Mô tả</h5>
+                <p class="my-2 fs-6">TH2D - Thanh toan ve xem phim</p>
+                <h5 class="my-2">Tổng tiền</h5>
+                <p class="my-2 fs-3 fw-bold qr_sotien"></p>
+              </div>
+              <div class="col">
+                <img
+                  src="../image/QR_ThanhToanZLPay.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <button
+                  class="xacnhan mt-3 btn btn-success"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  Xác nhận
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal modal-lg" id="momomodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title" style="color: #d8047c">
+                Thanh toán bằng MoMo
+              </h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body row pt-3">
+              <div class="col-5">
+                <h4 class="my-2 text-center">Thông tin đơn hàng</h4>
+                <h5 class="my-2">Nhà cung cấp</h5>
+                <div class="d-flex">
+                  <img
+                    src="../image/logo-removebg-preview.png"
+                    class="w-75"
+                    alt=""
+                  />
+                </div>
+                <h5 class="my-2">Mô tả</h5>
+                <p class="my-2 fs-6">TH2D - Thanh toan ve xem phim</p>
+                <h5 class="my-2">Tổng tiền</h5>
+                <p class="my-2 fs-3 fw-bold qr_sotien"></p>
+              </div>
+              <div class="col">
+                <img
+                  src="../image/QR_ThanhToanMOMO.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <button
+                  class="xacnhan mt-3 btn btn-success"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  Xác nhận
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal modal-lg" id="qrmodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title text-success">
+                Thanh toán bằng QR Ngân Hàng
+              </h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body row pt-3">
+              <div class="col-5">
+                <h3 class="my-2 text-center">Thông tin đơn hàng</h3>
+                <h5 class="my-2">Nhà cung cấp</h5>
+                <div class="d-flex">
+                  <img
+                    src="../image/logo-removebg-preview.png"
+                    class="w-75"
+                    alt=""
+                  />
+                </div>
+                <h5 class="my-2">Mô tả</h5>
+                <p class="my-2 fs-6">TH2D - Thanh toan ve xem phim</p>
+                <h5 class="my-2">Tổng tiền</h5>
+                <p class="my-2 fs-3 fw-bold qr_sotien"></p>
+              </div>
+              <div class="col">
+                <img
+                  src="../image/QR_ThanhToanQR.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <button
+                  class="xacnhan mt-3 btn btn-success"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  Xác nhận
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal modal-md fade"
+        id="modalId"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="modalTitleId">🍿 COMBO 🥤</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row mb-2">
+                  <img
+                    class="img-fluid col-3 rounded-5"
+                    src="../image/pepngot.png"
+                    alt=""
+                  />
+                  <div class="col">
+                    <strong>Pepsi + Bắp ngọt</strong>
+                    <p class="my-0 text-secondary">1 Bắp rang bơ + 1 Pepsi</p>
+                    <p class="my-0 text-success">67.000 đ</p>
+                  </div>
+                  <div class="col-4 my-auto row">
+                    <a
+                      name=""
+                      id="minusPN"
+                      class="btn my-auto col"
+                      role="button"
+                      >-</a
+                    >
+                    <p id="pepngot" class="p-3 w-25 border h-100 my-auto col">
+                      0
+                    </p>
+                    <a name="" id="plusPN" class="col btn my-auto" role="button"
+                      >+</a
+                    >
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <img
+                    class="img-fluid col-3 rounded-5"
+                    src="../image/pepphomai.png"
+                    alt=""
+                  />
+                  <div class="col">
+                    <strong>Pepsi + Bắp phô mai</strong>
+                    <p class="my-0 text-secondary">1 Bắp phô mai + 1 Pepsi</p>
+                    <p class="my-0 text-success">75.000 đ</p>
+                  </div>
+                  <div class="col-4 my-auto row">
+                    <a
+                      name=""
+                      id="minusPP"
+                      class="btn my-auto col"
+                      role="button"
+                      >-</a
+                    >
+                    <p id="pepphomai" class="p-3 w-25 border h-100 my-auto col">
+                      0
+                    </p>
+                    <a name="" id="plusPP" class="col btn my-auto" role="button"
+                      >+</a
+                    >
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <img
+                    class="img-fluid col-3 rounded-5"
+                    src="../image/7upngot.png"
+                    alt=""
+                  />
+                  <div class="col">
+                    <strong>7Up + Bắp ngọt</strong>
+                    <p class="my-0 text-secondary">1 Bắp rang bơ + 1 7Up</p>
+                    <p class="my-0 text-success">67.000 đ</p>
+                  </div>
+                  <div class="col-4 my-auto row">
+                    <a
+                      name=""
+                      id="minus7N"
+                      class="btn my-auto col"
+                      role="button"
+                      >-</a
+                    >
+                    <p id="7upngot" class="p-3 w-25 border h-100 my-auto col">
+                      0
+                    </p>
+                    <a name="" id="plus7N" class="col btn my-auto" role="button"
+                      >+</a
+                    >
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <img
+                    class="img-fluid col-3 rounded-5"
+                    src="../image/7upphomai.png"
+                    alt=""
+                  />
+                  <div class="col">
+                    <strong>7Up + Bắp phô mai</strong>
+                    <p class="my-0 text-secondary">1 Bắp phô mai + 1 7Up</p>
+                    <p class="my-0 text-success">75.000 đ</p>
+                  </div>
+                  <div class="col-4 my-auto row">
+                    <a
+                      name=""
+                      id="minus7P"
+                      class="btn my-auto col"
+                      role="button"
+                      >-</a
+                    >
+                    <p id="7upphomai" class="p-3 w-25 border h-100 my-auto col">
+                      0
+                    </p>
+                    <a name="" id="plus7P" class="col btn my-auto" role="button"
+                      >+</a
+                    >
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <img
+                    class="img-fluid col-3 rounded-5"
+                    src="../image/mirindangot.png"
+                    alt=""
+                  />
+                  <div class="col">
+                    <strong>Mirinda + Bắp ngọt</strong>
+                    <p class="my-0 text-secondary">1 Bắp rang bơ + 1 Mirinda</p>
+                    <p class="my-0 text-success">67.000 đ</p>
+                  </div>
+                  <div class="col-4 my-auto row">
+                    <a
+                      name=""
+                      id="minusMN"
+                      class="btn my-auto col"
+                      role="button"
+                      >-</a
+                    >
+                    <p
+                      id="mirindangot"
+                      class="p-3 w-25 border h-100 my-auto col"
+                    >
+                      0
+                    </p>
+                    <a name="" id="plusMN" class="col btn my-auto" role="button"
+                      >+</a
+                    >
+                  </div>
+                </div>
+                <div class="row mb-2">
+                  <img
+                    class="img-fluid h-100 my-auto col-3 rounded-5"
+                    src="../image/mirindaphomai.png"
+                    alt=""
+                  />
+                  <div class="col">
+                    <strong>Mirinda + Bắp phô mai</strong>
+                    <p class="my-0 text-secondary">1 Bắp phô mai + 1 Mirinda</p>
+                    <p class="my-0 text-success">75.000 đ</p>
+                  </div>
+                  <div class="col-4 my-auto row">
+                    <a
+                      name=""
+                      id="minusMP"
+                      class="btn my-auto col"
+                      role="button"
+                      >-</a
+                    >
+                    <p
+                      id="mirindaphomai"
+                      class="p-3 w-25 border h-100 my-auto col"
+                    >
+                      0
+                    </p>
+                    <a name="" id="plusMP" class="col btn my-auto" role="button"
+                      >+</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        var modalId = document.getElementById("modalId");
+
+        modalId.addEventListener("show.bs.modal", function (event) {
+          // Button that triggered the modal
+          let button = event.relatedTarget;
+          // Extract info from data-bs-* attributes
+          let recipient = button.getAttribute("data-bs-whatever");
+
+          // Use above variables to manipulate the DOM
+        });
+      </script>
+
+      <footer>
+        <img
+          style="width: 100%; margin-top: 50px"
+          src="../image/line-bg.png"
+          alt=""
+        />
+        <div class="container-footer">
+          <div class="logo-footer">
+            <img
+              class="img-fluid mt-3"
+              src="../image/logo-removebg-preview.png"
+              alt=""
+            />
+          </div>
+          <div class="d-flex nav justify-content-between flex-wrap mt-5">
+            <div class="nav-item">
+              <h3 class="text-center text-warning">LIÊN KẾT</h3>
+              <ul class="nav">
+                <li class="nav-item d-flex">
+                  <a class="nav-link" href=""
+                    ><img src="../image/scl_facebook.png" alt=""
+                  /></a>
+                  <a class="nav-link" href=""
+                    ><img src="../image/scl_youtube.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer2 nav-item">
+              <h3 class="text-center text-warning">HỆ THỐNG RẠP</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Đồng Nai</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Đồng Tháp</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Gia Lai</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">TH2D Gò Vấp</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer3 nav-item">
+              <h3 class="text-center text-warning">TH2D</h3>
+              <ul class="content-TH2D nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Phim đang chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Phim sắp chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Suất chiếu đặc biệt</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Lịch chiếu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Khuyến mãi</a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-footer4 nav-item">
+              <h3 class="text-warning text-center">THÔNG TIN</h3>
+              <ul class="content-thongtin nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Giới thiệu</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Tin tức</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Hỏi và đáp</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="content-footer5 nav-item">
+              <h3 class="text-center text-warning">CHÍNH SÁCH VÀ QUY ĐỊNH</h3>
+              <ul class="content-chinhsach nav flex-column">
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Quy định chung</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Điều khoản giao dịch</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Chính sách bảo mật</a>
+                </li>
+                <li class="nav-item text-center">
+                  <a class="nav-link text-grey" href="">Thông tin công ty</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="thanhtoan">
+            <div class="content-thanhtoan mt-5">
+              <h3 class="text-center text-white">Chấp nhận thanh toán</h3>
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/napas-40.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/payment-visa.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/payment-mastercard.png" alt=""
+                  /></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=""
+                    ><img src="../image/momo.jpg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="infor-company">
+            <div class="content-infor mt-5">
+              <div style="width: fit-content; margin: auto">
+                <img src="../image/dathongbao.png" alt="" />
+              </div>
+              <p class="text-center text-white mb-0">
+                CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM - RẠP CHIẾU PHIM TH2D
+                <br />
+                ĐỊA CHỈ: 416/19 DƯƠNG QUÃNG HÀM, PHƯỜNG 5, QUẬN GÒ VẤP, TP.HCM
+                <br />
+                GIẤY CNĐKDN SỐ: 0312742744, ĐĂNG KÝ LẦN ĐẦU NGÀY 18/04/2014,
+                ĐĂNG KÝ THAY ĐỔI LẦN THỨ 2 NGÀY 15/09/2014, CẤP BỞI SỞ KH&ĐT
+                TP.HCM
+                <br />
+                <br />
+                2015 © TH2D. ALL RIGHTS RESERVED.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/DatVe.js"></script>
+    <script src="../js/dangnhap.js"></script>
+  <script src="../js/xulyform.js"></script>
+  </body>
+  
+</html>
