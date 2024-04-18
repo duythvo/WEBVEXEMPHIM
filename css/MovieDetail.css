@@ -1,0 +1,154 @@
+.border-r{
+    border-radius: 20px 0 20px 0;
+}
+
+.box-shadow-double{
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.3), 0 0 50px 0 rgba(0, 0, 0, 0.4) inset
+}
+
+.trailer:hover{
+    background-color: black !important;
+}
+
+.muave:hover{
+    background-color: yellow;
+}
+
+.muave:hover a span{
+    color: black !important;
+}
+
+@media screen and (max-width:1180px) and (min-width:1000px){
+
+    .muave,
+    .trailer{
+        width: fit-content !important;
+        height: 50px !important;
+    }
+    .muave a,
+    .trailer a{
+        max-width: 100px;
+        line-height: 50px !important;
+    }
+
+    .muave a{
+        padding: 0 20px !important;
+    }
+
+    .muave a span,
+    .trailer a span{
+        font-size: 15px !important;
+    }
+
+    .trailer a img{
+        max-width: 30px !important;
+    }
+
+    .share a img{
+        width: 40px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .content-movie{
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .movie-detail{
+        margin-top: 20px;
+        max-width: 600px;
+    }
+
+    .muave,
+    .trailer{
+        width: fit-content !important;
+        height: 50px !important;
+    }
+    .muave a,
+    .trailer a{
+        max-width: 100px;
+        line-height: 50px !important;
+    }
+
+    .muave a{
+        padding: 0 20px !important;
+    }
+
+    .muave a span,
+    .trailer a span{
+        font-size: 15px !important;
+    }
+
+    .trailer a img{
+        max-width: 30px !important;
+    }
+
+    .share a img{
+        width: 40px;
+    }
+
+}
+
+@media screen and (max-width:700px){
+    .movie-detail{
+        max-width: 460px;
+    }
+
+    .content-movie .movie-pic img{
+        width: 460px !important;
+    }
+
+    .muave,
+    .trailer{
+        width: fit-content !important;
+        height: 50px !important;
+    }
+    .muave a,
+    .trailer a{
+        max-width: 100px;
+        line-height: 50px !important;
+    }
+
+    .muave a{
+        padding: 0 20px !important;
+    }
+
+    .muave a span,
+    .trailer a span{
+        font-size: 15px !important;
+    }
+
+    .trailer a img{
+        max-width: 30px !important;
+    }
+
+    .share a img{
+        width: 40px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .content-movie .movie-pic img{
+        width: 300px !important;
+    }
+
+    .movie-detail{
+        margin-left: 60px !important;
+    }
+
+    .movie-detail span{
+        max-width: 150px;
+    }
+
+    .movie-detail p{
+        font-size: 15px !important;
+        max-width: 340px;
+    }
+
+    .social{
+        display: flex;
+        justify-content: unset !important;
+    }
+}

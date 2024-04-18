@@ -82,12 +82,3 @@ window.addEventListener('resize',function(){
   }
   swiper.update()
 })
-
-
-const infohover = document.querySelectorAll('info-hover')
-
-infohover.addEventListener('click',()=>{
-  if(window.innerWidth <=600){
-    infohover.classList.add('d-none')
-  }
-})
